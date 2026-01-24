@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { baseMetadata, viewport as baseViewport } from "@/lib/metadata";
 import {
-  baseMetadata,
-  organizationJsonLd,
-  websiteJsonLd,
-} from "@/lib/metadata";
+  generateEnhancedOrganizationJsonLd,
+  generateWebsiteWithSearchJsonLd,
+} from "@/lib/seo";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -16,6 +16,11 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = baseMetadata;
+export const viewport: Viewport = baseViewport;
+
+// Enhanced JSON-LD for AI discoverability
+const organizationJsonLd = generateEnhancedOrganizationJsonLd();
+const websiteJsonLd = generateWebsiteWithSearchJsonLd();
 
 export default function RootLayout({
   children,
@@ -25,6 +30,22 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Preconnect to external resources for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+
+        {/* DNS prefetch for external links */}
+        <link rel="dns-prefetch" href="https://linkedin.com" />
+        <link rel="dns-prefetch" href="https://github.com" />
+
+        {/* AI/LLM discovery files */}
+        <link rel="author" href="/llms.txt" />
+
+        {/* Structured Data - Enhanced for AI crawlers */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

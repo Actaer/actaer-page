@@ -8,6 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { getAllPostSlugs, getPostBySlug, formatDate } from "@/lib/blog";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { generateBreadcrumbJsonLd } from "@/lib/seo";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -32,6 +33,7 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     image: post.image,
+    canonical: `${siteConfig.url}/blog/${slug}`,
     openGraph: {
       type: "article",
       publishedTime: post.date,
@@ -52,6 +54,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   // Dynamic import of the MDX content
   const { default: Content } = await import(`@/content/blog/${slug}.mdx`);
 
+  // Breadcrumb JSON-LD
+  const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+    { name: "Home", url: siteConfig.url },
+    { name: "Blog", url: `${siteConfig.url}/blog` },
+    { name: post.title, url: `${siteConfig.url}/blog/${slug}` },
+  ]);
+
   // BlogPosting JSON-LD
   const blogPostingJsonLd = {
     "@context": "https://schema.org",
@@ -60,6 +69,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     description: post.description,
     image: post.image ? `${siteConfig.url}${post.image}` : undefined,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       "@type": "Person",
       name: post.author,
@@ -68,16 +78,28 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/images/logo.png`,
+      },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${siteConfig.url}/blog/${slug}`,
     },
     keywords: post.tags.join(", "),
+    articleSection: "Technology",
+    inLanguage: "en-US",
   };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

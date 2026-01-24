@@ -3,19 +3,48 @@ import { Header, Footer } from "@/components/layout";
 import { Badge } from "@/components/ui/badge";
 import { BlogCard } from "@/components/blog";
 import { getAllPosts } from "@/lib/blog";
-import { constructMetadata } from "@/lib/metadata";
+import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { generateBreadcrumbJsonLd, generateBlogListJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "Blog",
   description:
     "Insights, tutorials, and updates from the Actaer team. Learn about software development, IT consulting, and technology trends.",
+  canonical: `${siteConfig.url}/blog`,
 });
 
 export default async function BlogPage() {
   const posts = await getAllPosts();
 
+  // JSON-LD schemas
+  const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+    { name: "Home", url: siteConfig.url },
+    { name: "Blog", url: `${siteConfig.url}/blog` },
+  ]);
+
+  const blogListJsonLd = generateBlogListJsonLd(
+    posts.map((post) => ({
+      title: post.title,
+      description: post.description,
+      url: `${siteConfig.url}/blog/${post.slug}`,
+      date: post.date,
+    })),
+  );
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(blogListJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

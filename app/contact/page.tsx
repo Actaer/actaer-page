@@ -5,11 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { generateBreadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "Contact Us",
   description:
     "Get in touch with Actaer. Let's discuss your software development, IT consulting, or product development needs.",
+  canonical: `${siteConfig.url}/contact`,
 });
 
 // LocalBusiness JSON-LD
@@ -61,9 +63,21 @@ const contactInfo = [
   },
 ];
 
+// JSON-LD schema
+const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "Contact", url: `${siteConfig.url}/contact` },
+]);
+
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

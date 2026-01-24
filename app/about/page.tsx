@@ -11,12 +11,18 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ArrowRight, Target, Heart, Zap, Users } from "lucide-react";
-import { constructMetadata } from "@/lib/metadata";
+import { constructMetadata, siteConfig } from "@/lib/metadata";
+import {
+  generateBreadcrumbJsonLd,
+  generateAboutPageJsonLd,
+  generateFaqJsonLd,
+} from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "About Us",
   description:
     "Learn about Actaer - a full-service tech consulting firm transforming businesses into agile, software-powered innovators.",
+  canonical: `${siteConfig.url}/about`,
 });
 
 const values = [
@@ -53,9 +59,64 @@ const stats = [
   { value: "15+", label: "Team Members" },
 ];
 
+// JSON-LD schemas for AI discoverability
+const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "About", url: `${siteConfig.url}/about` },
+]);
+
+const aboutPageJsonLd = generateAboutPageJsonLd();
+
+// FAQ for AI crawlers and featured snippets
+const faqJsonLd = generateFaqJsonLd([
+  {
+    question: "What is Actaer?",
+    answer:
+      "Actaer is a full-service technology consulting firm based in Serbia that specializes in IT consulting, custom software development, and product development. We transform businesses into agile, software-powered innovators.",
+  },
+  {
+    question: "Where is Actaer located?",
+    answer:
+      "Actaer is headquartered in Novi Pazar, Serbia. We serve clients globally and offer fully remote engagement models.",
+  },
+  {
+    question: "What services does Actaer offer?",
+    answer:
+      "Actaer offers three main service categories: IT Consulting (digital transformation, technical due diligence, team augmentation), Custom Software Development (full-stack engineering, AI/ML solutions, enterprise systems), and Product Development (MVP development, UI/UX design, ongoing support).",
+  },
+  {
+    question: "How many years of experience does Actaer have?",
+    answer:
+      "Actaer has over 10 years of experience in software development and IT consulting, having delivered 50+ projects for 30+ clients worldwide.",
+  },
+  {
+    question: "What is Vantum ERP?",
+    answer:
+      "Vantum ERP is Actaer's flagship product - a modern distribution ERP designed for wholesalers, distributors, and retail chains. It features AI-powered replenishment, real-time inventory management, and a modern cloud-native architecture.",
+  },
+]);
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(aboutPageJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

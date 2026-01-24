@@ -1,0 +1,108 @@
+# Actaer - Software Development & IT Consulting
+
+> Full-service tech consulting firm transforming businesses into agile, software-powered innovators.
+
+## Company Overview
+
+Actaer is a technology consulting and software development company based in Novi Pazar, Serbia. We specialize in IT consulting, custom software development, and product development services for businesses worldwide.
+
+## Contact Information
+
+- Website: https://actaer.com
+- Email: office@actaer.com
+- Phone: +381 649055722
+- Location: Novi Pazar, Serbia
+- LinkedIn: https://linkedin.com/company/actaer
+- GitHub: https://github.com/actaer
+
+## Services
+
+### IT Consulting
+Strategic technology guidance and digital transformation consulting including:
+- Project Specification & Planning
+- Digital Transformation Strategy
+- Technical Due Diligence & Risk Analysis
+- Team Augmentation & Scalability
+- Data-Driven Consulting
+
+### Custom Software Development
+End-to-end software development services:
+- Front-end & Back-end Engineering (React, Node.js, .NET, Java)
+- AI & Machine Learning Solutions
+- Autonomous & Agentic Systems
+- Real-Time Communication Platforms
+- Enterprise-Grade Software Solutions
+
+### Product Development
+Complete product lifecycle services:
+- Conceptualization & Prototyping
+- User-Centric Design
+- MVP Development & Iteration
+- Seamless Deployment & Integration
+- Ongoing Support & Maintenance
+
+## Products
+
+### Vantum ERP
+Modern distribution ERP for wholesalers, distributors, and retail chains.
+
+**Key Features:**
+- Inventory Management with multi-warehouse support
+- Sales Order Processing with real-time availability
+- Purchase Order Management
+- AI-Powered Smart Replenishment
+- Lot and serial tracking
+- Real-time analytics
+
+**Tech Stack:** .NET 10, React 19, PostgreSQL, Kafka, Redis
+
+**Website:** https://vantumerp.com
+
+## Company Stats
+
+- 10+ Years of Experience
+- 50+ Projects Delivered
+- 30+ Happy Clients
+- 15+ Team Members
+
+## Core Values
+
+1. **Results-Driven**: We measure success by client impact
+2. **Client-Centric**: Long-term partnerships based on trust
+3. **Innovation-Focused**: Cutting-edge technology solutions
+4. **Collaborative**: Working as an extension of your team
+
+## Technology Expertise
+
+- **Languages:** TypeScript, JavaScript, Python, C#, Java
+- **Frontend:** React, Next.js, Vue.js, Angular
+- **Backend:** Node.js, .NET, Spring Boot
+- **Databases:** PostgreSQL, MongoDB, Redis
+- **Cloud:** AWS, Azure, Google Cloud
+- **AI/ML:** OpenAI, LangChain, TensorFlow, PyTorch
+
+## Frequently Asked Questions
+
+**Q: Where is Actaer located?**
+A: Actaer is based in Novi Pazar, Serbia, serving clients globally.
+
+**Q: What industries does Actaer serve?**
+A: We serve various industries including retail, distribution, logistics, healthcare, fintech, and enterprise businesses.
+
+**Q: Does Actaer offer remote services?**
+A: Yes, we work with clients worldwide and offer fully remote engagement models.
+
+**Q: What is Vantum ERP?**
+A: Vantum ERP is our flagship product - a modern distribution ERP designed for wholesalers, distributors, and retail chains with AI-powered features.
+
+**Q: How can I contact Actaer?**
+A: You can reach us at office@actaer.com or call +381 649055722.
+
+## Documentation
+
+For more information, visit:
+- Services: https://actaer.com/services
+- Products: https://actaer.com/products/vantum-erp
+- Blog: https://actaer.com/blog
+- Contact: https://actaer.com/contact
+- About: https://actaer.com/about

@@ -12,12 +12,18 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import { constructMetadata } from "@/lib/metadata";
+import { constructMetadata, siteConfig } from "@/lib/metadata";
+import {
+  generateBreadcrumbJsonLd,
+  generateServiceJsonLd,
+  generateFaqJsonLd,
+} from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "Custom Software Development",
   description:
     "End-to-end software development services. Front-end, back-end, AI/ML, enterprise solutions, and real-time communication platforms.",
+  canonical: `${siteConfig.url}/services/software-development`,
 });
 
 const developmentServices = [
@@ -88,9 +94,69 @@ const developmentServices = [
   },
 ];
 
+// JSON-LD schemas
+const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "Services", url: `${siteConfig.url}/services` },
+  {
+    name: "Software Development",
+    url: `${siteConfig.url}/services/software-development`,
+  },
+]);
+
+const serviceJsonLd = generateServiceJsonLd({
+  name: "Custom Software Development",
+  description:
+    "End-to-end software development services. Front-end, back-end, AI/ML, enterprise solutions, and real-time communication platforms.",
+  serviceType: "Software Development",
+  url: `${siteConfig.url}/services/software-development`,
+});
+
+// FAQ for AI crawlers
+const faqJsonLd = generateFaqJsonLd([
+  {
+    question: "What software development services does Actaer provide?",
+    answer:
+      "Actaer provides full-stack engineering (React, Vue.js, Node.js, .NET), AI & Machine Learning development, Enterprise Solutions (ERP, CRM, data platforms), and Real-Time Communications (VoIP, video conferencing, collaboration platforms).",
+  },
+  {
+    question: "What programming languages and frameworks does Actaer use?",
+    answer:
+      "Actaer works with modern React, Angular, Vue.js frontends; Node.js, .NET, Java backends; GraphQL and RESTful APIs; microservices architecture; and implements CI/CD pipelines for automated deployment.",
+  },
+  {
+    question: "Does Actaer offer AI and Machine Learning development?",
+    answer:
+      "Yes, Actaer offers custom ML model development, Natural Language Processing (NLP), computer vision solutions, predictive analytics, and AI integration services to help businesses automate processes and gain insights.",
+  },
+  {
+    question: "What enterprise solutions does Actaer build?",
+    answer:
+      "Actaer builds ERP system implementations, custom CRM solutions, business process automation, data warehouse solutions, and enterprise integration platforms tailored to specific business needs.",
+  },
+]);
+
 export default function SoftwareDevelopmentPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

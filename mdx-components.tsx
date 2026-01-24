@@ -27,23 +27,38 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
 
     // Paragraphs and text
-    p: ({ children }) => (
-      <p className="leading-7 not-first:mt-6">{children}</p>
-    ),
+    p: ({ children }) => <p className="leading-7 not-first:mt-6">{children}</p>,
     strong: ({ children }) => (
       <strong className="font-semibold">{children}</strong>
     ),
     em: ({ children }) => <em className="italic">{children}</em>,
 
-    // Links
-    a: ({ href, children }) => (
-      <Link
-        href={href || "#"}
-        className="font-medium text-primary underline underline-offset-4 hover:text-primary/80"
-      >
-        {children}
-      </Link>
-    ),
+    // Links - handle external links with proper rel attributes
+    a: ({ href, children }) => {
+      const isExternal = href?.startsWith("http") || href?.startsWith("//");
+
+      if (isExternal) {
+        return (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline underline-offset-4 hover:text-primary/80"
+          >
+            {children}
+          </a>
+        );
+      }
+
+      return (
+        <Link
+          href={href || "#"}
+          className="font-medium text-primary underline underline-offset-4 hover:text-primary/80"
+        >
+          {children}
+        </Link>
+      );
+    },
 
     // Lists
     ul: ({ children }) => (

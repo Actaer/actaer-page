@@ -1,4 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 import { siteConfig } from "@/lib/metadata";
 import { Separator } from "@/components/ui/separator";
 import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
@@ -18,6 +22,8 @@ const footerLinks = {
 };
 
 export function Footer() {
+  const { resolvedTheme } = useTheme();
+
   return (
     <footer className="bg-muted/30 border-t">
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
@@ -25,9 +31,17 @@ export function Footer() {
           {/* Brand & Contact */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold font-heading bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-                ACTAER
-              </span>
+              <Image
+                src={
+                  resolvedTheme === "dark"
+                    ? "/images/logo-light.png"
+                    : "/images/logo-dark.png"
+                }
+                alt="Actaer"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+              />
             </Link>
             <p className="text-muted-foreground text-sm mb-6">
               Full-service tech consulting firm transforming businesses into

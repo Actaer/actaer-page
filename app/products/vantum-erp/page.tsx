@@ -11,6 +11,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
   ArrowRight,
   Package,
   ShoppingCart,
@@ -21,11 +27,17 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
+import {
+  generateBreadcrumbJsonLd,
+  generateSoftwareAppJsonLd,
+  generateFaqJsonLd,
+} from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "Vantum ERP - Distribution ERP, Reimagined",
   description:
     "Modern distribution ERP for wholesalers, distributors, and retail chains. Inventory management, sales orders, purchasing, and AI-powered replenishment.",
+  canonical: `${siteConfig.url}/products/vantum-erp`,
 });
 
 const modules = [
@@ -155,13 +167,61 @@ const productJsonLd = {
   ],
 };
 
+// Breadcrumb JSON-LD
+const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "Products", url: `${siteConfig.url}/products` },
+  { name: "Vantum ERP", url: `${siteConfig.url}/products/vantum-erp` },
+]);
+
+// FAQ for AI crawlers - ERP specific questions
+const faqJsonLd = generateFaqJsonLd([
+  {
+    question: "What is Vantum ERP?",
+    answer:
+      "Vantum ERP is a modern distribution ERP system designed for wholesalers, distributors, and retail chains. It features AI-powered smart replenishment, real-time inventory management across multiple warehouses, sales order processing, and purchase order management. Built with .NET 10, React 19, and PostgreSQL.",
+  },
+  {
+    question: "How is Vantum ERP different from legacy ERP systems?",
+    answer:
+      "Unlike legacy ERPs that take 6-18 months to implement and charge per-seat fees, Vantum ERP can be implemented in weeks, offers unlimited users, features a modern user interface, uses cloud-native modular architecture, and provides continuous deployment updates.",
+  },
+  {
+    question: "What industries is Vantum ERP designed for?",
+    answer:
+      "Vantum ERP is specifically designed for distribution businesses including wholesalers, distributors, retail chains, and 3PL (third-party logistics) providers who need modern inventory management and order processing capabilities.",
+  },
+  {
+    question: "Does Vantum ERP support multiple warehouses?",
+    answer:
+      "Yes, Vantum ERP provides real-time stock visibility across unlimited warehouses with features like lot tracking, serial numbers, and bin location management.",
+  },
+  {
+    question: "What is AI-powered replenishment in Vantum ERP?",
+    answer:
+      "Vantum ERP's Smart Replenishment module uses AI to calculate optimal reorder points, automatically generate purchase orders based on sales velocity, make seasonal adjustments, and maintain safety stock calculations.",
+  },
+]);
+
 export default function VantumERPPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
           __html: JSON.stringify(productJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
         }}
       />
       <Header />
@@ -384,6 +444,97 @@ export default function VantumERPPage() {
                   </CardHeader>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-12">
+                <Badge variant="outline" className="mb-4">
+                  FAQ
+                </Badge>
+                <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
+                  Frequently Asked Questions
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Everything you need to know about Vantum ERP
+                </p>
+              </div>
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>What is Vantum ERP?</AccordionTrigger>
+                  <AccordionContent>
+                    Vantum ERP is a modern distribution ERP system designed
+                    specifically for wholesalers, distributors, retail chains,
+                    and 3PL providers. It features AI-powered inventory
+                    replenishment, real-time analytics, and 100% API
+                    coverage—all without the complexity of legacy ERP systems.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>
+                    How is Vantum ERP different from traditional ERP systems?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Unlike legacy ERPs that require extensive customization and
+                    long implementation cycles, Vantum ERP is built with modern
+                    cloud-native architecture. It offers 10x faster
+                    implementation, unlimited users with no per-seat licensing,
+                    zero hidden fees, and AI-native features out of the box.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>
+                    What industries does Vantum ERP serve?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Vantum ERP is optimized for distribution-focused businesses
+                    including wholesale distributors, retail chains with
+                    multiple locations, 3PL (third-party logistics) providers,
+                    and any business managing complex inventory across multiple
+                    warehouses.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-4">
+                  <AccordionTrigger>
+                    Does Vantum ERP include AI features?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Yes! Vantum ERP includes AI-powered inventory replenishment
+                    that analyzes sales patterns, seasonality, and lead times to
+                    automatically generate optimal purchase suggestions. This
+                    helps reduce stockouts while minimizing excess inventory.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-5">
+                  <AccordionTrigger>
+                    How can I get started with Vantum ERP?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    We&apos;re currently accepting enterprises for our 2026
+                    pilot program. Visit{" "}
+                    <a
+                      href="https://vantumerp.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      vantumerp.com
+                    </a>{" "}
+                    for more information or{" "}
+                    <Link
+                      href="/contact"
+                      className="text-primary hover:underline"
+                    >
+                      contact our sales team
+                    </Link>{" "}
+                    to schedule a demo.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </section>

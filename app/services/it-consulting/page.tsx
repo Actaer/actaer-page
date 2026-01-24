@@ -12,12 +12,18 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import { constructMetadata } from "@/lib/metadata";
+import { constructMetadata, siteConfig } from "@/lib/metadata";
+import {
+  generateBreadcrumbJsonLd,
+  generateServiceJsonLd,
+  generateFaqJsonLd,
+} from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "IT Consulting",
   description:
     "Strategic technology guidance and digital transformation consulting. Project planning, technical due diligence, and data-driven consulting services.",
+  canonical: `${siteConfig.url}/services/it-consulting`,
 });
 
 const consultingServices = [
@@ -88,9 +94,61 @@ const consultingServices = [
   },
 ];
 
+// JSON-LD schemas
+const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "Services", url: `${siteConfig.url}/services` },
+  { name: "IT Consulting", url: `${siteConfig.url}/services/it-consulting` },
+]);
+
+const serviceJsonLd = generateServiceJsonLd({
+  name: "IT Consulting",
+  description:
+    "Strategic technology guidance and digital transformation consulting. Project planning, technical due diligence, and data-driven consulting services.",
+  serviceType: "IT Consulting",
+  url: `${siteConfig.url}/services/it-consulting`,
+});
+
+// FAQ for AI crawlers
+const faqJsonLd = generateFaqJsonLd([
+  {
+    question: "What IT consulting services does Actaer offer?",
+    answer:
+      "Actaer offers comprehensive IT consulting including Digital Transformation Strategy, Project Specification & Planning, Technical Due Diligence, Team Augmentation, and Data-Driven Consulting services.",
+  },
+  {
+    question: "What is technical due diligence?",
+    answer:
+      "Technical due diligence is an in-depth assessment of a company's technology stack, typically performed before mergers, acquisitions, or major investments. It includes code quality review, security vulnerability assessment, scalability analysis, technical debt evaluation, and team capability assessment.",
+  },
+  {
+    question: "Does Actaer offer team augmentation services?",
+    answer:
+      "Yes, Actaer provides team augmentation services with senior developers and architects, specialized skill sets on demand, flexible engagement models, knowledge transfer, and managed onboarding processes.",
+  },
+]);
+
 export default function ITConsultingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

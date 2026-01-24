@@ -1,14 +1,16 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "./MobileNav";
+import { ModeToggle } from "@/components/mode-toggle";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -20,7 +22,9 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+gsap.registerPlugin(useGSAP);
+
+const emptySubscribe = () => () => {};
 
 const services = [
   {
@@ -50,6 +54,12 @@ export function Header() {
   const headerRef = useRef<HTMLElement>(null);
   const pathname = usePathname();
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const mounted = useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false,
+  );
+  const { resolvedTheme } = useTheme();
 
   useGSAP(
     () => {
@@ -59,16 +69,6 @@ export function Header() {
         { y: -100, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
       );
-
-      // Sticky header background on scroll
-      ScrollTrigger.create({
-        start: "top -80",
-        end: 99999,
-        toggleClass: {
-          className: "header-scrolled",
-          targets: headerRef.current,
-        },
-      });
     },
     { scope: headerRef },
   );
@@ -77,15 +77,46 @@ export function Header() {
     <>
       <header
         ref={headerRef}
-        className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/0 [&.header-scrolled]:bg-background/80 [&.header-scrolled]:backdrop-blur-lg [&.header-scrolled]:border-b [&.header-scrolled]:border-border/40"
+        className="fixed top-4 inset-x-4 md:inset-x-0 z-50 mx-auto md:w-fit transition-all duration-300 rounded-full border border-border/40 bg-background/80 backdrop-blur-lg shadow-lg"
       >
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex h-16 items-center justify-between">
+        <div className="px-5 md:px-8">
+          <div className="flex h-12 md:h-14 items-center justify-between md:gap-10 xl:gap-32">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold font-heading bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-                ACTAER
-              </span>
+            <Link href="/" className="flex items-center">
+              {/* Show placeholder or CSS-based solution before mount to prevent flash */}
+              {!mounted ? (
+                <>
+                  <Image
+                    src="/images/logo-light.png"
+                    alt="Actaer"
+                    width={120}
+                    height={40}
+                    className="h-8 w-auto hidden dark:block"
+                    priority
+                  />
+                  <Image
+                    src="/images/logo-dark.png"
+                    alt="Actaer"
+                    width={120}
+                    height={40}
+                    className="h-8 w-auto block dark:hidden"
+                    priority
+                  />
+                </>
+              ) : (
+                <Image
+                  src={
+                    resolvedTheme === "dark"
+                      ? "/images/logo-light.png"
+                      : "/images/logo-dark.png"
+                  }
+                  alt="Actaer"
+                  width={120}
+                  height={40}
+                  className="h-8 w-auto"
+                  priority
+                />
+              )}
             </Link>
 
             {/* Desktop Navigation */}
@@ -101,7 +132,7 @@ export function Header() {
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                    <ul className="grid w-100 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150">
                       {services.map((service) => (
                         <li key={service.title}>
                           <NavigationMenuLink asChild>
@@ -158,9 +189,10 @@ export function Header() {
               </NavigationMenuList>
             </NavigationMenu>
 
-            {/* CTA Button - Desktop */}
-            <div className="hidden md:block">
-              <Button asChild>
+            {/* CTA Button & Theme Toggle - Desktop */}
+            <div className="hidden md:flex items-center gap-2">
+              <ModeToggle />
+              <Button asChild className="rounded-full">
                 <Link href="/contact">Get Started</Link>
               </Button>
             </div>

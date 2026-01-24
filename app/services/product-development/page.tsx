@@ -11,12 +11,19 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import { constructMetadata } from "@/lib/metadata";
+import { constructMetadata, siteConfig } from "@/lib/metadata";
+import {
+  generateBreadcrumbJsonLd,
+  generateServiceJsonLd,
+  generateHowToJsonLd,
+  generateFaqJsonLd,
+} from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "Product Development",
   description:
     "End-to-end product development from ideation to launch. Prototyping, MVP development, user-centric design, and ongoing support.",
+  canonical: `${siteConfig.url}/services/product-development`,
 });
 
 const phases = [
@@ -94,9 +101,82 @@ const phases = [
   },
 ];
 
+// JSON-LD schemas
+const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "Services", url: `${siteConfig.url}/services` },
+  {
+    name: "Product Development",
+    url: `${siteConfig.url}/services/product-development`,
+  },
+]);
+
+const serviceJsonLd = generateServiceJsonLd({
+  name: "Product Development",
+  description:
+    "End-to-end product development from ideation to launch. Prototyping, MVP development, user-centric design, and ongoing support.",
+  serviceType: "Product Development",
+  url: `${siteConfig.url}/services/product-development`,
+});
+
+// HowTo schema for product development process - great for AI understanding
+const howToJsonLd = generateHowToJsonLd({
+  name: "How to Build a Successful Software Product",
+  description:
+    "A comprehensive guide to product development from conceptualization to launch and ongoing support.",
+  totalTime: "P3M",
+  steps: phases.map((phase) => ({
+    name: phase.title,
+    text: phase.description,
+  })),
+});
+
+// FAQ for AI crawlers
+const faqJsonLd = generateFaqJsonLd([
+  {
+    question: "How long does product development take?",
+    answer:
+      "Product development timelines vary based on complexity. A typical MVP can be delivered in 2-3 months, while full-featured products may take 6-12 months. We work in agile sprints to deliver value incrementally.",
+  },
+  {
+    question: "What is included in MVP development?",
+    answer:
+      "MVP (Minimum Viable Product) development includes core feature implementation, scalable architecture, basic analytics integration, and deployment infrastructure. This allows you to validate your product idea with real users quickly.",
+  },
+  {
+    question: "Does Actaer provide ongoing support after launch?",
+    answer:
+      "Yes, we offer comprehensive post-launch support including 24/7 monitoring, bug fixes and updates, security patches, and feature enhancements to ensure your product continues to evolve with your business.",
+  },
+]);
+
 export default function ProductDevelopmentPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(howToJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

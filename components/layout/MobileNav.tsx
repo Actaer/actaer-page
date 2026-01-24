@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 import {
   Sheet,
   SheetContent,
@@ -15,6 +17,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
 import { cn } from "@/lib/utils";
 
 interface MobileNavProps {
@@ -46,6 +49,7 @@ const navItems = [
 
 export function MobileNav({ open, onOpenChange }: MobileNavProps) {
   const pathname = usePathname();
+  const { resolvedTheme } = useTheme();
 
   const handleLinkClick = () => {
     onOpenChange(false);
@@ -53,36 +57,48 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-        <SheetHeader>
+      <SheetContent side="right" className="w-full sm:w-[400px] p-0">
+        <SheetHeader className="px-6 pt-6 pb-4">
           <SheetTitle>
-            <span className="text-2xl font-bold font-heading bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-              ACTAER
-            </span>
+            <Image
+              src={
+                resolvedTheme === "dark"
+                  ? "/images/logo-light.png"
+                  : "/images/logo-dark.png"
+              }
+              alt="Actaer"
+              width={140}
+              height={48}
+              className="h-10 w-auto"
+            />
           </SheetTitle>
         </SheetHeader>
-        <nav className="flex flex-col gap-4 mt-8">
+        <nav className="flex flex-col px-6 pb-6">
           {/* Services Accordion */}
           <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="services" className="border-b-0">
+            <AccordionItem
+              value="services"
+              className="border-b border-border/50"
+            >
               <AccordionTrigger
                 className={cn(
-                  "text-lg font-medium py-2 hover:no-underline",
+                  "text-xl font-medium py-4 hover:no-underline",
                   pathname.startsWith("/services") && "text-primary",
                 )}
               >
                 Services
               </AccordionTrigger>
-              <AccordionContent>
-                <div className="flex flex-col gap-2 pl-4">
+              <AccordionContent className="pb-4">
+                <div className="flex flex-col gap-1 pl-2">
                   {services.map((service) => (
                     <Link
                       key={service.href}
                       href={service.href}
                       onClick={handleLinkClick}
                       className={cn(
-                        "text-muted-foreground hover:text-foreground transition-colors py-2",
-                        pathname === service.href && "text-primary",
+                        "text-base text-muted-foreground hover:text-foreground transition-colors py-3 px-3 rounded-lg hover:bg-muted",
+                        pathname === service.href &&
+                          "text-primary bg-primary/5",
                       )}
                     >
                       {service.title}
@@ -94,26 +110,34 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
           </Accordion>
 
           {/* Other nav items */}
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={handleLinkClick}
-              className={cn(
-                "text-lg font-medium py-2 hover:text-primary transition-colors",
-                pathname === item.href && "text-primary",
-              )}
-            >
-              {item.label}
-            </Link>
-          ))}
+          <div className="flex flex-col mt-2">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={handleLinkClick}
+                className={cn(
+                  "text-xl font-medium py-4 border-b border-border/50 hover:text-primary transition-colors",
+                  pathname === item.href && "text-primary",
+                )}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
 
           {/* CTA Button */}
-          <Button asChild className="mt-4">
+          <Button asChild size="lg" className="mt-8 rounded-full">
             <Link href="/contact" onClick={handleLinkClick}>
               Get Started
             </Link>
           </Button>
+
+          {/* Theme Toggle */}
+          <div className="flex items-center justify-between mt-8 pt-6 border-t border-border/50">
+            <span className="text-base text-muted-foreground">Theme</span>
+            <ModeToggle />
+          </div>
         </nav>
       </SheetContent>
     </Sheet>
