@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { Header, Footer } from "@/components/layout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -9,31 +8,46 @@ import { ArrowLeft, Calendar, User } from "lucide-react";
 import { getAllPostSlugs, getPostBySlug, formatDate } from "@/lib/blog";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd } from "@/lib/seo";
+import { Link } from "@/i18n/navigation";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { Locale, locales, defaultLocale } from "@/i18n/config";
 
 interface BlogPostPageProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: Locale }>;
 }
 
 export async function generateStaticParams() {
-  const slugs = getAllPostSlugs();
-  return slugs.map((slug) => ({ slug }));
+  // Generate params for all locale/slug combinations
+  const params: { locale: string; slug: string }[] = [];
+
+  for (const locale of locales) {
+    const slugs = getAllPostSlugs(locale);
+    for (const slug of slugs) {
+      params.push({ locale, slug });
+    }
+  }
+
+  return params;
 }
 
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const post = await getPostBySlug(slug);
+  const { slug, locale } = await params;
+  const post = await getPostBySlug(slug, locale);
+  const t = await getTranslations({ locale, namespace: "blog" });
 
   if (!post) {
-    return constructMetadata({ title: "Post Not Found" });
+    return constructMetadata({ title: t("noPostsTitle") });
   }
 
   return constructMetadata({
     title: post.title,
     description: post.description,
     image: post.image,
-    canonical: `${siteConfig.url}/blog/${slug}`,
+    canonical: `${siteConfig.url}/${locale}/blog/${slug}`,
+    locale,
+    path: `/blog/${slug}`,
     openGraph: {
       type: "article",
       publishedTime: post.date,
@@ -44,22 +58,42 @@ export async function generateMetadata({
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const { slug } = await params;
-  const post = await getPostBySlug(slug);
+  const { slug, locale } = await params;
+  setRequestLocale(locale);
+
+  const t = await getTranslations("blog");
+  const post = await getPostBySlug(slug, locale);
 
   if (!post) {
     notFound();
   }
 
-  // Dynamic import of the MDX content
-  const { default: Content } = await import(`@/content/blog/${slug}.mdx`);
+  // Dynamic import of the MDX content - try locale first, then fallback
+  let Content;
+  try {
+    const module = await import(`@/content/blog/${locale}/${slug}.mdx`);
+    Content = module.default;
+  } catch {
+    // Fallback to English
+    const module = await import(`@/content/blog/${defaultLocale}/${slug}.mdx`);
+    Content = module.default;
+  }
 
   // Breadcrumb JSON-LD
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
     { name: "Home", url: siteConfig.url },
-    { name: "Blog", url: `${siteConfig.url}/blog` },
-    { name: post.title, url: `${siteConfig.url}/blog/${slug}` },
+    { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/blog` },
+    { name: post.title, url: `${siteConfig.url}/${locale}/blog/${slug}` },
   ]);
+
+  // Map locale to language code
+  const localeToLang: Record<string, string> = {
+    en: "en-US",
+    sr: "sr-RS",
+    de: "de-DE",
+    es: "es-ES",
+    pt: "pt-PT",
+  };
 
   // BlogPosting JSON-LD
   const blogPostingJsonLd = {
@@ -85,11 +119,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${siteConfig.url}/blog/${slug}`,
+      "@id": `${siteConfig.url}/${locale}/blog/${slug}`,
     },
     keywords: post.tags.join(", "),
     articleSection: "Technology",
-    inLanguage: "en-US",
+    inLanguage: localeToLang[locale] || "en-US",
   };
 
   return (
@@ -115,7 +149,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <Button asChild variant="ghost" className="group">
                 <Link href="/blog">
                   <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
-                  Back to Blog
+                  {t("backToBlog")}
                 </Link>
               </Button>
             </div>
@@ -142,7 +176,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </span>
                 <span className="flex items-center gap-1">
                   <Calendar className="w-4 h-4" />
-                  {formatDate(post.date)}
+                  {formatDate(post.date, locale)}
                 </span>
               </div>
             </header>
@@ -159,11 +193,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             {/* Post footer */}
             <footer className="max-w-3xl mx-auto text-center">
               <p className="text-muted-foreground mb-6">
-                Thanks for reading! Have questions or want to discuss this
-                topic?
+                {t("thanksForReading")}
               </p>
               <Button asChild>
-                <Link href="/contact">Get in Touch</Link>
+                <Link href="/contact">{t("getInTouch")}</Link>
               </Button>
             </footer>
           </div>

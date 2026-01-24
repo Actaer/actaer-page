@@ -4,6 +4,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 import {
   ClipboardList,
@@ -15,46 +16,34 @@ import {
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const steps = [
-  {
-    icon: ClipboardList,
-    number: "01",
-    title: "Planning",
-    description:
-      "We analyze your challenges, align goals with stakeholders, and develop a comprehensive roadmap for success.",
-  },
-  {
-    icon: Palette,
-    number: "02",
-    title: "Design",
-    description:
-      "Our team crafts solution frameworks and IT architectures tailored to your specific requirements.",
-  },
-  {
-    icon: Cog,
-    number: "03",
-    title: "Implementation",
-    description:
-      "Agile execution with seamless integration, building scalable solutions that grow with your business.",
-  },
-  {
-    icon: CheckCircle,
-    number: "04",
-    title: "Verification",
-    description:
-      "Rigorous testing and validation ensure your solution meets the highest quality standards.",
-  },
-  {
-    icon: Headphones,
-    number: "05",
-    title: "Maintenance",
-    description:
-      "Proactive support and continuous enhancements keep your systems running at peak performance.",
-  },
+type StepKey =
+  | "planning"
+  | "design"
+  | "implementation"
+  | "verification"
+  | "maintenance";
+
+const stepConfigs: {
+  icon: typeof ClipboardList;
+  number: string;
+  key: StepKey;
+}[] = [
+  { icon: ClipboardList, number: "01", key: "planning" },
+  { icon: Palette, number: "02", key: "design" },
+  { icon: Cog, number: "03", key: "implementation" },
+  { icon: CheckCircle, number: "04", key: "verification" },
+  { icon: Headphones, number: "05", key: "maintenance" },
 ];
 
 export function Workflow() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("workflow");
+
+  const steps = stepConfigs.map((config) => ({
+    ...config,
+    title: t(`steps.${config.key}.title`),
+    description: t(`steps.${config.key}.description`),
+  }));
 
   useGSAP(
     () => {
@@ -75,7 +64,7 @@ export function Workflow() {
       );
 
       // Animate each step on scroll
-      steps.forEach((_, index) => {
+      stepConfigs.forEach((_, index) => {
         gsap.fromTo(
           `.workflow-step-${index}`,
           { opacity: 0, x: index % 2 === 0 ? -50 : 50 },
@@ -119,18 +108,18 @@ export function Workflow() {
         {/* Header */}
         <div className="workflow-header text-center max-w-3xl mx-auto mb-16">
           <Badge variant="outline" className="mb-4">
-            Our Process
+            {t("badge")}
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-4">
-            How We{" "}
-            <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-              Deliver Success
-            </span>
+            {t.rich("title", {
+              highlighted: (chunks) => (
+                <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
+                  {chunks}
+                </span>
+              ),
+            })}
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Our proven methodology ensures consistent, high-quality results for
-            every project we undertake.
-          </p>
+          <p className="text-lg text-muted-foreground">{t("description")}</p>
         </div>
 
         {/* Workflow Steps */}

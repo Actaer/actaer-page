@@ -7,8 +7,17 @@ import {
   Workflow,
   CtaSection,
 } from "@/components/sections";
+import { setRequestLocale } from "next-intl/server";
+import { Locale } from "@/i18n/config";
 
-export default function HomePage() {
+interface HomePageProps {
+  params: Promise<{ locale: Locale }>;
+}
+
+export default async function HomePage({ params }: HomePageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <Header />

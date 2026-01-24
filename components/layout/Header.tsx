@@ -1,16 +1,17 @@
 "use client";
 
 import { useRef, useState, useSyncExternalStore } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "./MobileNav";
 import { ModeToggle } from "@/components/mode-toggle";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -26,30 +27,6 @@ gsap.registerPlugin(useGSAP);
 
 const emptySubscribe = () => () => {};
 
-const services = [
-  {
-    title: "IT Consulting",
-    href: "/services/it-consulting",
-    description: "Strategic technology guidance and digital transformation.",
-  },
-  {
-    title: "Software Development",
-    href: "/services/software-development",
-    description: "Custom software solutions tailored to your needs.",
-  },
-  {
-    title: "Product Development",
-    href: "/services/product-development",
-    description: "End-to-end product creation from concept to launch.",
-  },
-];
-
-const navItems = [
-  { href: "/about", label: "About" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
-];
-
 export function Header() {
   const headerRef = useRef<HTMLElement>(null);
   const pathname = usePathname();
@@ -60,6 +37,31 @@ export function Header() {
     () => false,
   );
   const { resolvedTheme } = useTheme();
+  const t = useTranslations("navigation");
+
+  const services = [
+    {
+      title: t("itConsulting"),
+      href: "/services/it-consulting",
+      description: t("itConsultingDescription"),
+    },
+    {
+      title: t("softwareDevelopment"),
+      href: "/services/software-development",
+      description: t("softwareDevelopmentDescription"),
+    },
+    {
+      title: t("productDevelopment"),
+      href: "/services/product-development",
+      description: t("productDevelopmentDescription"),
+    },
+  ];
+
+  const navItems = [
+    { href: "/about", label: t("about") },
+    { href: "/blog", label: t("blog") },
+    { href: "/contact", label: t("contact") },
+  ];
 
   useGSAP(
     () => {
@@ -129,7 +131,7 @@ export function Header() {
                       pathname.startsWith("/services") && "text-primary",
                     )}
                   >
-                    Services
+                    {t("services")}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-100 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150">
@@ -159,31 +161,33 @@ export function Header() {
 
                 {/* Products */}
                 <NavigationMenuItem>
-                  <Link href="/products/vantum-erp" legacyBehavior passHref>
-                    <NavigationMenuLink
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/products/vantum-erp"
                       className={cn(
                         navigationMenuTriggerStyle(),
                         pathname.startsWith("/products") && "text-primary",
                       )}
                     >
-                      Vantum ERP
-                    </NavigationMenuLink>
-                  </Link>
+                      {t("vantumErp")}
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 {/* Other nav items */}
                 {navItems.map((item) => (
                   <NavigationMenuItem key={item.href}>
-                    <Link href={item.href} legacyBehavior passHref>
-                      <NavigationMenuLink
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href={item.href}
                         className={cn(
                           navigationMenuTriggerStyle(),
                           pathname === item.href && "text-primary",
                         )}
                       >
                         {item.label}
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
@@ -191,9 +195,10 @@ export function Header() {
 
             {/* CTA Button & Theme Toggle - Desktop */}
             <div className="hidden md:flex items-center gap-2">
+              <LanguageSwitcher />
               <ModeToggle />
               <Button asChild className="rounded-full">
-                <Link href="/contact">Get Started</Link>
+                <Link href="/contact">{t("getStarted")}</Link>
               </Button>
             </div>
 
@@ -205,7 +210,7 @@ export function Header() {
               onClick={() => setMobileNavOpen(true)}
             >
               <Menu className="h-6 w-6" />
-              <span className="sr-only">Open menu</span>
+              <span className="sr-only">{t("openMenu")}</span>
             </Button>
           </div>
         </div>

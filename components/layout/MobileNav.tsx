@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import {
   Sheet,
   SheetContent,
@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { cn } from "@/lib/utils";
 
 interface MobileNavProps {
@@ -25,31 +26,32 @@ interface MobileNavProps {
   onOpenChange: (open: boolean) => void;
 }
 
-const services = [
-  {
-    title: "IT Consulting",
-    href: "/services/it-consulting",
-  },
-  {
-    title: "Software Development",
-    href: "/services/software-development",
-  },
-  {
-    title: "Product Development",
-    href: "/services/product-development",
-  },
-];
-
-const navItems = [
-  { href: "/about", label: "About" },
-  { href: "/products/vantum-erp", label: "Vantum ERP" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
-];
-
 export function MobileNav({ open, onOpenChange }: MobileNavProps) {
   const pathname = usePathname();
   const { resolvedTheme } = useTheme();
+  const t = useTranslations("navigation");
+
+  const services = [
+    {
+      title: t("itConsulting"),
+      href: "/services/it-consulting",
+    },
+    {
+      title: t("softwareDevelopment"),
+      href: "/services/software-development",
+    },
+    {
+      title: t("productDevelopment"),
+      href: "/services/product-development",
+    },
+  ];
+
+  const navItems = [
+    { href: "/about", label: t("about") },
+    { href: "/products/vantum-erp", label: t("vantumErp") },
+    { href: "/blog", label: t("blog") },
+    { href: "/contact", label: t("contact") },
+  ];
 
   const handleLinkClick = () => {
     onOpenChange(false);
@@ -86,7 +88,7 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
                   pathname.startsWith("/services") && "text-primary",
                 )}
               >
-                Services
+                {t("services")}
               </AccordionTrigger>
               <AccordionContent className="pb-4">
                 <div className="flex flex-col gap-1 pl-2">
@@ -129,14 +131,19 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
           {/* CTA Button */}
           <Button asChild size="lg" className="mt-8 rounded-full">
             <Link href="/contact" onClick={handleLinkClick}>
-              Get Started
+              {t("getStarted")}
             </Link>
           </Button>
 
-          {/* Theme Toggle */}
+          {/* Theme Toggle & Language */}
           <div className="flex items-center justify-between mt-8 pt-6 border-t border-border/50">
-            <span className="text-base text-muted-foreground">Theme</span>
-            <ModeToggle />
+            <span className="text-base text-muted-foreground">
+              {t("theme")}
+            </span>
+            <div className="flex items-center gap-2">
+              <LanguageSwitcher />
+              <ModeToggle />
+            </div>
           </div>
         </nav>
       </SheetContent>

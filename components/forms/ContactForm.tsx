@@ -4,7 +4,8 @@ import { useSubmit } from "@formspree/react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -18,15 +19,13 @@ import {
 } from "@/components/ui/card";
 import { CheckCircle, Loader2 } from "lucide-react";
 
-const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Please enter a valid email address"),
-  company: z.string().optional(),
-  phone: z.string().optional(),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
-
-type FormData = z.infer<typeof formSchema>;
+type FormData = {
+  name: string;
+  email: string;
+  company?: string;
+  phone?: string;
+  message: string;
+};
 
 interface ContactFormProps {
   formspreeId?: string;
@@ -37,12 +36,27 @@ interface ContactFormProps {
 
 export function ContactForm({
   formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID || "your-form-id",
-  title = "Send us a message",
-  description = "Fill out the form below and we'll get back to you as soon as possible.",
+  title,
+  description,
   compact = false,
 }: ContactFormProps) {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const t = useTranslations("contact");
+  const tValidation = useTranslations("validation");
+
+  // Create schema with translated error messages
+  const formSchema = useMemo(
+    () =>
+      z.object({
+        name: z.string().min(2, tValidation("nameMin")),
+        email: z.string().email(tValidation("emailInvalid")),
+        company: z.string().optional(),
+        phone: z.string().optional(),
+        message: z.string().min(10, tValidation("messageMin")),
+      }),
+    [tValidation],
+  );
 
   const {
     register,
@@ -61,14 +75,12 @@ export function ContactForm({
       const result = await formspreeSubmit(data);
       // Check if submission failed
       if (result && "error" in result && result.error) {
-        setSubmitError(
-          "There was an error submitting your message. Please try again.",
-        );
+        setSubmitError(t("errors.submit"));
       } else {
         setSubmitSuccess(true);
       }
     } catch {
-      setSubmitError("An unexpected error occurred. Please try again.");
+      setSubmitError(t("errors.unexpected"));
     }
   };
 
@@ -86,12 +98,12 @@ export function ContactForm({
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Message Sent!</h3>
+            <h3 className="text-xl font-semibold mb-2">{t("success.title")}</h3>
             <p className="text-muted-foreground mb-6">
-              Thank you for reaching out. We&apos;ll get back to you shortly.
+              {t("success.description")}
             </p>
             <Button variant="outline" onClick={handleReset}>
-              Send Another Message
+              {t("success.sendAnother")}
             </Button>
           </div>
         </CardContent>
@@ -103,8 +115,12 @@ export function ContactForm({
     <Card className={compact ? "border-0 shadow-none" : ""}>
       {!compact && (
         <CardHeader>
-          <CardTitle className="text-2xl font-heading">{title}</CardTitle>
-          <CardDescription>{description}</CardDescription>
+          <CardTitle className="text-2xl font-heading">
+            {title || t("formTitle")}
+          </CardTitle>
+          <CardDescription>
+            {description || t("formDescription")}
+          </CardDescription>
         </CardHeader>
       )}
       <CardContent className={compact ? "p-0" : ""}>
@@ -112,11 +128,12 @@ export function ContactForm({
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="name">
-                Name <span className="text-destructive">*</span>
+                {t("form.name")}{" "}
+                <span className="text-destructive">{t("form.required")}</span>
               </Label>
               <Input
                 id="name"
-                placeholder="John Doe"
+                placeholder={t("form.namePlaceholder")}
                 {...register("name")}
                 className={errors.name ? "border-destructive" : ""}
               />
@@ -129,12 +146,13 @@ export function ContactForm({
 
             <div className="space-y-2">
               <Label htmlFor="email">
-                Email <span className="text-destructive">*</span>
+                {t("form.email")}{" "}
+                <span className="text-destructive">{t("form.required")}</span>
               </Label>
               <Input
                 id="email"
                 type="email"
-                placeholder="john@company.com"
+                placeholder={t("form.emailPlaceholder")}
                 {...register("email")}
                 className={errors.email ? "border-destructive" : ""}
               />
@@ -148,20 +166,20 @@ export function ContactForm({
 
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="company">Company</Label>
+              <Label htmlFor="company">{t("form.company")}</Label>
               <Input
                 id="company"
-                placeholder="Acme Inc."
+                placeholder={t("form.companyPlaceholder")}
                 {...register("company")}
               />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="phone">Phone</Label>
+              <Label htmlFor="phone">{t("form.phone")}</Label>
               <Input
                 id="phone"
                 type="tel"
-                placeholder="+1 (555) 123-4567"
+                placeholder={t("form.phonePlaceholder")}
                 {...register("phone")}
               />
             </div>
@@ -169,11 +187,12 @@ export function ContactForm({
 
           <div className="space-y-2">
             <Label htmlFor="message">
-              Message <span className="text-destructive">*</span>
+              {t("form.message")}{" "}
+              <span className="text-destructive">{t("form.required")}</span>
             </Label>
             <Textarea
               id="message"
-              placeholder="Tell us about your project or how we can help..."
+              placeholder={t("form.messagePlaceholder")}
               rows={5}
               {...register("message")}
               className={errors.message ? "border-destructive" : ""}
@@ -188,7 +207,7 @@ export function ContactForm({
           {(errors.root || submitError) && (
             <div className="p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
               <p className="text-sm text-destructive">
-                {submitError || "Something went wrong. Please try again."}
+                {submitError || t("errors.general")}
               </p>
             </div>
           )}
@@ -197,10 +216,10 @@ export function ContactForm({
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Sending...
+                {t("form.submitting")}
               </>
             ) : (
-              "Send Message"
+              t("form.submit")
             )}
           </Button>
         </form>

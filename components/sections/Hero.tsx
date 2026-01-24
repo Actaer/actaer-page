@@ -1,9 +1,10 @@
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
@@ -11,6 +12,7 @@ gsap.registerPlugin(useGSAP);
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("hero");
 
   useGSAP(
     () => {
@@ -78,37 +80,35 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            <span className="text-sm font-medium">
-              Introducing Vantum ERP — Distribution ERP, Reimagined
-            </span>
+            <span className="text-sm font-medium">{t("badge")}</span>
           </div>
 
           {/* Title */}
           <h1 className="hero-title text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-heading tracking-tight mb-6">
-            Your Success,{" "}
-            <span className="bg-linear-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Engineered
-            </span>{" "}
-            by ACTAER
+            {t.rich("title", {
+              highlighted: (chunks) => (
+                <span className="bg-linear-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  {chunks}
+                </span>
+              ),
+            })}
           </h1>
 
           {/* Description */}
           <p className="hero-description text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            We&apos;re a full-service tech consulting firm transforming
-            businesses into agile, software-powered innovators. From strategy to
-            implementation, we engineer your digital future.
+            {t("description")}
           </p>
 
           {/* CTA Buttons */}
           <div className="hero-buttons flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="group">
               <Link href="/contact">
-                Start Your Project
+                {t("startProject")}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/services">Explore Services</Link>
+              <Link href="/services">{t("exploreServices")}</Link>
             </Button>
           </div>
         </div>
@@ -116,7 +116,7 @@ export function Hero() {
         {/* Scroll indicator */}
         <div className="hero-scroll absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
           <span className="text-xs text-muted-foreground uppercase tracking-widest">
-            Scroll
+            {t("scroll")}
           </span>
           <ChevronDown className="h-5 w-5 text-muted-foreground" />
         </div>

@@ -1,10 +1,11 @@
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -18,50 +19,48 @@ import { ArrowRight, Lightbulb, Code2, Rocket } from "lucide-react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const services = [
-  {
-    icon: Lightbulb,
-    title: "IT Consulting",
-    description:
-      "Strategic technology guidance to drive digital transformation and optimize your IT infrastructure.",
-    features: [
-      "Digital Transformation Strategy",
-      "Technical Due Diligence",
-      "Team Augmentation",
-      "Data-Driven Consulting",
-    ],
-    href: "/services/it-consulting",
-  },
-  {
-    icon: Code2,
-    title: "Software Development",
-    description:
-      "Custom software solutions built with cutting-edge technologies to solve your unique challenges.",
-    features: [
-      "Full-Stack Engineering",
-      "AI & Machine Learning",
-      "Enterprise Solutions",
-      "Real-Time Platforms",
-    ],
-    href: "/services/software-development",
-  },
-  {
-    icon: Rocket,
-    title: "Product Development",
-    description:
-      "End-to-end product creation from ideation to launch, with ongoing support and iteration.",
-    features: [
-      "Prototyping & MVP",
-      "User-Centric Design",
-      "Agile Development",
-      "Launch & Scale",
-    ],
-    href: "/services/product-development",
-  },
-];
-
 export function ServicesGrid() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("services");
+
+  const services = [
+    {
+      icon: Lightbulb,
+      title: t("itConsulting.title"),
+      description: t("itConsulting.description"),
+      features: [
+        t("itConsulting.features.digitalTransformation"),
+        t("itConsulting.features.technicalDueDiligence"),
+        t("itConsulting.features.teamAugmentation"),
+        t("itConsulting.features.dataDriven"),
+      ],
+      href: "/services/it-consulting",
+    },
+    {
+      icon: Code2,
+      title: t("softwareDevelopment.title"),
+      description: t("softwareDevelopment.description"),
+      features: [
+        t("softwareDevelopment.features.fullStack"),
+        t("softwareDevelopment.features.aiMl"),
+        t("softwareDevelopment.features.enterprise"),
+        t("softwareDevelopment.features.realTime"),
+      ],
+      href: "/services/software-development",
+    },
+    {
+      icon: Rocket,
+      title: t("productDevelopment.title"),
+      description: t("productDevelopment.description"),
+      features: [
+        t("productDevelopment.features.prototyping"),
+        t("productDevelopment.features.userCentric"),
+        t("productDevelopment.features.agile"),
+        t("productDevelopment.features.launch"),
+      ],
+      href: "/services/product-development",
+    },
+  ];
 
   useGSAP(
     () => {
@@ -107,18 +106,18 @@ export function ServicesGrid() {
         {/* Header */}
         <div className="services-header text-center max-w-3xl mx-auto mb-16">
           <Badge variant="outline" className="mb-4">
-            Our Services
+            {t("badge")}
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-4">
-            Comprehensive Tech Solutions for{" "}
-            <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-              Modern Businesses
-            </span>
+            {t.rich("title", {
+              highlighted: (chunks) => (
+                <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
+                  {chunks}
+                </span>
+              ),
+            })}
           </h2>
-          <p className="text-lg text-muted-foreground">
-            From strategic consulting to hands-on development, we offer
-            end-to-end services to power your digital transformation journey.
-          </p>
+          <p className="text-lg text-muted-foreground">{t("description")}</p>
         </div>
 
         {/* Services Grid */}
@@ -153,7 +152,7 @@ export function ServicesGrid() {
                 </ul>
                 <Button asChild variant="ghost" className="group/btn p-0">
                   <Link href={service.href}>
-                    Learn More
+                    {t("learnMore")}
                     <span className="sr-only"> about {service.title}</span>
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
@@ -170,7 +169,7 @@ export function ServicesGrid() {
         <div className="text-center mt-12">
           <Button asChild size="lg" variant="outline">
             <Link href="/services">
-              View All Services
+              {t("viewAll")}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>

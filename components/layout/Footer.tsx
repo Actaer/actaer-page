@@ -1,28 +1,42 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { siteConfig } from "@/lib/metadata";
+import { useCookieConsentSafe } from "@/lib/cookie-consent";
 import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
-
-const footerLinks = {
-  services: [
-    { label: "IT Consulting", href: "/services/it-consulting" },
-    { label: "Software Development", href: "/services/software-development" },
-    { label: "Product Development", href: "/services/product-development" },
-  ],
-  products: [{ label: "Vantum ERP", href: "/products/vantum-erp" }],
-  company: [
-    { label: "About", href: "/about" },
-    { label: "Blog", href: "/blog" },
-    { label: "Contact", href: "/contact" },
-  ],
-};
+import { Button } from "@/components/ui/button";
+import { Mail, Phone, MapPin, Linkedin, Twitter, Cookie } from "lucide-react";
 
 export function Footer() {
   const { resolvedTheme } = useTheme();
+  const t = useTranslations();
+  const cookieContext = useCookieConsentSafe();
+  const openPreferences = cookieContext?.openPreferences ?? (() => {});
+
+  const footerLinks = {
+    services: [
+      { label: t("navigation.itConsulting"), href: "/services/it-consulting" },
+      {
+        label: t("navigation.softwareDevelopment"),
+        href: "/services/software-development",
+      },
+      {
+        label: t("navigation.productDevelopment"),
+        href: "/services/product-development",
+      },
+    ],
+    products: [
+      { label: t("navigation.vantumErp"), href: "/products/vantum-erp" },
+    ],
+    company: [
+      { label: t("navigation.about"), href: "/about" },
+      { label: t("navigation.blog"), href: "/blog" },
+      { label: t("navigation.contact"), href: "/contact" },
+    ],
+  };
 
   return (
     <footer className="bg-muted/30 border-t">
@@ -44,8 +58,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-muted-foreground text-sm mb-6">
-              Full-service tech consulting firm transforming businesses into
-              agile, software-powered innovators.
+              {t("footer.description")}
             </p>
             <div className="space-y-3">
               <a
@@ -71,7 +84,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <p className="font-semibold mb-4">Services</p>
+            <p className="font-semibold mb-4">{t("footer.services")}</p>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.href}>
@@ -88,7 +101,7 @@ export function Footer() {
 
           {/* Products */}
           <div>
-            <p className="font-semibold mb-4">Products</p>
+            <p className="font-semibold mb-4">{t("footer.products")}</p>
             <ul className="space-y-3">
               {footerLinks.products.map((link) => (
                 <li key={link.href}>
@@ -105,7 +118,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <p className="font-semibold mb-4">Company</p>
+            <p className="font-semibold mb-4">{t("footer.company")}</p>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
@@ -118,6 +131,37 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Legal Links */}
+            <p className="font-semibold mb-4 mt-6">{t("footer.legal")}</p>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {t("footer.privacyPolicy")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cookies"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {t("footer.cookiePolicy")}
+                </Link>
+              </li>
+              <li>
+                <Button
+                  variant="link"
+                  className="h-auto p-0 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  onClick={openPreferences}
+                >
+                  <Cookie className="mr-1.5 h-3.5 w-3.5" />
+                  {t("footer.cookieSettings")}
+                </Button>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -125,7 +169,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Actaer. All rights reserved.
+            {t("footer.copyright", { year: new Date().getFullYear() })}
           </p>
 
           {/* Social Links */}

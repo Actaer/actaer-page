@@ -4,31 +4,41 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const technologies = [
-  { name: "React", category: "Frontend" },
-  { name: "Angular", category: "Frontend" },
-  { name: "Next.js", category: "Frontend" },
-  { name: "TypeScript", category: "Language" },
-  { name: "Node.js", category: "Backend" },
-  { name: ".NET", category: "Backend" },
-  { name: "Python", category: "Language" },
-  { name: "Java", category: "Language" },
-  { name: "PostgreSQL", category: "Database" },
-  { name: "MongoDB", category: "Database" },
-  { name: "Elasticsearch", category: "Database" },
-  { name: "Redis", category: "Database" },
-  { name: "Docker", category: "DevOps" },
-  { name: "Kubernetes", category: "DevOps" },
-  { name: "AWS", category: "Cloud" },
-  { name: "Azure", category: "Cloud" },
+type TechCategory =
+  | "frontend"
+  | "backend"
+  | "language"
+  | "database"
+  | "devops"
+  | "cloud";
+
+const technologies: { name: string; category: TechCategory }[] = [
+  { name: "React", category: "frontend" },
+  { name: "Angular", category: "frontend" },
+  { name: "Next.js", category: "frontend" },
+  { name: "TypeScript", category: "language" },
+  { name: "Node.js", category: "backend" },
+  { name: ".NET", category: "backend" },
+  { name: "Python", category: "language" },
+  { name: "Java", category: "language" },
+  { name: "PostgreSQL", category: "database" },
+  { name: "MongoDB", category: "database" },
+  { name: "Elasticsearch", category: "database" },
+  { name: "Redis", category: "database" },
+  { name: "Docker", category: "devops" },
+  { name: "Kubernetes", category: "devops" },
+  { name: "AWS", category: "cloud" },
+  { name: "Azure", category: "cloud" },
 ];
 
 export function TechStack() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("techStack");
 
   useGSAP(
     () => {
@@ -74,18 +84,18 @@ export function TechStack() {
         {/* Header */}
         <div className="tech-header text-center max-w-3xl mx-auto mb-16">
           <Badge variant="outline" className="mb-4">
-            Technology Stack
+            {t("badge")}
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-4">
-            Built with{" "}
-            <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-              Modern Technologies
-            </span>
+            {t.rich("title", {
+              highlighted: (chunks) => (
+                <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
+                  {chunks}
+                </span>
+              ),
+            })}
           </h2>
-          <p className="text-lg text-muted-foreground">
-            We leverage cutting-edge tools and frameworks to build scalable,
-            maintainable, and high-performance solutions.
-          </p>
+          <p className="text-lg text-muted-foreground">{t("description")}</p>
         </div>
 
         {/* Tech Grid */}
@@ -101,7 +111,7 @@ export function TechStack() {
 
               {/* Tooltip */}
               <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-foreground text-background text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-                {tech.category}
+                {t(`categories.${tech.category}`)}
               </div>
             </div>
           ))}

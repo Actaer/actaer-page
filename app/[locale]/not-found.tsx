@@ -1,9 +1,14 @@
-import Link from "next/link";
+"use client";
+
 import { Header, Footer } from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { Home, ArrowLeft, Search } from "lucide-react";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export default function NotFound() {
+  const t = useTranslations("notFound");
+
   return (
     <>
       <Header />
@@ -22,11 +27,10 @@ export default function NotFound() {
 
             {/* Message */}
             <h1 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-              Page Not Found
+              {t("title")}
             </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto">
-              Sorry, we couldn&apos;t find the page you&apos;re looking for. It
-              might have been moved or doesn&apos;t exist.
+              {t("description")}
             </p>
 
             {/* Actions */}
@@ -34,13 +38,13 @@ export default function NotFound() {
               <Button asChild size="lg">
                 <Link href="/">
                   <Home className="mr-2 h-4 w-4" />
-                  Back to Home
+                  {t("backToHome")}
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="/contact">
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  Contact Support
+                  {t("contactSupport")}
                 </Link>
               </Button>
             </div>
@@ -48,14 +52,14 @@ export default function NotFound() {
             {/* Helpful Links */}
             <div className="mt-12 pt-8 border-t">
               <p className="text-sm text-muted-foreground mb-4">
-                Here are some helpful links:
+                {t("helpfulLinks")}
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
                 <Link
                   href="/services"
                   className="text-primary hover:underline underline-offset-4"
                 >
-                  Our Services
+                  {t("ourServices")}
                 </Link>
                 <span className="text-muted-foreground">•</span>
                 <Link
@@ -76,7 +80,7 @@ export default function NotFound() {
                   href="/about"
                   className="text-primary hover:underline underline-offset-4"
                 >
-                  About Us
+                  {t("aboutUs")}
                 </Link>
               </div>
             </div>

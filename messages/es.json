@@ -1,0 +1,577 @@
+{
+  "metadata": {
+    "title": "Desarrollo de Software y Consultoría IT",
+    "titleTemplate": "{title} | Actaer",
+    "description": "Firma de consultoría tecnológica integral que transforma empresas en innovadores ágiles impulsados por software. Consultoría IT, desarrollo de software personalizado y soluciones empresariales."
+  },
+  "navigation": {
+    "services": "Servicios",
+    "itConsulting": "Consultoría IT",
+    "itConsultingDescription": "Orientación tecnológica estratégica y transformación digital.",
+    "softwareDevelopment": "Desarrollo de Software",
+    "softwareDevelopmentDescription": "Soluciones de software personalizadas según sus necesidades.",
+    "productDevelopment": "Desarrollo de Productos",
+    "productDevelopmentDescription": "Creación de productos de principio a fin, del concepto al lanzamiento.",
+    "vantumErp": "Vantum ERP",
+    "about": "Nosotros",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "getStarted": "Comenzar",
+    "openMenu": "Abrir menú",
+    "theme": "Tema"
+  },
+  "hero": {
+    "badge": "Presentamos Vantum ERP — ERP de Distribución, Reimaginado",
+    "title": "Tu éxito, <highlighted>Diseñado</highlighted> por ACTAER",
+    "description": "Somos una firma de consultoría tecnológica integral que transforma empresas en innovadores ágiles impulsados por software. Desde la estrategia hasta la implementación, diseñamos tu futuro digital.",
+    "startProject": "Iniciar tu proyecto",
+    "exploreServices": "Explorar servicios",
+    "scroll": "Desplazar"
+  },
+  "about": {
+    "badge": "Sobre Actaer",
+    "title": "Resolviendo problemas empresariales complejos con <highlighted>Tecnología Inteligente</highlighted>",
+    "description1": "Actaer es una firma de consultoría tecnológica recién fundada, construida por ingenieros y consultores experimentados. Aportamos perspectivas frescas y experiencia comprobada para transformar tu visión en soluciones de software confiables y escalables.",
+    "description2": "Desde consultoría IT estratégica hasta desarrollo completo de productos, colaboramos con empresas de todos los tamaños para navegar el complejo panorama digital. Nuestro enfoque ágil garantiza que entregamos valor en cada paso del camino.",
+    "tagline": "Ideas Frescas, Experiencia Comprobada"
+  },
+  "services": {
+    "badge": "Nuestros Servicios",
+    "title": "Soluciones tecnológicas integrales para <highlighted>Empresas Modernas</highlighted>",
+    "description": "Desde consultoría estratégica hasta desarrollo práctico, ofrecemos servicios de extremo a extremo para impulsar tu transformación digital.",
+    "viewAll": "Ver todos los servicios",
+    "learnMore": "Saber más",
+    "keyOfferings": "Ofertas clave:",
+    "itConsulting": {
+      "title": "Consultoría IT",
+      "description": "Orientación tecnológica estratégica para impulsar la transformación digital y optimizar tu infraestructura IT.",
+      "features": {
+        "digitalTransformation": "Estrategia de Transformación Digital",
+        "technicalDueDiligence": "Due Diligence Técnica",
+        "teamAugmentation": "Ampliación de Equipo",
+        "dataDriven": "Consultoría Basada en Datos"
+      }
+    },
+    "softwareDevelopment": {
+      "title": "Desarrollo de Software",
+      "description": "Soluciones de software personalizadas construidas con tecnologías de vanguardia para resolver tus desafíos únicos.",
+      "features": {
+        "fullStack": "Ingeniería Full-Stack",
+        "aiMl": "IA y Aprendizaje Automático",
+        "enterprise": "Soluciones Empresariales",
+        "realTime": "Plataformas en Tiempo Real"
+      }
+    },
+    "productDevelopment": {
+      "title": "Desarrollo de Productos",
+      "description": "Creación de productos de principio a fin, desde la ideación hasta el lanzamiento, con soporte continuo e iteración.",
+      "features": {
+        "prototyping": "Prototipado y MVP",
+        "userCentric": "Diseño Centrado en el Usuario",
+        "agile": "Desarrollo Ágil",
+        "launch": "Lanzamiento y Escalado"
+      }
+    }
+  },
+  "servicesPage": {
+    "pageTitle": "Servicios",
+    "pageDescription": "Soluciones tecnológicas integrales que incluyen consultoría IT, desarrollo de software personalizado y desarrollo de productos para impulsar tu transformación digital.",
+    "heroTitle": "Soluciones integrales para el {highlighted}",
+    "heroHighlighted": "Éxito Digital",
+    "heroDescription": "Desde consultoría estratégica hasta desarrollo práctico, ofrecemos servicios de extremo a extremo para impulsar tu transformación digital.",
+    "faqBadge": "FAQ",
+    "faqTitle": "Preguntas Frecuentes",
+    "faqDescription": "Respuestas a preguntas frecuentes sobre nuestros servicios",
+    "faq1Question": "¿Cómo sé qué servicio es adecuado para mi negocio?",
+    "faq1Answer": "Depende de tu etapa actual. Si estás explorando opciones o necesitas orientación estratégica, comienza con Consultoría IT. Si tienes requisitos claros y necesitas implementación, el Desarrollo de Software es el camino. Si estás construyendo un nuevo producto desde cero, nuestro servicio de Desarrollo de Productos cubre todo el recorrido desde la idea hasta el lanzamiento.",
+    "faq2Question": "¿Con qué tecnologías trabaja Actaer?",
+    "faq2Answer": "Trabajamos con tecnologías modernas de nivel empresarial incluyendo React, Next.js, Vue.js para frontends; Node.js, .NET y Java para backends; PostgreSQL, MongoDB y Redis para datos; y plataformas cloud como AWS, Azure y GCP. También nos especializamos en soluciones de IA/ML usando los frameworks más recientes.",
+    "faq3Question": "¿Cuánto tiempo dura un proyecto típico?",
+    "faq3Answer": "Los plazos de los proyectos varían según el alcance. Un compromiso de consultoría puede durar 2-4 semanas, mientras que un proyecto de desarrollo de software puede abarcar de 2-6 meses. El desarrollo completo de productos típicamente abarca 4-12 meses. Proporcionaremos un cronograma detallado durante nuestra consulta inicial.",
+    "faq4Question": "¿Ofrecen soporte continuo después de completar el proyecto?",
+    "faq4Answer": "¡Sí! Ofrecemos varios paquetes de soporte y mantenimiento que incluyen corrección de errores, monitoreo de rendimiento, actualizaciones de funciones y soporte crítico 24/7. Creemos en asociaciones a largo plazo, no solo en proyectos únicos.",
+    "ctaTitle": "¿No estás seguro de qué servicio necesitas?",
+    "ctaDescription": "Hablemos sobre tus desafíos. Te ayudaremos a encontrar la solución adecuada para tu negocio.",
+    "ctaButton": "Programar una consulta"
+  },
+  "itConsultingPage": {
+    "pageTitle": "Consultoría IT",
+    "pageDescription": "Orientación tecnológica estratégica y consultoría de transformación digital. Planificación de proyectos, due diligence técnica y servicios de consultoría basados en datos.",
+    "badge": "Consultoría IT",
+    "heroTitle": "Orientación Tecnológica {highlighted}",
+    "heroHighlighted": "Estratégica",
+    "heroDescription": "Navegue por el complejo panorama tecnológico con consultoría experta que alinea sus inversiones en TI con los objetivos empresariales.",
+    "ctaButton": "Iniciar Consulta",
+    "exploreProducts": "Explorar Vantum ERP",
+    "overviewTitle": "Nuestros Servicios de Consultoría",
+    "overviewDescription": "Consultoría IT integral para guiar su viaje de transformación digital.",
+    "strategyTitle": "Estrategia de Transformación Digital",
+    "strategyDescription": "Ayudamos a las organizaciones a navegar por el complejo panorama digital con estrategias claras y accionables que alinean las inversiones tecnológicas con los objetivos empresariales.",
+    "strategyBenefit1": "Desarrollo de hojas de ruta tecnológicas",
+    "strategyBenefit2": "Planificación de modernización de sistemas legacy",
+    "strategyBenefit3": "Estrategias de migración a la nube",
+    "strategyBenefit4": "Oportunidades de automatización de procesos",
+    "strategyBenefit5": "Análisis competitivo y benchmarking",
+    "planningTitle": "Especificación y Planificación de Proyectos",
+    "planningDescription": "Planificación integral de proyectos que garantiza requisitos claros, plazos realistas y asignación efectiva de recursos para una entrega exitosa.",
+    "planningBenefit1": "Recopilación y análisis de requisitos",
+    "planningBenefit2": "Documentos de especificación técnica",
+    "planningBenefit3": "Planificación de recursos y cronogramas",
+    "planningBenefit4": "Evaluación y mitigación de riesgos",
+    "planningBenefit5": "Estimación y optimización de presupuestos",
+    "dueDiligenceTitle": "Due Diligence Técnica",
+    "dueDiligenceDescription": "Evaluaciones técnicas profundas para fusiones, adquisiciones o inversiones tecnológicas importantes para identificar riesgos y oportunidades.",
+    "dueDiligenceBenefit1": "Revisión de calidad de código y arquitectura",
+    "dueDiligenceBenefit2": "Evaluación de vulnerabilidades de seguridad",
+    "dueDiligenceBenefit3": "Análisis de escalabilidad y rendimiento",
+    "dueDiligenceBenefit4": "Evaluación de deuda técnica",
+    "dueDiligenceBenefit5": "Evaluación de capacidades del equipo",
+    "augmentationTitle": "Ampliación de Equipo",
+    "augmentationDescription": "Escale su capacidad de desarrollo con profesionales experimentados que se integran perfectamente con sus equipos existentes.",
+    "augmentationBenefit1": "Desarrolladores senior y arquitectos",
+    "augmentationBenefit2": "Habilidades especializadas bajo demanda",
+    "augmentationBenefit3": "Modelos de compromiso flexibles",
+    "augmentationBenefit4": "Transferencia de conocimiento incluida",
+    "augmentationBenefit5": "Proceso de onboarding gestionado",
+    "dataTitle": "Consultoría Basada en Datos",
+    "dataDescription": "Aproveche el poder de los datos para tomar decisiones informadas con nuestros servicios de consultoría de analytics e inteligencia empresarial.",
+    "dataBenefit1": "Desarrollo de estrategia de datos",
+    "dataBenefit2": "Selección de plataforma de analytics",
+    "dataBenefit3": "Definición y seguimiento de KPIs",
+    "dataBenefit4": "Marcos de gobernanza de datos",
+    "dataBenefit5": "Implementación de analytics predictivo",
+    "whatYouGet": "Lo Que Obtiene",
+    "whyChooseTitle": "¿Por Qué Elegir Actaer para Consultoría IT?",
+    "whyChooseDescription": "Aportamos profunda experiencia técnica combinada con visión empresarial para entregar soluciones prácticas y accionables.",
+    "reason1Title": "Experiencia en la Industria",
+    "reason1Description": "Años de experiencia en diversas industrias nos dan perspectivas únicas sobre sus desafíos.",
+    "reason2Title": "Enfoque Práctico",
+    "reason2Description": "Nos enfocamos en recomendaciones accionables que pueden implementarse, no solo en marcos teóricos.",
+    "reason3Title": "Soporte de Principio a Fin",
+    "reason3Description": "Desde la estrategia hasta la ejecución, lo apoyamos durante todo el viaje de transformación.",
+    "ctaTitle": "¿Listo para Transformar su Estrategia Tecnológica?",
+    "ctaDescription": "Hablemos de cómo nuestros servicios de consultoría pueden ayudarle a alcanzar sus objetivos empresariales.",
+    "ctaButtonPrimary": "Programar una Consulta",
+    "ctaButtonSecondary": "Ver Todos los Servicios"
+  },
+  "softwareDevPage": {
+    "pageTitle": "Desarrollo de Software Personalizado",
+    "pageDescription": "Servicios de desarrollo de software de principio a fin. Frontend, backend, IA/ML, soluciones empresariales y plataformas de comunicación en tiempo real.",
+    "badge": "Desarrollo de Software",
+    "heroTitle": "Soluciones de Software {highlighted}",
+    "heroHighlighted": "Personalizadas",
+    "heroDescription": "Construya software potente y escalable adaptado a sus necesidades empresariales únicas con nuestro equipo de desarrollo experto.",
+    "ctaButton": "Iniciar su Proyecto",
+    "exploreProducts": "Explorar Vantum ERP",
+    "overviewTitle": "Nuestros Servicios de Desarrollo",
+    "overviewDescription": "Servicios de desarrollo de software de principio a fin adaptados a sus requisitos únicos.",
+    "fullstackTitle": "Ingeniería Full-Stack",
+    "fullstackDescription": "Servicios completos de desarrollo frontend y backend para construir aplicaciones robustas y escalables desde cero.",
+    "fullstackBenefit1": "Frontends modernos con React, Angular o Vue.js",
+    "fullstackBenefit2": "Backends con Node.js, .NET o Java",
+    "fullstackBenefit3": "APIs RESTful y GraphQL",
+    "fullstackBenefit4": "Arquitectura de microservicios",
+    "fullstackBenefit5": "Configuración de pipelines CI/CD",
+    "aiMlTitle": "IA y Machine Learning",
+    "aiMlDescription": "Aproveche el poder de la inteligencia artificial para automatizar procesos, obtener insights y crear aplicaciones inteligentes.",
+    "aiMlBenefit1": "Desarrollo de modelos ML personalizados",
+    "aiMlBenefit2": "Procesamiento de Lenguaje Natural (NLP)",
+    "aiMlBenefit3": "Soluciones de visión por computadora",
+    "aiMlBenefit4": "Analytics predictivo",
+    "aiMlBenefit5": "Integración y despliegue de IA",
+    "agenticTitle": "Sistemas Autónomos y Agénticos",
+    "agenticDescription": "Construya agentes y sistemas autónomos inteligentes que pueden razonar, planificar y ejecutar tareas complejas de forma independiente.",
+    "agenticBenefit1": "Agentes impulsados por LLM",
+    "agenticBenefit2": "Orquestación multi-agente",
+    "agenticBenefit3": "Uso de herramientas y llamadas a funciones",
+    "agenticBenefit4": "Generación aumentada por recuperación (RAG)",
+    "agenticBenefit5": "Automatización de flujos de trabajo",
+    "realtimeTitle": "Plataformas en Tiempo Real",
+    "realtimeDescription": "Plataformas de comunicación y colaboración en tiempo real de alto rendimiento para experiencias conectadas modernas.",
+    "realtimeBenefit1": "Implementación de WebSocket y WebRTC",
+    "realtimeBenefit2": "Sistemas de chat y mensajería",
+    "realtimeBenefit3": "Funciones de colaboración en vivo",
+    "realtimeBenefit4": "Sistemas de notificaciones push",
+    "realtimeBenefit5": "Arquitecturas orientadas a eventos",
+    "enterpriseTitle": "Soluciones Empresariales",
+    "enterpriseDescription": "Software empresarial escalable y seguro que maneja lógica de negocio compleja y se integra con sus sistemas existentes.",
+    "enterpriseBenefit1": "Sistemas ERP y CRM",
+    "enterpriseBenefit2": "Automatización de procesos de negocio",
+    "enterpriseBenefit3": "Integración de sistemas legacy",
+    "enterpriseBenefit4": "Cumplimiento de seguridad empresarial",
+    "enterpriseBenefit5": "Diseño de alta disponibilidad",
+    "whatYouGet": "Lo Que Obtiene",
+    "whatWeDeliver": "Lo Que Entregamos",
+    "whyChooseTitle": "¿Por Qué Elegir Actaer para Desarrollo de Software?",
+    "whyChooseDescription": "Combinamos excelencia técnica con un profundo entendimiento de sus necesidades empresariales.",
+    "reason1Title": "Equipo Experto",
+    "reason1Description": "Desarrolladores senior con años de experiencia en diversas tecnologías e industrias.",
+    "reason2Title": "Enfoque en Calidad",
+    "reason2Description": "Código limpio y mantenible con pruebas y documentación exhaustivas.",
+    "reason3Title": "Entrega Ágil",
+    "reason3Description": "Desarrollo iterativo con demos regulares asegura que siempre tenga el control.",
+    "techTitle": "Tecnologías que Usamos",
+    "techDescription": "Trabajamos con tecnologías modernas y probadas para entregar soluciones confiables y escalables.",
+    "techStackTitle": "Nuestro Stack Tecnológico",
+    "techStackDescription": "Aprovechamos tecnologías de vanguardia para construir soluciones robustas y escalables.",
+    "techFrontend": "Frontend",
+    "techBackend": "Backend",
+    "techDatabase": "Base de Datos",
+    "techDevOps": "DevOps y Cloud",
+    "ctaTitle": "¿Listo para Construir su Solución de Software?",
+    "ctaDescription": "Hablemos de los requisitos de su proyecto y cómo podemos dar vida a su visión.",
+    "ctaButtonPrimary": "Iniciar su Proyecto",
+    "ctaButtonSecondary": "Ver Todos los Servicios"
+  },
+  "productDevPage": {
+    "pageTitle": "Desarrollo de Productos",
+    "pageDescription": "Desarrollo de productos de principio a fin desde la ideación hasta el lanzamiento. Prototipado, desarrollo de MVP, diseño centrado en el usuario y soporte continuo.",
+    "badge": "Desarrollo de Productos",
+    "heroTitle": "De la Idea al {highlighted}",
+    "heroHighlighted": "Mercado",
+    "heroDescription": "Ciclo de vida completo de desarrollo de productos con orientación experta, desde el concepto inicial hasta el lanzamiento exitoso y más allá.",
+    "ctaButton": "Iniciar su Producto",
+    "exploreProducts": "Ver Vantum ERP",
+    "phasesTitle": "Nuestro Proceso de Desarrollo",
+    "phasesDescription": "Una metodología probada que lleva su producto del concepto al éxito en el mercado.",
+    "phase1Title": "Conceptualización e Ideación",
+    "phase1Description": "Trabajamos con usted para definir su visión del producto, identificar usuarios objetivo y validar el ajuste al mercado antes de escribir una sola línea de código.",
+    "phase1Deliverable1": "Documento de visión del producto",
+    "phase1Deliverable2": "Personas de usuario y mapas de viaje",
+    "phase1Deliverable3": "Análisis competitivo",
+    "phase1Deliverable4": "Priorización de características",
+    "phase2Title": "Prototipado y Diseño",
+    "phase2Description": "Transforme ideas en prototipos tangibles con diseño centrado en el usuario que equilibra estética con funcionalidad.",
+    "phase2Deliverable1": "Prototipos interactivos",
+    "phase2Deliverable2": "Sistema de diseño UI/UX",
+    "phase2Deliverable3": "Feedback de pruebas de usuario",
+    "phase2Deliverable4": "Documentación de handoff de diseño",
+    "phase3Title": "Desarrollo de MVP",
+    "phase3Description": "Construya un producto mínimo viable rápidamente para validar suposiciones y recopilar feedback real de usuarios.",
+    "phase3Deliverable1": "Implementación de características core",
+    "phase3Deliverable2": "Arquitectura escalable",
+    "phase3Deliverable3": "Integración básica de analytics",
+    "phase3Deliverable4": "Infraestructura de despliegue",
+    "phase4Title": "Iteración y Mejora",
+    "phase4Description": "Mejora continua basada en feedback de usuarios, añadiendo características y optimizando el rendimiento.",
+    "phase4Deliverable1": "Ejecución del roadmap de características",
+    "phase4Deliverable2": "Optimización de rendimiento",
+    "phase4Deliverable3": "Framework de pruebas A/B",
+    "phase4Deliverable4": "Analytics avanzado",
+    "phase5Title": "Lanzamiento y Escalado",
+    "phase5Description": "Llegue al mercado con confianza y escale su producto para satisfacer la demanda creciente.",
+    "phase5Deliverable1": "Despliegue en producción",
+    "phase5Deliverable2": "Pruebas de carga y optimización",
+    "phase5Deliverable3": "Monitoreo y alertas",
+    "phase5Deliverable4": "Infraestructura escalable",
+    "phase6Title": "Soporte y Mantenimiento",
+    "phase6Description": "Soporte continuo para mantener su producto funcionando sin problemas y evolucionando con su negocio.",
+    "phase6Deliverable1": "Monitoreo 24/7",
+    "phase6Deliverable2": "Correcciones de bugs y actualizaciones",
+    "phase6Deliverable3": "Parches de seguridad",
+    "phase6Deliverable4": "Mejoras de características",
+    "deliverablesTitle": "Lo Que Obtiene",
+    "whyTitle": "¿Por Qué Construir Con Nosotros?",
+    "whyDescription": "Combinamos experiencia técnica con pensamiento de producto para construir soluciones que los usuarios aman.",
+    "reason1Title": "Enfoque Centrado en el Usuario",
+    "reason1Description": "Cada decisión está guiada por las necesidades y feedback de los usuarios, asegurando que su producto resuelva problemas reales.",
+    "reason2Title": "Desarrollo Ágil",
+    "reason2Description": "Desarrollo iterativo con demos regulares y ciclos de feedback lo mantiene en control.",
+    "reason3Title": "Excelencia Técnica",
+    "reason3Description": "Código limpio y mantenible y arquitectura moderna que escala con su éxito.",
+    "reason4Title": "Asociación a Largo Plazo",
+    "reason4Description": "Estamos invertidos en su éxito, proporcionando soporte continuo y orientación estratégica.",
+    "ctaTitle": "¿Listo para Construir su Producto?",
+    "ctaDescription": "Hablemos de su idea de producto y creemos una hoja de ruta para darle vida.",
+    "ctaButtonPrimary": "Iniciar su Producto",
+    "ctaButtonSecondary": "Ver Todos los Servicios"
+  },
+  "techStack": {
+    "badge": "Stack Tecnológico",
+    "title": "Construido con <highlighted>Tecnologías Modernas</highlighted>",
+    "description": "Aprovechamos herramientas y frameworks de vanguardia para construir soluciones escalables, mantenibles y de alto rendimiento.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "language": "Lenguaje",
+      "database": "Base de Datos",
+      "devops": "DevOps",
+      "cloud": "Cloud"
+    }
+  },
+  "workflow": {
+    "badge": "Nuestro Proceso",
+    "title": "Cómo <highlighted>Entregamos Éxito</highlighted>",
+    "description": "Nuestra metodología probada garantiza resultados consistentes y de alta calidad para cada proyecto que emprendemos.",
+    "steps": {
+      "planning": {
+        "title": "Planificación",
+        "description": "Analizamos tus desafíos, alineamos objetivos con las partes interesadas y desarrollamos una hoja de ruta integral para el éxito."
+      },
+      "design": {
+        "title": "Diseño",
+        "description": "Nuestro equipo crea marcos de solución y arquitecturas IT adaptadas a tus requisitos específicos."
+      },
+      "implementation": {
+        "title": "Implementación",
+        "description": "Ejecución ágil con integración perfecta, construyendo soluciones escalables que crecen con tu negocio."
+      },
+      "verification": {
+        "title": "Verificación",
+        "description": "Pruebas rigurosas y validación garantizan que tu solución cumpla con los más altos estándares de calidad."
+      },
+      "maintenance": {
+        "title": "Mantenimiento",
+        "description": "Soporte proactivo y mejoras continuas mantienen tus sistemas funcionando al máximo rendimiento."
+      }
+    }
+  },
+  "cta": {
+    "title": "¿Listo para <highlighted>Transformar</highlighted> tu negocio?",
+    "description": "Hablemos sobre cómo podemos ayudarte a resolver tus desafíos más exigentes con soluciones tecnológicas inteligentes.",
+    "startConversation": "Iniciar una conversación",
+    "exploreVantum": "Explorar Vantum ERP"
+  },
+  "footer": {
+    "description": "Firma de consultoría tecnológica integral que transforma empresas en innovadores ágiles impulsados por software.",
+    "services": "Servicios",
+    "products": "Productos",
+    "company": "Empresa",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidad",
+    "cookiePolicy": "Política de Cookies",
+    "cookieSettings": "Configuración de Cookies",
+    "copyright": "© {year} Actaer. Todos los derechos reservados."
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "Usamos cookies",
+      "description": "Usamos cookies para mejorar tu experiencia de navegación, analizar el tráfico del sitio y personalizar el contenido. Al hacer clic en \"Aceptar todo\", consientes nuestro uso de cookies.",
+      "learnMore": "Saber más",
+      "acceptAll": "Aceptar todo",
+      "rejectAll": "Rechazar todo",
+      "customize": "Personalizar"
+    },
+    "preferences": {
+      "title": "Preferencias de Cookies",
+      "description": "Gestiona tus preferencias de cookies. Puedes activar o desactivar diferentes tipos de cookies a continuación. Obtén más información sobre cómo usamos las cookies en nuestra",
+      "privacyPolicy": "Política de Privacidad",
+      "save": "Guardar preferencias",
+      "required": "Requerido"
+    },
+    "categories": {
+      "essential": {
+        "title": "Cookies Esenciales",
+        "description": "Estas cookies son necesarias para que el sitio web funcione y no se pueden desactivar. Generalmente solo se establecen en respuesta a acciones realizadas por ti, como configurar tus preferencias de privacidad, iniciar sesión o completar formularios."
+      },
+      "functional": {
+        "title": "Cookies Funcionales",
+        "description": "Estas cookies permiten funcionalidades mejoradas y personalización, como recordar tus preferencias, configuración de idioma y proporcionar características mejoradas."
+      },
+      "analytics": {
+        "title": "Cookies de Análisis",
+        "description": "Estas cookies nos ayudan a entender cómo los visitantes interactúan con nuestro sitio web recopilando e informando información de forma anónima. Esto nos ayuda a mejorar nuestro sitio web y servicios."
+      },
+      "marketing": {
+        "title": "Cookies de Marketing",
+        "description": "Estas cookies pueden ser establecidas por nuestros socios publicitarios para crear un perfil de tus intereses y mostrarte anuncios relevantes en otros sitios."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Contáctanos",
+    "title": "Hablemos {highlighted}",
+    "highlighted": "juntos",
+    "subtitle": "¿Tienes un proyecto en mente? ¿Quieres discutir cómo podemos ayudar a tu negocio? Nos encantaría saber de ti.",
+    "pageTitle": "Contáctanos",
+    "pageDescription": "Ponte en contacto con Actaer. Hablemos sobre tus necesidades de desarrollo de software, consultoría IT o desarrollo de productos.",
+    "getInTouch": "Ponte en contacto",
+    "getInTouchDescription": "Ya sea que tengas una pregunta sobre nuestros servicios, quieras discutir un proyecto, o simplemente saludar, estamos aquí para ayudar.",
+    "formTitle": "Envíanos un mensaje",
+    "formDescription": "Completa el formulario a continuación y te responderemos lo antes posible.",
+    "info": {
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "businessHours": "Horario comercial",
+      "businessHoursValue": "Lun - Vie, 9:00 - 18:00 CET"
+    },
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "juan@empresa.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Acme S.A.",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+34 XXX XXX XXX",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto o cómo podemos ayudarte...",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando...",
+      "required": "*"
+    },
+    "success": {
+      "title": "¡Mensaje enviado!",
+      "description": "Gracias por contactarnos. Te responderemos pronto.",
+      "sendAnother": "Enviar otro mensaje"
+    },
+    "errors": {
+      "general": "Algo salió mal. Por favor, inténtalo de nuevo.",
+      "submit": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo.",
+      "unexpected": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "responseTime": {
+        "question": "¿Cuál es su tiempo de respuesta típico?",
+        "answer": "Normalmente respondemos a las consultas en 24 horas hábiles. Para asuntos urgentes, llámanos directamente."
+      },
+      "international": {
+        "question": "¿Trabajan con clientes internacionales?",
+        "answer": "¡Absolutamente! Trabajamos con clientes de todo el mundo. Nuestro equipo tiene experiencia en colaboración remota y nos adaptamos a diferentes zonas horarias según sea necesario."
+      },
+      "messageInfo": {
+        "question": "¿Qué información debo incluir en mi mensaje?",
+        "answer": "Ayúdanos a entender tu proyecto incluyendo: tu contexto empresarial, el problema que intentas resolver, requisitos técnicos y expectativas de plazos."
+      },
+      "freeConsultation": {
+        "question": "¿Ofrecen consultas gratuitas?",
+        "answer": "Sí, ofrecemos una consulta inicial gratuita para entender tus necesidades y explorar cómo podemos ayudar. Sin obligaciones, solo una conversación sobre tu proyecto."
+      }
+    }
+  },
+  "validation": {
+    "nameMin": "El nombre debe tener al menos 2 caracteres",
+    "emailInvalid": "Por favor, introduce una dirección de correo válida",
+    "messageMin": "El mensaje debe tener al menos 10 caracteres"
+  },
+  "blog": {
+    "badge": "Blog",
+    "title": "Perspectivas y {highlighted}",
+    "highlighted": "Actualizaciones",
+    "description": "Reflexiones sobre desarrollo de software, tendencias tecnológicas y creación de productos exitosos.",
+    "pageTitle": "Blog",
+    "pageDescription": "Perspectivas, tutoriales y actualizaciones del equipo Actaer. Aprende sobre desarrollo de software, consultoría IT y tendencias tecnológicas.",
+    "readMore": "Leer más",
+    "noPostsTitle": "Próximamente",
+    "noPostsDescription": "Aún no hay publicaciones. ¡Vuelve pronto!",
+    "backToBlog": "Volver al blog",
+    "thanksForReading": "¡Gracias por leer! ¿Tienes preguntas o quieres discutir este tema?",
+    "getInTouch": "Contáctanos"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, no pudimos encontrar la página que buscas. Puede que haya sido movida o no exista.",
+    "backToHome": "Volver al inicio",
+    "contactSupport": "Contactar soporte",
+    "helpfulLinks": "Aquí tienes algunos enlaces útiles:",
+    "ourServices": "Nuestros servicios",
+    "aboutUs": "Sobre nosotros"
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "readMore": "Leer más",
+    "getStarted": "Comenzar",
+    "contactUs": "Contáctanos",
+    "viewAll": "Ver todo"
+  },
+  "privacyPage": {
+    "pageTitle": "Política de Privacidad",
+    "pageDescription": "Descubre cómo Actaer recopila, utiliza y protege tu información personal.",
+    "badge": "Legal",
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: {date}",
+    "intro": "En Actaer, nos tomamos tu privacidad en serio. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando visitas nuestro sitio web o utilizas nuestros servicios.",
+    "sections": {
+      "collect": {
+        "title": "Información que recopilamos",
+        "description": "Podemos recopilar información sobre ti de varias maneras, incluyendo:",
+        "items": {
+          "contact": "Información de contacto (nombre, correo electrónico, teléfono) cuando completas formularios",
+          "usage": "Datos de uso sobre cómo interactúas con nuestro sitio web",
+          "device": "Información del dispositivo como tipo de navegador, sistema operativo y dirección IP",
+          "cookies": "Datos de cookies y tecnologías de seguimiento similares"
+        }
+      },
+      "use": {
+        "title": "Cómo usamos tu información",
+        "description": "Utilizamos la información que recopilamos para varios propósitos:",
+        "items": {
+          "services": "Para proporcionar y mantener nuestros servicios",
+          "communication": "Para comunicarnos contigo sobre consultas y actualizaciones",
+          "improvement": "Para mejorar nuestro sitio web y servicios",
+          "legal": "Para cumplir con obligaciones legales"
+        }
+      },
+      "sharing": {
+        "title": "Compartir datos",
+        "description": "No vendemos tu información personal. Podemos compartir información con proveedores de servicios de confianza que nos ayudan a operar nuestro sitio web y conducir nuestro negocio, siempre que acepten mantener esta información confidencial."
+      },
+      "rights": {
+        "title": "Tus derechos",
+        "description": "Dependiendo de tu ubicación, puedes tener ciertos derechos sobre tus datos personales:",
+        "items": {
+          "access": "Derecho a acceder a tus datos personales",
+          "correction": "Derecho a corregir datos inexactos",
+          "deletion": "Derecho a solicitar la eliminación de tus datos",
+          "objection": "Derecho a oponerte al procesamiento de datos",
+          "portability": "Derecho a la portabilidad de datos"
+        }
+      },
+      "contact": {
+        "title": "Contáctanos",
+        "description": "Si tienes preguntas sobre esta Política de Privacidad o nuestras prácticas de datos, contáctanos en"
+      }
+    }
+  },
+  "cookiesPage": {
+    "pageTitle": "Política de Cookies",
+    "pageDescription": "Conoce las cookies que utilizamos y cómo gestionar tus preferencias.",
+    "badge": "Legal",
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización: {date}",
+    "intro": "Esta Política de Cookies explica cómo Actaer utiliza cookies y tecnologías de seguimiento similares cuando visitas nuestro sitio web. Al usar nuestro sitio web, consientes el uso de cookies de acuerdo con esta política.",
+    "sections": {
+      "whatAreCookies": {
+        "title": "¿Qué son las cookies?",
+        "description": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. Ayudan a los sitios web a recordar tus preferencias y entender cómo usas el sitio."
+      },
+      "types": {
+        "title": "Tipos de cookies que usamos",
+        "description": "Utilizamos diferentes tipos de cookies para varios propósitos:",
+        "essential": {
+          "title": "Cookies esenciales",
+          "description": "Estas cookies son necesarias para que el sitio web funcione correctamente. Permiten funciones básicas como la navegación de páginas y el acceso a áreas seguras."
+        },
+        "functional": {
+          "title": "Cookies funcionales",
+          "description": "Estas cookies recuerdan tus preferencias y elecciones para proporcionar una experiencia más personalizada."
+        },
+        "analytics": {
+          "title": "Cookies de análisis",
+          "description": "Estas cookies nos ayudan a entender cómo los visitantes interactúan con nuestro sitio web recopilando información anónima."
+        },
+        "marketing": {
+          "title": "Cookies de marketing",
+          "description": "Estas cookies rastrean tus hábitos de navegación para ofrecer publicidad más relevante para ti y tus intereses."
+        }
+      },
+      "managing": {
+        "title": "Gestionar tus preferencias de cookies",
+        "description": "Puedes gestionar tus preferencias de cookies en cualquier momento haciendo clic en el enlace \"Configuración de cookies\" en el pie de página de nuestro sitio web.",
+        "browserSettings": "También puedes controlar las cookies a través de la configuración de tu navegador. Ten en cuenta que deshabilitar ciertas cookies puede afectar la funcionalidad de nuestro sitio web."
+      },
+      "thirdParty": {
+        "title": "Cookies de terceros",
+        "description": "Utilizamos los siguientes servicios de terceros que pueden establecer cookies:",
+        "vercel": "Análisis web para entender el rendimiento del sitio",
+        "clarity": "Grabaciones de sesión y mapas de calor para mejorar la experiencia del usuario"
+      },
+      "contact": {
+        "title": "Contáctanos",
+        "description": "Si tienes preguntas sobre nuestro uso de cookies, contáctanos en"
+      }
+    }
+  }
+}

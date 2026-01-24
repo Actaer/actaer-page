@@ -1,6 +1,8 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
-import { BlogPost, formatDate } from "@/lib/blog";
+import { BlogPost } from "@/lib/blog";
+import { formatDate } from "@/lib/date";
 import {
   Card,
   CardContent,
@@ -10,12 +12,18 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import { Locale } from "@/i18n/config";
 
 interface BlogCardProps {
   post: BlogPost;
 }
 
 export function BlogCard({ post }: BlogCardProps) {
+  const t = useTranslations("blog");
+  const locale = useLocale() as Locale;
+
   return (
     <Card className="overflow-hidden border-border/50 hover:border-primary/30 transition-colors group">
       <Link href={`/blog/${post.slug}`}>
@@ -33,7 +41,7 @@ export function BlogCard({ post }: BlogCardProps) {
         <CardHeader>
           <div className="flex items-center gap-2 mb-2">
             <time className="text-sm text-muted-foreground">
-              {formatDate(post.date)}
+              {formatDate(post.date, locale)}
             </time>
             {post.tags.length > 0 && (
               <>
@@ -58,7 +66,7 @@ export function BlogCard({ post }: BlogCardProps) {
               className="text-primary flex items-center gap-1 text-sm font-medium group-hover:gap-2 transition-all"
               aria-hidden="true"
             >
-              Read More
+              {t("readMore")}
               <ArrowRight className="w-4 h-4" />
             </span>
           </div>

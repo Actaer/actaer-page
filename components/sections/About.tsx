@@ -4,12 +4,14 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export function About() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("about");
 
   useGSAP(
     () => {
@@ -43,26 +45,21 @@ export function About() {
           {/* Content */}
           <div className="about-content">
             <Badge variant="outline" className="mb-4">
-              About Actaer
+              {t("badge")}
             </Badge>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6">
-              Solving Demanding Business Problems with{" "}
-              <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-                Smart Technology
-              </span>
+              {t.rich("title", {
+                highlighted: (chunks) => (
+                  <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
+                    {chunks}
+                  </span>
+                ),
+              })}
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Actaer is a newly founded tech consulting firm built by
-              experienced engineers and consultants. We bring fresh perspectives
-              and proven expertise to transform your vision into reliable,
-              scalable software solutions.
+              {t("description1")}
             </p>
-            <p className="text-muted-foreground mb-8">
-              From strategic IT consulting to full-scale product development, we
-              partner with businesses of all sizes to navigate the complex
-              digital landscape. Our agile approach ensures we deliver value at
-              every step of the journey.
-            </p>
+            <p className="text-muted-foreground mb-8">{t("description2")}</p>
           </div>
 
           {/* Visual Element */}
@@ -73,9 +70,7 @@ export function About() {
                   <div className="text-6xl md:text-8xl font-bold font-heading bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent mb-4">
                     A
                   </div>
-                  <p className="text-muted-foreground">
-                    Fresh Ideas, Proven Expertise
-                  </p>
+                  <p className="text-muted-foreground">{t("tagline")}</p>
                 </div>
               </div>
             </div>

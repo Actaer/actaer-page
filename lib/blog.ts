@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { type Locale, defaultLocale } from "@/i18n/config";
 
 export interface BlogPost {
   slug: string;
@@ -10,24 +11,38 @@ export interface BlogPost {
   tags: string[];
   image?: string;
   published: boolean;
+  locale: Locale;
 }
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
 
-export async function getAllPosts(): Promise<BlogPost[]> {
-  // Check if directory exists
-  if (!fs.existsSync(BLOG_DIR)) {
+function getBlogDirForLocale(locale: Locale): string {
+  return path.join(BLOG_DIR, locale);
+}
+
+export async function getAllPosts(
+  locale: Locale = defaultLocale,
+): Promise<BlogPost[]> {
+  const localeBlogDir = getBlogDirForLocale(locale);
+  const fallbackBlogDir = getBlogDirForLocale(defaultLocale);
+
+  // Check if locale directory exists, fallback to default
+  const blogDir = fs.existsSync(localeBlogDir)
+    ? localeBlogDir
+    : fallbackBlogDir;
+
+  if (!fs.existsSync(blogDir)) {
     return [];
   }
 
-  const files = fs.readdirSync(BLOG_DIR);
+  const files = fs.readdirSync(blogDir);
   const mdxFiles = files.filter((file) => file.endsWith(".mdx"));
 
   const posts: BlogPost[] = [];
 
   for (const file of mdxFiles) {
     const slug = file.replace(/\.mdx$/, "");
-    const post = await getPostBySlug(slug);
+    const post = await getPostBySlug(slug, locale);
     if (post && post.published) {
       posts.push(post);
     }
@@ -39,16 +54,42 @@ export async function getAllPosts(): Promise<BlogPost[]> {
   );
 }
 
-export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
+export async function getPostBySlug(
+  slug: string,
+  locale: Locale = defaultLocale,
+): Promise<BlogPost | null> {
   try {
-    const filePath = path.join(BLOG_DIR, `${slug}.mdx`);
+    const localeBlogDir = getBlogDirForLocale(locale);
+    const fallbackBlogDir = getBlogDirForLocale(defaultLocale);
+
+    // Check locale-specific path first, then fallback to default locale
+    let filePath = path.join(localeBlogDir, `${slug}.mdx`);
+    let usedLocale = locale;
+
+    if (!fs.existsSync(filePath)) {
+      filePath = path.join(fallbackBlogDir, `${slug}.mdx`);
+      usedLocale = defaultLocale;
+    }
 
     if (!fs.existsSync(filePath)) {
       return null;
     }
 
     // Dynamic import to get the metadata
-    const { metadata } = await import(`@/content/blog/${slug}.mdx`);
+    const importPath =
+      usedLocale === defaultLocale
+        ? `@/content/blog/${defaultLocale}/${slug}.mdx`
+        : `@/content/blog/${locale}/${slug}.mdx`;
+
+    // We need to try the locale first, then fallback
+    let metadata;
+    try {
+      metadata = (await import(`@/content/blog/${locale}/${slug}.mdx`))
+        .metadata;
+    } catch {
+      metadata = (await import(`@/content/blog/${defaultLocale}/${slug}.mdx`))
+        .metadata;
+    }
 
     return {
       slug,
@@ -59,28 +100,37 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
       tags: metadata.tags || [],
       image: metadata.image,
       published: metadata.published !== false,
+      locale: usedLocale,
     };
   } catch {
     return null;
   }
 }
 
-export function getAllPostSlugs(): string[] {
-  if (!fs.existsSync(BLOG_DIR)) {
-    return [];
+export function getAllPostSlugs(locale: Locale = defaultLocale): string[] {
+  const localeBlogDir = getBlogDirForLocale(locale);
+  const fallbackBlogDir = getBlogDirForLocale(defaultLocale);
+
+  // Get slugs from both locale and fallback directories
+  const slugs = new Set<string>();
+
+  if (fs.existsSync(localeBlogDir)) {
+    const files = fs.readdirSync(localeBlogDir);
+    files
+      .filter((file) => file.endsWith(".mdx"))
+      .forEach((file) => slugs.add(file.replace(/\.mdx$/, "")));
   }
 
-  const files = fs.readdirSync(BLOG_DIR);
-  return files
-    .filter((file) => file.endsWith(".mdx"))
-    .map((file) => file.replace(/\.mdx$/, ""));
+  // Also include fallback slugs if locale is not default
+  if (locale !== defaultLocale && fs.existsSync(fallbackBlogDir)) {
+    const files = fs.readdirSync(fallbackBlogDir);
+    files
+      .filter((file) => file.endsWith(".mdx"))
+      .forEach((file) => slugs.add(file.replace(/\.mdx$/, "")));
+  }
+
+  return Array.from(slugs);
 }
 
-export function formatDate(dateString: string): string {
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
+// Re-export formatDate from the date utility for backwards compatibility
+export { formatDate } from "./date";

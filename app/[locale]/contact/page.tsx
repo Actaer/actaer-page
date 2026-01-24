@@ -6,13 +6,27 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd } from "@/lib/seo";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { Locale } from "@/i18n/config";
 
-export const metadata: Metadata = constructMetadata({
-  title: "Contact Us",
-  description:
-    "Get in touch with Actaer. Let's discuss your software development, IT consulting, or product development needs.",
-  canonical: `${siteConfig.url}/contact`,
-});
+interface ContactPageProps {
+  params: Promise<{ locale: Locale }>;
+}
+
+export async function generateMetadata({
+  params,
+}: ContactPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contact" });
+
+  return constructMetadata({
+    title: t("pageTitle"),
+    description: t("pageDescription"),
+    canonical: `${siteConfig.url}/${locale}/contact`,
+    locale,
+    path: "/contact",
+  });
+}
 
 // LocalBusiness JSON-LD
 const localBusinessJsonLd = {
@@ -36,40 +50,63 @@ const localBusinessJsonLd = {
   },
 };
 
-const contactInfo = [
-  {
-    icon: Mail,
-    title: "Email",
-    value: siteConfig.links.email,
-    href: `mailto:${siteConfig.links.email}`,
-  },
-  {
-    icon: Phone,
-    title: "Phone",
-    value: siteConfig.links.phone,
-    href: `tel:${siteConfig.links.phone}`,
-  },
-  {
-    icon: MapPin,
-    title: "Location",
-    value: `${siteConfig.address.city}, ${siteConfig.address.country}`,
-    href: null,
-  },
-  {
-    icon: Clock,
-    title: "Business Hours",
-    value: "Mon - Fri, 9:00 AM - 6:00 PM CET",
-    href: null,
-  },
-];
+export default async function ContactPage({ params }: ContactPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
 
-// JSON-LD schema
-const breadcrumbJsonLd = generateBreadcrumbJsonLd([
-  { name: "Home", url: siteConfig.url },
-  { name: "Contact", url: `${siteConfig.url}/contact` },
-]);
+  const t = await getTranslations("contact");
 
-export default function ContactPage() {
+  const contactInfo = [
+    {
+      icon: Mail,
+      title: t("info.email"),
+      value: siteConfig.links.email,
+      href: `mailto:${siteConfig.links.email}`,
+    },
+    {
+      icon: Phone,
+      title: t("info.phone"),
+      value: siteConfig.links.phone,
+      href: `tel:${siteConfig.links.phone}`,
+    },
+    {
+      icon: MapPin,
+      title: t("info.location"),
+      value: `${siteConfig.address.city}, ${siteConfig.address.country}`,
+      href: null,
+    },
+    {
+      icon: Clock,
+      title: t("info.businessHours"),
+      value: t("info.businessHoursValue"),
+      href: null,
+    },
+  ];
+
+  // JSON-LD schema
+  const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+    { name: "Home", url: siteConfig.url },
+    { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/contact` },
+  ]);
+
+  const faqs = [
+    {
+      question: t("faq.responseTime.question"),
+      answer: t("faq.responseTime.answer"),
+    },
+    {
+      question: t("faq.international.question"),
+      answer: t("faq.international.answer"),
+    },
+    {
+      question: t("faq.messageInfo.question"),
+      answer: t("faq.messageInfo.answer"),
+    },
+    {
+      question: t("faq.freeConsultation.question"),
+      answer: t("faq.freeConsultation.answer"),
+    },
+  ];
   return (
     <>
       <script
@@ -91,17 +128,17 @@ export default function ContactPage() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <Badge variant="outline" className="mb-4">
-                Contact Us
+                {t("badge")}
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">
-                Let&apos;s{" "}
+                {t.raw("title").split("{highlighted}")[0]}
                 <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-                  Talk
+                  {t("highlighted")}
                 </span>
+                {t.raw("title").split("{highlighted}")[1] || ""}
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Have a project in mind? Want to discuss how we can help your
-                business? We&apos;d love to hear from you.
+                {t("subtitle")}
               </p>
             </div>
           </div>
@@ -115,12 +152,10 @@ export default function ContactPage() {
               <div className="lg:col-span-1 space-y-6">
                 <div>
                   <h2 className="text-2xl font-bold font-heading mb-4">
-                    Get in Touch
+                    {t("getInTouch")}
                   </h2>
                   <p className="text-muted-foreground">
-                    Whether you have a question about our services, want to
-                    discuss a project, or just want to say hello, we&apos;re
-                    here to help.
+                    {t("getInTouchDescription")}
                   </p>
                 </div>
 
@@ -167,33 +202,11 @@ export default function ContactPage() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold font-heading mb-8 text-center">
-                Frequently Asked Questions
+                {t("faq.title")}
               </h2>
 
               <div className="space-y-6">
-                {[
-                  {
-                    question: "What is your typical response time?",
-                    answer:
-                      "We typically respond to inquiries within 24 business hours. For urgent matters, please call us directly.",
-                  },
-                  {
-                    question: "Do you work with international clients?",
-                    answer:
-                      "Absolutely! We work with clients worldwide. Our team is experienced in remote collaboration and we adjust to different time zones as needed.",
-                  },
-                  {
-                    question:
-                      "What information should I include in my message?",
-                    answer:
-                      "Help us understand your project by including: your business context, the problem you're trying to solve, any technical requirements, and your timeline expectations.",
-                  },
-                  {
-                    question: "Do you offer free consultations?",
-                    answer:
-                      "Yes, we offer an initial free consultation to understand your needs and explore how we can help. No obligations, just a conversation about your project.",
-                  },
-                ].map((faq, index) => (
+                {faqs.map((faq, index) => (
                   <Card key={index} className="border-border/50">
                     <CardHeader>
                       <CardTitle className="text-lg">{faq.question}</CardTitle>

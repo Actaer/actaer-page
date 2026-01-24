@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { locales, type Locale } from "@/i18n/config";
 
 export const siteConfig = {
   name: "Actaer",
@@ -106,6 +107,8 @@ export function constructMetadata({
   image,
   noIndex = false,
   canonical,
+  locale,
+  path = "",
   ...props
 }: {
   title?: string;
@@ -113,12 +116,23 @@ export function constructMetadata({
   image?: string;
   noIndex?: boolean;
   canonical?: string;
+  locale?: Locale;
+  path?: string;
 } & Partial<Metadata> = {}): Metadata {
+  // Generate alternate language links for hreflang
+  const languages: Record<string, string> = {};
+  if (locale && path !== undefined) {
+    for (const loc of locales) {
+      languages[loc] = `${siteConfig.url}/${loc}${path}`;
+    }
+  }
+
   return {
     title: title,
     description: description || siteConfig.description,
     alternates: {
       canonical: canonical,
+      languages: Object.keys(languages).length > 0 ? languages : undefined,
       ...props.alternates,
     },
     openGraph: {
@@ -126,6 +140,9 @@ export function constructMetadata({
       description: description || siteConfig.description,
       images: image ? [{ url: image }] : undefined,
       url: canonical,
+      locale: locale
+        ? `${locale}_${locale === "en" ? "US" : locale.toUpperCase()}`
+        : "en_US",
       ...props.openGraph,
     },
     twitter: {
