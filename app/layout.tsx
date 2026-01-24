@@ -7,6 +7,7 @@ import {
   generateEnhancedOrganizationJsonLd,
   generateWebsiteWithSearchJsonLd,
 } from "@/lib/seo";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -70,6 +71,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
