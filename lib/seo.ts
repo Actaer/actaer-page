@@ -269,7 +269,7 @@ export function generateEnhancedOrganizationJsonLd() {
         availableLanguage: ["English", "Serbian"],
       },
     ],
-    sameAs: [siteConfig.links.linkedin, siteConfig.links.github],
+    sameAs: [siteConfig.links.linkedin, siteConfig.links.twitter],
     knowsAbout: [
       "Software Development",
       "IT Consulting",

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { siteConfig } from "@/lib/metadata";
 import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
 
 const footerLinks = {
   services: [
@@ -71,7 +71,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <p className="font-semibold mb-4">Services</p>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.href}>
@@ -88,7 +88,7 @@ export function Footer() {
 
           {/* Products */}
           <div>
-            <h4 className="font-semibold mb-4">Products</h4>
+            <p className="font-semibold mb-4">Products</p>
             <ul className="space-y-3">
               {footerLinks.products.map((link) => (
                 <li key={link.href}>
@@ -105,7 +105,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <p className="font-semibold mb-4">Company</p>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
@@ -140,13 +140,13 @@ export function Footer() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href={siteConfig.links.github}
+              href={siteConfig.links.twitter}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="GitHub"
+              aria-label="X (Twitter)"
             >
-              <Github className="h-5 w-5" />
+              <Twitter className="h-5 w-5" />
             </a>
           </div>
         </div>

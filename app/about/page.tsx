@@ -52,13 +52,6 @@ const values = [
   },
 ];
 
-const stats = [
-  { value: "10+", label: "Years of Experience" },
-  { value: "50+", label: "Projects Delivered" },
-  { value: "30+", label: "Happy Clients" },
-  { value: "15+", label: "Team Members" },
-];
-
 // JSON-LD schemas for AI discoverability
 const breadcrumbJsonLd = generateBreadcrumbJsonLd([
   { name: "Home", url: siteConfig.url },
@@ -72,7 +65,7 @@ const faqJsonLd = generateFaqJsonLd([
   {
     question: "What is Actaer?",
     answer:
-      "Actaer is a full-service technology consulting firm based in Serbia that specializes in IT consulting, custom software development, and product development. We transform businesses into agile, software-powered innovators.",
+      "Actaer is a newly founded, full-service technology consulting firm based in Serbia that specializes in IT consulting, custom software development, and product development. We transform businesses into agile, software-powered innovators.",
   },
   {
     question: "Where is Actaer located?",
@@ -85,9 +78,9 @@ const faqJsonLd = generateFaqJsonLd([
       "Actaer offers three main service categories: IT Consulting (digital transformation, technical due diligence, team augmentation), Custom Software Development (full-stack engineering, AI/ML solutions, enterprise systems), and Product Development (MVP development, UI/UX design, ongoing support).",
   },
   {
-    question: "How many years of experience does Actaer have?",
+    question: "Why choose Actaer as a new consulting firm?",
     answer:
-      "Actaer has over 10 years of experience in software development and IT consulting, having delivered 50+ projects for 30+ clients worldwide.",
+      "Although newly founded, Actaer is built by experienced engineers and consultants with proven track records in software development and IT consulting. We bring fresh perspectives, modern approaches, and dedicated focus to every client engagement.",
   },
   {
     question: "What is Vantum ERP?",
@@ -157,20 +150,20 @@ export default function AboutPage() {
                     and technology that didn&apos;t serve their needs.
                   </p>
                   <p>
-                    We set out to change that. Our team brings together decades
-                    of experience across enterprise software, startups, and
+                    We set out to change that. Our founding team brings together
+                    experience across enterprise software, startups, and
                     consulting. We&apos;ve seen what works, what doesn&apos;t,
                     and why most technology initiatives fail to deliver on their
                     promise.
                   </p>
                   <p>
-                    Today, we partner with businesses of all sizes—from
-                    ambitious startups to established enterprises—to build
-                    software that actually works. Software that scales with your
-                    business, adapts to your needs, and delivers real value.
+                    As a new firm, we bring fresh perspectives and modern
+                    approaches—unencumbered by legacy thinking. We partner with
+                    businesses of all sizes to build software that actually
+                    works, scales with your needs, and delivers real value.
                   </p>
                   <p>
-                    Our latest venture, Vantum ERP, embodies everything we
+                    Our first product, Vantum ERP, embodies everything we
                     believe about software: it&apos;s modern, user-friendly, and
                     built for how businesses actually operate today.
                   </p>
@@ -194,24 +187,6 @@ export default function AboutPage() {
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
                 <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl" />
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Section */}
-        <section className="py-12 border-y">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold font-heading text-primary mb-1">
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -316,6 +291,7 @@ export default function AboutPage() {
                     <Button asChild variant="ghost" className="p-0 group">
                       <Link href={service.href}>
                         Learn More
+                        <span className="sr-only"> about {service.title}</span>
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </Button>

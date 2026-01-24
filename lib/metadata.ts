@@ -10,7 +10,7 @@ export const siteConfig = {
     email: "office@actaer.com",
     phone: "+381 649055722",
     linkedin: "https://linkedin.com/company/actaer",
-    github: "https://github.com/actaer",
+    twitter: "https://x.com/actaerco",
   },
   address: {
     city: "Novi Pazar",
@@ -158,7 +158,7 @@ export const organizationJsonLd = {
     email: siteConfig.links.email,
     contactType: "customer service",
   },
-  sameAs: [siteConfig.links.linkedin, siteConfig.links.github],
+  sameAs: [siteConfig.links.linkedin, siteConfig.links.twitter],
 };
 
 // WebSite JSON-LD Schema

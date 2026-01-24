@@ -13,7 +13,7 @@ Actaer is a technology consulting and software development company based in Novi
 - Phone: +381 649055722
 - Location: Novi Pazar, Serbia
 - LinkedIn: https://linkedin.com/company/actaer
-- GitHub: https://github.com/actaer
+- X (Twitter): https://x.com/actaerco
 
 ## Services
 
@@ -58,12 +58,9 @@ Modern distribution ERP for wholesalers, distributors, and retail chains.
 
 **Website:** https://vantumerp.com
 
-## Company Stats
+## About Us
 
-- 10+ Years of Experience
-- 50+ Projects Delivered
-- 30+ Happy Clients
-- 15+ Team Members
+Actaer is a newly founded tech consulting firm built by experienced engineers and consultants. We bring fresh perspectives and modern approaches to help businesses leverage technology effectively.
 
 ## Core Values
 

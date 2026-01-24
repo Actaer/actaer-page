@@ -54,7 +54,10 @@ export function BlogCard({ post }: BlogCardProps) {
         <CardContent>
           <div className="flex items-center justify-between">
             <span className="text-sm text-muted-foreground">{post.author}</span>
-            <span className="text-primary flex items-center gap-1 text-sm font-medium group-hover:gap-2 transition-all">
+            <span
+              className="text-primary flex items-center gap-1 text-sm font-medium group-hover:gap-2 transition-all"
+              aria-hidden="true"
+            >
               Read More
               <ArrowRight className="w-4 h-4" />
             </span>

@@ -28,33 +28,9 @@ export function About() {
           },
         },
       );
-
-      gsap.fromTo(
-        ".about-stat",
-        { opacity: 0, scale: 0.8 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 0.5,
-          stagger: 0.1,
-          ease: "back.out(1.7)",
-          scrollTrigger: {
-            trigger: ".about-stats",
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        },
-      );
     },
     { scope: containerRef },
   );
-
-  const stats = [
-    { value: "10+", label: "Years Experience" },
-    { value: "50+", label: "Projects Delivered" },
-    { value: "30+", label: "Happy Clients" },
-    { value: "100%", label: "Client Satisfaction" },
-  ];
 
   return (
     <section
@@ -76,9 +52,9 @@ export function About() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              At Actaer, we believe technology is the key to unlocking your
-              business potential. Our team of experienced consultants and
-              engineers work together to transform your vision into reliable,
+              Actaer is a newly founded tech consulting firm built by
+              experienced engineers and consultants. We bring fresh perspectives
+              and proven expertise to transform your vision into reliable,
               scalable software solutions.
             </p>
             <p className="text-muted-foreground mb-8">
@@ -87,20 +63,6 @@ export function About() {
               digital landscape. Our agile approach ensures we deliver value at
               every step of the journey.
             </p>
-
-            {/* Stats */}
-            <div className="about-stats grid grid-cols-2 md:grid-cols-4 gap-6">
-              {stats.map((stat, index) => (
-                <div key={index} className="about-stat text-center">
-                  <div className="text-3xl md:text-4xl font-bold font-heading text-primary mb-1">
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Visual Element */}
@@ -112,7 +74,7 @@ export function About() {
                     A
                   </div>
                   <p className="text-muted-foreground">
-                    Engineering Excellence Since Day One
+                    Fresh Ideas, Proven Expertise
                   </p>
                 </div>
               </div>

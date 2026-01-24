@@ -162,6 +162,10 @@ export default function ServicesPage() {
                       <Button asChild className="group">
                         <Link href={service.href}>
                           Learn More
+                          <span className="sr-only">
+                            {" "}
+                            about {service.title}
+                          </span>
                           <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Link>
                       </Button>

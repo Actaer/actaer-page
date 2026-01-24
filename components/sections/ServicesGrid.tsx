@@ -154,6 +154,7 @@ export function ServicesGrid() {
                 <Button asChild variant="ghost" className="group/btn p-0">
                   <Link href={service.href}>
                     Learn More
+                    <span className="sr-only"> about {service.title}</span>
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
                 </Button>
