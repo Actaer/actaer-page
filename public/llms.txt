@@ -6,6 +6,11 @@
 
 Actaer is a technology consulting and software development company based in Novi Pazar, Serbia. We specialize in IT consulting, custom software development, and product development services for businesses worldwide.
 
+**Founded:** 2025
+**Headquarters:** Novi Pazar, Serbia
+**Service Area:** Global (remote-first)
+**Company Type:** Technology Consulting & Software Development
+
 ## Contact Information
 
 - Website: https://actaer.com
@@ -14,6 +19,7 @@ Actaer is a technology consulting and software development company based in Novi
 - Location: Novi Pazar, Serbia
 - LinkedIn: https://linkedin.com/company/actaer
 - X (Twitter): https://x.com/actaerco
+- Languages: English, German, Spanish, Portuguese, Serbian
 
 ## Services
 
@@ -25,13 +31,17 @@ Strategic technology guidance and digital transformation consulting including:
 - Team Augmentation & Scalability
 - Data-Driven Consulting
 
+**Best for:** Organizations seeking strategic technology guidance, companies planning digital transformation, businesses needing technical assessments for M&A.
+
 ### Custom Software Development
 End-to-end software development services:
 - Front-end & Back-end Engineering (React, Node.js, .NET, Java)
 - AI & Machine Learning Solutions
-- Autonomous & Agentic Systems
+- Autonomous & Agentic Systems (LLM agents, RAG, multi-agent orchestration)
 - Real-Time Communication Platforms
 - Enterprise-Grade Software Solutions
+
+**Best for:** Companies needing custom software solutions, enterprises requiring AI/ML integration, businesses building real-time platforms.
 
 ### Product Development
 Complete product lifecycle services:
@@ -40,6 +50,8 @@ Complete product lifecycle services:
 - MVP Development & Iteration
 - Seamless Deployment & Integration
 - Ongoing Support & Maintenance
+
+**Best for:** Startups building MVPs, enterprises launching new products, companies needing end-to-end product support.
 
 ## Products
 
@@ -54,6 +66,9 @@ Modern distribution ERP for wholesalers, distributors, and retail chains.
 - Lot and serial tracking
 - Real-time analytics
 
+**Target Industries:** Wholesale distribution, retail chains, 3PL logistics
+**Pricing Model:** Contact for pricing (no per-seat fees, unlimited users)
+**Implementation Time:** Weeks, not months
 **Tech Stack:** .NET 10, React 19, PostgreSQL, Kafka, Redis
 
 **Website:** https://vantumerp.com
@@ -76,7 +91,16 @@ Actaer is a newly founded tech consulting firm built by experienced engineers an
 - **Backend:** Node.js, .NET, Spring Boot
 - **Databases:** PostgreSQL, MongoDB, Redis
 - **Cloud:** AWS, Azure, Google Cloud
-- **AI/ML:** OpenAI, LangChain, TensorFlow, PyTorch
+- **AI/ML:** OpenAI, Azure AI, LangChain, TensorFlow, PyTorch
+- **AI Agents:** LLM-powered agents, RAG systems, multi-agent orchestration, function calling
+
+## Industry Expertise
+
+- **Retail & E-commerce:** POS systems, inventory management, omnichannel solutions
+- **Distribution & Logistics:** ERP systems, warehouse management, supply chain optimization
+- **Healthcare:** HIPAA-compliant systems, patient management, telemedicine
+- **Fintech:** Payment processing, financial analytics, regulatory compliance
+- **Enterprise:** CRM, ERP, business process automation
 
 ## Frequently Asked Questions
 
@@ -95,10 +119,26 @@ A: Vantum ERP is our flagship product - a modern distribution ERP designed for w
 **Q: How can I contact Actaer?**
 A: You can reach us at office@actaer.com or call +381 649055722.
 
+**Q: What programming languages does Actaer use?**
+A: We primarily use TypeScript, JavaScript, Python, C#, and Java, with expertise in React, Next.js, Node.js, and .NET frameworks.
+
+**Q: Does Actaer build AI agents and autonomous systems?**
+A: Yes, we specialize in building LLM-powered agents, multi-agent orchestration systems, RAG (retrieval-augmented generation) applications, and workflow automation using modern AI frameworks.
+
+**Q: What is Actaer's approach to project delivery?**
+A: We use agile methodologies with iterative development, regular demos, and continuous feedback loops to ensure client satisfaction and project success.
+
+**Q: Can Actaer help with digital transformation?**
+A: Yes, our IT consulting services include comprehensive digital transformation strategy, legacy system modernization, and cloud migration planning.
+
 ## Documentation
 
 For more information, visit:
+- Homepage: https://actaer.com
 - Services: https://actaer.com/services
+- IT Consulting: https://actaer.com/services/it-consulting
+- Software Development: https://actaer.com/services/software-development
+- Product Development: https://actaer.com/services/product-development
 - Products: https://actaer.com/products/vantum-erp
 - Blog: https://actaer.com/blog
 - Contact: https://actaer.com/contact

@@ -4,24 +4,37 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd } from "@/lib/seo";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { type Locale } from "@/i18n/config";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("privacyPage");
+interface PageProps {
+  params: Promise<{ locale: Locale }>;
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "privacyPage" });
   return constructMetadata({
     title: t("pageTitle"),
     description: t("pageDescription"),
-    canonical: `${siteConfig.url}/privacy`,
+    canonical: `${siteConfig.url}/${locale}/privacy`,
+    locale,
+    path: "/privacy",
   });
 }
 
-const breadcrumbJsonLd = generateBreadcrumbJsonLd([
-  { name: "Home", url: siteConfig.url },
-  { name: "Privacy Policy", url: `${siteConfig.url}/privacy` },
-]);
+export default async function PrivacyPage({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
 
-export default async function PrivacyPage() {
   const t = await getTranslations("privacyPage");
+
+  const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+    { name: "Home", url: `${siteConfig.url}/${locale}` },
+    { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/privacy` },
+  ]);
 
   return (
     <>

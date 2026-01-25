@@ -4,24 +4,37 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd } from "@/lib/seo";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { type Locale } from "@/i18n/config";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("cookiesPage");
+interface PageProps {
+  params: Promise<{ locale: Locale }>;
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "cookiesPage" });
   return constructMetadata({
     title: t("pageTitle"),
     description: t("pageDescription"),
-    canonical: `${siteConfig.url}/cookies`,
+    canonical: `${siteConfig.url}/${locale}/cookies`,
+    locale,
+    path: "/cookies",
   });
 }
 
-const breadcrumbJsonLd = generateBreadcrumbJsonLd([
-  { name: "Home", url: siteConfig.url },
-  { name: "Cookie Policy", url: `${siteConfig.url}/cookies` },
-]);
+export default async function CookiesPage({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
 
-export default async function CookiesPage() {
   const t = await getTranslations("cookiesPage");
+
+  const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+    { name: "Home", url: `${siteConfig.url}/${locale}` },
+    { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/cookies` },
+  ]);
 
   const cookieTypes = [
     {

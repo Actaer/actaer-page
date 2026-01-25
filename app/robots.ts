@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/_next/"],
       },
-      // Explicitly allow AI crawlers
+      // Explicitly allow AI crawlers for AIO/GEO
       {
         userAgent: "GPTBot",
         allow: "/",
@@ -23,11 +23,23 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
       {
+        userAgent: "Googlebot",
+        allow: "/",
+      },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+      },
+      {
         userAgent: "Anthropic-AI",
         allow: "/",
       },
       {
         userAgent: "ClaudeBot",
+        allow: "/",
+      },
+      {
+        userAgent: "Claude-Web",
         allow: "/",
       },
       {
@@ -40,6 +52,22 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "YouBot",
+        allow: "/",
+      },
+      {
+        userAgent: "Applebot",
+        allow: "/",
+      },
+      {
+        userAgent: "Bytespider",
+        allow: "/",
+      },
+      {
+        userAgent: "CCBot",
+        allow: "/",
+      },
+      {
+        userAgent: "cohere-ai",
         allow: "/",
       },
     ],

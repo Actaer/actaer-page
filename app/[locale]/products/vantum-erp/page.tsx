@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Header, Footer } from "@/components/layout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -32,13 +32,27 @@ import {
   generateSoftwareAppJsonLd,
   generateFaqJsonLd,
 } from "@/lib/seo";
+import { type Locale } from "@/i18n/config";
+import { setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = constructMetadata({
-  title: "Vantum ERP - Distribution ERP, Reimagined",
-  description:
-    "Modern distribution ERP for wholesalers, distributors, and retail chains. Inventory management, sales orders, purchasing, and AI-powered replenishment.",
-  canonical: `${siteConfig.url}/products/vantum-erp`,
-});
+interface PageProps {
+  params: Promise<{ locale: Locale }>;
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  return constructMetadata({
+    title: "Vantum ERP - Distribution ERP, Reimagined",
+    description:
+      "Modern distribution ERP for wholesalers, distributors, and retail chains. Inventory management, sales orders, purchasing, and AI-powered replenishment.",
+    canonical: `${siteConfig.url}/${locale}/products/vantum-erp`,
+    locale,
+    path: "/products/vantum-erp",
+  });
+}
 
 const modules = [
   {
@@ -203,7 +217,10 @@ const faqJsonLd = generateFaqJsonLd([
   },
 ]);
 
-export default function VantumERPPage() {
+export default async function VantumERPPage({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <script

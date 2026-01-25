@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Header, Footer } from "@/components/layout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -17,13 +17,28 @@ import {
   generateAboutPageJsonLd,
   generateFaqJsonLd,
 } from "@/lib/seo";
+import { type Locale } from "@/i18n/config";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = constructMetadata({
-  title: "About Us",
-  description:
-    "Learn about Actaer - a full-service tech consulting firm transforming businesses into agile, software-powered innovators.",
-  canonical: `${siteConfig.url}/about`,
-});
+interface PageProps {
+  params: Promise<{ locale: Locale }>;
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
+
+  return constructMetadata({
+    title: t("badge"),
+    description:
+      "Learn about Actaer - a full-service tech consulting firm transforming businesses into agile, software-powered innovators.",
+    canonical: `${siteConfig.url}/${locale}/about`,
+    locale,
+    path: "/about",
+  });
+}
 
 const values = [
   {
@@ -89,7 +104,10 @@ const faqJsonLd = generateFaqJsonLd([
   },
 ]);
 
-export default function AboutPage() {
+export default async function AboutPage({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <script
