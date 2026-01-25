@@ -11,6 +11,7 @@ export function formatDate(
     de: "de-DE",
     es: "es-ES",
     pt: "pt-PT",
+    pl: "pl-PL",
   };
 
   return date.toLocaleDateString(localeMap[locale], {

@@ -3,7 +3,7 @@ import { getAllPosts } from "@/lib/blog";
 import { locales, defaultLocale, Locale } from "@/i18n/config";
 
 // Fixed dates for static pages (update these when content changes)
-const STATIC_LAST_MODIFIED = new Date("2026-01-24");
+const STATIC_LAST_MODIFIED = new Date("2026-01-25");
 
 // Static page paths
 const staticPaths = [

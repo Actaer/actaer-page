@@ -19,7 +19,7 @@ Actaer is a technology consulting and software development company based in Novi
 - Location: Novi Pazar, Serbia
 - LinkedIn: https://linkedin.com/company/actaer
 - X (Twitter): https://x.com/actaerco
-- Languages: English, German, Spanish, Portuguese, Serbian
+- Languages: English, German, Spanish, Portuguese, Serbian, Polish
 
 ## Services
 
