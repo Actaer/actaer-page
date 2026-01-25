@@ -579,5 +579,214 @@
         "description": "Wenn Sie Fragen zu unserer Verwendung von Cookies haben, kontaktieren Sie uns bitte unter"
       }
     }
+  },
+  "vantumErpPage": {
+    "pageTitle": "Vantum ERP - Distribution ERP, Neu Gedacht",
+    "pageDescription": "Modernes Distributions-ERP für Großhändler, Distributoren und Einzelhandelsketten. Bestandsmanagement, Verkaufsaufträge, Einkauf und KI-gestützte Nachbestellung.",
+    "badge": "Enterprise-Produkt",
+    "heroTitle": "Vantum ERP",
+    "heroSubtitle": "Distribution ERP, Neu Gedacht",
+    "heroDescription": "ERP ohne Legacy-Ballast. Entwickelt für moderne Großhändler, Distributoren, Einzelhandelsketten und 3PL-Anbieter.",
+    "visitVantum": "Vantum ERP besuchen",
+    "requestDemo": "Demo anfordern",
+    "metrics": {
+      "fasterImplementation": "Schnellere Implementierung",
+      "apiCoverage": "API-Abdeckung",
+      "hiddenFees": "Versteckte Gebühren",
+      "usersIncluded": "Benutzer inklusive"
+    },
+    "modules": {
+      "title": "Vier Leistungsstarke Module",
+      "description": "Alles was Sie brauchen, um Ihr Distributionsgeschäft zu verwalten, in einer integrierten Plattform.",
+      "inventory": {
+        "title": "Bestandsmanagement",
+        "description": "Echtzeit-Bestandsübersicht über unbegrenzte Lager mit Chargenverfolgung, Seriennummern und Lagerplatzverwaltung.",
+        "features": {
+          "multiWarehouse": "Multi-Lager-Unterstützung",
+          "lotTracking": "Chargen- und Seriennummernverfolgung",
+          "binLocation": "Lagerplatzverwaltung",
+          "realTimeStock": "Echtzeit-Bestände",
+          "adjustments": "Bestandskorrekturen"
+        }
+      },
+      "sales": {
+        "title": "Verkaufsaufträge",
+        "description": "Vollständiger Angebots-bis-Zahlungs-Workflow mit Echtzeit-Verfügbarkeitsprüfung und automatischer Bestandsreservierung.",
+        "features": {
+          "quoteManagement": "Angebotsverwaltung",
+          "orderProcessing": "Auftragsabwicklung",
+          "realTimeAvailability": "Echtzeit-Verfügbarkeit",
+          "autoReservations": "Automatische Reservierungen",
+          "shippingIntegration": "Versandintegration"
+        }
+      },
+      "purchasing": {
+        "title": "Einkauf",
+        "description": "Optimiertes Lieferantenmanagement mit PO-Automatisierung, Lieferzeit-Tracking und Kostenanalyse.",
+        "features": {
+          "vendorManagement": "Lieferantenmanagement",
+          "purchaseOrders": "Bestellungen",
+          "leadTimeTracking": "Lieferzeit-Tracking",
+          "costAnalysis": "Kostenanalyse",
+          "receivingWorkflow": "Wareneingangs-Workflow"
+        }
+      },
+      "replenishment": {
+        "title": "Intelligente Nachbestellung",
+        "description": "KI-gestützte Bestellpunkt-Berechnungen mit automatischer PO-Generierung basierend auf Verkaufsgeschwindigkeit.",
+        "features": {
+          "aiForecasting": "KI-Bedarfsprognose",
+          "reorderOptimization": "Bestellpunkt-Optimierung",
+          "autoPoGeneration": "Auto PO-Generierung",
+          "seasonalAdjustments": "Saisonale Anpassungen",
+          "safetyStock": "Sicherheitsbestand-Berechnungen"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Legacy ERP vs Vantum",
+      "description": "Sehen Sie, warum moderne Unternehmen Vantum gegenüber traditionellen ERP-Systemen wählen.",
+      "feature": "Funktion",
+      "legacyErp": "Legacy ERP",
+      "vantumErp": "Vantum ERP",
+      "implementationTime": "Implementierungszeit",
+      "legacyImplementation": "6-18 Monate",
+      "vantumImplementation": "Wochen, nicht Monate",
+      "licensingModel": "Lizenzmodell",
+      "legacyLicensing": "Pro-Benutzer-Gebühren",
+      "vantumLicensing": "Unbegrenzte Benutzer",
+      "customization": "Anpassung",
+      "legacyCustomization": "Berater erforderlich",
+      "vantumCustomization": "Self-Service-Konfiguration",
+      "userExperience": "Benutzererfahrung",
+      "legacyUx": "Jahrzehnte alte UX",
+      "vantumUx": "Moderne Oberfläche",
+      "architecture": "Architektur",
+      "legacyArchitecture": "Monolithisch",
+      "vantumArchitecture": "Modular, Cloud-nativ",
+      "updates": "Updates",
+      "legacyUpdates": "Jährliche Releases",
+      "vantumUpdates": "Kontinuierliche Bereitstellung"
+    },
+    "techStack": {
+      "title": "Enterprise-Grade Architektur",
+      "description": "Aufgebaut auf modernen, bewährten Technologien für Zuverlässigkeit, Leistung und Sicherheit.",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Datenbank",
+      "events": "Events",
+      "caching": "Caching",
+      "integration": "Integration",
+      "features": {
+        "subSecond": {
+          "title": "Reaktionszeit unter einer Sekunde",
+          "description": "Optimierte Abfragen und Caching für blitzschnelle Leistung."
+        },
+        "security": {
+          "title": "Enterprise-Sicherheit",
+          "description": "RBAC, Audit-Logging und Verschlüsselung im Ruhezustand und während der Übertragung."
+        },
+        "api": {
+          "title": "100% API-Abdeckung",
+          "description": "Vollständiger REST API-Zugang für nahtlose Integrationen."
+        }
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Häufig Gestellte Fragen",
+      "description": "Alles, was Sie über Vantum ERP wissen müssen",
+      "q1": {
+        "question": "Was ist Vantum ERP?",
+        "answer": "Vantum ERP ist ein modernes Distributions-ERP-System, das speziell für Großhändler, Distributoren, Einzelhandelsketten und 3PL-Anbieter entwickelt wurde. Es bietet KI-gestützte Bestandsauffüllung, Echtzeit-Analysen und 100% API-Abdeckung – alles ohne die Komplexität von Legacy-ERP-Systemen."
+      },
+      "q2": {
+        "question": "Wie unterscheidet sich Vantum ERP von traditionellen ERP-Systemen?",
+        "answer": "Im Gegensatz zu Legacy-ERPs, die umfangreiche Anpassungen und lange Implementierungszyklen erfordern, ist Vantum ERP mit moderner Cloud-nativer Architektur aufgebaut. Es bietet 10x schnellere Implementierung, unbegrenzte Benutzer ohne Pro-Benutzer-Lizenzierung, keine versteckten Gebühren und KI-native Funktionen von Anfang an."
+      },
+      "q3": {
+        "question": "Welche Branchen bedient Vantum ERP?",
+        "answer": "Vantum ERP ist für distributionsorientierte Unternehmen optimiert, einschließlich Großhändler, Einzelhandelsketten mit mehreren Standorten, 3PL-Anbieter (Third-Party-Logistics) und jedes Unternehmen, das komplexe Bestände über mehrere Lager verwaltet."
+      },
+      "q4": {
+        "question": "Enthält Vantum ERP KI-Funktionen?",
+        "answer": "Ja! Vantum ERP enthält KI-gestützte Bestandsauffüllung, die Verkaufsmuster, Saisonalität und Lieferzeiten analysiert, um automatisch optimale Einkaufsvorschläge zu generieren. Dies hilft, Fehlbestände zu reduzieren und gleichzeitig Überbestände zu minimieren."
+      },
+      "q5": {
+        "question": "Wie kann ich mit Vantum ERP beginnen?",
+        "answer": "Wir nehmen derzeit Unternehmen für unser 2026 Pilotprogramm auf. Besuchen Sie vantumerp.com für weitere Informationen oder kontaktieren Sie unser Vertriebsteam, um eine Demo zu vereinbaren."
+      }
+    },
+    "cta": {
+      "badge": "Begrenztes Pilotprogramm",
+      "title": "Nehmen Sie am 2026 Pilotprogramm teil",
+      "description": "Wir akzeptieren eine begrenzte Anzahl von Unternehmen für unser Pilotprogramm. Erhalten Sie frühzeitigen Zugang und gestalten Sie die Zukunft des Distributions-ERP.",
+      "learnMore": "Mehr erfahren auf vantumerp.com",
+      "contactSales": "Vertrieb kontaktieren"
+    }
+  },
+  "aboutPage": {
+    "pageTitle": "Über Actaer",
+    "pageDescription": "Erfahren Sie mehr über Actaer - eine Full-Service-Technologieberatung, die Unternehmen in agile, softwaregetriebene Innovatoren transformiert.",
+    "badge": "Über Actaer",
+    "heroTitle": "Engineering für",
+    "heroHighlighted": "Digitalen Erfolg",
+    "heroDescription": "Wir sind eine Full-Service-Technologieberatung, die Unternehmen in agile, softwaregetriebene Innovatoren transformiert. Technologie ist der Schlüssel zur Entfaltung Ihres Potenzials.",
+    "story": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "Actaer wurde mit einer einfachen Überzeugung gegründet: Technologie sollte ein Wegbereiter sein, kein Hindernis. Wir sahen zu viele Unternehmen, die mit veralteten Systemen, gescheiterten Softwareprojekten und Technologie kämpften, die ihren Bedürfnissen nicht diente.",
+      "paragraph2": "Wir haben uns vorgenommen, das zu ändern. Unser Gründungsteam vereint Erfahrung aus Enterprise-Software, Startups und Beratung. Wir haben gesehen, was funktioniert, was nicht, und warum die meisten Technologieinitiativen ihr Versprechen nicht einlösen.",
+      "paragraph3": "Als neues Unternehmen bringen wir frische Perspektiven und moderne Ansätze mit — unbelastet von altem Denken. Wir arbeiten mit Unternehmen jeder Größe zusammen, um Software zu entwickeln, die tatsächlich funktioniert, mit Ihren Anforderungen skaliert und echten Mehrwert liefert.",
+      "paragraph4": "Unser erstes Produkt, Vantum ERP, verkörpert alles, was wir an Software glauben: Es ist modern, benutzerfreundlich und für die Art und Weise gebaut, wie Unternehmen heute tatsächlich arbeiten.",
+      "tagline": "Engineering-Exzellenz"
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "description": "Die Prinzipien, die alles leiten, was wir tun.",
+      "resultsDriven": {
+        "title": "Ergebnisorientiert",
+        "description": "Wir messen Erfolg am Impact, den wir für unsere Kunden schaffen, nicht an protokollierten Stunden oder geschriebenen Codezeilen."
+      },
+      "clientCentric": {
+        "title": "Kundenorientiert",
+        "description": "Ihr Erfolg ist unser Erfolg. Wir bauen langfristige Partnerschaften auf, basierend auf Vertrauen, Transparenz und gegenseitigem Wachstum."
+      },
+      "innovationFocused": {
+        "title": "Innovationsfokussiert",
+        "description": "Wir bleiben an der Spitze der Technologie und bringen modernste Lösungen, um Ihre anspruchsvollsten Probleme zu lösen."
+      },
+      "collaborative": {
+        "title": "Kollaborativ",
+        "description": "Wir arbeiten als Erweiterung Ihres Teams und fördern offene Kommunikation und gemeinsame Verantwortung für Ergebnisse."
+      }
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Unternehmen mit Technologie zu befähigen, die tatsächlich funktioniert. Wir haben uns zum Ziel gesetzt, die Lücke zwischen dem, was Technologie verspricht, und dem, was sie liefert, zu schließen.",
+      "quote": "Ihr Erfolg, entwickelt von ACTAER"
+    },
+    "whatWeDo": {
+      "title": "Was Wir Tun",
+      "description": "Umfassende Technologiedienste für Ihr Unternehmen.",
+      "itConsulting": {
+        "title": "IT-Beratung",
+        "description": "Strategische Beratung für digitale Transformation, technische Due Diligence und Technologieplanung."
+      },
+      "softwareDevelopment": {
+        "title": "Softwareentwicklung",
+        "description": "Maßgeschneiderte Softwarelösungen mit modernen Technologien für Ihre einzigartigen Herausforderungen."
+      },
+      "productDevelopment": {
+        "title": "Produktentwicklung",
+        "description": "End-to-End Produkterstellung vom Konzept bis zum Launch, mit laufender Unterstützung und Iteration."
+      },
+      "learnMore": "Mehr Erfahren"
+    },
+    "cta": {
+      "title": "Bereit zur Zusammenarbeit?",
+      "description": "Lassen Sie uns besprechen, wie wir Ihr Unternehmen mit Technologie transformieren können, die liefert.",
+      "getInTouch": "Kontakt Aufnehmen",
+      "exploreServices": "Services Entdecken"
+    }
   }
 }

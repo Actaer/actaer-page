@@ -1,0 +1,792 @@
+{
+  "metadata": {
+    "title": "Rozwój Oprogramowania i Konsulting IT",
+    "titleTemplate": "{title} | Actaer",
+    "description": "Kompleksowa firma konsultingowa przekształcająca przedsiębiorstwa w zwinnych, innowatorów napędzanych oprogramowaniem. Konsulting IT, tworzenie oprogramowania na zamówienie i rozwiązania enterprise."
+  },
+  "navigation": {
+    "services": "Usługi",
+    "itConsulting": "Konsulting IT",
+    "itConsultingDescription": "Strategiczne doradztwo technologiczne i transformacja cyfrowa.",
+    "softwareDevelopment": "Rozwój Oprogramowania",
+    "softwareDevelopmentDescription": "Rozwiązania programistyczne dostosowane do Twoich potrzeb.",
+    "productDevelopment": "Rozwój Produktu",
+    "productDevelopmentDescription": "Kompleksowe tworzenie produktu od koncepcji do wdrożenia.",
+    "vantumErp": "Vantum ERP",
+    "about": "O nas",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "getStarted": "Rozpocznij",
+    "openMenu": "Otwórz menu",
+    "theme": "Motyw"
+  },
+  "hero": {
+    "badge": "Przedstawiamy Vantum ERP — System ERP dla Dystrybucji, Nowa Wizja",
+    "title": "Twój Sukces, <highlighted>Zaprojektowany</highlighted> przez ACTAER",
+    "description": "Jesteśmy kompleksową firmą konsultingową przekształcającą przedsiębiorstwa w zwinnych, innowatorów napędzanych oprogramowaniem. Od strategii po wdrożenie, projektujemy Twoją cyfrową przyszłość.",
+    "startProject": "Rozpocznij Projekt",
+    "exploreServices": "Poznaj Usługi",
+    "scroll": "Przewiń"
+  },
+  "about": {
+    "badge": "O Actaer",
+    "title": "Rozwiązujemy Wymagające Problemy Biznesowe za pomocą <highlighted>Inteligentnej Technologii</highlighted>",
+    "description1": "Actaer to nowo założona firma konsultingowa stworzona przez doświadczonych inżynierów i konsultantów. Wnosimy świeże perspektywy i sprawdzoną wiedzę, aby przekształcić Twoją wizję w niezawodne, skalowalne rozwiązania programistyczne.",
+    "description2": "Od strategicznego konsultingu IT po pełnoskalowy rozwój produktu, współpracujemy z firmami różnej wielkości, aby nawigować w złożonym cyfrowym krajobrazie. Nasze zwinne podejście zapewnia wartość na każdym etapie.",
+    "tagline": "Świeże Pomysły, Sprawdzona Wiedza"
+  },
+  "services": {
+    "badge": "Nasze Usługi",
+    "title": "Kompleksowe Rozwiązania Technologiczne dla <highlighted>Nowoczesnych Firm</highlighted>",
+    "description": "Od strategicznego konsultingu po praktyczny rozwój, oferujemy kompleksowe usługi napędzające Twoją cyfrową transformację.",
+    "viewAll": "Zobacz Wszystkie Usługi",
+    "learnMore": "Dowiedz się Więcej",
+    "keyOfferings": "Kluczowe Oferty:",
+    "itConsulting": {
+      "title": "Konsulting IT",
+      "description": "Strategiczne doradztwo technologiczne napędzające transformację cyfrową i optymalizujące infrastrukturę IT.",
+      "features": {
+        "digitalTransformation": "Strategia Transformacji Cyfrowej",
+        "technicalDueDiligence": "Due Diligence Techniczne",
+        "teamAugmentation": "Rozszerzenie Zespołu",
+        "dataDriven": "Konsulting Oparty na Danych"
+      }
+    },
+    "softwareDevelopment": {
+      "title": "Rozwój Oprogramowania",
+      "description": "Rozwiązania programistyczne na zamówienie z wykorzystaniem najnowszych technologii.",
+      "features": {
+        "fullStack": "Inżynieria Full-Stack",
+        "aiMl": "AI i Uczenie Maszynowe",
+        "enterprise": "Rozwiązania Enterprise",
+        "realTime": "Platformy Czasu Rzeczywistego"
+      }
+    },
+    "productDevelopment": {
+      "title": "Rozwój Produktu",
+      "description": "Kompleksowe tworzenie produktu od pomysłu do wdrożenia, z ciągłym wsparciem i iteracją.",
+      "features": {
+        "prototyping": "Prototypowanie i MVP",
+        "userCentric": "Projektowanie Zorientowane na Użytkownika",
+        "agile": "Rozwój Zwinny",
+        "launch": "Wprowadzenie i Skalowanie"
+      }
+    }
+  },
+  "servicesPage": {
+    "pageTitle": "Usługi",
+    "pageDescription": "Kompleksowe rozwiązania technologiczne obejmujące konsulting IT, tworzenie oprogramowania na zamówienie i rozwój produktu.",
+    "heroTitle": "Kompleksowe Rozwiązania dla {highlighted}",
+    "heroHighlighted": "Cyfrowego Sukcesu",
+    "heroDescription": "Od strategicznego konsultingu po praktyczny rozwój, oferujemy kompleksowe usługi napędzające Twoją cyfrową transformację.",
+    "faqBadge": "FAQ",
+    "faqTitle": "Najczęściej Zadawane Pytania",
+    "faqDescription": "Odpowiedzi na często zadawane pytania dotyczące naszych usług",
+    "faq1Question": "Jak mogę określić, która usługa jest odpowiednia dla mojej firmy?",
+    "faq1Answer": "To zależy od Twojego obecnego etapu. Jeśli badasz opcje lub potrzebujesz strategicznego doradztwa, zacznij od Konsultingu IT. Jeśli masz jasne wymagania i potrzebujesz wdrożenia, Rozwój Oprogramowania jest właściwą drogą. Jeśli budujesz nowy produkt od podstaw, nasz serwis Rozwoju Produktu obejmuje całą podróż od pomysłu do wdrożenia.",
+    "faq2Question": "Z jakimi technologiami pracuje Actaer?",
+    "faq2Answer": "Pracujemy z nowoczesnymi technologiami klasy enterprise, w tym React, Next.js, Vue.js dla frontendów; Node.js, .NET i Java dla backendów; PostgreSQL, MongoDB i Redis dla danych; oraz platformy chmurowe jak AWS, Azure i GCP. Specjalizujemy się również w rozwiązaniach AI/ML.",
+    "faq3Question": "Jak długo trwa typowy projekt?",
+    "faq3Answer": "Czas realizacji projektu różni się w zależności od zakresu. Konsulting może trwać 2-4 tygodnie, podczas gdy projekt oprogramowania na zamówienie może trwać od 2-6 miesięcy. Pełny rozwój produktu zwykle trwa 4-12 miesięcy. Podczas wstępnej konsultacji przedstawimy szczegółowy harmonogram.",
+    "faq4Question": "Czy oferujecie wsparcie po zakończeniu projektu?",
+    "faq4Answer": "Tak! Oferujemy różne pakiety wsparcia i utrzymania, w tym naprawę błędów, monitorowanie wydajności, aktualizacje funkcji i wsparcie krytyczne 24/7. Wierzymy w długoterminowe partnerstwa, a nie jednorazowe projekty.",
+    "ctaTitle": "Nie Wiesz, Której Usługi Potrzebujesz?",
+    "ctaDescription": "Porozmawiajmy o Twoich wyzwaniach. Pomożemy Ci znaleźć odpowiednie rozwiązanie dla Twojej firmy.",
+    "ctaButton": "Umów Konsultację"
+  },
+  "itConsultingPage": {
+    "pageTitle": "Konsulting IT",
+    "pageDescription": "Strategiczne doradztwo technologiczne i konsulting transformacji cyfrowej. Planowanie projektów, due diligence techniczne i konsulting oparty na danych.",
+    "badge": "Konsulting IT",
+    "heroTitle": "Strategiczne Doradztwo {highlighted}",
+    "heroHighlighted": "Technologiczne",
+    "heroDescription": "Nawiguj w złożonym krajobrazie technologicznym z eksperckim konsultingiem, który dostosowuje inwestycje IT do celów biznesowych.",
+    "ctaButton": "Rozpocznij Konsultację",
+    "exploreProducts": "Poznaj Vantum ERP",
+    "overviewTitle": "Nasze Usługi Konsultingowe",
+    "overviewDescription": "Kompleksowy konsulting IT prowadzący Twoją transformację cyfrową.",
+    "strategyTitle": "Strategia Transformacji Cyfrowej",
+    "strategyDescription": "Pomagamy organizacjom nawigować w złożonym cyfrowym krajobrazie z jasnymi, wykonalnymi strategiami, które dostosowują inwestycje technologiczne do celów biznesowych.",
+    "strategyBenefit1": "Opracowanie mapy drogowej technologii",
+    "strategyBenefit2": "Planowanie modernizacji systemów legacy",
+    "strategyBenefit3": "Strategie migracji do chmury",
+    "strategyBenefit4": "Możliwości automatyzacji procesów",
+    "strategyBenefit5": "Analiza konkurencji i benchmarking",
+    "planningTitle": "Specyfikacja i Planowanie Projektu",
+    "planningDescription": "Kompleksowe planowanie projektu zapewniające jasne wymagania, realistyczne harmonogramy i efektywną alokację zasobów.",
+    "planningBenefit1": "Zbieranie i analiza wymagań",
+    "planningBenefit2": "Dokumenty specyfikacji technicznej",
+    "planningBenefit3": "Planowanie zasobów i harmonogramów",
+    "planningBenefit4": "Ocena i ograniczanie ryzyka",
+    "planningBenefit5": "Szacowanie i optymalizacja budżetu",
+    "dueDiligenceTitle": "Due Diligence Techniczne",
+    "dueDiligenceDescription": "Dogłębne oceny techniczne dla fuzji, przejęć lub dużych inwestycji technologicznych w celu identyfikacji ryzyk i możliwości.",
+    "dueDiligenceBenefit1": "Przegląd jakości kodu i architektury",
+    "dueDiligenceBenefit2": "Ocena luk bezpieczeństwa",
+    "dueDiligenceBenefit3": "Analiza skalowalności i wydajności",
+    "dueDiligenceBenefit4": "Ocena długu technicznego",
+    "dueDiligenceBenefit5": "Ocena kompetencji zespołu",
+    "augmentationTitle": "Rozszerzenie Zespołu",
+    "augmentationDescription": "Zwiększ możliwości rozwoju dzięki doświadczonym profesjonalistom, którzy płynnie integrują się z istniejącymi zespołami.",
+    "augmentationBenefit1": "Seniorzy programiści i architekci",
+    "augmentationBenefit2": "Specjalistyczne umiejętności na żądanie",
+    "augmentationBenefit3": "Elastyczne modele współpracy",
+    "augmentationBenefit4": "Transfer wiedzy w cenie",
+    "augmentationBenefit5": "Zarządzany proces onboardingu",
+    "dataTitle": "Konsulting Oparty na Danych",
+    "dataDescription": "Wykorzystaj moc danych do podejmowania świadomych decyzji dzięki naszym usługom konsultingu analitycznego i business intelligence.",
+    "dataBenefit1": "Opracowanie strategii danych",
+    "dataBenefit2": "Wybór platformy analitycznej",
+    "dataBenefit3": "Definiowanie i śledzenie KPI",
+    "dataBenefit4": "Ramy zarządzania danymi",
+    "dataBenefit5": "Wdrożenie analityki predykcyjnej",
+    "whatYouGet": "Co Otrzymujesz",
+    "whyChooseTitle": "Dlaczego Wybrać Actaer na Konsulting IT?",
+    "whyChooseDescription": "Łączymy głęboką wiedzę techniczną z biznesową przenikliwością, dostarczając praktyczne, wykonalne rozwiązania.",
+    "reason1Title": "Doświadczenie Branżowe",
+    "reason1Description": "Wieloletnie doświadczenie w różnych branżach daje nam unikalne spojrzenie na Twoje wyzwania.",
+    "reason2Title": "Praktyczne Podejście",
+    "reason2Description": "Skupiamy się na wykonalnych rekomendacjach, które można wdrożyć, a nie tylko teoretycznych ramach.",
+    "reason3Title": "Kompleksowe Wsparcie",
+    "reason3Description": "Od strategii po wdrożenie, wspieramy Cię przez całą podróż transformacji.",
+    "ctaTitle": "Gotowy na Transformację Strategii Technologicznej?",
+    "ctaDescription": "Porozmawiajmy o tym, jak nasze usługi konsultingowe mogą pomóc Ci osiągnąć cele biznesowe.",
+    "ctaButtonPrimary": "Umów Konsultację",
+    "ctaButtonSecondary": "Zobacz Wszystkie Usługi"
+  },
+  "softwareDevPage": {
+    "pageTitle": "Tworzenie Oprogramowania na Zamówienie",
+    "pageDescription": "Kompleksowe usługi rozwoju oprogramowania. Front-end, back-end, AI/ML, rozwiązania enterprise i platformy komunikacji w czasie rzeczywistym.",
+    "badge": "Rozwój Oprogramowania",
+    "heroTitle": "Rozwiązania Programistyczne {highlighted}",
+    "heroHighlighted": "na Zamówienie",
+    "heroDescription": "Buduj potężne, skalowalne oprogramowanie dostosowane do unikalnych potrzeb Twojego biznesu z naszym eksperckim zespołem.",
+    "ctaButton": "Rozpocznij Projekt",
+    "exploreProducts": "Poznaj Vantum ERP",
+    "overviewTitle": "Nasze Usługi Deweloperskie",
+    "overviewDescription": "Kompleksowe usługi rozwoju oprogramowania dostosowane do Twoich unikalnych wymagań.",
+    "fullstackTitle": "Inżynieria Full-Stack",
+    "fullstackDescription": "Kompletne usługi rozwoju front-end i back-end do budowy solidnych, skalowalnych aplikacji od podstaw.",
+    "fullstackBenefit1": "Nowoczesne frontendy React, Angular lub Vue.js",
+    "fullstackBenefit2": "Backendy Node.js, .NET lub Java",
+    "fullstackBenefit3": "RESTful API i GraphQL",
+    "fullstackBenefit4": "Architektura mikrousług",
+    "fullstackBenefit5": "Konfiguracja pipeline CI/CD",
+    "aiMlTitle": "AI i Uczenie Maszynowe",
+    "aiMlDescription": "Wykorzystaj moc sztucznej inteligencji do automatyzacji procesów, uzyskiwania insights i tworzenia inteligentnych aplikacji.",
+    "aiMlBenefit1": "Tworzenie niestandardowych modeli ML",
+    "aiMlBenefit2": "Przetwarzanie Języka Naturalnego (NLP)",
+    "aiMlBenefit3": "Rozwiązania Computer Vision",
+    "aiMlBenefit4": "Analityka predykcyjna",
+    "aiMlBenefit5": "Integracja i wdrożenie AI",
+    "agenticTitle": "Systemy Autonomiczne i Agentowe",
+    "agenticDescription": "Buduj inteligentnych autonomicznych agentów i systemy, które mogą rozumować, planować i wykonywać złożone zadania samodzielnie.",
+    "agenticBenefit1": "Agenci napędzani LLM",
+    "agenticBenefit2": "Orkiestracja wielu agentów",
+    "agenticBenefit3": "Wykorzystanie narzędzi i wywoływanie funkcji",
+    "agenticBenefit4": "Generacja wspomagana wyszukiwaniem (RAG)",
+    "agenticBenefit5": "Automatyzacja workflow",
+    "realtimeTitle": "Platformy Czasu Rzeczywistego",
+    "realtimeDescription": "Wysokowydajne platformy komunikacji w czasie rzeczywistym i współpracy dla nowoczesnych, połączonych doświadczeń.",
+    "realtimeBenefit1": "Implementacja WebSocket i WebRTC",
+    "realtimeBenefit2": "Systemy czatu i wiadomości",
+    "realtimeBenefit3": "Funkcje współpracy na żywo",
+    "realtimeBenefit4": "Systemy powiadomień push",
+    "realtimeBenefit5": "Architektury event-driven",
+    "enterpriseTitle": "Rozwiązania Enterprise",
+    "enterpriseDescription": "Skalowalne, bezpieczne oprogramowanie enterprise obsługujące złożoną logikę biznesową i integrujące się z istniejącymi systemami.",
+    "enterpriseBenefit1": "Systemy ERP i CRM",
+    "enterpriseBenefit2": "Automatyzacja procesów biznesowych",
+    "enterpriseBenefit3": "Integracja systemów legacy",
+    "enterpriseBenefit4": "Zgodność z bezpieczeństwem enterprise",
+    "enterpriseBenefit5": "Projektowanie wysokiej dostępności",
+    "whatYouGet": "Co Otrzymujesz",
+    "whatWeDeliver": "Co Dostarczamy",
+    "whyChooseTitle": "Dlaczego Wybrać Actaer na Rozwój Oprogramowania?",
+    "whyChooseDescription": "Łączymy doskonałość techniczną z głębokim zrozumieniem potrzeb Twojego biznesu.",
+    "reason1Title": "Ekspercki Zespół",
+    "reason1Description": "Seniorzy programiści z wieloletnim doświadczeniem w różnych technologiach i branżach.",
+    "reason2Title": "Fokus na Jakość",
+    "reason2Description": "Czysty, łatwy w utrzymaniu kod z kompleksowym testowaniem i dokumentacją.",
+    "reason3Title": "Zwinna Realizacja",
+    "reason3Description": "Iteracyjny rozwój z regularnymi demo zapewnia, że zawsze masz kontrolę.",
+    "techTitle": "Technologie, z Którymi Pracujemy",
+    "techDescription": "Pracujemy z nowoczesnymi, sprawdzonymi technologiami, aby dostarczać niezawodne, skalowalne rozwiązania.",
+    "techStackTitle": "Nasz Stos Technologiczny",
+    "techStackDescription": "Wykorzystujemy najnowocześniejsze technologie do budowy solidnych, skalowalnych rozwiązań.",
+    "techFrontend": "Frontend",
+    "techBackend": "Backend",
+    "techDatabase": "Baza Danych",
+    "techDevOps": "DevOps i Chmura",
+    "ctaTitle": "Gotowy do Budowy Rozwiązania Programistycznego?",
+    "ctaDescription": "Porozmawiajmy o wymaganiach Twojego projektu i jak możemy urzeczywistnić Twoją wizję.",
+    "ctaButtonPrimary": "Rozpocznij Projekt",
+    "ctaButtonSecondary": "Zobacz Wszystkie Usługi"
+  },
+  "productDevPage": {
+    "pageTitle": "Rozwój Produktu",
+    "pageDescription": "Kompleksowy rozwój produktu od pomysłu do wdrożenia. Prototypowanie, rozwój MVP, projektowanie zorientowane na użytkownika i ciągłe wsparcie.",
+    "badge": "Rozwój Produktu",
+    "heroTitle": "Od Pomysłu do {highlighted}",
+    "heroHighlighted": "Rynku",
+    "heroDescription": "Kompletny cykl życia rozwoju produktu z eksperckim przewodnictwem, od początkowej koncepcji do udanego wdrożenia i dalej.",
+    "ctaButton": "Rozpocznij Swój Produkt",
+    "exploreProducts": "Zobacz Vantum ERP",
+    "phasesTitle": "Nasz Proces Rozwoju",
+    "phasesDescription": "Sprawdzona metodologia prowadząca Twój produkt od koncepcji do sukcesu rynkowego.",
+    "processTitle": "Nasz Proces Rozwoju",
+    "processDescription": "Sprawdzona metodologia prowadząca Twój produkt od koncepcji do sukcesu rynkowego.",
+    "phase1Title": "Konceptualizacja i Tworzenie Pomysłów",
+    "phase1Description": "Pracujemy z Tobą, aby zdefiniować wizję produktu, zidentyfikować docelowych użytkowników i zweryfikować dopasowanie rynkowe przed napisaniem pierwszej linii kodu.",
+    "phase1Deliverable1": "Dokument wizji produktu",
+    "phase1Deliverable2": "Persony użytkowników i mapy podróży",
+    "phase1Deliverable3": "Analiza konkurencji",
+    "phase1Deliverable4": "Priorytetyzacja funkcji",
+    "phase2Title": "Prototypowanie i Projektowanie",
+    "phase2Description": "Przekształcamy pomysły w namacalne prototypy z projektowaniem zorientowanym na użytkownika, łączącym estetykę z funkcjonalnością.",
+    "phase2Deliverable1": "Interaktywne prototypy",
+    "phase2Deliverable2": "System projektowania UI/UX",
+    "phase2Deliverable3": "Feedback z testów użytkowników",
+    "phase2Deliverable4": "Dokumentacja przekazania projektu",
+    "phase3Title": "Rozwój MVP",
+    "phase3Description": "Szybko budujemy minimalny opłacalny produkt, aby zweryfikować założenia i zebrać prawdziwy feedback użytkowników.",
+    "phase3Deliverable1": "Implementacja podstawowych funkcji",
+    "phase3Deliverable2": "Skalowalna architektura",
+    "phase3Deliverable3": "Podstawowa integracja analityki",
+    "phase3Deliverable4": "Infrastruktura wdrożeniowa",
+    "phase4Title": "Iteracja i Udoskonalanie",
+    "phase4Description": "Ciągle ulepszamy w oparciu o feedback użytkowników, dodając funkcje i optymalizując wydajność.",
+    "phase4Deliverable1": "Realizacja mapy drogowej funkcji",
+    "phase4Deliverable2": "Optymalizacja wydajności",
+    "phase4Deliverable3": "Framework testów A/B",
+    "phase4Deliverable4": "Zaawansowana analityka",
+    "phase5Title": "Wdrożenie i Skalowanie",
+    "phase5Description": "Wejdź na rynek z pewnością i skaluj swój produkt, aby sprostać rosnącemu zapotrzebowaniu.",
+    "phase5Deliverable1": "Wdrożenie produkcyjne",
+    "phase5Deliverable2": "Testy obciążeniowe i optymalizacja",
+    "phase5Deliverable3": "Monitoring i alertowanie",
+    "phase5Deliverable4": "Skalowanie infrastruktury",
+    "phase6Title": "Wsparcie i Utrzymanie",
+    "phase6Description": "Ciągłe wsparcie, aby Twój produkt działał płynnie i ewoluował wraz z Twoim biznesem.",
+    "phase6Deliverable1": "Monitoring 24/7",
+    "phase6Deliverable2": "Naprawy błędów i aktualizacje",
+    "phase6Deliverable3": "Łatki bezpieczeństwa",
+    "phase6Deliverable4": "Rozszerzenia funkcjonalności",
+    "deliverablesTitle": "Co Otrzymujesz",
+    "deliverables": "Rezultaty:",
+    "whyTitle": "Dlaczego Budować z Nami?",
+    "whyDescription": "Łączymy wiedzę techniczną z myśleniem produktowym, aby budować rozwiązania, które użytkownicy kochają.",
+    "whyChooseTitle": "Dlaczego Budować z Nami?",
+    "whyChooseDescription": "Łączymy wiedzę techniczną z myśleniem produktowym, aby budować rozwiązania, które użytkownicy kochają.",
+    "mvpTagline": "Waliduj szybko. Iteruj szybciej.",
+    "reason1Title": "Podejście Zorientowane na Użytkownika",
+    "reason1Description": "Każda decyzja jest kierowana potrzebami i feedbackiem użytkowników, zapewniając, że Twój produkt rozwiązuje prawdziwe problemy.",
+    "reason2Title": "Rozwój Zwinny",
+    "reason2Description": "Iteracyjny rozwój z regularnymi demo i pętlami feedbacku zapewnia Ci kontrolę.",
+    "reason3Title": "Doskonałość Techniczna",
+    "reason3Description": "Czysty, łatwy w utrzymaniu kod i nowoczesna architektura, która skaluje się wraz z Twoim sukcesem.",
+    "reason4Title": "Długoterminowe Partnerstwo",
+    "reason4Description": "Zależy nam na Twoim sukcesie, zapewniając ciągłe wsparcie i strategiczne doradztwo.",
+    "ctaTitle": "Gotowy do Budowy Swojego Produktu?",
+    "ctaDescription": "Porozmawiajmy o Twoim pomyśle na produkt i stwórzmy mapę drogową do jego realizacji.",
+    "ctaButtonPrimary": "Rozpocznij Swój Produkt",
+    "ctaButtonSecondary": "Zobacz Wszystkie Usługi"
+  },
+  "techStack": {
+    "badge": "Stos Technologiczny",
+    "title": "Zbudowany z <highlighted>Nowoczesnych Technologii</highlighted>",
+    "description": "Wykorzystujemy najnowocześniejsze narzędzia i frameworki do budowy skalowalnych, łatwych w utrzymaniu i wysokowydajnych rozwiązań.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "language": "Język",
+      "database": "Baza Danych",
+      "devops": "DevOps",
+      "cloud": "Chmura"
+    }
+  },
+  "workflow": {
+    "badge": "Nasz Proces",
+    "title": "Jak <highlighted>Dostarczamy Sukces</highlighted>",
+    "description": "Nasza sprawdzona metodologia zapewnia spójne, wysokiej jakości rezultaty dla każdego projektu.",
+    "steps": {
+      "planning": {
+        "title": "Planowanie",
+        "description": "Analizujemy Twoje wyzwania, uzgadniamy cele z interesariuszami i opracowujemy kompleksową mapę drogową sukcesu."
+      },
+      "design": {
+        "title": "Projektowanie",
+        "description": "Nasz zespół tworzy ramy rozwiązań i architektury IT dostosowane do Twoich specyficznych wymagań."
+      },
+      "implementation": {
+        "title": "Wdrożenie",
+        "description": "Zwinna realizacja z płynną integracją, budując skalowalne rozwiązania rosnące wraz z Twoim biznesem."
+      },
+      "verification": {
+        "title": "Weryfikacja",
+        "description": "Rygorystyczne testowanie i walidacja zapewniają, że Twoje rozwiązanie spełnia najwyższe standardy jakości."
+      },
+      "maintenance": {
+        "title": "Utrzymanie",
+        "description": "Proaktywne wsparcie i ciągłe udoskonalenia utrzymują Twoje systemy na szczytowej wydajności."
+      }
+    }
+  },
+  "cta": {
+    "title": "Gotowy na <highlighted>Transformację</highlighted> Swojego Biznesu?",
+    "description": "Porozmawiajmy o tym, jak możemy pomóc Ci rozwiązać najtrudniejsze wyzwania za pomocą inteligentnych rozwiązań technologicznych.",
+    "startConversation": "Rozpocznij Rozmowę",
+    "exploreVantum": "Poznaj Vantum ERP"
+  },
+  "footer": {
+    "description": "Kompleksowa firma konsultingowa przekształcająca przedsiębiorstwa w zwinnych, innowatorów napędzanych oprogramowaniem.",
+    "services": "Usługi",
+    "products": "Produkty",
+    "company": "Firma",
+    "legal": "Prawne",
+    "privacyPolicy": "Polityka Prywatności",
+    "cookiePolicy": "Polityka Cookies",
+    "cookieSettings": "Ustawienia Cookies",
+    "copyright": "© {year} Actaer. Wszelkie prawa zastrzeżone."
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "Używamy plików cookie",
+      "description": "Używamy plików cookie, aby poprawić jakość przeglądania, analizować ruch na stronie i personalizować treści. Klikając \"Akceptuj Wszystkie\", wyrażasz zgodę na używanie przez nas plików cookie.",
+      "learnMore": "Dowiedz się więcej",
+      "acceptAll": "Akceptuj Wszystkie",
+      "rejectAll": "Odrzuć Wszystkie",
+      "customize": "Dostosuj"
+    },
+    "preferences": {
+      "title": "Preferencje Plików Cookie",
+      "description": "Zarządzaj swoimi preferencjami dotyczącymi plików cookie. Możesz włączyć lub wyłączyć różne typy plików cookie poniżej. Dowiedz się więcej o tym, jak używamy plików cookie w naszej",
+      "privacyPolicy": "Polityce Prywatności",
+      "save": "Zapisz Preferencje",
+      "required": "Wymagane"
+    },
+    "categories": {
+      "essential": {
+        "title": "Niezbędne Pliki Cookie",
+        "description": "Te pliki cookie są niezbędne do prawidłowego działania strony i nie można ich wyłączyć. Są zazwyczaj ustawiane tylko w odpowiedzi na Twoje działania, takie jak ustawianie preferencji prywatności, logowanie lub wypełnianie formularzy."
+      },
+      "functional": {
+        "title": "Funkcjonalne Pliki Cookie",
+        "description": "Te pliki cookie umożliwiają rozszerzoną funkcjonalność i personalizację, taką jak zapamiętywanie preferencji, ustawień językowych i dostarczanie ulepszonych funkcji."
+      },
+      "analytics": {
+        "title": "Analityczne Pliki Cookie",
+        "description": "Te pliki cookie pomagają nam zrozumieć, jak odwiedzający wchodzą w interakcję z naszą stroną, zbierając i raportując informacje anonimowo. Pomaga nam to ulepszać naszą stronę i usługi."
+      },
+      "marketing": {
+        "title": "Marketingowe Pliki Cookie",
+        "description": "Te pliki cookie mogą być ustawiane przez naszych partnerów reklamowych w celu tworzenia profilu Twoich zainteresowań i wyświetlania odpowiednich reklam na innych stronach."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Porozmawiajmy {highlighted}",
+    "highlighted": "Razem",
+    "subtitle": "Masz projekt w planach? Chcesz porozmawiać o tym, jak możemy pomóc Twojej firmie? Chętnie Cię wysłuchamy.",
+    "pageTitle": "Kontakt",
+    "pageDescription": "Skontaktuj się z Actaer. Porozmawiajmy o Twoich potrzebach w zakresie rozwoju oprogramowania, konsultingu IT lub rozwoju produktu.",
+    "getInTouch": "Skontaktuj się",
+    "getInTouchDescription": "Niezależnie od tego, czy masz pytanie o nasze usługi, chcesz omówić projekt, czy po prostu się przywitać, jesteśmy tu, aby pomóc.",
+    "formTitle": "Wyślij nam wiadomość",
+    "formDescription": "Wypełnij poniższy formularz, a skontaktujemy się z Tobą jak najszybciej.",
+    "info": {
+      "email": "Email",
+      "phone": "Telefon",
+      "location": "Lokalizacja",
+      "businessHours": "Godziny Pracy",
+      "businessHoursValue": "Pon - Pt, 9:00 - 18:00 CET"
+    },
+    "form": {
+      "name": "Imię i Nazwisko",
+      "namePlaceholder": "Jan Kowalski",
+      "email": "Email",
+      "emailPlaceholder": "jan@firma.pl",
+      "company": "Firma",
+      "companyPlaceholder": "Przykładowa Sp. z o.o.",
+      "phone": "Telefon",
+      "phonePlaceholder": "+48 123 456 789",
+      "message": "Wiadomość",
+      "messagePlaceholder": "Opowiedz nam o swoim projekcie lub jak możemy pomóc...",
+      "submit": "Wyślij Wiadomość",
+      "submitting": "Wysyłanie...",
+      "required": "*"
+    },
+    "success": {
+      "title": "Wiadomość Wysłana!",
+      "description": "Dziękujemy za kontakt. Odezwiemy się wkrótce.",
+      "sendAnother": "Wyślij Kolejną Wiadomość"
+    },
+    "errors": {
+      "general": "Coś poszło nie tak. Spróbuj ponownie.",
+      "submit": "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie.",
+      "unexpected": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie."
+    },
+    "faq": {
+      "title": "Najczęściej Zadawane Pytania",
+      "responseTime": {
+        "question": "Jaki jest typowy czas odpowiedzi?",
+        "answer": "Zazwyczaj odpowiadamy na zapytania w ciągu 24 godzin roboczych. W pilnych sprawach prosimy o bezpośredni kontakt telefoniczny."
+      },
+      "international": {
+        "question": "Czy współpracujecie z klientami międzynarodowymi?",
+        "answer": "Oczywiście! Współpracujemy z klientami na całym świecie. Nasz zespół ma doświadczenie w zdalnej współpracy i dostosowujemy się do różnych stref czasowych."
+      },
+      "messageInfo": {
+        "question": "Jakie informacje powinienem zawrzeć w wiadomości?",
+        "answer": "Pomóż nam zrozumieć Twój projekt, podając: kontekst biznesowy, problem który chcesz rozwiązać, wymagania techniczne i oczekiwania czasowe."
+      },
+      "freeConsultation": {
+        "question": "Czy oferujecie bezpłatne konsultacje?",
+        "answer": "Tak, oferujemy wstępną bezpłatną konsultację, aby zrozumieć Twoje potrzeby i zbadać, jak możemy pomóc. Bez zobowiązań, tylko rozmowa o Twoim projekcie."
+      }
+    }
+  },
+  "validation": {
+    "nameMin": "Imię musi mieć co najmniej 2 znaki",
+    "emailInvalid": "Wprowadź prawidłowy adres email",
+    "messageMin": "Wiadomość musi mieć co najmniej 10 znaków"
+  },
+  "blog": {
+    "badge": "Blog",
+    "title": "Insights i {highlighted}",
+    "highlighted": "Aktualności",
+    "description": "Przemyślenia na temat rozwoju oprogramowania, trendów technologicznych i budowania udanych produktów.",
+    "pageTitle": "Blog",
+    "pageDescription": "Insights, tutoriale i aktualności od zespołu Actaer. Dowiedz się o rozwoju oprogramowania, konsultingu IT i trendach technologicznych.",
+    "readMore": "Czytaj Więcej",
+    "noPostsTitle": "Wkrótce",
+    "noPostsDescription": "Brak wpisów na blogu. Wróć wkrótce!",
+    "backToBlog": "Powrót do Bloga",
+    "thanksForReading": "Dziękujemy za lekturę! Masz pytania lub chcesz omówić ten temat?",
+    "getInTouch": "Skontaktuj się"
+  },
+  "notFound": {
+    "title": "Nie Znaleziono Strony",
+    "description": "Przepraszamy, nie mogliśmy znaleźć strony, której szukasz. Mogła zostać przeniesiona lub nie istnieje.",
+    "backToHome": "Powrót do Strony Głównej",
+    "contactSupport": "Skontaktuj się ze Wsparciem",
+    "helpfulLinks": "Oto kilka pomocnych linków:",
+    "ourServices": "Nasze Usługi",
+    "aboutUs": "O Nas"
+  },
+  "common": {
+    "learnMore": "Dowiedz się Więcej",
+    "readMore": "Czytaj Więcej",
+    "getStarted": "Rozpocznij",
+    "contactUs": "Skontaktuj się",
+    "viewAll": "Zobacz Wszystkie"
+  },
+  "privacyPage": {
+    "pageTitle": "Polityka Prywatności",
+    "pageDescription": "Dowiedz się, jak Actaer zbiera, wykorzystuje i chroni Twoje dane osobowe.",
+    "badge": "Prawne",
+    "title": "Polityka Prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: {date}",
+    "intro": "W Actaer poważnie traktujemy Twoją prywatność. Niniejsza Polityka Prywatności wyjaśnia, jak zbieramy, wykorzystujemy, ujawniamy i chronimy Twoje informacje podczas odwiedzania naszej strony lub korzystania z naszych usług.",
+    "sections": {
+      "collect": {
+        "title": "Informacje, które Zbieramy",
+        "description": "Możemy zbierać informacje o Tobie na różne sposoby, w tym:",
+        "items": {
+          "contact": "Dane kontaktowe (imię, email, numer telefonu) gdy wypełniasz formularze",
+          "usage": "Dane o korzystaniu ze strony dotyczące sposobu interakcji z naszą witryną",
+          "device": "Informacje o urządzeniu takie jak typ przeglądarki, system operacyjny i adres IP",
+          "cookies": "Dane z plików cookie i podobnych technologii śledzenia"
+        }
+      },
+      "use": {
+        "title": "Jak Wykorzystujemy Twoje Informacje",
+        "description": "Wykorzystujemy zebrane informacje do różnych celów:",
+        "items": {
+          "services": "Aby świadczyć i utrzymywać nasze usługi",
+          "communication": "Aby komunikować się z Tobą w sprawach zapytań i aktualizacji",
+          "improvement": "Aby ulepszać naszą stronę i usługi",
+          "legal": "Aby wypełniać zobowiązania prawne"
+        }
+      },
+      "sharing": {
+        "title": "Udostępnianie Danych",
+        "description": "Nie sprzedajemy Twoich danych osobowych. Możemy udostępniać informacje zaufanym dostawcom usług, którzy pomagają nam w prowadzeniu naszej strony i działalności, pod warunkiem, że zgodzą się zachować te informacje w poufności."
+      },
+      "rights": {
+        "title": "Twoje Prawa",
+        "description": "W zależności od Twojej lokalizacji, możesz mieć określone prawa dotyczące Twoich danych osobowych:",
+        "items": {
+          "access": "Prawo dostępu do swoich danych osobowych",
+          "correction": "Prawo do poprawienia niedokładnych danych",
+          "deletion": "Prawo do żądania usunięcia swoich danych",
+          "objection": "Prawo do sprzeciwu wobec przetwarzania danych",
+          "portability": "Prawo do przenoszenia danych"
+        }
+      },
+      "contact": {
+        "title": "Kontakt",
+        "description": "Jeśli masz pytania dotyczące niniejszej Polityki Prywatności lub naszych praktyk dotyczących danych, skontaktuj się z nami pod adresem"
+      }
+    }
+  },
+  "cookiesPage": {
+    "pageTitle": "Polityka Cookies",
+    "pageDescription": "Dowiedz się o plikach cookie, których używamy i jak zarządzać swoimi preferencjami.",
+    "badge": "Prawne",
+    "title": "Polityka Cookies",
+    "lastUpdated": "Ostatnia aktualizacja: {date}",
+    "intro": "Niniejsza Polityka Cookies wyjaśnia, jak Actaer używa plików cookie i podobnych technologii śledzenia podczas odwiedzania naszej strony. Korzystając z naszej strony, wyrażasz zgodę na używanie plików cookie zgodnie z tą polityką.",
+    "sections": {
+      "whatAreCookies": {
+        "title": "Czym Są Pliki Cookie?",
+        "description": "Pliki cookie to małe pliki tekstowe przechowywane na Twoim urządzeniu podczas odwiedzania strony internetowej. Pomagają stronom zapamiętywać Twoje preferencje i zrozumieć, jak korzystasz ze strony."
+      },
+      "types": {
+        "title": "Rodzaje Używanych Plików Cookie",
+        "description": "Używamy różnych typów plików cookie do różnych celów:",
+        "essential": {
+          "title": "Niezbędne Pliki Cookie",
+          "description": "Te pliki cookie są niezbędne do prawidłowego działania strony. Umożliwiają podstawowe funkcje jak nawigacja po stronie i dostęp do bezpiecznych obszarów."
+        },
+        "functional": {
+          "title": "Funkcjonalne Pliki Cookie",
+          "description": "Te pliki cookie zapamiętują Twoje preferencje i wybory, aby zapewnić bardziej spersonalizowane doświadczenie."
+        },
+        "analytics": {
+          "title": "Analityczne Pliki Cookie",
+          "description": "Te pliki cookie pomagają nam zrozumieć, jak odwiedzający wchodzą w interakcję z naszą stroną, zbierając anonimowe informacje."
+        },
+        "marketing": {
+          "title": "Marketingowe Pliki Cookie",
+          "description": "Te pliki cookie śledzą Twoje nawyki przeglądania, aby dostarczać reklamy bardziej odpowiednie dla Ciebie i Twoich zainteresowań."
+        }
+      },
+      "managing": {
+        "title": "Zarządzanie Preferencjami Plików Cookie",
+        "description": "Możesz zarządzać swoimi preferencjami dotyczącymi plików cookie w dowolnym momencie, klikając link \"Ustawienia Cookies\" w stopce naszej strony.",
+        "browserSettings": "Możesz również kontrolować pliki cookie poprzez ustawienia przeglądarki. Pamiętaj, że wyłączenie niektórych plików cookie może wpłynąć na funkcjonalność naszej strony."
+      },
+      "thirdParty": {
+        "title": "Pliki Cookie Podmiotów Trzecich",
+        "description": "Korzystamy z następujących usług podmiotów trzecich, które mogą ustawiać pliki cookie:",
+        "vercel": "Analityka webowa do zrozumienia wydajności strony",
+        "clarity": "Nagrania sesji i mapy cieplne do poprawy doświadczenia użytkownika"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "description": "Jeśli masz pytania dotyczące naszego używania plików cookie, skontaktuj się z nami pod adresem"
+      }
+    }
+  },
+  "vantumErpPage": {
+    "pageTitle": "Vantum ERP - ERP Dystrybucji, Nowa Wizja",
+    "pageDescription": "Nowoczesny ERP dystrybucji dla hurtowni, dystrybutorów i sieci handlowych. Zarządzanie zapasami, zamówienia sprzedaży, zakupy i inteligentne uzupełnianie zapasów napędzane AI.",
+    "badge": "Produkt Enterprise",
+    "heroTitle": "Vantum ERP",
+    "heroSubtitle": "ERP Dystrybucji, Nowa Wizja",
+    "heroDescription": "ERP bez legacy bagażu. Zbudowany dla nowoczesnych hurtowni, dystrybutorów, sieci handlowych i dostawców 3PL.",
+    "visitVantum": "Odwiedź Vantum ERP",
+    "requestDemo": "Zamów Demo",
+    "metrics": {
+      "fasterImplementation": "Szybsza Implementacja",
+      "apiCoverage": "Pokrycie API",
+      "hiddenFees": "Ukryte Opłaty",
+      "usersIncluded": "Użytkownicy Wliczeni"
+    },
+    "modules": {
+      "title": "Cztery Potężne Moduły",
+      "description": "Wszystko czego potrzebujesz do zarządzania biznesem dystrybucyjnym, na jednej zintegrowanej platformie.",
+      "inventory": {
+        "title": "Zarządzanie Zapasami",
+        "description": "Widoczność stanów magazynowych w czasie rzeczywistym w nieograniczonej liczbie magazynów ze śledzeniem partii, numerów seryjnych i lokalizacji.",
+        "features": {
+          "multiWarehouse": "Wsparcie wielu magazynów",
+          "lotTracking": "Śledzenie partii i numerów seryjnych",
+          "binLocation": "Zarządzanie lokalizacjami",
+          "realTimeStock": "Stany magazynowe w czasie rzeczywistym",
+          "adjustments": "Korekty zapasów"
+        }
+      },
+      "sales": {
+        "title": "Zamówienia Sprzedaży",
+        "description": "Kompletny workflow od oferty do płatności z weryfikacją dostępności w czasie rzeczywistym i automatyczną rezerwacją zapasów.",
+        "features": {
+          "quoteManagement": "Zarządzanie ofertami",
+          "orderProcessing": "Przetwarzanie zamówień",
+          "realTimeAvailability": "Dostępność w czasie rzeczywistym",
+          "autoReservations": "Automatyczne rezerwacje",
+          "shippingIntegration": "Integracja wysyłki"
+        }
+      },
+      "purchasing": {
+        "title": "Zakupy",
+        "description": "Zoptymalizowane zarządzanie dostawcami z automatyzacją zamówień zakupu, śledzeniem czasów realizacji i analizą kosztów.",
+        "features": {
+          "vendorManagement": "Zarządzanie dostawcami",
+          "purchaseOrders": "Zamówienia zakupu",
+          "leadTimeTracking": "Śledzenie czasów realizacji",
+          "costAnalysis": "Analiza kosztów",
+          "receivingWorkflow": "Workflow przyjęcia towarów"
+        }
+      },
+      "replenishment": {
+        "title": "Inteligentne Uzupełnianie",
+        "description": "Obliczanie punktów ponownego zamawiania wspomagane AI z automatycznym generowaniem zamówień zakupu na podstawie szybkości sprzedaży.",
+        "features": {
+          "aiForecasting": "Prognozowanie popytu AI",
+          "reorderOptimization": "Optymalizacja punktu ponownego zamawiania",
+          "autoPoGeneration": "Automatyczne generowanie zamówień",
+          "seasonalAdjustments": "Korekty sezonowe",
+          "safetyStock": "Obliczanie zapasu bezpieczeństwa"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Legacy ERP vs Vantum",
+      "description": "Zobacz dlaczego nowoczesne firmy wybierają Vantum zamiast tradycyjnych systemów ERP.",
+      "feature": "Funkcja",
+      "legacyErp": "Legacy ERP",
+      "vantumErp": "Vantum ERP",
+      "implementationTime": "Czas Implementacji",
+      "legacyImplementation": "6-18 miesięcy",
+      "vantumImplementation": "Tygodnie, nie miesiące",
+      "licensingModel": "Model Licencjonowania",
+      "legacyLicensing": "Opłaty per użytkownik",
+      "vantumLicensing": "Nieograniczona liczba użytkowników",
+      "customization": "Customizacja",
+      "legacyCustomization": "Wymagani konsultanci",
+      "vantumCustomization": "Konfiguracja self-service",
+      "userExperience": "Doświadczenie Użytkownika",
+      "legacyUx": "UX sprzed dekady",
+      "vantumUx": "Nowoczesny interfejs",
+      "architecture": "Architektura",
+      "legacyArchitecture": "Monolityczna",
+      "vantumArchitecture": "Modularna, cloud-native",
+      "updates": "Aktualizacje",
+      "legacyUpdates": "Roczne wydania",
+      "vantumUpdates": "Ciągłe wdrażanie"
+    },
+    "techStack": {
+      "title": "Architektura Klasy Enterprise",
+      "description": "Zbudowany na nowoczesnych, sprawdzonych technologiach dla niezawodności, wydajności i bezpieczeństwa.",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Baza Danych",
+      "events": "Zdarzenia",
+      "caching": "Caching",
+      "integration": "Integracja",
+      "features": {
+        "subSecond": {
+          "title": "Odpowiedź Poniżej Sekundy",
+          "description": "Zoptymalizowane zapytania i caching dla błyskawicznej wydajności."
+        },
+        "security": {
+          "title": "Bezpieczeństwo Enterprise",
+          "description": "RBAC, logowanie audytu i szyfrowanie w spoczynku i podczas transmisji."
+        },
+        "api": {
+          "title": "100% Pokrycie API",
+          "description": "Pełny dostęp do REST API dla bezproblemowych integracji."
+        }
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Najczęściej Zadawane Pytania",
+      "description": "Wszystko co musisz wiedzieć o Vantum ERP",
+      "q1": {
+        "question": "Czym jest Vantum ERP?",
+        "answer": "Vantum ERP to nowoczesny system ERP dystrybucji zaprojektowany specjalnie dla hurtowni, dystrybutorów, sieci handlowych i dostawców 3PL. Oferuje inteligentne uzupełnianie zapasów napędzane AI, analizy w czasie rzeczywistym i 100% pokrycie API — wszystko bez złożoności systemów legacy ERP."
+      },
+      "q2": {
+        "question": "Czym różni się Vantum ERP od tradycyjnych systemów ERP?",
+        "answer": "W przeciwieństwie do legacy ERP, które wymagają rozbudowanej customizacji i długich cykli wdrożeniowych, Vantum ERP jest zbudowany z nowoczesną architekturą cloud-native. Oferuje 10x szybszą implementację, nieograniczoną liczbę użytkowników bez licencji per użytkownik, zero ukrytych opłat i wbudowane funkcje AI od początku."
+      },
+      "q3": {
+        "question": "Jakie branże obsługuje Vantum ERP?",
+        "answer": "Vantum ERP jest zoptymalizowany dla firm skupionych na dystrybucji, w tym hurtowni, sieci handlowych z wieloma lokalizacjami, dostawców 3PL i każdej firmy zarządzającej złożonymi zapasami w wielu magazynach."
+      },
+      "q4": {
+        "question": "Czy Vantum ERP zawiera funkcje AI?",
+        "answer": "Tak! Vantum ERP zawiera inteligentne uzupełnianie zapasów napędzane AI, które analizuje wzorce sprzedaży, sezonowość i czasy realizacji, aby automatycznie generować optymalne sugestie zakupowe. Pomaga to zmniejszyć braki magazynowe przy jednoczesnej minimalizacji nadmiernych zapasów."
+      },
+      "q5": {
+        "question": "Jak mogę rozpocząć z Vantum ERP?",
+        "answer": "Obecnie przyjmujemy firmy do naszego programu pilotażowego 2026. Odwiedź vantumerp.com po więcej informacji lub skontaktuj się z naszym zespołem sprzedaży, aby umówić demo."
+      }
+    },
+    "cta": {
+      "badge": "Ograniczony Program Pilotażowy",
+      "title": "Dołącz do Programu Pilotażowego 2026",
+      "description": "Przyjmujemy ograniczoną liczbę firm do naszego programu pilotażowego. Uzyskaj wczesny dostęp i kształtuj przyszłość ERP dystrybucji.",
+      "learnMore": "Dowiedz się więcej na vantumerp.com",
+      "contactSales": "Skontaktuj się z Działem Sprzedaży"
+    }
+  },
+  "aboutPage": {
+    "pageTitle": "O Actaer",
+    "pageDescription": "Poznaj Actaer - kompleksową firmę konsultingową, która przekształca przedsiębiorstwa w zwinnych, innowatorów napędzanych oprogramowaniem.",
+    "badge": "O Actaer",
+    "heroTitle": "Inżynieria dla",
+    "heroHighlighted": "Cyfrowego Sukcesu",
+    "heroDescription": "Jesteśmy kompleksową firmą konsultingową, która przekształca przedsiębiorstwa w zwinnych, innowatorów napędzanych oprogramowaniem. Technologia jest kluczem do uwolnienia Twojego potencjału.",
+    "story": {
+      "title": "Nasza Historia",
+      "paragraph1": "Actaer został założony z prostym przekonaniem: technologia powinna być pomocnikiem, a nie przeszkodą. Widzieliśmy zbyt wiele firm zmagających się z przestarzałymi systemami, nieudanymi projektami oprogramowania i technologią, która nie służyła ich potrzebom.",
+      "paragraph2": "Postanowiliśmy to zmienić. Nasz zespół założycielski łączy doświadczenie z oprogramowania enterprise, startupów i konsultingu. Widzieliśmy, co działa, co nie i dlaczego większość inicjatyw technologicznych nie spełnia swoich obietnic.",
+      "paragraph3": "Jako nowa firma, wnosimy świeże perspektywy i nowoczesne podejścia — nieobciążeni legacy myśleniem. Współpracujemy z firmami każdej wielkości, aby budować oprogramowanie, które naprawdę działa, skaluje się z Twoimi potrzebami i dostarcza rzeczywistą wartość.",
+      "paragraph4": "Nasz pierwszy produkt, Vantum ERP, uosabia wszystko, w co wierzymy jeśli chodzi o oprogramowanie: jest nowoczesny, przyjazny użytkownikowi i zbudowany dla sposobu, w jaki firmy naprawdę działają dzisiaj.",
+      "tagline": "Doskonałość Inżynieryjna"
+    },
+    "values": {
+      "title": "Nasze Wartości",
+      "description": "Zasady, które kierują wszystkim, co robimy.",
+      "resultsDriven": {
+        "title": "Zorientowani na Rezultaty",
+        "description": "Mierzymy sukces wpływem, który tworzymy dla naszych klientów, a nie przepracowanymi godzinami czy napisanymi liniami kodu."
+      },
+      "clientCentric": {
+        "title": "Zorientowani na Klienta",
+        "description": "Twój sukces jest naszym sukcesem. Budujemy długoterminowe partnerstwa oparte na zaufaniu, przejrzystości i wspólnym rozwoju."
+      },
+      "innovationFocused": {
+        "title": "Skoncentrowani na Innowacjach",
+        "description": "Pozostajemy na czele technologii, dostarczając najnowocześniejsze rozwiązania dla Twoich najtrudniejszych problemów."
+      },
+      "collaborative": {
+        "title": "Współpracujący",
+        "description": "Pracujemy jako przedłużenie Twojego zespołu, wspierając otwartą komunikację i wspólną odpowiedzialność za rezultaty."
+      }
+    },
+    "mission": {
+      "title": "Nasza Misja",
+      "description": "Wspierać firmy technologią, która naprawdę działa. Jesteśmy na misji, aby wyeliminować przepaść między tym, co technologia obiecuje, a tym, co dostarcza.",
+      "quote": "Twój Sukces, Zaprojektowany przez ACTAER"
+    },
+    "whatWeDo": {
+      "title": "Co Robimy",
+      "description": "Kompleksowe usługi technologiczne dla Twojego biznesu.",
+      "itConsulting": {
+        "title": "Konsulting IT",
+        "description": "Strategiczne doradztwo dla transformacji cyfrowej, due diligence techniczne i planowanie technologiczne."
+      },
+      "softwareDevelopment": {
+        "title": "Rozwój Oprogramowania",
+        "description": "Rozwiązania oprogramowania na zamówienie budowane z nowoczesnymi technologiami dla Twoich unikalnych wyzwań."
+      },
+      "productDevelopment": {
+        "title": "Rozwój Produktu",
+        "description": "Kompleksowe tworzenie produktu od koncepcji do wdrożenia, z ciągłym wsparciem i iteracją."
+      },
+      "learnMore": "Dowiedz się więcej"
+    },
+    "cta": {
+      "title": "Gotowy do Współpracy?",
+      "description": "Porozmawiajmy o tym, jak możemy pomóc przekształcić Twój biznes technologią, która dostarcza.",
+      "getInTouch": "Skontaktuj się",
+      "exploreServices": "Poznaj Usługi"
+    }
+  }
+}

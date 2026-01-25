@@ -28,44 +28,18 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "about" });
+  const t = await getTranslations({ locale, namespace: "aboutPage" });
 
   return constructMetadata({
-    title: t("badge"),
-    description:
-      "Learn about Actaer - a full-service tech consulting firm transforming businesses into agile, software-powered innovators.",
+    title: t("pageTitle"),
+    description: t("pageDescription"),
     canonical: `${siteConfig.url}/${locale}/about`,
     locale,
     path: "/about",
   });
 }
 
-const values = [
-  {
-    icon: Target,
-    title: "Results-Driven",
-    description:
-      "We measure success by the impact we create for our clients, not by hours logged or lines of code written.",
-  },
-  {
-    icon: Heart,
-    title: "Client-Centric",
-    description:
-      "Your success is our success. We build long-term partnerships based on trust, transparency, and mutual growth.",
-  },
-  {
-    icon: Zap,
-    title: "Innovation-Focused",
-    description:
-      "We stay at the forefront of technology, bringing cutting-edge solutions to solve your most challenging problems.",
-  },
-  {
-    icon: Users,
-    title: "Collaborative",
-    description:
-      "We work as an extension of your team, fostering open communication and shared ownership of outcomes.",
-  },
-];
+const valueIcons = [Target, Heart, Zap, Users];
 
 // JSON-LD schemas for AI discoverability
 const breadcrumbJsonLd = generateBreadcrumbJsonLd([
@@ -108,6 +82,49 @@ export default async function AboutPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const t = await getTranslations({ locale, namespace: "aboutPage" });
+
+  const values = [
+    {
+      icon: valueIcons[0],
+      title: t("values.resultsDriven.title"),
+      description: t("values.resultsDriven.description"),
+    },
+    {
+      icon: valueIcons[1],
+      title: t("values.clientCentric.title"),
+      description: t("values.clientCentric.description"),
+    },
+    {
+      icon: valueIcons[2],
+      title: t("values.innovationFocused.title"),
+      description: t("values.innovationFocused.description"),
+    },
+    {
+      icon: valueIcons[3],
+      title: t("values.collaborative.title"),
+      description: t("values.collaborative.description"),
+    },
+  ];
+
+  const services = [
+    {
+      title: t("whatWeDo.itConsulting.title"),
+      description: t("whatWeDo.itConsulting.description"),
+      href: `/${locale}/services/it-consulting`,
+    },
+    {
+      title: t("whatWeDo.softwareDevelopment.title"),
+      description: t("whatWeDo.softwareDevelopment.description"),
+      href: `/${locale}/services/software-development`,
+    },
+    {
+      title: t("whatWeDo.productDevelopment.title"),
+      description: t("whatWeDo.productDevelopment.description"),
+      href: `/${locale}/services/product-development`,
+    },
+  ];
+
   return (
     <>
       <script
@@ -135,18 +152,16 @@ export default async function AboutPage({ params }: PageProps) {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl">
               <Badge variant="outline" className="mb-4">
-                About Actaer
+                {t("badge")}
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">
-                Engineering{" "}
+                {t("heroTitle")}{" "}
                 <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-                  Digital Success
+                  {t("heroHighlighted")}
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
-                We&apos;re a full-service tech consulting firm transforming
-                businesses into agile, software-powered innovators. Technology
-                is the key to unlocking your potential.
+                {t("heroDescription")}
               </p>
             </div>
           </div>
@@ -158,33 +173,13 @@ export default async function AboutPage({ params }: PageProps) {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-                  Our Story
+                  {t("story.title")}
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
-                  <p>
-                    Actaer was founded with a simple belief: technology should
-                    be an enabler, not an obstacle. We saw too many businesses
-                    struggling with outdated systems, failed software projects,
-                    and technology that didn&apos;t serve their needs.
-                  </p>
-                  <p>
-                    We set out to change that. Our founding team brings together
-                    experience across enterprise software, startups, and
-                    consulting. We&apos;ve seen what works, what doesn&apos;t,
-                    and why most technology initiatives fail to deliver on their
-                    promise.
-                  </p>
-                  <p>
-                    As a new firm, we bring fresh perspectives and modern
-                    approaches—unencumbered by legacy thinking. We partner with
-                    businesses of all sizes to build software that actually
-                    works, scales with your needs, and delivers real value.
-                  </p>
-                  <p>
-                    Our first product, Vantum ERP, embodies everything we
-                    believe about software: it&apos;s modern, user-friendly, and
-                    built for how businesses actually operate today.
-                  </p>
+                  <p>{t("story.paragraph1")}</p>
+                  <p>{t("story.paragraph2")}</p>
+                  <p>{t("story.paragraph3")}</p>
+                  <p>{t("story.paragraph4")}</p>
                 </div>
               </div>
 
@@ -197,7 +192,7 @@ export default async function AboutPage({ params }: PageProps) {
                       </div>
                       <p className="text-xl font-semibold">Actaer</p>
                       <p className="text-muted-foreground">
-                        Engineering Excellence
+                        {t("story.tagline")}
                       </p>
                     </div>
                   </div>
@@ -214,10 +209,10 @@ export default async function AboutPage({ params }: PageProps) {
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-                Our Values
+                {t("values.title")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                The principles that guide everything we do.
+                {t("values.description")}
               </p>
             </div>
 
@@ -246,16 +241,14 @@ export default async function AboutPage({ params }: PageProps) {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-                Our Mission
+                {t("mission.title")}
               </h2>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                To empower businesses with technology that actually works.
-                We&apos;re on a mission to eliminate the gap between what
-                technology promises and what it delivers.
+                {t("mission.description")}
               </p>
               <div className="inline-block p-8 rounded-2xl bg-background border">
                 <blockquote className="text-lg italic">
-                  &ldquo;Your Success, Engineered by ACTAER&rdquo;
+                  &ldquo;{t("mission.quote")}&rdquo;
                 </blockquote>
               </div>
             </div>
@@ -267,34 +260,15 @@ export default async function AboutPage({ params }: PageProps) {
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-                What We Do
+                {t("whatWeDo.title")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Comprehensive technology services to power your business.
+                {t("whatWeDo.description")}
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "IT Consulting",
-                  description:
-                    "Strategic guidance for digital transformation, technical due diligence, and technology planning.",
-                  href: "/services/it-consulting",
-                },
-                {
-                  title: "Software Development",
-                  description:
-                    "Custom software solutions built with modern technologies to solve your unique challenges.",
-                  href: "/services/software-development",
-                },
-                {
-                  title: "Product Development",
-                  description:
-                    "End-to-end product creation from concept to launch, with ongoing support and iteration.",
-                  href: "/services/product-development",
-                },
-              ].map((service, index) => (
+              {services.map((service, index) => (
                 <Card
                   key={index}
                   className="border-border/50 hover:border-primary/30 transition-colors"
@@ -308,8 +282,8 @@ export default async function AboutPage({ params }: PageProps) {
                   <CardContent>
                     <Button asChild variant="ghost" className="p-0 group">
                       <Link href={service.href}>
-                        Learn More
-                        <span className="sr-only"> about {service.title}</span>
+                        {t("whatWeDo.learnMore")}
+                        <span className="sr-only"> {service.title}</span>
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </Button>
@@ -325,21 +299,22 @@ export default async function AboutPage({ params }: PageProps) {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-                Ready to Work Together?
+                {t("cta.title")}
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Let&apos;s discuss how we can help transform your business with
-                technology that delivers.
+                {t("cta.description")}
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg">
-                  <Link href="/contact">
-                    Get in Touch
+                  <Link href={`/${locale}/contact`}>
+                    {t("cta.getInTouch")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/services">Explore Services</Link>
+                  <Link href={`/${locale}/services`}>
+                    {t("cta.exploreServices")}
+                  </Link>
                 </Button>
               </div>
             </div>

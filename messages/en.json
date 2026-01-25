@@ -579,5 +579,214 @@
         "description": "If you have questions about our use of cookies, please contact us at"
       }
     }
+  },
+  "vantumErpPage": {
+    "pageTitle": "Vantum ERP - Distribution ERP, Reimagined",
+    "pageDescription": "Modern distribution ERP for wholesalers, distributors, and retail chains. Inventory management, sales orders, purchasing, and AI-powered replenishment.",
+    "badge": "Enterprise Product",
+    "heroTitle": "Vantum ERP",
+    "heroSubtitle": "Distribution ERP, Reimagined",
+    "heroDescription": "ERP without the legacy baggage. Built for modern wholesalers, distributors, retail chains, and 3PL providers.",
+    "visitVantum": "Visit Vantum ERP",
+    "requestDemo": "Request Demo",
+    "metrics": {
+      "fasterImplementation": "Faster Implementation",
+      "apiCoverage": "API Coverage",
+      "hiddenFees": "Hidden Fees",
+      "usersIncluded": "Users Included"
+    },
+    "modules": {
+      "title": "Four Powerful Modules",
+      "description": "Everything you need to manage your distribution business, in one integrated platform.",
+      "inventory": {
+        "title": "Inventory Management",
+        "description": "Real-time stock visibility across unlimited warehouses with lot tracking, serial numbers, and bin locations.",
+        "features": {
+          "multiWarehouse": "Multi-warehouse support",
+          "lotTracking": "Lot and serial tracking",
+          "binLocation": "Bin location management",
+          "realTimeStock": "Real-time stock levels",
+          "adjustments": "Inventory adjustments"
+        }
+      },
+      "sales": {
+        "title": "Sales Orders",
+        "description": "Complete quote-to-cash workflow with real-time availability checks and automatic inventory reservation.",
+        "features": {
+          "quoteManagement": "Quote management",
+          "orderProcessing": "Order processing",
+          "realTimeAvailability": "Real-time availability",
+          "autoReservations": "Automatic reservations",
+          "shippingIntegration": "Shipping integration"
+        }
+      },
+      "purchasing": {
+        "title": "Purchasing",
+        "description": "Streamlined vendor management with PO automation, lead time tracking, and cost analysis.",
+        "features": {
+          "vendorManagement": "Vendor management",
+          "purchaseOrders": "Purchase orders",
+          "leadTimeTracking": "Lead time tracking",
+          "costAnalysis": "Cost analysis",
+          "receivingWorkflow": "Receiving workflow"
+        }
+      },
+      "replenishment": {
+        "title": "Smart Replenishment",
+        "description": "AI-assisted reorder point calculations with automatic PO generation based on sales velocity.",
+        "features": {
+          "aiForecasting": "AI demand forecasting",
+          "reorderOptimization": "Reorder point optimization",
+          "autoPoGeneration": "Auto PO generation",
+          "seasonalAdjustments": "Seasonal adjustments",
+          "safetyStock": "Safety stock calculations"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Legacy ERP vs Vantum",
+      "description": "See why modern businesses are choosing Vantum over traditional ERP systems.",
+      "feature": "Feature",
+      "legacyErp": "Legacy ERP",
+      "vantumErp": "Vantum ERP",
+      "implementationTime": "Implementation Time",
+      "legacyImplementation": "6-18 months",
+      "vantumImplementation": "Weeks, not months",
+      "licensingModel": "Licensing Model",
+      "legacyLicensing": "Per-seat fees",
+      "vantumLicensing": "Unlimited users",
+      "customization": "Customization",
+      "legacyCustomization": "Consultants required",
+      "vantumCustomization": "Self-service config",
+      "userExperience": "User Experience",
+      "legacyUx": "Decade-old UX",
+      "vantumUx": "Modern interface",
+      "architecture": "Architecture",
+      "legacyArchitecture": "Monolithic",
+      "vantumArchitecture": "Modular, cloud-native",
+      "updates": "Updates",
+      "legacyUpdates": "Annual releases",
+      "vantumUpdates": "Continuous deployment"
+    },
+    "techStack": {
+      "title": "Enterprise-Grade Architecture",
+      "description": "Built on modern, proven technologies for reliability, performance, and security.",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Database",
+      "events": "Events",
+      "caching": "Caching",
+      "integration": "Integration",
+      "features": {
+        "subSecond": {
+          "title": "Sub-second Response",
+          "description": "Optimized queries and caching for blazing-fast performance."
+        },
+        "security": {
+          "title": "Enterprise Security",
+          "description": "RBAC, audit logging, and encryption at rest and in transit."
+        },
+        "api": {
+          "title": "100% API Coverage",
+          "description": "Full REST API access for seamless integrations."
+        }
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently Asked Questions",
+      "description": "Everything you need to know about Vantum ERP",
+      "q1": {
+        "question": "What is Vantum ERP?",
+        "answer": "Vantum ERP is a modern distribution ERP system designed specifically for wholesalers, distributors, retail chains, and 3PL providers. It features AI-powered inventory replenishment, real-time analytics, and 100% API coverage—all without the complexity of legacy ERP systems."
+      },
+      "q2": {
+        "question": "How is Vantum ERP different from traditional ERP systems?",
+        "answer": "Unlike legacy ERPs that require extensive customization and long implementation cycles, Vantum ERP is built with modern cloud-native architecture. It offers 10x faster implementation, unlimited users with no per-seat licensing, zero hidden fees, and AI-native features out of the box."
+      },
+      "q3": {
+        "question": "What industries does Vantum ERP serve?",
+        "answer": "Vantum ERP is optimized for distribution-focused businesses including wholesale distributors, retail chains with multiple locations, 3PL (third-party logistics) providers, and any business managing complex inventory across multiple warehouses."
+      },
+      "q4": {
+        "question": "Does Vantum ERP include AI features?",
+        "answer": "Yes! Vantum ERP includes AI-powered inventory replenishment that analyzes sales patterns, seasonality, and lead times to automatically generate optimal purchase suggestions. This helps reduce stockouts while minimizing excess inventory."
+      },
+      "q5": {
+        "question": "How can I get started with Vantum ERP?",
+        "answer": "We're currently accepting enterprises for our 2026 pilot program. Visit vantumerp.com for more information or contact our sales team to schedule a demo."
+      }
+    },
+    "cta": {
+      "badge": "Limited Pilot Program",
+      "title": "Join the 2026 Pilot Program",
+      "description": "We're accepting a limited number of enterprises for our pilot program. Get early access and shape the future of distribution ERP.",
+      "learnMore": "Learn More at vantumerp.com",
+      "contactSales": "Contact Sales"
+    }
+  },
+  "aboutPage": {
+    "pageTitle": "About Actaer",
+    "pageDescription": "Learn about Actaer - a full-service tech consulting firm transforming businesses into agile, software-powered innovators.",
+    "badge": "About Actaer",
+    "heroTitle": "Engineering",
+    "heroHighlighted": "Digital Success",
+    "heroDescription": "We're a full-service tech consulting firm transforming businesses into agile, software-powered innovators. Technology is the key to unlocking your potential.",
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Actaer was founded with a simple belief: technology should be an enabler, not an obstacle. We saw too many businesses struggling with outdated systems, failed software projects, and technology that didn't serve their needs.",
+      "paragraph2": "We set out to change that. Our founding team brings together experience across enterprise software, startups, and consulting. We've seen what works, what doesn't, and why most technology initiatives fail to deliver on their promise.",
+      "paragraph3": "As a new firm, we bring fresh perspectives and modern approaches—unencumbered by legacy thinking. We partner with businesses of all sizes to build software that actually works, scales with your needs, and delivers real value.",
+      "paragraph4": "Our first product, Vantum ERP, embodies everything we believe about software: it's modern, user-friendly, and built for how businesses actually operate today.",
+      "tagline": "Engineering Excellence"
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "The principles that guide everything we do.",
+      "resultsDriven": {
+        "title": "Results-Driven",
+        "description": "We measure success by the impact we create for our clients, not by hours logged or lines of code written."
+      },
+      "clientCentric": {
+        "title": "Client-Centric",
+        "description": "Your success is our success. We build long-term partnerships based on trust, transparency, and mutual growth."
+      },
+      "innovationFocused": {
+        "title": "Innovation-Focused",
+        "description": "We stay at the forefront of technology, bringing cutting-edge solutions to solve your most challenging problems."
+      },
+      "collaborative": {
+        "title": "Collaborative",
+        "description": "We work as an extension of your team, fostering open communication and shared ownership of outcomes."
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower businesses with technology that actually works. We're on a mission to eliminate the gap between what technology promises and what it delivers.",
+      "quote": "Your Success, Engineered by ACTAER"
+    },
+    "whatWeDo": {
+      "title": "What We Do",
+      "description": "Comprehensive technology services to power your business.",
+      "itConsulting": {
+        "title": "IT Consulting",
+        "description": "Strategic guidance for digital transformation, technical due diligence, and technology planning."
+      },
+      "softwareDevelopment": {
+        "title": "Software Development",
+        "description": "Custom software solutions built with modern technologies to solve your unique challenges."
+      },
+      "productDevelopment": {
+        "title": "Product Development",
+        "description": "End-to-end product creation from concept to launch, with ongoing support and iteration."
+      },
+      "learnMore": "Learn More"
+    },
+    "cta": {
+      "title": "Ready to Work Together?",
+      "description": "Let's discuss how we can help transform your business with technology that delivers.",
+      "getInTouch": "Get in Touch",
+      "exploreServices": "Explore Services"
+    }
   }
 }

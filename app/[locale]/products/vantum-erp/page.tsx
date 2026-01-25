@@ -33,7 +33,7 @@ import {
   generateFaqJsonLd,
 } from "@/lib/seo";
 import { type Locale } from "@/i18n/config";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;
@@ -43,113 +43,16 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "vantumErpPage" });
 
   return constructMetadata({
-    title: "Vantum ERP - Distribution ERP, Reimagined",
-    description:
-      "Modern distribution ERP for wholesalers, distributors, and retail chains. Inventory management, sales orders, purchasing, and AI-powered replenishment.",
+    title: t("pageTitle"),
+    description: t("pageDescription"),
     canonical: `${siteConfig.url}/${locale}/products/vantum-erp`,
     locale,
     path: "/products/vantum-erp",
   });
 }
-
-const modules = [
-  {
-    icon: Package,
-    title: "Inventory Management",
-    description:
-      "Real-time stock visibility across unlimited warehouses with lot tracking, serial numbers, and bin locations.",
-    features: [
-      "Multi-warehouse support",
-      "Lot and serial tracking",
-      "Bin location management",
-      "Real-time stock levels",
-      "Inventory adjustments",
-    ],
-  },
-  {
-    icon: ShoppingCart,
-    title: "Sales Orders",
-    description:
-      "Complete quote-to-cash workflow with real-time availability checks and automatic inventory reservation.",
-    features: [
-      "Quote management",
-      "Order processing",
-      "Real-time availability",
-      "Automatic reservations",
-      "Shipping integration",
-    ],
-  },
-  {
-    icon: Truck,
-    title: "Purchasing",
-    description:
-      "Streamlined vendor management with PO automation, lead time tracking, and cost analysis.",
-    features: [
-      "Vendor management",
-      "Purchase orders",
-      "Lead time tracking",
-      "Cost analysis",
-      "Receiving workflow",
-    ],
-  },
-  {
-    icon: Brain,
-    title: "Smart Replenishment",
-    description:
-      "AI-assisted reorder point calculations with automatic PO generation based on sales velocity.",
-    features: [
-      "AI demand forecasting",
-      "Reorder point optimization",
-      "Auto PO generation",
-      "Seasonal adjustments",
-      "Safety stock calculations",
-    ],
-  },
-];
-
-const comparison = [
-  {
-    feature: "Implementation Time",
-    legacy: "6-18 months",
-    vantum: "Weeks, not months",
-  },
-  {
-    feature: "Licensing Model",
-    legacy: "Per-seat fees",
-    vantum: "Unlimited users",
-  },
-  {
-    feature: "Customization",
-    legacy: "Consultants required",
-    vantum: "Self-service config",
-  },
-  {
-    feature: "User Experience",
-    legacy: "Decade-old UX",
-    vantum: "Modern interface",
-  },
-  {
-    feature: "Architecture",
-    legacy: "Monolithic",
-    vantum: "Modular, cloud-native",
-  },
-  {
-    feature: "Updates",
-    legacy: "Annual releases",
-    vantum: "Continuous deployment",
-  },
-];
-
-const techStack = [
-  { name: ".NET 10", category: "Backend" },
-  { name: "React 19", category: "Frontend" },
-  { name: "PostgreSQL", category: "Database" },
-  { name: "Kafka", category: "Events" },
-  { name: "Redis", category: "Caching" },
-  { name: "REST API", category: "Integration" },
-];
 
 // JSON-LD for the product
 const productJsonLd = {
@@ -220,6 +123,122 @@ const faqJsonLd = generateFaqJsonLd([
 export default async function VantumERPPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "vantumErpPage" });
+
+  const modules = [
+    {
+      icon: Package,
+      title: t("modules.inventory.title"),
+      description: t("modules.inventory.description"),
+      features: [
+        t("modules.inventory.features.multiWarehouse"),
+        t("modules.inventory.features.lotTracking"),
+        t("modules.inventory.features.binLocation"),
+        t("modules.inventory.features.realTimeStock"),
+        t("modules.inventory.features.adjustments"),
+      ],
+    },
+    {
+      icon: ShoppingCart,
+      title: t("modules.sales.title"),
+      description: t("modules.sales.description"),
+      features: [
+        t("modules.sales.features.quoteManagement"),
+        t("modules.sales.features.orderProcessing"),
+        t("modules.sales.features.realTimeAvailability"),
+        t("modules.sales.features.autoReservations"),
+        t("modules.sales.features.shippingIntegration"),
+      ],
+    },
+    {
+      icon: Truck,
+      title: t("modules.purchasing.title"),
+      description: t("modules.purchasing.description"),
+      features: [
+        t("modules.purchasing.features.vendorManagement"),
+        t("modules.purchasing.features.purchaseOrders"),
+        t("modules.purchasing.features.leadTimeTracking"),
+        t("modules.purchasing.features.costAnalysis"),
+        t("modules.purchasing.features.receivingWorkflow"),
+      ],
+    },
+    {
+      icon: Brain,
+      title: t("modules.replenishment.title"),
+      description: t("modules.replenishment.description"),
+      features: [
+        t("modules.replenishment.features.aiForecasting"),
+        t("modules.replenishment.features.reorderOptimization"),
+        t("modules.replenishment.features.autoPoGeneration"),
+        t("modules.replenishment.features.seasonalAdjustments"),
+        t("modules.replenishment.features.safetyStock"),
+      ],
+    },
+  ];
+
+  const comparison = [
+    {
+      feature: t("comparison.implementationTime"),
+      legacy: t("comparison.legacyImplementation"),
+      vantum: t("comparison.vantumImplementation"),
+    },
+    {
+      feature: t("comparison.licensingModel"),
+      legacy: t("comparison.legacyLicensing"),
+      vantum: t("comparison.vantumLicensing"),
+    },
+    {
+      feature: t("comparison.customization"),
+      legacy: t("comparison.legacyCustomization"),
+      vantum: t("comparison.vantumCustomization"),
+    },
+    {
+      feature: t("comparison.userExperience"),
+      legacy: t("comparison.legacyUx"),
+      vantum: t("comparison.vantumUx"),
+    },
+    {
+      feature: t("comparison.architecture"),
+      legacy: t("comparison.legacyArchitecture"),
+      vantum: t("comparison.vantumArchitecture"),
+    },
+    {
+      feature: t("comparison.updates"),
+      legacy: t("comparison.legacyUpdates"),
+      vantum: t("comparison.vantumUpdates"),
+    },
+  ];
+
+  const techStack = [
+    { name: ".NET 10", category: t("techStack.backend") },
+    { name: "React 19", category: t("techStack.frontend") },
+    { name: "PostgreSQL", category: t("techStack.database") },
+    { name: "Kafka", category: t("techStack.events") },
+    { name: "Redis", category: t("techStack.caching") },
+    { name: "REST API", category: t("techStack.integration") },
+  ];
+
+  const techFeatures = [
+    {
+      title: t("techStack.features.subSecond.title"),
+      description: t("techStack.features.subSecond.description"),
+    },
+    {
+      title: t("techStack.features.security.title"),
+      description: t("techStack.features.security.description"),
+    },
+    {
+      title: t("techStack.features.api.title"),
+      description: t("techStack.features.api.description"),
+    },
+  ];
+
+  const metrics = [
+    { value: "10x", label: t("metrics.fasterImplementation") },
+    { value: "100%", label: t("metrics.apiCoverage") },
+    { value: "0", label: t("metrics.hiddenFees") },
+    { value: "∞", label: t("metrics.usersIncluded") },
+  ];
 
   return (
     <>
@@ -249,20 +268,19 @@ export default async function VantumERPPage({ params }: PageProps) {
           <div className="container relative z-10 mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto text-center">
               <Badge variant="outline" className="mb-4">
-                Enterprise Product
+                {t("badge")}
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">
                 <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-                  Vantum ERP
+                  {t("heroTitle")}
                 </span>
                 <br />
                 <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground">
-                  Distribution ERP, Reimagined
+                  {t("heroSubtitle")}
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                ERP without the legacy baggage. Built for modern wholesalers,
-                distributors, retail chains, and 3PL providers.
+                {t("heroDescription")}
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg">
@@ -271,12 +289,12 @@ export default async function VantumERPPage({ params }: PageProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Visit Vantum ERP
+                    {t("visitVantum")}
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/contact">Request Demo</Link>
+                  <Link href="/contact">{t("requestDemo")}</Link>
                 </Button>
               </div>
             </div>
@@ -287,12 +305,7 @@ export default async function VantumERPPage({ params }: PageProps) {
         <section className="py-12 bg-muted/30">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { value: "10x", label: "Faster Implementation" },
-                { value: "100%", label: "API Coverage" },
-                { value: "0", label: "Hidden Fees" },
-                { value: "∞", label: "Users Included" },
-              ].map((stat, index) => (
+              {metrics.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold font-heading text-primary mb-1">
                     {stat.value}
@@ -311,11 +324,10 @@ export default async function VantumERPPage({ params }: PageProps) {
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-                Four Powerful Modules
+                {t("modules.title")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Everything you need to manage your distribution business, in one
-                integrated platform.
+                {t("modules.description")}
               </p>
             </div>
 
@@ -360,11 +372,10 @@ export default async function VantumERPPage({ params }: PageProps) {
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-                Legacy ERP vs Vantum
+                {t("comparison.title")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                See why modern businesses are choosing Vantum over traditional
-                ERP systems.
+                {t("comparison.description")}
               </p>
             </div>
 
@@ -374,12 +385,14 @@ export default async function VantumERPPage({ params }: PageProps) {
                   <table className="w-full">
                     <thead>
                       <tr className="border-b bg-muted/50">
-                        <th className="text-left p-4 font-semibold">Feature</th>
+                        <th className="text-left p-4 font-semibold">
+                          {t("comparison.feature")}
+                        </th>
                         <th className="text-center p-4 font-semibold text-muted-foreground">
-                          Legacy ERP
+                          {t("comparison.legacyErp")}
                         </th>
                         <th className="text-center p-4 font-semibold text-primary">
-                          Vantum ERP
+                          {t("comparison.vantumErp")}
                         </th>
                       </tr>
                     </thead>
@@ -414,11 +427,10 @@ export default async function VantumERPPage({ params }: PageProps) {
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-                Enterprise-Grade Architecture
+                {t("techStack.title")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Built on modern, proven technologies for reliability,
-                performance, and security.
+                {t("techStack.description")}
               </p>
             </div>
 
@@ -437,23 +449,7 @@ export default async function VantumERPPage({ params }: PageProps) {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
-              {[
-                {
-                  title: "Sub-second Response",
-                  description:
-                    "Optimized queries and caching for blazing-fast performance.",
-                },
-                {
-                  title: "Enterprise Security",
-                  description:
-                    "RBAC, audit logging, and encryption at rest and in transit.",
-                },
-                {
-                  title: "100% API Coverage",
-                  description:
-                    "Full REST API access for seamless integrations.",
-                },
-              ].map((item, index) => (
+              {techFeatures.map((item, index) => (
                 <Card key={index} className="border-border/50 text-center">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.title}</CardTitle>
@@ -471,85 +467,35 @@ export default async function VantumERPPage({ params }: PageProps) {
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">
                 <Badge variant="outline" className="mb-4">
-                  FAQ
+                  {t("faq.badge")}
                 </Badge>
                 <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-                  Frequently Asked Questions
+                  {t("faq.title")}
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Everything you need to know about Vantum ERP
+                  {t("faq.description")}
                 </p>
               </div>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>What is Vantum ERP?</AccordionTrigger>
-                  <AccordionContent>
-                    Vantum ERP is a modern distribution ERP system designed
-                    specifically for wholesalers, distributors, retail chains,
-                    and 3PL providers. It features AI-powered inventory
-                    replenishment, real-time analytics, and 100% API
-                    coverage—all without the complexity of legacy ERP systems.
-                  </AccordionContent>
+                  <AccordionTrigger>{t("faq.q1.question")}</AccordionTrigger>
+                  <AccordionContent>{t("faq.q1.answer")}</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>
-                    How is Vantum ERP different from traditional ERP systems?
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    Unlike legacy ERPs that require extensive customization and
-                    long implementation cycles, Vantum ERP is built with modern
-                    cloud-native architecture. It offers 10x faster
-                    implementation, unlimited users with no per-seat licensing,
-                    zero hidden fees, and AI-native features out of the box.
-                  </AccordionContent>
+                  <AccordionTrigger>{t("faq.q2.question")}</AccordionTrigger>
+                  <AccordionContent>{t("faq.q2.answer")}</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>
-                    What industries does Vantum ERP serve?
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    Vantum ERP is optimized for distribution-focused businesses
-                    including wholesale distributors, retail chains with
-                    multiple locations, 3PL (third-party logistics) providers,
-                    and any business managing complex inventory across multiple
-                    warehouses.
-                  </AccordionContent>
+                  <AccordionTrigger>{t("faq.q3.question")}</AccordionTrigger>
+                  <AccordionContent>{t("faq.q3.answer")}</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                  <AccordionTrigger>
-                    Does Vantum ERP include AI features?
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    Yes! Vantum ERP includes AI-powered inventory replenishment
-                    that analyzes sales patterns, seasonality, and lead times to
-                    automatically generate optimal purchase suggestions. This
-                    helps reduce stockouts while minimizing excess inventory.
-                  </AccordionContent>
+                  <AccordionTrigger>{t("faq.q4.question")}</AccordionTrigger>
+                  <AccordionContent>{t("faq.q4.answer")}</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
-                  <AccordionTrigger>
-                    How can I get started with Vantum ERP?
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    We&apos;re currently accepting enterprises for our 2026
-                    pilot program. Visit{" "}
-                    <a
-                      href="https://vantumerp.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline"
-                    >
-                      vantumerp.com
-                    </a>{" "}
-                    for more information or{" "}
-                    <Link
-                      href="/contact"
-                      className="text-primary hover:underline"
-                    >
-                      contact our sales team
-                    </Link>{" "}
-                    to schedule a demo.
-                  </AccordionContent>
+                  <AccordionTrigger>{t("faq.q5.question")}</AccordionTrigger>
+                  <AccordionContent>{t("faq.q5.answer")}</AccordionContent>
                 </AccordionItem>
               </Accordion>
             </div>
@@ -561,15 +507,13 @@ export default async function VantumERPPage({ params }: PageProps) {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <Badge variant="outline" className="mb-4">
-                Limited Pilot Program
+                {t("cta.badge")}
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-                Join the 2026 Pilot Program
+                {t("cta.title")}
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                We&apos;re accepting a limited number of enterprises for our
-                pilot program. Get early access and shape the future of
-                distribution ERP.
+                {t("cta.description")}
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg">
@@ -578,13 +522,13 @@ export default async function VantumERPPage({ params }: PageProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Learn More at vantumerp.com
+                    {t("cta.learnMore")}
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href="/contact">
-                    Contact Sales
+                    {t("cta.contactSales")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
