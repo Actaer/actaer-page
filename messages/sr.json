@@ -592,8 +592,8 @@
     "metrics": {
       "fasterImplementation": "Brža implementacija",
       "apiCoverage": "API pokrivenost",
-      "hiddenFees": "Skrivene naknade",
-      "usersIncluded": "Korisnici uključeni"
+      "modernPricing": "Moderno cenovnik",
+      "flexibleLicensing": "Fleksibilno licenciranje"
     },
     "modules": {
       "title": "Četiri moćna modula",
@@ -653,8 +653,8 @@
       "legacyImplementation": "6-18 meseci",
       "vantumImplementation": "Nedelje, ne meseci",
       "licensingModel": "Model licenciranja",
-      "legacyLicensing": "Naknade po korisniku",
-      "vantumLicensing": "Neograničeno korisnika",
+      "legacyLicensing": "Složene naknade po korisniku",
+      "vantumLicensing": "Fleksibilno i transparentno",
       "customization": "Prilagođavanje",
       "legacyCustomization": "Potrebni konsultanti",
       "vantumCustomization": "Samostalna konfiguracija",
@@ -702,7 +702,7 @@
       },
       "q2": {
         "question": "Po čemu se Vantum ERP razlikuje od tradicionalnih ERP sistema?",
-        "answer": "Za razliku od legacy ERP-ova koji zahtevaju obimne prilagodbe i duge cikluse implementacije, Vantum ERP je izgrađen sa modernom cloud-native arhitekturom. Nudi 10 puta bržu implementaciju, neograničeno korisnika bez licenciranja po korisniku, nula skrivenih naknada i AI funkcije ugrađene od početka."
+        "answer": "Za razliku od legacy ERP-ova koji zahtevaju obimne prilagodbe i duge cikluse implementacije, Vantum ERP je izgrađen sa modernom cloud-native arhitekturom. Nudi 10 puta bržu implementaciju, fleksibilne opcije licenciranja, transparentno cenovnik, i AI funkcije ugrađene od početka. Posetite vantumerp.com za detaljne informacije o cenama."
       },
       "q3": {
         "question": "Koje industrije opslužuje Vantum ERP?",
@@ -715,6 +715,10 @@
       "q5": {
         "question": "Kako mogu da počnem sa Vantum ERP-om?",
         "answer": "Trenutno primamo kompanije za naš pilot program 2026. Posetite vantumerp.com za više informacija ili kontaktirajte naš prodajni tim da zakažete demo."
+      },
+      "q6": {
+        "question": "Kako funkcioniše cenovnik za Vantum ERP?",
+        "answer": "Vantum ERP koristi fleksibilan cenovnik prilagođen potrebama vašeg poslovanja, uključujući faktore kao što su broj korisnika, obim narudžbina i veličina kataloga proizvoda. Za detaljne informacije o cenama i da razgovaramo o planu koji odgovara vašim zahtevima, posetite vantumerp.com ili kontaktirajte naš prodajni tim."
       }
     },
     "cta": {

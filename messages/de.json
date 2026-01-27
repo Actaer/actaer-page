@@ -592,8 +592,8 @@
     "metrics": {
       "fasterImplementation": "Schnellere Implementierung",
       "apiCoverage": "API-Abdeckung",
-      "hiddenFees": "Versteckte Gebühren",
-      "usersIncluded": "Benutzer inklusive"
+      "modernPricing": "Moderne Preisgestaltung",
+      "flexibleLicensing": "Flexible Lizenzierung"
     },
     "modules": {
       "title": "Vier Leistungsstarke Module",
@@ -653,8 +653,8 @@
       "legacyImplementation": "6-18 Monate",
       "vantumImplementation": "Wochen, nicht Monate",
       "licensingModel": "Lizenzmodell",
-      "legacyLicensing": "Pro-Benutzer-Gebühren",
-      "vantumLicensing": "Unbegrenzte Benutzer",
+      "legacyLicensing": "Komplexe Pro-Benutzer-Gebühren",
+      "vantumLicensing": "Flexibel & transparent",
       "customization": "Anpassung",
       "legacyCustomization": "Berater erforderlich",
       "vantumCustomization": "Self-Service-Konfiguration",
@@ -702,7 +702,7 @@
       },
       "q2": {
         "question": "Wie unterscheidet sich Vantum ERP von traditionellen ERP-Systemen?",
-        "answer": "Im Gegensatz zu Legacy-ERPs, die umfangreiche Anpassungen und lange Implementierungszyklen erfordern, ist Vantum ERP mit moderner Cloud-nativer Architektur aufgebaut. Es bietet 10x schnellere Implementierung, unbegrenzte Benutzer ohne Pro-Benutzer-Lizenzierung, keine versteckten Gebühren und KI-native Funktionen von Anfang an."
+        "answer": "Im Gegensatz zu Legacy-ERPs, die umfangreiche Anpassungen und lange Implementierungszyklen erfordern, ist Vantum ERP mit moderner Cloud-nativer Architektur aufgebaut. Es bietet 10x schnellere Implementierung, flexible Lizenzierungsoptionen, transparente Preisgestaltung und KI-native Funktionen von Anfang an. Besuchen Sie vantumerp.com für detaillierte Preisinformationen."
       },
       "q3": {
         "question": "Welche Branchen bedient Vantum ERP?",
@@ -715,6 +715,10 @@
       "q5": {
         "question": "Wie kann ich mit Vantum ERP beginnen?",
         "answer": "Wir nehmen derzeit Unternehmen für unser 2026 Pilotprogramm auf. Besuchen Sie vantumerp.com für weitere Informationen oder kontaktieren Sie unser Vertriebsteam, um eine Demo zu vereinbaren."
+      },
+      "q6": {
+        "question": "Wie funktioniert die Preisgestaltung für Vantum ERP?",
+        "answer": "Vantum ERP verwendet flexible Preisgestaltung, die auf Ihre Geschäftsanforderungen zugeschnitten ist, einschließlich Faktoren wie Benutzeranzahl, Auftragsvolumen und Produktkatalogsgröße. Für detaillierte Preisinformationen und um einen Plan zu besprechen, der Ihren Anforderungen entspricht, besuchen Sie bitte vantumerp.com oder kontaktieren Sie unser Vertriebsteam."
       }
     },
     "cta": {

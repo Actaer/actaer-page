@@ -592,8 +592,8 @@
     "metrics": {
       "fasterImplementation": "Faster Implementation",
       "apiCoverage": "API Coverage",
-      "hiddenFees": "Hidden Fees",
-      "usersIncluded": "Users Included"
+      "modernPricing": "Modern Pricing",
+      "flexibleLicensing": "Flexible Licensing"
     },
     "modules": {
       "title": "Four Powerful Modules",
@@ -653,8 +653,8 @@
       "legacyImplementation": "6-18 months",
       "vantumImplementation": "Weeks, not months",
       "licensingModel": "Licensing Model",
-      "legacyLicensing": "Per-seat fees",
-      "vantumLicensing": "Unlimited users",
+      "legacyLicensing": "Complex per-seat fees",
+      "vantumLicensing": "Flexible & transparent",
       "customization": "Customization",
       "legacyCustomization": "Consultants required",
       "vantumCustomization": "Self-service config",
@@ -702,7 +702,7 @@
       },
       "q2": {
         "question": "How is Vantum ERP different from traditional ERP systems?",
-        "answer": "Unlike legacy ERPs that require extensive customization and long implementation cycles, Vantum ERP is built with modern cloud-native architecture. It offers 10x faster implementation, unlimited users with no per-seat licensing, zero hidden fees, and AI-native features out of the box."
+        "answer": "Unlike legacy ERPs that require extensive customization and long implementation cycles, Vantum ERP is built with modern cloud-native architecture. It offers 10x faster implementation, flexible licensing options, transparent pricing, and AI-native features out of the box. Visit vantumerp.com for detailed pricing information."
       },
       "q3": {
         "question": "What industries does Vantum ERP serve?",
@@ -715,6 +715,10 @@
       "q5": {
         "question": "How can I get started with Vantum ERP?",
         "answer": "We're currently accepting enterprises for our 2026 pilot program. Visit vantumerp.com for more information or contact our sales team to schedule a demo."
+      },
+      "q6": {
+        "question": "How does pricing work for Vantum ERP?",
+        "answer": "Vantum ERP uses flexible pricing tailored to your business needs, including factors like the number of users, order volume, and product catalog size. For detailed pricing information and to discuss a plan that fits your requirements, please visit vantumerp.com or contact our sales team."
       }
     },
     "cta": {
