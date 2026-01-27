@@ -236,8 +236,6 @@ export default async function VantumERPPage({ params }: PageProps) {
   const metrics = [
     { value: "10x", label: t("metrics.fasterImplementation") },
     { value: "100%", label: t("metrics.apiCoverage") },
-    { value: "0", label: t("metrics.hiddenFees") },
-    { value: "∞", label: t("metrics.usersIncluded") },
   ];
 
   return (
@@ -304,7 +302,7 @@ export default async function VantumERPPage({ params }: PageProps) {
         {/* Key Metrics */}
         <section className="py-12 bg-muted/30">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 gap-8">
               {metrics.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold font-heading text-primary mb-1">
@@ -496,6 +494,10 @@ export default async function VantumERPPage({ params }: PageProps) {
                 <AccordionItem value="item-5">
                   <AccordionTrigger>{t("faq.q5.question")}</AccordionTrigger>
                   <AccordionContent>{t("faq.q5.answer")}</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-6">
+                  <AccordionTrigger>{t("faq.q6.question")}</AccordionTrigger>
+                  <AccordionContent>{t("faq.q6.answer")}</AccordionContent>
                 </AccordionItem>
               </Accordion>
             </div>
