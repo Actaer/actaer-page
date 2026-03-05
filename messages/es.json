@@ -20,7 +20,7 @@
     "theme": "Tema"
   },
   "hero": {
-    "badge": "Software Development & IT Consulting",
+    "badge": "Desarrollo de Software y Consultoría IT",
     "title": "Tu éxito, <highlighted>Diseñado</highlighted> por ACTAER",
     "description": "Somos una firma de consultoría tecnológica integral que transforma empresas en innovadores ágiles impulsados por software. Desde la estrategia hasta la implementación, diseñamos tu futuro digital.",
     "startProject": "Iniciar tu proyecto",
@@ -587,7 +587,8 @@
       "paragraph1": "Actaer fue fundada con una creencia simple: la tecnología debería ser un habilitador, no un obstáculo. Vimos demasiadas empresas luchando con sistemas obsoletos, proyectos de software fallidos y tecnología que no servía a sus necesidades.",
       "paragraph2": "Nos propusimos cambiar eso. Nuestro equipo fundador reúne experiencia en software empresarial, startups y consultoría. Hemos visto qué funciona, qué no, y por qué la mayoría de las iniciativas tecnológicas no cumplen su promesa.",
       "paragraph3": "Como nueva firma, aportamos perspectivas frescas y enfoques modernos, sin lastre de pensamiento heredado. Nos asociamos con empresas de todos los tamaños para construir software que realmente funciona, escala con tus necesidades y entrega valor real.",
-      "tagline": "Excelencia en Ingeniería"
+      "tagline": "Excelencia en Ingeniería",
+      "paragraph4": "Creemos en asociaciones a largo plazo basadas en la confianza y la experiencia. Combinamos asesoramiento estratégico, ingeniería de primer nivel y estrecha colaboración con su equipo para construir juntos soluciones digitales sostenibles."
     },
     "values": {
       "title": "Nuestros Valores",

@@ -20,7 +20,7 @@
     "theme": "Tema"
   },
   "hero": {
-    "badge": "Software Development & IT Consulting",
+    "badge": "Razvoj softvera i IT konsalting",
     "title": "Vaš uspeh, <highlighted>Inženjeriran</highlighted> od ACTAER-a",
     "description": "Mi smo kompletna tehnološka konsalting firma koja transformiše preduzeća u agilne, softverski pokretane inovatore. Od strategije do implementacije, mi inženjerimo vašu digitalnu budućnost.",
     "startProject": "Započnite projekat",
@@ -587,7 +587,8 @@
       "paragraph1": "Actaer je osnovan sa jednostavnim uverenjem: tehnologija treba da bude pomoćnik, a ne prepreka. Videli smo previše preduzeća koja se bore sa zastarelim sistemima, neuspelim softverskim projektima i tehnologijom koja nije služila njihovim potrebama.",
       "paragraph2": "Krenuli smo da to promenimo. Naš osnivački tim objedinjuje iskustvo iz enterprise softvera, startupova i konsaltinga. Videli smo šta funkcioniše, šta ne, i zašto većina tehnoloških inicijativa ne ispunjava svoje obećanje.",
       "paragraph3": "Kao nova firma, donosimo sveže perspektive i moderne pristupe — neopterećeni legacy razmišljanjem. Sarađujemo sa preduzećima svih veličina da gradimo softver koji zaista funkcioniše, skalira sa vašim potrebama i isporučuje stvarnu vrednost.",
-      "tagline": "Inženjerska izvrsnost"
+      "tagline": "Inženjerska izvrsnost",
+      "paragraph4": "Verujemo u dugoročna partnerstva zasnovana na poverenju i stručnosti. Kombinujemo strateško savetovanje, vrhunski inženjering i blisku saradnju sa vašim timom kako bismo zajedno izgradili održiva digitalna rešenja."
     },
     "values": {
       "title": "Naše vrednosti",

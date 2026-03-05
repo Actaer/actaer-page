@@ -20,7 +20,7 @@
     "theme": "Motyw"
   },
   "hero": {
-    "badge": "Software Development & IT Consulting",
+    "badge": "Rozwój Oprogramowania i Konsulting IT",
     "title": "Twój Sukces, <highlighted>Zaprojektowany</highlighted> przez ACTAER",
     "description": "Jesteśmy kompleksową firmą konsultingową przekształcającą przedsiębiorstwa w zwinnych, innowatorów napędzanych oprogramowaniem. Od strategii po wdrożenie, projektujemy Twoją cyfrową przyszłość.",
     "startProject": "Rozpocznij Projekt",
@@ -587,7 +587,8 @@
       "paragraph1": "Actaer został założony z prostym przekonaniem: technologia powinna być pomocnikiem, a nie przeszkodą. Widzieliśmy zbyt wiele firm zmagających się z przestarzałymi systemami, nieudanymi projektami oprogramowania i technologią, która nie służyła ich potrzebom.",
       "paragraph2": "Postanowiliśmy to zmienić. Nasz zespół założycielski łączy doświadczenie z oprogramowania enterprise, startupów i konsultingu. Widzieliśmy, co działa, co nie i dlaczego większość inicjatyw technologicznych nie spełnia swoich obietnic.",
       "paragraph3": "Jako nowa firma, wnosimy świeże perspektywy i nowoczesne podejścia — nieobciążeni legacy myśleniem. Współpracujemy z firmami każdej wielkości, aby budować oprogramowanie, które naprawdę działa, skaluje się z Twoimi potrzebami i dostarcza rzeczywistą wartość.",
-      "tagline": "Doskonałość Inżynieryjna"
+      "tagline": "Doskonałość Inżynieryjna",
+      "paragraph4": "Łączymy strategiczne myślenie z głęboką wiedzą inżynieryjną, aby pomagać organizacjom przechodzić od pomysłów do działających rozwiązań produkcyjnych — w sposób przewidywalny, przejrzysty i mierzalny."
     },
     "values": {
       "title": "Nasze Wartości",

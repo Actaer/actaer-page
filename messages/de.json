@@ -20,7 +20,7 @@
     "theme": "Design"
   },
   "hero": {
-    "badge": "Software Development & IT Consulting",
+    "badge": "Softwareentwicklung & IT-Beratung",
     "title": "Ihr Erfolg, <highlighted>Entwickelt</highlighted> von ACTAER",
     "description": "Wir sind eine Full-Service-Technologieberatung, die Unternehmen in agile, softwaregetriebene Innovatoren verwandelt. Von der Strategie bis zur Implementierung gestalten wir Ihre digitale Zukunft.",
     "startProject": "Projekt starten",
@@ -587,7 +587,8 @@
       "paragraph1": "Actaer wurde mit einer einfachen Überzeugung gegründet: Technologie sollte ein Wegbereiter sein, kein Hindernis. Wir sahen zu viele Unternehmen, die mit veralteten Systemen, gescheiterten Softwareprojekten und Technologie kämpften, die ihren Bedürfnissen nicht diente.",
       "paragraph2": "Wir haben uns vorgenommen, das zu ändern. Unser Gründungsteam vereint Erfahrung aus Enterprise-Software, Startups und Beratung. Wir haben gesehen, was funktioniert, was nicht, und warum die meisten Technologieinitiativen ihr Versprechen nicht einlösen.",
       "paragraph3": "Als neues Unternehmen bringen wir frische Perspektiven und moderne Ansätze mit — unbelastet von altem Denken. Wir arbeiten mit Unternehmen jeder Größe zusammen, um Software zu entwickeln, die tatsächlich funktioniert, mit Ihren Anforderungen skaliert und echten Mehrwert liefert.",
-      "tagline": "Engineering-Exzellenz"
+      "tagline": "Engineering-Exzellenz",
+      "paragraph4": "Wir glauben an langfristige Partnerschaften, die auf Vertrauen und Fachkenntnis aufgebaut sind. Wir kombinieren strategische Beratung, erstklassige Technik und enge Zusammenarbeit mit Ihrem Team, um gemeinsam nachhaltige digitale Lösungen zu entwickeln."
     },
     "values": {
       "title": "Unsere Werte",
