@@ -71,11 +71,6 @@ const faqJsonLd = generateFaqJsonLd([
     answer:
       "Although newly founded, Actaer is built by experienced engineers and consultants with proven track records in software development and IT consulting. We bring fresh perspectives, modern approaches, and dedicated focus to every client engagement.",
   },
-  {
-    question: "What is Vantum ERP?",
-    answer:
-      "Vantum ERP is Actaer's flagship product - a modern distribution ERP designed for wholesalers, distributors, and retail chains. It features AI-powered replenishment, real-time inventory management, and a modern cloud-native architecture.",
-  },
 ]);
 
 export default async function AboutPage({ params }: PageProps) {

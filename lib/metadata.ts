@@ -42,7 +42,6 @@ export const baseMetadata: Metadata = {
     "custom software",
     "enterprise solutions",
     "ERP",
-    "Vantum ERP",
     "digital transformation",
     "AI solutions",
     "product development",

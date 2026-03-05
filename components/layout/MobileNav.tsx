@@ -48,7 +48,6 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
 
   const navItems = [
     { href: "/about", label: t("about") },
-    { href: "/products/vantum-erp", label: t("vantumErp") },
     { href: "/blog", label: t("blog") },
     { href: "/contact", label: t("contact") },
   ];

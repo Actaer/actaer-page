@@ -28,9 +28,6 @@ export function Footer() {
         href: "/services/product-development",
       },
     ],
-    products: [
-      { label: t("navigation.vantumErp"), href: "/products/vantum-erp" },
-    ],
     company: [
       { label: t("navigation.about"), href: "/about" },
       { label: t("navigation.blog"), href: "/blog" },
@@ -41,7 +38,7 @@ export function Footer() {
   return (
     <footer className="bg-muted/30 border-t">
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Brand & Contact */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4">
@@ -87,23 +84,6 @@ export function Footer() {
             <p className="font-semibold mb-4">{t("footer.services")}</p>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Products */}
-          <div>
-            <p className="font-semibold mb-4">{t("footer.products")}</p>
-            <ul className="space-y-3">
-              {footerLinks.products.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

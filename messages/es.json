@@ -12,7 +12,6 @@
     "softwareDevelopmentDescription": "Soluciones de software personalizadas según sus necesidades.",
     "productDevelopment": "Desarrollo de Productos",
     "productDevelopmentDescription": "Creación de productos de principio a fin, del concepto al lanzamiento.",
-    "vantumErp": "Vantum ERP",
     "about": "Nosotros",
     "blog": "Blog",
     "contact": "Contacto",
@@ -21,7 +20,7 @@
     "theme": "Tema"
   },
   "hero": {
-    "badge": "Presentamos Vantum ERP — ERP de Distribución, Reimaginado",
+    "badge": "Software Development & IT Consulting",
     "title": "Tu éxito, <highlighted>Diseñado</highlighted> por ACTAER",
     "description": "Somos una firma de consultoría tecnológica integral que transforma empresas en innovadores ágiles impulsados por software. Desde la estrategia hasta la implementación, diseñamos tu futuro digital.",
     "startProject": "Iniciar tu proyecto",
@@ -102,7 +101,6 @@
     "heroHighlighted": "Estratégica",
     "heroDescription": "Navegue por el complejo panorama tecnológico con consultoría experta que alinea sus inversiones en TI con los objetivos empresariales.",
     "ctaButton": "Iniciar Consulta",
-    "exploreProducts": "Explorar Vantum ERP",
     "overviewTitle": "Nuestros Servicios de Consultoría",
     "overviewDescription": "Consultoría IT integral para guiar su viaje de transformación digital.",
     "strategyTitle": "Estrategia de Transformación Digital",
@@ -162,7 +160,6 @@
     "heroHighlighted": "Personalizadas",
     "heroDescription": "Construya software potente y escalable adaptado a sus necesidades empresariales únicas con nuestro equipo de desarrollo experto.",
     "ctaButton": "Iniciar su Proyecto",
-    "exploreProducts": "Explorar Vantum ERP",
     "overviewTitle": "Nuestros Servicios de Desarrollo",
     "overviewDescription": "Servicios de desarrollo de software de principio a fin adaptados a sus requisitos únicos.",
     "fullstackTitle": "Ingeniería Full-Stack",
@@ -231,7 +228,6 @@
     "heroHighlighted": "Mercado",
     "heroDescription": "Ciclo de vida completo de desarrollo de productos con orientación experta, desde el concepto inicial hasta el lanzamiento exitoso y más allá.",
     "ctaButton": "Iniciar su Producto",
-    "exploreProducts": "Ver Vantum ERP",
     "phasesTitle": "Nuestro Proceso de Desarrollo",
     "phasesDescription": "Una metodología probada que lleva su producto del concepto al éxito en el mercado.",
     "processTitle": "Nuestro Proceso de Desarrollo",
@@ -335,8 +331,7 @@
   "cta": {
     "title": "¿Listo para <highlighted>Transformar</highlighted> tu negocio?",
     "description": "Hablemos sobre cómo podemos ayudarte a resolver tus desafíos más exigentes con soluciones tecnológicas inteligentes.",
-    "startConversation": "Iniciar una conversación",
-    "exploreVantum": "Explorar Vantum ERP"
+    "startConversation": "Iniciar una conversación"
   },
   "footer": {
     "description": "Firma de consultoría tecnológica integral que transforma empresas en innovadores ágiles impulsados por software.",
@@ -580,155 +575,6 @@
       }
     }
   },
-  "vantumErpPage": {
-    "pageTitle": "Vantum ERP - ERP de Distribución, Reimaginado",
-    "pageDescription": "ERP de distribución moderno para mayoristas, distribuidores y cadenas minoristas. Gestión de inventario, pedidos de venta, compras y reabastecimiento impulsado por IA.",
-    "badge": "Producto Empresarial",
-    "heroTitle": "Vantum ERP",
-    "heroSubtitle": "ERP de Distribución, Reimaginado",
-    "heroDescription": "ERP sin el equipaje heredado. Construido para mayoristas, distribuidores, cadenas minoristas y proveedores 3PL modernos.",
-    "visitVantum": "Visitar Vantum ERP",
-    "requestDemo": "Solicitar Demo",
-    "metrics": {
-      "fasterImplementation": "Implementación más rápida",
-      "apiCoverage": "Cobertura API",
-      "modernPricing": "Precios Modernos",
-      "flexibleLicensing": "Licencias Flexibles"
-    },
-    "modules": {
-      "title": "Cuatro Módulos Potentes",
-      "description": "Todo lo que necesitas para gestionar tu negocio de distribución, en una plataforma integrada.",
-      "inventory": {
-        "title": "Gestión de Inventario",
-        "description": "Visibilidad de stock en tiempo real en almacenes ilimitados con seguimiento de lotes, números de serie y ubicaciones.",
-        "features": {
-          "multiWarehouse": "Soporte multi-almacén",
-          "lotTracking": "Seguimiento de lotes y series",
-          "binLocation": "Gestión de ubicaciones",
-          "realTimeStock": "Niveles de stock en tiempo real",
-          "adjustments": "Ajustes de inventario"
-        }
-      },
-      "sales": {
-        "title": "Pedidos de Venta",
-        "description": "Flujo de trabajo completo de cotización a cobro con verificación de disponibilidad en tiempo real y reserva automática de inventario.",
-        "features": {
-          "quoteManagement": "Gestión de cotizaciones",
-          "orderProcessing": "Procesamiento de pedidos",
-          "realTimeAvailability": "Disponibilidad en tiempo real",
-          "autoReservations": "Reservas automáticas",
-          "shippingIntegration": "Integración de envíos"
-        }
-      },
-      "purchasing": {
-        "title": "Compras",
-        "description": "Gestión de proveedores optimizada con automatización de OC, seguimiento de tiempos de entrega y análisis de costos.",
-        "features": {
-          "vendorManagement": "Gestión de proveedores",
-          "purchaseOrders": "Órdenes de compra",
-          "leadTimeTracking": "Seguimiento de tiempos de entrega",
-          "costAnalysis": "Análisis de costos",
-          "receivingWorkflow": "Flujo de recepción"
-        }
-      },
-      "replenishment": {
-        "title": "Reabastecimiento Inteligente",
-        "description": "Cálculos de punto de reorden asistidos por IA con generación automática de OC basada en velocidad de ventas.",
-        "features": {
-          "aiForecasting": "Pronóstico de demanda con IA",
-          "reorderOptimization": "Optimización de punto de reorden",
-          "autoPoGeneration": "Generación automática de OC",
-          "seasonalAdjustments": "Ajustes estacionales",
-          "safetyStock": "Cálculos de stock de seguridad"
-        }
-      }
-    },
-    "comparison": {
-      "title": "ERP Heredado vs Vantum",
-      "description": "Descubre por qué las empresas modernas eligen Vantum sobre los sistemas ERP tradicionales.",
-      "feature": "Característica",
-      "legacyErp": "ERP Heredado",
-      "vantumErp": "Vantum ERP",
-      "implementationTime": "Tiempo de Implementación",
-      "legacyImplementation": "6-18 meses",
-      "vantumImplementation": "Semanas, no meses",
-      "licensingModel": "Modelo de Licencias",
-      "legacyLicensing": "Tarifas complejas por usuario",
-      "vantumLicensing": "Flexible y transparente",
-      "customization": "Personalización",
-      "legacyCustomization": "Requiere consultores",
-      "vantumCustomization": "Configuración autoservicio",
-      "userExperience": "Experiencia de Usuario",
-      "legacyUx": "UX de hace una década",
-      "vantumUx": "Interfaz moderna",
-      "architecture": "Arquitectura",
-      "legacyArchitecture": "Monolítica",
-      "vantumArchitecture": "Modular, nativa en la nube",
-      "updates": "Actualizaciones",
-      "legacyUpdates": "Lanzamientos anuales",
-      "vantumUpdates": "Despliegue continuo"
-    },
-    "techStack": {
-      "title": "Arquitectura de Nivel Empresarial",
-      "description": "Construido sobre tecnologías modernas y probadas para confiabilidad, rendimiento y seguridad.",
-      "backend": "Backend",
-      "frontend": "Frontend",
-      "database": "Base de datos",
-      "events": "Eventos",
-      "caching": "Caché",
-      "integration": "Integración",
-      "features": {
-        "subSecond": {
-          "title": "Respuesta en menos de un segundo",
-          "description": "Consultas optimizadas y caché para un rendimiento ultrarrápido."
-        },
-        "security": {
-          "title": "Seguridad Empresarial",
-          "description": "RBAC, registro de auditoría y cifrado en reposo y en tránsito."
-        },
-        "api": {
-          "title": "100% Cobertura API",
-          "description": "Acceso completo a API REST para integraciones sin problemas."
-        }
-      }
-    },
-    "faq": {
-      "badge": "FAQ",
-      "title": "Preguntas Frecuentes",
-      "description": "Todo lo que necesitas saber sobre Vantum ERP",
-      "q1": {
-        "question": "¿Qué es Vantum ERP?",
-        "answer": "Vantum ERP es un sistema ERP de distribución moderno diseñado específicamente para mayoristas, distribuidores, cadenas minoristas y proveedores 3PL. Cuenta con reabastecimiento de inventario impulsado por IA, análisis en tiempo real y 100% de cobertura API, todo sin la complejidad de los sistemas ERP heredados."
-      },
-      "q2": {
-        "question": "¿En qué se diferencia Vantum ERP de los sistemas ERP tradicionales?",
-        "answer": "A diferencia de los ERP heredados que requieren personalización extensa y largos ciclos de implementación, Vantum ERP está construido con arquitectura moderna nativa en la nube. Ofrece implementación 10 veces más rápida, opciones de licenciamiento flexibles, precios transparentes y funciones nativas de IA desde el principio. Visite vantumerp.com para obtener información detallada sobre precios."
-      },
-      "q3": {
-        "question": "¿Qué industrias atiende Vantum ERP?",
-        "answer": "Vantum ERP está optimizado para negocios enfocados en distribución, incluyendo distribuidores mayoristas, cadenas minoristas con múltiples ubicaciones, proveedores 3PL y cualquier negocio que gestione inventario complejo en múltiples almacenes."
-      },
-      "q4": {
-        "question": "¿Incluye Vantum ERP funciones de IA?",
-        "answer": "¡Sí! Vantum ERP incluye reabastecimiento de inventario impulsado por IA que analiza patrones de ventas, estacionalidad y tiempos de entrega para generar automáticamente sugerencias de compra óptimas. Esto ayuda a reducir los desabastecimientos mientras minimiza el exceso de inventario."
-      },
-      "q5": {
-        "question": "¿Cómo puedo comenzar con Vantum ERP?",
-        "answer": "Actualmente estamos aceptando empresas para nuestro programa piloto 2026. Visita vantumerp.com para más información o contacta a nuestro equipo de ventas para programar una demo."
-      },
-      "q6": {
-        "question": "¿Cómo funciona el precio de Vantum ERP?",
-        "answer": "Vantum ERP utiliza precios flexibles adaptados a las necesidades de su negocio, incluidos factores como el número de usuarios, el volumen de pedidos y el tamaño del catálogo de productos. Para obtener información detallada sobre precios y discutir un plan que se ajuste a sus requisitos, visite vantumerp.com o contacte a nuestro equipo de ventas."
-      }
-    },
-    "cta": {
-      "badge": "Programa Piloto Limitado",
-      "title": "Únete al Programa Piloto 2026",
-      "description": "Estamos aceptando un número limitado de empresas para nuestro programa piloto. Obtén acceso anticipado y da forma al futuro del ERP de distribución.",
-      "learnMore": "Más información en vantumerp.com",
-      "contactSales": "Contactar Ventas"
-    }
-  },
   "aboutPage": {
     "pageTitle": "Sobre Actaer",
     "pageDescription": "Conoce Actaer - una firma de consultoría tecnológica integral que transforma empresas en innovadores ágiles impulsados por software.",
@@ -741,7 +587,6 @@
       "paragraph1": "Actaer fue fundada con una creencia simple: la tecnología debería ser un habilitador, no un obstáculo. Vimos demasiadas empresas luchando con sistemas obsoletos, proyectos de software fallidos y tecnología que no servía a sus necesidades.",
       "paragraph2": "Nos propusimos cambiar eso. Nuestro equipo fundador reúne experiencia en software empresarial, startups y consultoría. Hemos visto qué funciona, qué no, y por qué la mayoría de las iniciativas tecnológicas no cumplen su promesa.",
       "paragraph3": "Como nueva firma, aportamos perspectivas frescas y enfoques modernos, sin lastre de pensamiento heredado. Nos asociamos con empresas de todos los tamaños para construir software que realmente funciona, escala con tus necesidades y entrega valor real.",
-      "paragraph4": "Nuestro primer producto, Vantum ERP, encarna todo lo que creemos sobre el software: es moderno, fácil de usar y construido para cómo las empresas realmente operan hoy.",
       "tagline": "Excelencia en Ingeniería"
     },
     "values": {
