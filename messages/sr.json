@@ -12,7 +12,6 @@
     "softwareDevelopmentDescription": "Prilagođena softverska rešenja po vašim potrebama.",
     "productDevelopment": "Razvoj proizvoda",
     "productDevelopmentDescription": "Kompletna izrada proizvoda od koncepta do lansiranja.",
-    "vantumErp": "Vantum ERP",
     "about": "O nama",
     "blog": "Blog",
     "contact": "Kontakt",
@@ -21,7 +20,7 @@
     "theme": "Tema"
   },
   "hero": {
-    "badge": "Predstavljamo Vantum ERP — Distributivni ERP, redizajniran",
+    "badge": "Razvoj softvera i IT konsalting",
     "title": "Vaš uspeh, <highlighted>Inženjeriran</highlighted> od ACTAER-a",
     "description": "Mi smo kompletna tehnološka konsalting firma koja transformiše preduzeća u agilne, softverski pokretane inovatore. Od strategije do implementacije, mi inženjerimo vašu digitalnu budućnost.",
     "startProject": "Započnite projekat",
@@ -102,7 +101,6 @@
     "heroHighlighted": "Vođenje",
     "heroDescription": "Navigirajte kroz kompleksni tehnološki pejzaž uz stručni konsalting koji usklađuje vaše IT investicije sa poslovnim ciljevima.",
     "ctaButton": "Započnite Konsultaciju",
-    "exploreProducts": "Istražite Vantum ERP",
     "overviewTitle": "Naše Konsalting Usluge",
     "overviewDescription": "Sveobuhvatni IT konsalting za vođenje vaše digitalne transformacije.",
     "strategyTitle": "Strategija Digitalne Transformacije",
@@ -162,7 +160,6 @@
     "heroHighlighted": "Rešenja",
     "heroDescription": "Izgradite moćan, skalabilan softver prilagođen vašim jedinstvenim poslovnim potrebama sa našim stručnim razvojnim timom.",
     "ctaButton": "Započnite Projekat",
-    "exploreProducts": "Istražite Vantum ERP",
     "overviewTitle": "Naše Razvojne Usluge",
     "overviewDescription": "Usluge razvoja softvera od početka do kraja prilagođene vašim jedinstvenim zahtevima.",
     "fullstackTitle": "Full-Stack Inženjering",
@@ -231,7 +228,6 @@
     "heroHighlighted": "Tržišta",
     "heroDescription": "Kompletan životni ciklus razvoja proizvoda sa stručnim vođenjem, od početnog koncepta do uspešnog lansiranja i dalje.",
     "ctaButton": "Započnite Proizvod",
-    "exploreProducts": "Pogledajte Vantum ERP",
     "phasesTitle": "Naš Razvojni Proces",
     "phasesDescription": "Dokazana metodologija koja vodi vaš proizvod od koncepta do uspeha na tržištu.",
     "processTitle": "Naš Razvojni Proces",
@@ -335,8 +331,7 @@
   "cta": {
     "title": "Spremni da <highlighted>Transformišete</highlighted> svoje poslovanje?",
     "description": "Razgovarajmo o tome kako vam možemo pomoći da rešite najzahtevnije izazove pametnim tehnološkim rešenjima.",
-    "startConversation": "Započnite razgovor",
-    "exploreVantum": "Istražite Vantum ERP"
+    "startConversation": "Započnite razgovor"
   },
   "footer": {
     "description": "Kompletna tehnološka konsalting firma koja transformiše preduzeća u agilne, softverski pokretane inovatore.",
@@ -580,155 +575,6 @@
       }
     }
   },
-  "vantumErpPage": {
-    "pageTitle": "Vantum ERP - ERP za distribuciju, redefinisan",
-    "pageDescription": "Moderan ERP za distribuciju za veleprodaje, distributere i maloprodajne lance. Upravljanje zalihama, prodajni nalozi, nabavka i AI pametno snabdevanje.",
-    "badge": "Enterprise proizvod",
-    "heroTitle": "Vantum ERP",
-    "heroSubtitle": "ERP za distribuciju, redefinisan",
-    "heroDescription": "ERP bez legacy balasta. Izgrađen za moderne veleprodaje, distributere, maloprodajne lance i 3PL provajdere.",
-    "visitVantum": "Posetite Vantum ERP",
-    "requestDemo": "Zatražite demo",
-    "metrics": {
-      "fasterImplementation": "Brža implementacija",
-      "apiCoverage": "API pokrivenost",
-      "modernPricing": "Moderno cenovnik",
-      "flexibleLicensing": "Fleksibilno licenciranje"
-    },
-    "modules": {
-      "title": "Četiri moćna modula",
-      "description": "Sve što vam je potrebno za upravljanje distribucionim poslovanjem, na jednoj integrisanoj platformi.",
-      "inventory": {
-        "title": "Upravljanje zalihama",
-        "description": "Vidljivost zaliha u realnom vremenu preko neograničenog broja magacina sa praćenjem lotova, serijskih brojeva i lokacija.",
-        "features": {
-          "multiWarehouse": "Podrška za više magacina",
-          "lotTracking": "Praćenje lotova i serijskih brojeva",
-          "binLocation": "Upravljanje lokacijama",
-          "realTimeStock": "Nivo zaliha u realnom vremenu",
-          "adjustments": "Korekcije zaliha"
-        }
-      },
-      "sales": {
-        "title": "Prodajni nalozi",
-        "description": "Kompletan tok od ponude do naplate sa proverom dostupnosti u realnom vremenu i automatskom rezervacijom zaliha.",
-        "features": {
-          "quoteManagement": "Upravljanje ponudama",
-          "orderProcessing": "Obrada naloga",
-          "realTimeAvailability": "Dostupnost u realnom vremenu",
-          "autoReservations": "Automatske rezervacije",
-          "shippingIntegration": "Integracija isporuke"
-        }
-      },
-      "purchasing": {
-        "title": "Nabavka",
-        "description": "Optimizovano upravljanje dobavljačima sa automatizacijom narudžbina, praćenjem rokova isporuke i analizom troškova.",
-        "features": {
-          "vendorManagement": "Upravljanje dobavljačima",
-          "purchaseOrders": "Narudžbenice",
-          "leadTimeTracking": "Praćenje rokova isporuke",
-          "costAnalysis": "Analiza troškova",
-          "receivingWorkflow": "Tok prijema"
-        }
-      },
-      "replenishment": {
-        "title": "Pametno snabdevanje",
-        "description": "AI podržano izračunavanje tačke ponovnog naručivanja sa automatskom generacijom narudžbina na osnovu brzine prodaje.",
-        "features": {
-          "aiForecasting": "AI predviđanje potražnje",
-          "reorderOptimization": "Optimizacija tačke ponovnog naručivanja",
-          "autoPoGeneration": "Automatska generacija narudžbina",
-          "seasonalAdjustments": "Sezonska prilagođavanja",
-          "safetyStock": "Izračunavanje sigurnosnih zaliha"
-        }
-      }
-    },
-    "comparison": {
-      "title": "Legacy ERP vs Vantum",
-      "description": "Saznajte zašto moderne kompanije biraju Vantum umesto tradicionalnih ERP sistema.",
-      "feature": "Karakteristika",
-      "legacyErp": "Legacy ERP",
-      "vantumErp": "Vantum ERP",
-      "implementationTime": "Vreme implementacije",
-      "legacyImplementation": "6-18 meseci",
-      "vantumImplementation": "Nedelje, ne meseci",
-      "licensingModel": "Model licenciranja",
-      "legacyLicensing": "Složene naknade po korisniku",
-      "vantumLicensing": "Fleksibilno i transparentno",
-      "customization": "Prilagođavanje",
-      "legacyCustomization": "Potrebni konsultanti",
-      "vantumCustomization": "Samostalna konfiguracija",
-      "userExperience": "Korisničko iskustvo",
-      "legacyUx": "UX star deceniju",
-      "vantumUx": "Moderan interfejs",
-      "architecture": "Arhitektura",
-      "legacyArchitecture": "Monolitna",
-      "vantumArchitecture": "Modularna, cloud-native",
-      "updates": "Ažuriranja",
-      "legacyUpdates": "Godišnja izdanja",
-      "vantumUpdates": "Kontinuirano postavljanje"
-    },
-    "techStack": {
-      "title": "Enterprise-grade arhitektura",
-      "description": "Izgrađen na modernim, dokazanim tehnologijama za pouzdanost, performanse i bezbednost.",
-      "backend": "Backend",
-      "frontend": "Frontend",
-      "database": "Baza podataka",
-      "events": "Događaji",
-      "caching": "Keširanje",
-      "integration": "Integracija",
-      "features": {
-        "subSecond": {
-          "title": "Odziv ispod sekunde",
-          "description": "Optimizovani upiti i keširanje za munjevite performanse."
-        },
-        "security": {
-          "title": "Enterprise bezbednost",
-          "description": "RBAC, evidencija revizije i šifrovanje u mirovanju i prenosu."
-        },
-        "api": {
-          "title": "100% API pokrivenost",
-          "description": "Pun pristup REST API-ju za besprekorne integracije."
-        }
-      }
-    },
-    "faq": {
-      "badge": "FAQ",
-      "title": "Često postavljana pitanja",
-      "description": "Sve što treba da znate o Vantum ERP-u",
-      "q1": {
-        "question": "Šta je Vantum ERP?",
-        "answer": "Vantum ERP je moderan ERP sistem za distribuciju dizajniran specijalno za veleprodaje, distributere, maloprodajne lance i 3PL provajdere. Uključuje AI pametno snabdevanje, analitiku u realnom vremenu i 100% API pokrivenost — sve bez složenosti legacy ERP sistema."
-      },
-      "q2": {
-        "question": "Po čemu se Vantum ERP razlikuje od tradicionalnih ERP sistema?",
-        "answer": "Za razliku od legacy ERP-ova koji zahtevaju obimne prilagodbe i duge cikluse implementacije, Vantum ERP je izgrađen sa modernom cloud-native arhitekturom. Nudi 10 puta bržu implementaciju, fleksibilne opcije licenciranja, transparentno cenovnik, i AI funkcije ugrađene od početka. Posetite vantumerp.com za detaljne informacije o cenama."
-      },
-      "q3": {
-        "question": "Koje industrije opslužuje Vantum ERP?",
-        "answer": "Vantum ERP je optimizovan za kompanije fokusirane na distribuciju, uključujući veleprodajne distributere, maloprodajne lance sa više lokacija, 3PL provajdere i svako preduzeće koje upravlja složenim zalihama preko više magacina."
-      },
-      "q4": {
-        "question": "Da li Vantum ERP uključuje AI funkcije?",
-        "answer": "Da! Vantum ERP uključuje AI pametno snabdevanje koje analizira prodajne obrasce, sezonalnost i rokove isporuke da automatski generiše optimalne predloge za nabavku. Ovo pomaže u smanjenju nedostatka zaliha uz minimiziranje viška."
-      },
-      "q5": {
-        "question": "Kako mogu da počnem sa Vantum ERP-om?",
-        "answer": "Trenutno primamo kompanije za naš pilot program 2026. Posetite vantumerp.com za više informacija ili kontaktirajte naš prodajni tim da zakažete demo."
-      },
-      "q6": {
-        "question": "Kako funkcioniše cenovnik za Vantum ERP?",
-        "answer": "Vantum ERP koristi fleksibilan cenovnik prilagođen potrebama vašeg poslovanja, uključujući faktore kao što su broj korisnika, obim narudžbina i veličina kataloga proizvoda. Za detaljne informacije o cenama i da razgovaramo o planu koji odgovara vašim zahtevima, posetite vantumerp.com ili kontaktirajte naš prodajni tim."
-      }
-    },
-    "cta": {
-      "badge": "Ograničen pilot program",
-      "title": "Pridružite se pilot programu 2026",
-      "description": "Primamo ograničen broj kompanija za naš pilot program. Dobijte rani pristup i učestvujte u oblikovanju budućnosti ERP-a za distribuciju.",
-      "learnMore": "Saznajte više na vantumerp.com",
-      "contactSales": "Kontaktirajte prodaju"
-    }
-  },
   "aboutPage": {
     "pageTitle": "O Actaer-u",
     "pageDescription": "Saznajte više o Actaer-u - kompletnoj tehnološkoj konsultantskoj firmi koja transformiše preduzeća u agilne, softverski pokretane inovatore.",
@@ -741,8 +587,8 @@
       "paragraph1": "Actaer je osnovan sa jednostavnim uverenjem: tehnologija treba da bude pomoćnik, a ne prepreka. Videli smo previše preduzeća koja se bore sa zastarelim sistemima, neuspelim softverskim projektima i tehnologijom koja nije služila njihovim potrebama.",
       "paragraph2": "Krenuli smo da to promenimo. Naš osnivački tim objedinjuje iskustvo iz enterprise softvera, startupova i konsaltinga. Videli smo šta funkcioniše, šta ne, i zašto većina tehnoloških inicijativa ne ispunjava svoje obećanje.",
       "paragraph3": "Kao nova firma, donosimo sveže perspektive i moderne pristupe — neopterećeni legacy razmišljanjem. Sarađujemo sa preduzećima svih veličina da gradimo softver koji zaista funkcioniše, skalira sa vašim potrebama i isporučuje stvarnu vrednost.",
-      "paragraph4": "Naš prvi proizvod, Vantum ERP, otelotvoruje sve u šta verujemo kada je softver u pitanju: moderan je, jednostavan za upotrebu i izgrađen za način na koji preduzeća zaista rade danas.",
-      "tagline": "Inženjerska izvrsnost"
+      "tagline": "Inženjerska izvrsnost",
+      "paragraph4": "Verujemo u dugoročna partnerstva zasnovana na poverenju i stručnosti. Kombinujemo strateško savetovanje, vrhunski inženjering i blisku saradnju sa vašim timom kako bismo zajedno izgradili održiva digitalna rešenja."
     },
     "values": {
       "title": "Naše vrednosti",

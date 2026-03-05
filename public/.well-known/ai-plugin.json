@@ -3,7 +3,7 @@
   "name_for_human": "Actaer",
   "name_for_model": "actaer",
   "description_for_human": "Full-service tech consulting firm specializing in software development, IT consulting, and enterprise solutions.",
-  "description_for_model": "Actaer is a technology consulting and software development company based in Serbia. They offer IT consulting, custom software development, and product development services. Their flagship product is Vantum ERP, a modern distribution ERP for wholesalers and distributors. Use this to find information about Actaer's services, products, and contact details.",
+  "description_for_model": "Actaer is a technology consulting and software development company based in Serbia. They offer IT consulting, custom software development, and product development services. Use this to find information about Actaer's services and contact details.",
   "auth": {
     "type": "none"
   },

@@ -159,21 +159,6 @@ export function Header() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                {/* Products */}
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="/products/vantum-erp"
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        pathname.startsWith("/products") && "text-primary",
-                      )}
-                    >
-                      {t("vantumErp")}
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-
                 {/* Other nav items */}
                 {navItems.map((item) => (
                   <NavigationMenuItem key={item.href}>

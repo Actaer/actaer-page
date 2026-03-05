@@ -66,9 +66,6 @@ export function CtaSection() {
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href="/products/vantum-erp">{t("exploreVantum")}</Link>
-            </Button>
           </div>
         </div>
       </div>
