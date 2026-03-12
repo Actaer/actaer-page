@@ -29,15 +29,10 @@ export function ConditionalAnalytics() {
   // Apollo.io website visitor tracking for lead generation
   useEffect(() => {
     const apolloId = process.env.NEXT_PUBLIC_APOLLO_TRACKING_ID;
-
-    if (typeof window === "undefined") {
-      return;
-    }
-
-    const w = window as unknown as { at?: unknown };
     let inlineScript: HTMLScriptElement | null = null;
 
-    if (hasMarketingConsent && apolloId) {
+    if (typeof window !== "undefined" && hasMarketingConsent && apolloId) {
+      const w = window as unknown as { at?: unknown };
       // Sanitize the tracking ID to prevent injection
       const sanitizedId = apolloId.replace(/[^a-zA-Z0-9_-]/g, "");
       if (sanitizedId && !w.at) {
@@ -56,6 +51,8 @@ export function ConditionalAnalytics() {
     }
 
     return () => {
+      if (typeof window === "undefined") return;
+
       // Attempt to disable Apollo tracking if available
       const win = window as unknown as { at?: unknown };
       const atFn =
