@@ -1,98 +1,97 @@
 {
   "metadata": {
-    "title": "Развој софтвера и ИТ консалтинг",
+    "title": "Razvoj softvera i IT konsalting",
     "titleTemplate": "{title} | Actaer",
-    "description": "Комплетна технолошка консалтинг фирма која трансформише предузећа у агилне, софтверски покретане иноваторе. ИТ консалтинг, развој прилагођеног софтвера и корпоративна решења."
+    "description": "Kompletna tehnološka konsalting firma koja transformiše preduzeća u agilne, softverski pokretane inovatore. IT konsalting, razvoj prilagođenog softvera i korporativna rešenja."
   },
   "navigation": {
-    "services": "Услуге",
-    "itConsulting": "ИТ консалтинг",
-    "itConsultingDescription": "Стратешко технолошко вођење и дигитална трансформација.",
-    "softwareDevelopment": "Развој софтвера",
-    "softwareDevelopmentDescription": "Прилагођена софтверска решења по вашим потребама.",
-    "productDevelopment": "Развој производа",
-    "productDevelopmentDescription": "Комплетна израда производа од концепта до лансирања.",
-    "vantumErp": "Vantum ERP",
-    "about": "О нама",
-    "blog": "Блог",
-    "contact": "Контакт",
-    "getStarted": "Започните",
-    "openMenu": "Отвори мени",
-    "theme": "Тема"
+    "services": "Usluge",
+    "itConsulting": "IT konsalting",
+    "itConsultingDescription": "Strateško tehnološko vođenje i digitalna transformacija.",
+    "softwareDevelopment": "Razvoj softvera",
+    "softwareDevelopmentDescription": "Prilagođena softverska rešenja po vašim potrebama.",
+    "productDevelopment": "Razvoj proizvoda",
+    "productDevelopmentDescription": "Kompletna izrada proizvoda od koncepta do lansiranja.",
+    "about": "O nama",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "getStarted": "Započnite",
+    "openMenu": "Otvori meni",
+    "theme": "Tema"
   },
   "hero": {
-    "badge": "Представљамо Vantum ERP — Дистрибутивни ERP, редизајниран",
-    "title": "Ваш успех, <highlighted>Инжењериран</highlighted> од ACTAER-а",
-    "description": "Ми смо комплетна технолошка консалтинг фирма која трансформише предузећа у агилне, софтверски покретане иноваторе. Од стратегије до имплементације, ми инжењеримо вашу дигиталну будућност.",
-    "startProject": "Започните пројекат",
-    "exploreServices": "Истражите услуге",
-    "scroll": "Скролујте"
+    "badge": "Razvoj softvera i IT konsalting",
+    "title": "Vaš uspeh, <highlighted>Inženjeriran</highlighted> od ACTAER-a",
+    "description": "Mi smo kompletna tehnološka konsalting firma koja transformiše preduzeća u agilne, softverski pokretane inovatore. Od strategije do implementacije, mi inženjerimo vašu digitalnu budućnost.",
+    "startProject": "Započnite projekat",
+    "exploreServices": "Istražite usluge",
+    "scroll": "Skrolujte"
   },
   "about": {
-    "badge": "О Actaer-у",
-    "title": "Решавање захтевних пословних проблема уз <highlighted>Паметну технологију</highlighted>",
-    "description1": "Actaer је новооснована технолошка консалтинг фирма коју су основали искусни инжењери и консултанти. Доносимо свеже перспективе и доказану експертизу за претварање ваше визије у поуздана, скалабилна софтверска решења.",
-    "description2": "Од стратешког ИТ консалтинга до комплетног развоја производа, сарађујемо са предузећима свих величина за навигацију кроз сложени дигитални пејзаж. Наш агилни приступ осигурава да испоручујемо вредност на сваком кораку путовања.",
-    "tagline": "Свеже идеје, доказана експертиза"
+    "badge": "O Actaer-u",
+    "title": "Rešavanje zahtevnih poslovnih problema uz <highlighted>Pametnu tehnologiju</highlighted>",
+    "description1": "Actaer je novoosnovana tehnološka konsalting firma koju su osnovali iskusni inženjeri i konsultanti. Donosimo sveže perspektive i dokazanu ekspertizu za pretvaranje vaše vizije u pouzdana, skalabilna softverska rešenja.",
+    "description2": "Od strateškog IT konsaltinga do kompletnog razvoja proizvoda, sarađujemo sa preduzećima svih veličina za navigaciju kroz složeni digitalni pejzaž. Naš agilni pristup osigurava da isporučujemo vrednost na svakom koraku putovanja.",
+    "tagline": "Sveže ideje, dokazana ekspertiza"
   },
   "services": {
-    "badge": "Наше услуге",
-    "title": "Свеобухватна технолошка решења за <highlighted>Модерна предузећа</highlighted>",
-    "description": "Од стратешког консалтинга до практичног развоја, нудимо комплетне услуге за покретање ваше дигиталне трансформације.",
-    "viewAll": "Погледајте све услуге",
-    "learnMore": "Сазнајте више",
-    "keyOfferings": "Кључне понуде:",
+    "badge": "Naše usluge",
+    "title": "Sveobuhvatna tehnološka rešenja za <highlighted>Moderna preduzeća</highlighted>",
+    "description": "Od strateškog konsaltinga do praktičnog razvoja, nudimo kompletne usluge za pokretanje vaše digitalne transformacije.",
+    "viewAll": "Pogledajte sve usluge",
+    "learnMore": "Saznajte više",
+    "keyOfferings": "Ključne ponude:",
     "itConsulting": {
-      "title": "ИТ консалтинг",
-      "description": "Стратешко технолошко вођење за покретање дигиталне трансформације и оптимизацију ваше ИТ инфраструктуре.",
+      "title": "IT konsalting",
+      "description": "Strateško tehnološko vođenje za pokretanje digitalne transformacije i optimizaciju vaše IT infrastrukture.",
       "features": {
-        "digitalTransformation": "Стратегија дигиталне трансформације",
-        "technicalDueDiligence": "Техничка провера",
-        "teamAugmentation": "Проширење тима",
-        "dataDriven": "Консалтинг заснован на подацима"
+        "digitalTransformation": "Strategija digitalne transformacije",
+        "technicalDueDiligence": "Tehnička provera",
+        "teamAugmentation": "Proširenje tima",
+        "dataDriven": "Konsalting zasnovan na podacima"
       }
     },
     "softwareDevelopment": {
-      "title": "Развој софтвера",
-      "description": "Прилагођена софтверска решења изграђена најсавременијим технологијама за решавање ваших јединствених изазова.",
+      "title": "Razvoj softvera",
+      "description": "Prilagođena softverska rešenja izgrađena najsavremenijim tehnologijama za rešavanje vaših jedinstvenih izazova.",
       "features": {
-        "fullStack": "Full-Stack инжењеринг",
-        "aiMl": "ВИ и машинско учење",
-        "enterprise": "Корпоративна решења",
-        "realTime": "Платформе у реалном времену"
+        "fullStack": "Full-Stack inženjering",
+        "aiMl": "VI i mašinsko učenje",
+        "enterprise": "Korporativna rešenja",
+        "realTime": "Platforme u realnom vremenu"
       }
     },
     "productDevelopment": {
-      "title": "Развој производа",
-      "description": "Комплетна израда производа од идеје до лансирања, уз континуирану подршку и итерације.",
+      "title": "Razvoj proizvoda",
+      "description": "Kompletna izrada proizvoda od ideje do lansiranja, uz kontinuiranu podršku i iteracije.",
       "features": {
-        "prototyping": "Прототипирање и MVP",
-        "userCentric": "Дизајн усмерен на корисника",
-        "agile": "Агилни развој",
-        "launch": "Лансирање и скалирање"
+        "prototyping": "Prototipiranje i MVP",
+        "userCentric": "Dizajn usmeren na korisnika",
+        "agile": "Agilni razvoj",
+        "launch": "Lansiranje i skaliranje"
       }
     }
   },
   "servicesPage": {
-    "pageTitle": "Услуге",
-    "pageDescription": "Свеобухватна технолошка решења укључујући ИТ консалтинг, развој прилагођеног софтвера и развој производа за покретање ваше дигиталне трансформације.",
-    "heroTitle": "Свеобухватна решења за {highlighted}",
-    "heroHighlighted": "Дигитални успех",
-    "heroDescription": "Од стратешког консалтинга до практичног развоја, нудимо комплетне услуге за покретање ваше дигиталне трансформације.",
-    "faqBadge": "ЧПП",
-    "faqTitle": "Честа питања",
-    "faqDescription": "Одговори на често постављана питања о нашим услугама",
-    "faq1Question": "Како да знам која услуга је права за мој посао?",
-    "faq1Answer": "Зависи од ваше тренутне фазе. Ако истражујете опције или вам треба стратешко вођење, почните са ИТ консалтингом. Ако имате јасне захтеве и треба вам имплементација, развој софтвера је прави избор. Ако градите нов производ од нуле, наша услуга развоја производа покрива цело путовање од идеје до лансирања.",
-    "faq2Question": "Са којим технологијама Actaer ради?",
-    "faq2Answer": "Радимо са модерним технологијама корпоративног нивоа укључујући React, Next.js, Vue.js за frontend; Node.js, .NET и Java за backend; PostgreSQL, MongoDB и Redis за податке; и cloud платформе попут AWS, Azure и GCP. Такође се специјализујемо за AI/ML решења користећи најновије оквире.",
-    "faq3Question": "Колико дуго траје типичан пројекат?",
-    "faq3Answer": "Временски оквири пројеката варирају у зависности од обима. Консалтинг ангажман може трајати 2-4 недеље, док пројекат развоја софтвера може трајати од 2-6 месеци. Комплетан развој производа типично траје 4-12 месеци. Пружићемо детаљан временски оквир током наше иницијалне консултације.",
-    "faq4Question": "Да ли нудите подршку након завршетка пројекта?",
-    "faq4Answer": "Да! Нудимо разне пакете подршке и одржавања укључујући исправке грешака, надзор перформанси, ажурирања функција и 24/7 критичну подршку. Верујемо у дугорочна партнерства, не само једнократне пројекте.",
-    "ctaTitle": "Нисте сигурни која вам услуга треба?",
-    "ctaDescription": "Хајде да разговарамо о вашим изазовима. Помоћи ћемо вам да пронађете право решење за ваш посао.",
-    "ctaButton": "Закажите консултацију"
+    "pageTitle": "Usluge",
+    "pageDescription": "Sveobuhvatna tehnološka rešenja uključujući IT konsalting, razvoj prilagođenog softvera i razvoj proizvoda za pokretanje vaše digitalne transformacije.",
+    "heroTitle": "Sveobuhvatna rešenja za {highlighted}",
+    "heroHighlighted": "Digitalni uspeh",
+    "heroDescription": "Od strateškog konsaltinga do praktičnog razvoja, nudimo kompletne usluge za pokretanje vaše digitalne transformacije.",
+    "faqBadge": "ČPP",
+    "faqTitle": "Česta pitanja",
+    "faqDescription": "Odgovori na često postavljana pitanja o našim uslugama",
+    "faq1Question": "Kako da znam koja usluga je prava za moj posao?",
+    "faq1Answer": "Zavisi od vaše trenutne faze. Ako istražujete opcije ili vam treba strateško vođenje, počnite sa IT konsaltingom. Ako imate jasne zahteve i treba vam implementacija, razvoj softvera je pravi izbor. Ako gradite nov proizvod od nule, naša usluga razvoja proizvoda pokriva celo putovanje od ideje do lansiranja.",
+    "faq2Question": "Sa kojim tehnologijama Actaer radi?",
+    "faq2Answer": "Radimo sa modernim tehnologijama korporativnog nivoa uključujući React, Next.js, Vue.js za frontend; Node.js, .NET i Java za backend; PostgreSQL, MongoDB i Redis za podatke; i cloud platforme poput AWS, Azure i GCP. Takođe se specijalizujemo za AI/ML rešenja koristeći najnovije okvire.",
+    "faq3Question": "Koliko dugo traje tipičan projekat?",
+    "faq3Answer": "Vremenski okviri projekata variraju u zavisnosti od obima. Konsalting angažman može trajati 2-4 nedelje, dok projekat razvoja softvera može trajati od 2-6 meseci. Kompletan razvoj proizvoda tipično traje 4-12 meseci. Pružićemo detaljan vremenski okvir tokom naše inicijalne konsultacije.",
+    "faq4Question": "Da li nudite podršku nakon završetka projekta?",
+    "faq4Answer": "Da! Nudimo razne pakete podrške i održavanja uključujući ispravke grešaka, nadzor performansi, ažuriranja funkcija i 24/7 kritičnu podršku. Verujemo u dugoročna partnerstva, ne samo jednokratne projekte.",
+    "ctaTitle": "Niste sigurni koja vam usluga treba?",
+    "ctaDescription": "Hajde da razgovaramo o vašim izazovima. Pomoći ćemo vam da pronađete pravo rešenje za vaš posao.",
+    "ctaButton": "Zakažite konsultaciju"
   },
   "itConsultingPage": {
     "pageTitle": "IT Konsalting",
@@ -102,7 +101,6 @@
     "heroHighlighted": "Vođenje",
     "heroDescription": "Navigirajte kroz kompleksni tehnološki pejzaž uz stručni konsalting koji usklađuje vaše IT investicije sa poslovnim ciljevima.",
     "ctaButton": "Započnite Konsultaciju",
-    "exploreProducts": "Istražite Vantum ERP",
     "overviewTitle": "Naše Konsalting Usluge",
     "overviewDescription": "Sveobuhvatni IT konsalting za vođenje vaše digitalne transformacije.",
     "strategyTitle": "Strategija Digitalne Transformacije",
@@ -162,7 +160,6 @@
     "heroHighlighted": "Rešenja",
     "heroDescription": "Izgradite moćan, skalabilan softver prilagođen vašim jedinstvenim poslovnim potrebama sa našim stručnim razvojnim timom.",
     "ctaButton": "Započnite Projekat",
-    "exploreProducts": "Istražite Vantum ERP",
     "overviewTitle": "Naše Razvojne Usluge",
     "overviewDescription": "Usluge razvoja softvera od početka do kraja prilagođene vašim jedinstvenim zahtevima.",
     "fullstackTitle": "Full-Stack Inženjering",
@@ -231,7 +228,6 @@
     "heroHighlighted": "Tržišta",
     "heroDescription": "Kompletan životni ciklus razvoja proizvoda sa stručnim vođenjem, od početnog koncepta do uspešnog lansiranja i dalje.",
     "ctaButton": "Započnite Proizvod",
-    "exploreProducts": "Pogledajte Vantum ERP",
     "phasesTitle": "Naš Razvojni Proces",
     "phasesDescription": "Dokazana metodologija koja vodi vaš proizvod od koncepta do uspeha na tržištu.",
     "processTitle": "Naš Razvojni Proces",
@@ -293,500 +289,354 @@
     "ctaButtonSecondary": "Pogledajte Sve Usluge"
   },
   "techStack": {
-    "badge": "Технолошки стек",
-    "title": "Изграђено уз <highlighted>Модерне технологије</highlighted>",
-    "description": "Користимо најсавременије алате и оквире за изградњу скалабилних, одрживих и високо-перформантних решења.",
+    "badge": "Tehnološki stek",
+    "title": "Izgrađeno uz <highlighted>Moderne tehnologije</highlighted>",
+    "description": "Koristimo najsavremenije alate i okvire za izgradnju skalabilnih, održivih i visoko-performantnih rešenja.",
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
-      "language": "Језик",
-      "database": "База података",
+      "language": "Jezik",
+      "database": "Baza podataka",
       "devops": "DevOps",
       "cloud": "Cloud"
     }
   },
   "workflow": {
-    "badge": "Наш процес",
-    "title": "Како <highlighted>Испоручујемо успех</highlighted>",
-    "description": "Наша доказана методологија осигурава конзистентне, високо-квалитетне резултате за сваки пројекат који преузмемо.",
+    "badge": "Naš proces",
+    "title": "Kako <highlighted>Isporučujemo uspeh</highlighted>",
+    "description": "Naša dokazana metodologija osigurava konzistentne, visoko-kvalitetne rezultate za svaki projekat koji preuzmemo.",
     "steps": {
       "planning": {
-        "title": "Планирање",
-        "description": "Анализирамо ваше изазове, усклађујемо циљеве са заинтересованим странама и развијамо свеобухватан путоказ за успех."
+        "title": "Planiranje",
+        "description": "Analiziramo vaše izazove, usklađujemo ciljeve sa zainteresovanim stranama i razvijamo sveobuhvatan putokaz za uspeh."
       },
       "design": {
-        "title": "Дизајн",
-        "description": "Наш тим креира оквире решења и ИТ архитектуре прилагођене вашим специфичним захтевима."
+        "title": "Dizajn",
+        "description": "Naš tim kreira okvire rešenja i IT arhitekture prilagođene vašim specifičnim zahtevima."
       },
       "implementation": {
-        "title": "Имплементација",
-        "description": "Агилно извршење уз беспрекорну интеграцију, изградња скалабилних решења која расту са вашим пословањем."
+        "title": "Implementacija",
+        "description": "Agilno izvršenje uz besprekornu integraciju, izgradnja skalabilnih rešenja koja rastu sa vašim poslovanjem."
       },
       "verification": {
-        "title": "Верификација",
-        "description": "Ригорозно тестирање и валидација осигуравају да ваше решење испуњава највише стандарде квалитета."
+        "title": "Verifikacija",
+        "description": "Rigorozno testiranje i validacija osiguravaju da vaše rešenje ispunjava najviše standarde kvaliteta."
       },
       "maintenance": {
-        "title": "Одржавање",
-        "description": "Проактивна подршка и континуирана унапређења одржавају ваше системе на врхунским перформансама."
+        "title": "Održavanje",
+        "description": "Proaktivna podrška i kontinuirana unapređenja održavaju vaše sisteme na vrhunskim performansama."
       }
     }
   },
   "cta": {
-    "title": "Спремни да <highlighted>Трансформишете</highlighted> своје пословање?",
-    "description": "Разговарајмо о томе како вам можемо помоћи да решите најзахтевније изазове паметним технолошким решењима.",
-    "startConversation": "Започните разговор",
-    "exploreVantum": "Истражите Vantum ERP"
+    "title": "Spremni da <highlighted>Transformišete</highlighted> svoje poslovanje?",
+    "description": "Razgovarajmo o tome kako vam možemo pomoći da rešite najzahtevnije izazove pametnim tehnološkim rešenjima.",
+    "startConversation": "Započnite razgovor"
   },
   "footer": {
-    "description": "Комплетна технолошка консалтинг фирма која трансформише предузећа у агилне, софтверски покретане иноваторе.",
-    "services": "Услуге",
-    "products": "Производи",
-    "company": "Компанија",
-    "legal": "Правна обавештења",
-    "privacyPolicy": "Политика приватности",
-    "cookiePolicy": "Политика колачића",
-    "cookieSettings": "Подешавања колачића",
-    "copyright": "© {year} Actaer. Сва права задржана."
+    "description": "Kompletna tehnološka konsalting firma koja transformiše preduzeća u agilne, softverski pokretane inovatore.",
+    "services": "Usluge",
+    "products": "Proizvodi",
+    "company": "Kompanija",
+    "legal": "Pravna obaveštenja",
+    "privacyPolicy": "Politika privatnosti",
+    "cookiePolicy": "Politika kolačića",
+    "cookieSettings": "Podešavanja kolačića",
+    "copyright": "© {year} Actaer. Sva prava zadržana."
   },
   "cookieConsent": {
     "banner": {
-      "title": "Користимо колачиће",
-      "description": "Користимо колачиће за побољшање вашег искуства прегледања, анализу саобраћаја на сајту и персонализацију садржаја. Кликом на \"Прихвати све\" пристајете на наше коришћење колачића.",
-      "learnMore": "Сазнајте више",
-      "acceptAll": "Прихвати све",
-      "rejectAll": "Одбаци све",
-      "customize": "Прилагоди"
+      "title": "Koristimo kolačiće",
+      "description": "Koristimo kolačiće za poboljšanje vašeg iskustva pregledanja, analizu saobraćaja na sajtu i personalizaciju sadržaja. Klikom na \"Prihvati sve\" pristajete na naše korišćenje kolačića.",
+      "learnMore": "Saznajte više",
+      "acceptAll": "Prihvati sve",
+      "rejectAll": "Odbaci sve",
+      "customize": "Prilagodi"
     },
     "preferences": {
-      "title": "Подешавања колачића",
-      "description": "Управљајте подешавањима колачића. Можете омогућити или онемогућити различите врсте колачића испод. Сазнајте више о томе како користимо колачиће у нашој",
-      "privacyPolicy": "Политици приватности",
-      "save": "Сачувај подешавања",
-      "required": "Обавезно"
+      "title": "Podešavanja kolačića",
+      "description": "Upravljajte podešavanjima kolačića. Možete omogućiti ili onemogućiti različite vrste kolačića ispod. Saznajte više o tome kako koristimo kolačiće u našoj",
+      "privacyPolicy": "Politici privatnosti",
+      "save": "Sačuvaj podešavanja",
+      "required": "Obavezno"
     },
     "categories": {
       "essential": {
-        "title": "Есенцијални колачићи",
-        "description": "Ови колачићи су неопходни за функционисање веб сајта и не могу се искључити. Обично се постављају само као одговор на радње које сте извршили, као што су подешавање ваших преференција приватности, пријављивање или попуњавање формулара."
+        "title": "Esencijalni kolačići",
+        "description": "Ovi kolačići su neophodni za funkcionisanje veb sajta i ne mogu se isključiti. Obično se postavljaju samo kao odgovor na radnje koje ste izvršili, kao što su podešavanje vaših preferencija privatnosti, prijavljivanje ili popunjavanje formulara."
       },
       "functional": {
-        "title": "Функционални колачићи",
-        "description": "Ови колачићи омогућавају побољшану функционалност и персонализацију, као што је памћење ваших подешавања, језичких поставки и пружање унапређених функција."
+        "title": "Funkcionalni kolačići",
+        "description": "Ovi kolačići omogućavaju poboljšanu funkcionalnost i personalizaciju, kao što je pamćenje vaših podešavanja, jezičkih postavki i pružanje unapređenih funkcija."
       },
       "analytics": {
-        "title": "Аналитички колачићи",
-        "description": "Ови колачићи нам помажу да разумемо како посетиоци комуницирају са нашим веб сајтом прикупљањем и извештавањем информација анонимно. Ово нам помаже да побољшамо наш веб сајт и услуге."
+        "title": "Analitički kolačići",
+        "description": "Ovi kolačići nam pomažu da razumemo kako posetioci komuniciraju sa našim veb sajtom prikupljanjem i izveštavanjem informacija anonimno. Ovo nam pomaže da poboljšamo naš veb sajt i usluge."
       },
       "marketing": {
-        "title": "Маркетиншки колачићи",
-        "description": "Ове колачиће могу поставити наши рекламни партнери да би направили профил ваших интересовања и приказали вам релевантне огласе на другим сајтовима."
+        "title": "Marketinški kolačići",
+        "description": "Ove kolačiće mogu postaviti naši reklamni partneri da bi napravili profil vaših interesovanja i prikazali vam relevantne oglase na drugim sajtovima."
       }
     }
   },
   "contact": {
-    "badge": "Контактирајте нас",
-    "title": "Хајде да {highlighted}",
-    "highlighted": "разговарамо",
-    "subtitle": "Имате пројекат на уму? Желите да дискутујете како вам можемо помоћи? Радо бисмо чули од вас.",
-    "pageTitle": "Контактирајте нас",
-    "pageDescription": "Ступите у контакт са Actaer. Хајде да разговарамо о вашим потребама за развој софтвера, ИТ консалтинг или развој производа.",
-    "getInTouch": "Ступите у контакт",
-    "getInTouchDescription": "Било да имате питање о нашим услугама, желите да дискутујете о пројекту, или само да се јавите, ми смо ту да помогнемо.",
-    "formTitle": "Пошаљите нам поруку",
-    "formDescription": "Попуните формулар испод и јавићемо вам се што је пре могуће.",
+    "badge": "Kontaktirajte nas",
+    "title": "Hajde da {highlighted}",
+    "highlighted": "razgovaramo",
+    "subtitle": "Imate projekat na umu? Želite da diskutujete kako vam možemo pomoći? Rado bismo čuli od vas.",
+    "pageTitle": "Kontaktirajte nas",
+    "pageDescription": "Stupite u kontakt sa Actaer. Hajde da razgovaramo o vašim potrebama za razvoj softvera, IT konsalting ili razvoj proizvoda.",
+    "getInTouch": "Stupite u kontakt",
+    "getInTouchDescription": "Bilo da imate pitanje o našim uslugama, želite da diskutujete o projektu, ili samo da se javite, mi smo tu da pomognemo.",
+    "formTitle": "Pošaljite nam poruku",
+    "formDescription": "Popunite formular ispod i javićemo vam se što je pre moguće.",
     "info": {
-      "email": "Е-пошта",
-      "phone": "Телефон",
-      "location": "Локација",
-      "businessHours": "Радно време",
-      "businessHoursValue": "Пон - Пет, 9:00 - 18:00 CET"
+      "email": "E-pošta",
+      "phone": "Telefon",
+      "location": "Lokacija",
+      "businessHours": "Radno vreme",
+      "businessHoursValue": "Pon - Pet, 9:00 - 18:00 CET"
     },
     "form": {
-      "name": "Име",
-      "namePlaceholder": "Марко Марковић",
-      "email": "Е-пошта",
+      "name": "Ime",
+      "namePlaceholder": "Marko Marković",
+      "email": "E-pošta",
       "emailPlaceholder": "marko@kompanija.com",
-      "company": "Компанија",
+      "company": "Kompanija",
       "companyPlaceholder": "Acme d.o.o.",
-      "phone": "Телефон",
+      "phone": "Telefon",
       "phonePlaceholder": "+381 XX XXX XXXX",
-      "message": "Порука",
-      "messagePlaceholder": "Реците нам о свом пројекту или како вам можемо помоћи...",
-      "submit": "Пошаљи поруку",
-      "submitting": "Слање...",
+      "message": "Poruka",
+      "messagePlaceholder": "Recite nam o svom projektu ili kako vam možemo pomoći...",
+      "submit": "Pošalji poruku",
+      "submitting": "Slanje...",
       "required": "*"
     },
     "success": {
-      "title": "Порука послата!",
-      "description": "Хвала што сте нам се обратили. Јавићемо вам се ускоро.",
-      "sendAnother": "Пошаљи још једну поруку"
+      "title": "Poruka poslata!",
+      "description": "Hvala što ste nam se obratili. Javićemo vam se uskoro.",
+      "sendAnother": "Pošalji još jednu poruku"
     },
     "errors": {
-      "general": "Нешто није у реду. Молимо покушајте поново.",
-      "submit": "Дошло је до грешке при слању поруке. Молимо покушајте поново.",
-      "unexpected": "Дошло је до неочекиване грешке. Молимо покушајте поново."
+      "general": "Nešto nije u redu. Molimo pokušajte ponovo.",
+      "submit": "Došlo je do greške pri slanju poruke. Molimo pokušajte ponovo.",
+      "unexpected": "Došlo je do neočekivane greške. Molimo pokušajte ponovo."
     },
     "faq": {
-      "title": "Често постављана питања",
+      "title": "Često postavljana pitanja",
       "responseTime": {
-        "question": "Које је ваше типично време одговора?",
-        "answer": "Обично одговарамо на упите у року од 24 радна сата. За хитне случајеве, позовите нас директно."
+        "question": "Koje je vaše tipično vreme odgovora?",
+        "answer": "Obično odgovaramo na upite u roku od 24 radna sata. Za hitne slučajeve, pozovite nas direktno."
       },
       "international": {
-        "question": "Да ли радите са међународним клијентима?",
-        "answer": "Апсолутно! Радимо са клијентима широм света. Наш тим има искуства у удаљеној сарадњи и прилагођавамо се различитим временским зонама по потреби."
+        "question": "Da li radite sa međunarodnim klijentima?",
+        "answer": "Apsolutno! Radimo sa klijentima širom sveta. Naš tim ima iskustva u udaljenoj saradnji i prilagođavamo se različitim vremenskim zonama po potrebi."
       },
       "messageInfo": {
-        "question": "Које информације треба да укључим у своју поруку?",
-        "answer": "Помозите нам да разумемо ваш пројекат укључујући: ваш пословни контекст, проблем који покушавате да решите, техничке захтеве и очекивања у вези са временским оквиром."
+        "question": "Koje informacije treba da uključim u svoju poruku?",
+        "answer": "Pomozite nam da razumemo vaš projekat uključujući: vaš poslovni kontekst, problem koji pokušavate da rešite, tehničke zahteve i očekivanja u vezi sa vremenskim okvirom."
       },
       "freeConsultation": {
-        "question": "Да ли нудите бесплатне консултације?",
-        "answer": "Да, нудимо иницијалну бесплатну консултацију да разумемо ваше потребе и истражимо како вам можемо помоћи. Без обавеза, само разговор о вашем пројекту."
+        "question": "Da li nudite besplatne konsultacije?",
+        "answer": "Da, nudimo inicijalnu besplatnu konsultaciju da razumemo vaše potrebe i istražimo kako vam možemo pomoći. Bez obaveza, samo razgovor o vašem projektu."
       }
     }
   },
   "validation": {
-    "nameMin": "Име мора имати најмање 2 карактера",
-    "emailInvalid": "Молимо унесите важећу адресу е-поште",
-    "messageMin": "Порука мора имати најмање 10 карактера"
+    "nameMin": "Ime mora imati najmanje 2 karaktera",
+    "emailInvalid": "Molimo unesite važeću adresu e-pošte",
+    "messageMin": "Poruka mora imati najmanje 10 karaktera"
   },
   "blog": {
-    "badge": "Блог",
-    "title": "Увиди и {highlighted}",
-    "highlighted": "Новости",
-    "description": "Размишљања о развоју софтвера, технолошким трендовима и изградњи успешних производа.",
-    "pageTitle": "Блог",
-    "pageDescription": "Увиди, туторијали и новости од Actaer тима. Сазнајте више о развоју софтвера, ИТ консалтингу и технолошким трендовима.",
-    "readMore": "Прочитај више",
-    "noPostsTitle": "Ускоро",
-    "noPostsDescription": "Још нема блог постова. Проверите поново ускоро!",
-    "backToBlog": "Назад на блог",
-    "thanksForReading": "Хвала на читању! Имате питања или желите да дискутујете о овој теми?",
-    "getInTouch": "Ступите у контакт"
+    "badge": "Blog",
+    "title": "Uvidi i {highlighted}",
+    "highlighted": "Novosti",
+    "description": "Razmišljanja o razvoju softvera, tehnološkim trendovima i izgradnji uspešnih proizvoda.",
+    "pageTitle": "Blog",
+    "pageDescription": "Uvidi, tutorijali i novosti od Actaer tima. Saznajte više o razvoju softvera, IT konsaltingu i tehnološkim trendovima.",
+    "readMore": "Pročitaj više",
+    "noPostsTitle": "Uskoro",
+    "noPostsDescription": "Još nema blog postova. Proverite ponovo uskoro!",
+    "backToBlog": "Nazad na blog",
+    "thanksForReading": "Hvala na čitanju! Imate pitanja ili želite da diskutujete o ovoj temi?",
+    "getInTouch": "Stupite u kontakt"
   },
   "notFound": {
-    "title": "Страница није пронађена",
-    "description": "Жао нам је, нисмо могли пронаћи страницу коју тражите. Можда је премештена или не постоји.",
-    "backToHome": "Назад на почетну",
-    "contactSupport": "Контактирајте подршку",
-    "helpfulLinks": "Ево неких корисних линкова:",
-    "ourServices": "Наше услуге",
-    "aboutUs": "О нама"
+    "title": "Stranica nije pronađena",
+    "description": "Žao nam je, nismo mogli pronaći stranicu koju tražite. Možda je premeštena ili ne postoji.",
+    "backToHome": "Nazad na početnu",
+    "contactSupport": "Kontaktirajte podršku",
+    "helpfulLinks": "Evo nekih korisnih linkova:",
+    "ourServices": "Naše usluge",
+    "aboutUs": "O nama"
   },
   "common": {
-    "learnMore": "Сазнај више",
-    "readMore": "Прочитај више",
-    "getStarted": "Започни",
-    "contactUs": "Контактирајте нас",
-    "viewAll": "Погледај све"
+    "learnMore": "Saznaj više",
+    "readMore": "Pročitaj više",
+    "getStarted": "Započni",
+    "contactUs": "Kontaktirajte nas",
+    "viewAll": "Pogledaj sve"
   },
   "privacyPage": {
-    "pageTitle": "Политика приватности",
-    "pageDescription": "Сазнајте како Actaer прикупља, користи и штити ваше личне податке.",
-    "badge": "Правна обавештења",
-    "title": "Политика приватности",
-    "lastUpdated": "Последња измена: {date}",
-    "intro": "У Actaer-у озбиљно схватамо вашу приватност. Ова Политика приватности објашњава како прикупљамо, користимо, откривамо и штитимо ваше информације када посећујете наш сајт или користите наше услуге.",
+    "pageTitle": "Politika privatnosti",
+    "pageDescription": "Saznajte kako Actaer prikuplja, koristi i štiti vaše lične podatke.",
+    "badge": "Pravna obaveštenja",
+    "title": "Politika privatnosti",
+    "lastUpdated": "Poslednja izmena: {date}",
+    "intro": "U Actaer-u ozbiljno shvatamo vašu privatnost. Ova Politika privatnosti objašnjava kako prikupljamo, koristimo, otkrivamo i štitimo vaše informacije kada posećujete naš sajt ili koristite naše usluge.",
     "sections": {
       "collect": {
-        "title": "Информације које прикупљамо",
-        "description": "Можемо прикупљати информације о вама на различите начине, укључујући:",
+        "title": "Informacije koje prikupljamo",
+        "description": "Možemo prikupljati informacije o vama na različite načine, uključujući:",
         "items": {
-          "contact": "Контакт информације (име, email, телефон) када попуњавате формуларе",
-          "usage": "Податке о коришћењу о томе како комуницирате са нашим сајтом",
-          "device": "Информације о уређају као што су тип прегледача, оперативни систем и IP адреса",
-          "cookies": "Податке о колачићима и сличне технологије праћења"
+          "contact": "Kontakt informacije (ime, email, telefon) kada popunjavate formulare",
+          "usage": "Podatke o korišćenju o tome kako komunicirate sa našim sajtom",
+          "device": "Informacije o uređaju kao što su tip pregledača, operativni sistem i IP adresa",
+          "cookies": "Podatke o kolačićima i slične tehnologije praćenja"
         }
       },
       "use": {
-        "title": "Како користимо ваше информације",
-        "description": "Користимо прикупљене информације за различите сврхе:",
+        "title": "Kako koristimo vaše informacije",
+        "description": "Koristimo prikupljene informacije za različite svrhe:",
         "items": {
-          "services": "За пружање и одржавање наших услуга",
-          "communication": "За комуникацију са вама о упитима и ажурирањима",
-          "improvement": "За побољшање нашег сајта и услуга",
-          "legal": "За испуњавање законских обавеза"
+          "services": "Za pružanje i održavanje naših usluga",
+          "communication": "Za komunikaciju sa vama o upitima i ažuriranjima",
+          "improvement": "Za poboljšanje našeg sajta i usluga",
+          "legal": "Za ispunjavanje zakonskih obaveza"
         }
       },
       "sharing": {
-        "title": "Дељење података",
-        "description": "Не продајемо ваше личне податке. Можемо делити информације са поузданим пружаоцима услуга који нам помажу у раду нашег сајта и вођењу пословања, под условом да се сложе да ће ове информације чувати поверљивим."
+        "title": "Deljenje podataka",
+        "description": "Ne prodajemo vaše lične podatke. Možemo deliti informacije sa pouzdanim pružaocima usluga koji nam pomažu u radu našeg sajta i vođenju poslovanja, pod uslovom da se slože da će ove informacije čuvati poverljivim."
       },
       "rights": {
-        "title": "Ваша права",
-        "description": "У зависности од ваше локације, можда имате одређена права у вези са вашим личним подацима:",
+        "title": "Vaša prava",
+        "description": "U zavisnosti od vaše lokacije, možda imate određena prava u vezi sa vašim ličnim podacima:",
         "items": {
-          "access": "Право приступа вашим личним подацима",
-          "correction": "Право на исправку нетачних података",
-          "deletion": "Право да захтевате брисање ваших података",
-          "objection": "Право на приговор обради података",
-          "portability": "Право на преносивост података"
+          "access": "Pravo pristupa vašim ličnim podacima",
+          "correction": "Pravo na ispravku netačnih podataka",
+          "deletion": "Pravo da zahtevate brisanje vaših podataka",
+          "objection": "Pravo na prigovor obradi podataka",
+          "portability": "Pravo na prenosivost podataka"
         }
       },
       "contact": {
-        "title": "Контактирајте нас",
-        "description": "Ако имате питања о овој Политици приватности или нашим праксама података, контактирајте нас на"
+        "title": "Kontaktirajte nas",
+        "description": "Ako imate pitanja o ovoj Politici privatnosti ili našim praksama podataka, kontaktirajte nas na"
       }
     }
   },
   "cookiesPage": {
-    "pageTitle": "Политика колачића",
-    "pageDescription": "Сазнајте више о колачићима које користимо и како да управљате својим подешавањима.",
-    "badge": "Правна обавештења",
-    "title": "Политика колачића",
-    "lastUpdated": "Последња измена: {date}",
-    "intro": "Ова Политика колачића објашњава како Actaer користи колачиће и сличне технологије праћења када посећујете наш сајт. Коришћењем нашег сајта, пристајете на употребу колачића у складу са овом политиком.",
+    "pageTitle": "Politika kolačića",
+    "pageDescription": "Saznajte više o kolačićima koje koristimo i kako da upravljate svojim podešavanjima.",
+    "badge": "Pravna obaveštenja",
+    "title": "Politika kolačića",
+    "lastUpdated": "Poslednja izmena: {date}",
+    "intro": "Ova Politika kolačića objašnjava kako Actaer koristi kolačiće i slične tehnologije praćenja kada posećujete naš sajt. Korišćenjem našeg sajta, pristajete na upotrebu kolačića u skladu sa ovom politikom.",
     "sections": {
       "whatAreCookies": {
-        "title": "Шта су колачићи?",
-        "description": "Колачићи су мали текстуални фајлови који се чувају на вашем уређају када посетите веб сајт. Помажу сајтовима да запамте ваше преференције и разумеју како користите сајт."
+        "title": "Šta su kolačići?",
+        "description": "Kolačići su mali tekstualni fajlovi koji se čuvaju na vašem uređaju kada posetite veb sajt. Pomažu sajtovima da zapamte vaše preferencije i razumeju kako koristite sajt."
       },
       "types": {
-        "title": "Врсте колачића које користимо",
-        "description": "Користимо различите врсте колачића за различите сврхе:",
+        "title": "Vrste kolačića koje koristimo",
+        "description": "Koristimo različite vrste kolačića za različite svrhe:",
         "essential": {
-          "title": "Есенцијални колачићи",
-          "description": "Ови колачићи су неопходни за правилно функционисање сајта. Омогућавају основне функције као што су навигација страницама и приступ сигурним областима."
+          "title": "Esencijalni kolačići",
+          "description": "Ovi kolačići su neophodni za pravilno funkcionisanje sajta. Omogućavaju osnovne funkcije kao što su navigacija stranicama i pristup sigurnim oblastima."
         },
         "functional": {
-          "title": "Функционални колачићи",
-          "description": "Ови колачићи памте ваше преференције и изборе да би пружили персонализованије искуство."
+          "title": "Funkcionalni kolačići",
+          "description": "Ovi kolačići pamte vaše preferencije i izbore da bi pružili personalizovanije iskustvo."
         },
         "analytics": {
-          "title": "Аналитички колачићи",
-          "description": "Ови колачићи нам помажу да разумемо како посетиоци комуницирају са нашим сајтом прикупљањем анонимних информација."
+          "title": "Analitički kolačići",
+          "description": "Ovi kolačići nam pomažu da razumemo kako posetioci komuniciraju sa našim sajtom prikupljanjem anonimnih informacija."
         },
         "marketing": {
-          "title": "Маркетиншки колачићи",
-          "description": "Ови колачићи прате ваше навике прегледања да би испоручили рекламе које су релевантније за вас и ваша интересовања."
+          "title": "Marketinški kolačići",
+          "description": "Ovi kolačići prate vaše navike pregledanja da bi isporučili reklame koje su relevantnije za vas i vaša interesovanja."
         }
       },
       "managing": {
-        "title": "Управљање подешавањима колачића",
-        "description": "Можете управљати подешавањима колачића у било ком тренутку кликом на линк \"Подешавања колачића\" у подножју нашег сајта.",
-        "browserSettings": "Такође можете контролисати колачиће кроз подешавања вашег прегледача. Имајте на уму да онемогућавање одређених колачића може утицати на функционалност нашег сајта."
+        "title": "Upravljanje podešavanjima kolačića",
+        "description": "Možete upravljati podešavanjima kolačića u bilo kom trenutku klikom na link \"Podešavanja kolačića\" u podnožju našeg sajta.",
+        "browserSettings": "Takođe možete kontrolisati kolačiće kroz podešavanja vašeg pregledača. Imajte na umu da onemogućavanje određenih kolačića može uticati na funkcionalnost našeg sajta."
       },
       "thirdParty": {
-        "title": "Колачићи трећих страна",
-        "description": "Користимо следеће услуге трећих страна које могу постављати колачиће:",
-        "vercel": "Веб аналитика за разумевање перформанси сајта",
-        "clarity": "Снимци сесија и топлотне мапе за побољшање корисничког искуства"
+        "title": "Kolačići trećih strana",
+        "description": "Koristimo sledeće usluge trećih strana koje mogu postavljati kolačiće:",
+        "vercel": "Veb analitika za razumevanje performansi sajta",
+        "clarity": "Snimci sesija i toplotne mape za poboljšanje korisničkog iskustva"
       },
       "contact": {
-        "title": "Контактирајте нас",
-        "description": "Ако имате питања о нашој употреби колачића, контактирајте нас на"
+        "title": "Kontaktirajte nas",
+        "description": "Ako imate pitanja o našoj upotrebi kolačića, kontaktirajte nas na"
       }
-    }
-  },
-  "vantumErpPage": {
-    "pageTitle": "Vantum ERP - ERP за дистрибуцију, редефинисан",
-    "pageDescription": "Модеран ERP за дистрибуцију за велепродаје, дистрибутере и малопродајне ланце. Управљање залихама, продајни налози, набавка и АИ паметно снабдевање.",
-    "badge": "Enterprise производ",
-    "heroTitle": "Vantum ERP",
-    "heroSubtitle": "ERP за дистрибуцију, редефинисан",
-    "heroDescription": "ERP без legacy баласта. Изграђен за модерне велепродаје, дистрибутере, малопродајне ланце и 3PL провајдере.",
-    "visitVantum": "Посетите Vantum ERP",
-    "requestDemo": "Затражите демо",
-    "metrics": {
-      "fasterImplementation": "Бржа имплементација",
-      "apiCoverage": "API покривеност",
-      "hiddenFees": "Скривене накнаде",
-      "usersIncluded": "Корисници укључени"
-    },
-    "modules": {
-      "title": "Четири моћна модула",
-      "description": "Све што вам је потребно за управљање дистрибуционим пословањем, на једној интегрисаној платформи.",
-      "inventory": {
-        "title": "Управљање залихама",
-        "description": "Видљивост залиха у реалном времену преко неограниченог броја магацина са праћењем лотова, серијских бројева и локација.",
-        "features": {
-          "multiWarehouse": "Подршка за више магацина",
-          "lotTracking": "Праћење лотова и серијских бројева",
-          "binLocation": "Управљање локацијама",
-          "realTimeStock": "Ниво залиха у реалном времену",
-          "adjustments": "Корекције залиха"
-        }
-      },
-      "sales": {
-        "title": "Продајни налози",
-        "description": "Комплетан ток од понуде до наплате са провером доступности у реалном времену и аутоматском резервацијом залиха.",
-        "features": {
-          "quoteManagement": "Управљање понудама",
-          "orderProcessing": "Обрада налога",
-          "realTimeAvailability": "Доступност у реалном времену",
-          "autoReservations": "Аутоматске резервације",
-          "shippingIntegration": "Интеграција испоруке"
-        }
-      },
-      "purchasing": {
-        "title": "Набавка",
-        "description": "Оптимизовано управљање добављачима са аутоматизацијом наруџбина, праћењем рокова испоруке и анализом трошкова.",
-        "features": {
-          "vendorManagement": "Управљање добављачима",
-          "purchaseOrders": "Наруџбенице",
-          "leadTimeTracking": "Праћење рокова испоруке",
-          "costAnalysis": "Анализа трошкова",
-          "receivingWorkflow": "Ток пријема"
-        }
-      },
-      "replenishment": {
-        "title": "Паметно снабдевање",
-        "description": "АИ подржано израчунавање тачке поновног наручивања са аутоматском генерацијом наруџбина на основу брзине продаје.",
-        "features": {
-          "aiForecasting": "АИ предвиђање потражње",
-          "reorderOptimization": "Оптимизација тачке поновног наручивања",
-          "autoPoGeneration": "Аутоматска генерација наруџбина",
-          "seasonalAdjustments": "Сезонска прилагођавања",
-          "safetyStock": "Израчунавање сигурносних залиха"
-        }
-      }
-    },
-    "comparison": {
-      "title": "Legacy ERP vs Vantum",
-      "description": "Сазнајте зашто модерне компаније бирају Vantum уместо традиционалних ERP система.",
-      "feature": "Карактеристика",
-      "legacyErp": "Legacy ERP",
-      "vantumErp": "Vantum ERP",
-      "implementationTime": "Време имплементације",
-      "legacyImplementation": "6-18 месеци",
-      "vantumImplementation": "Недеље, не месеци",
-      "licensingModel": "Модел лиценцирања",
-      "legacyLicensing": "Накнаде по кориснику",
-      "vantumLicensing": "Неограничено корисника",
-      "customization": "Прилагођавање",
-      "legacyCustomization": "Потребни консултанти",
-      "vantumCustomization": "Самостална конфигурација",
-      "userExperience": "Корисничко искуство",
-      "legacyUx": "UX стар деценију",
-      "vantumUx": "Модеран интерфејс",
-      "architecture": "Архитектура",
-      "legacyArchitecture": "Монолитна",
-      "vantumArchitecture": "Модуларна, cloud-native",
-      "updates": "Ажурирања",
-      "legacyUpdates": "Годишња издања",
-      "vantumUpdates": "Континуирано постављање"
-    },
-    "techStack": {
-      "title": "Enterprise-grade архитектура",
-      "description": "Изграђен на модерним, доказаним технологијама за поузданост, перформансе и безбедност.",
-      "backend": "Backend",
-      "frontend": "Frontend",
-      "database": "База података",
-      "events": "Догађаји",
-      "caching": "Кеширање",
-      "integration": "Интеграција",
-      "features": {
-        "subSecond": {
-          "title": "Одзив испод секунде",
-          "description": "Оптимизовани упити и кеширање за муњевите перформансе."
-        },
-        "security": {
-          "title": "Enterprise безбедност",
-          "description": "RBAC, евиденција ревизије и шифровање у мировању и преносу."
-        },
-        "api": {
-          "title": "100% API покривеност",
-          "description": "Пун приступ REST API-ју за беспрекорне интеграције."
-        }
-      }
-    },
-    "faq": {
-      "badge": "FAQ",
-      "title": "Често постављана питања",
-      "description": "Све што треба да знате о Vantum ERP-у",
-      "q1": {
-        "question": "Шта је Vantum ERP?",
-        "answer": "Vantum ERP је модеран ERP систем за дистрибуцију дизајниран специјално за велепродаје, дистрибутере, малопродајне ланце и 3PL провајдере. Укључује АИ паметно снабдевање, аналитику у реалном времену и 100% API покривеност — све без сложености legacy ERP система."
-      },
-      "q2": {
-        "question": "По чему се Vantum ERP разликује од традиционалних ERP система?",
-        "answer": "За разлику од legacy ERP-ова који захтевају обимне прилагодбе и дуге циклусе имплементације, Vantum ERP је изграђен са модерном cloud-native архитектуром. Нуди 10 пута бржу имплементацију, неограничено корисника без лиценцирања по кориснику, нула скривених накнада и АИ функције уграђене од почетка."
-      },
-      "q3": {
-        "question": "Које индустрије опслужује Vantum ERP?",
-        "answer": "Vantum ERP је оптимизован за компаније фокусиране на дистрибуцију, укључујући велепродајне дистрибутере, малопродајне ланце са више локација, 3PL провајдере и свако предузеће које управља сложеним залихама преко више магацина."
-      },
-      "q4": {
-        "question": "Да ли Vantum ERP укључује АИ функције?",
-        "answer": "Да! Vantum ERP укључује АИ паметно снабдевање које анализира продајне обрасце, сезоналност и рокове испоруке да аутоматски генерише оптималне предлоге за набавку. Ово помаже у смањењу недостатка залиха уз минимизирање вишка."
-      },
-      "q5": {
-        "question": "Како могу да почнем са Vantum ERP-ом?",
-        "answer": "Тренутно примамо компаније за наш пилот програм 2026. Посетите vantumerp.com за више информација или контактирајте наш продајни тим да закажете демо."
-      }
-    },
-    "cta": {
-      "badge": "Ограничен пилот програм",
-      "title": "Придружите се пилот програму 2026",
-      "description": "Примамо ограничен број компанија за наш пилот програм. Добијте рани приступ и учествујте у обликовању будућности ERP-а за дистрибуцију.",
-      "learnMore": "Сазнајте више на vantumerp.com",
-      "contactSales": "Контактирајте продају"
     }
   },
   "aboutPage": {
-    "pageTitle": "О Actaer-у",
-    "pageDescription": "Сазнајте више о Actaer-у - комплетној технолошкој консултантској фирми која трансформише предузећа у агилне, софтверски покретане иноваторе.",
-    "badge": "О Actaer-у",
-    "heroTitle": "Инжењеринг за",
-    "heroHighlighted": "Дигитални успех",
-    "heroDescription": "Ми смо комплетна технолошка консултантска фирма која трансформише предузећа у агилне, софтверски покретане иноваторе. Технологија је кључ за откључавање вашег потенцијала.",
+    "pageTitle": "O Actaer-u",
+    "pageDescription": "Saznajte više o Actaer-u - kompletnoj tehnološkoj konsultantskoj firmi koja transformiše preduzeća u agilne, softverski pokretane inovatore.",
+    "badge": "O Actaer-u",
+    "heroTitle": "Inženjering za",
+    "heroHighlighted": "Digitalni uspeh",
+    "heroDescription": "Mi smo kompletna tehnološka konsultantska firma koja transformiše preduzeća u agilne, softverski pokretane inovatore. Tehnologija je ključ za otključavanje vašeg potencijala.",
     "story": {
-      "title": "Наша прича",
-      "paragraph1": "Actaer је основан са једноставним уверењем: технологија треба да буде помоћник, а не препрека. Видели смо превише предузећа која се боре са застарелим системима, неуспелим софтверским пројектима и технологијом која није служила њиховим потребама.",
-      "paragraph2": "Кренули смо да то променимо. Наш оснивачки тим обједињује искуство из enterprise софтвера, стартупова и консалтинга. Видели смо шта функционише, шта не, и зашто већина технолошких иницијатива не испуњава своје обећање.",
-      "paragraph3": "Као нова фирма, доносимо свеже перспективе и модерне приступе — неоптерећени legacy размишљањем. Сарађујемо са предузећима свих величина да градимо софтвер који заиста функционише, скалира са вашим потребама и испоручује стварну вредност.",
-      "paragraph4": "Наш први производ, Vantum ERP, отелотворује све у шта верујемо када је софтвер у питању: модеран је, једноставан за употребу и изграђен за начин на који предузећа заиста раде данас.",
-      "tagline": "Инжењерска изврсност"
+      "title": "Naša priča",
+      "paragraph1": "Actaer je osnovan sa jednostavnim uverenjem: tehnologija treba da bude pomoćnik, a ne prepreka. Videli smo previše preduzeća koja se bore sa zastarelim sistemima, neuspelim softverskim projektima i tehnologijom koja nije služila njihovim potrebama.",
+      "paragraph2": "Krenuli smo da to promenimo. Naš osnivački tim objedinjuje iskustvo iz enterprise softvera, startupova i konsaltinga. Videli smo šta funkcioniše, šta ne, i zašto većina tehnoloških inicijativa ne ispunjava svoje obećanje.",
+      "paragraph3": "Kao nova firma, donosimo sveže perspektive i moderne pristupe — neopterećeni legacy razmišljanjem. Sarađujemo sa preduzećima svih veličina da gradimo softver koji zaista funkcioniše, skalira sa vašim potrebama i isporučuje stvarnu vrednost.",
+      "tagline": "Inženjerska izvrsnost",
+      "paragraph4": "Verujemo u dugoročna partnerstva zasnovana na poverenju i stručnosti. Kombinujemo strateško savetovanje, vrhunski inženjering i blisku saradnju sa vašim timom kako bismo zajedno izgradili održiva digitalna rešenja."
     },
     "values": {
-      "title": "Наше вредности",
-      "description": "Принципи који воде све што радимо.",
+      "title": "Naše vrednosti",
+      "description": "Principi koji vode sve što radimo.",
       "resultsDriven": {
-        "title": "Оријентисани на резултате",
-        "description": "Меримо успех утицајем који стварамо за наше клијенте, не сатима рада или написаним линијама кода."
+        "title": "Orijentisani na rezultate",
+        "description": "Merimo uspeh uticajem koji stvaramo za naše klijente, ne satima rada ili napisanim linijama koda."
       },
       "clientCentric": {
-        "title": "Фокусирани на клијента",
-        "description": "Ваш успех је наш успех. Градимо дугорочна партнерства заснована на поверењу, транспарентности и заједничком расту."
+        "title": "Fokusirani na klijenta",
+        "description": "Vaš uspeh je naš uspeh. Gradimo dugoročna partnerstva zasnovana na poverenju, transparentnosti i zajedničkom rastu."
       },
       "innovationFocused": {
-        "title": "Фокусирани на иновације",
-        "description": "Остајемо на челу технологије, доносећи најсавременија решења за решавање ваших најизазовнијих проблема."
+        "title": "Fokusirani na inovacije",
+        "description": "Ostajemo na čelu tehnologije, donoseći najsavremenija rešenja za rešavanje vaših najizazovnijih problema."
       },
       "collaborative": {
-        "title": "Колаборативни",
-        "description": "Радимо као продужетак вашег тима, негујући отворену комуникацију и заједничко власништво над резултатима."
+        "title": "Kolaborativni",
+        "description": "Radimo kao produžetak vašeg tima, negujući otvorenu komunikaciju i zajedničko vlasništvo nad rezultatima."
       }
     },
     "mission": {
-      "title": "Наша мисија",
-      "description": "Да оснажимо предузећа технологијом која заиста функционише. На мисији смо да елиминишемо јаз између онога што технологија обећава и онога што испоручује.",
-      "quote": "Ваш успех, пројектован од стране ACTAER-а"
+      "title": "Naša misija",
+      "description": "Da osnažimo preduzeća tehnologijom koja zaista funkcioniše. Na misiji smo da eliminišemo jaz između onoga što tehnologija obećava i onoga što isporučuje.",
+      "quote": "Vaš uspeh, projektovan od strane ACTAER-a"
     },
     "whatWeDo": {
-      "title": "Шта радимо",
-      "description": "Свеобухватне технолошке услуге за покретање вашег пословања.",
+      "title": "Šta radimo",
+      "description": "Sveobuhvatne tehnološke usluge za pokretanje vašeg poslovanja.",
       "itConsulting": {
-        "title": "IT консалтинг",
-        "description": "Стратешко вођење за дигиталну трансформацију, технички due diligence и технолошко планирање."
+        "title": "IT konsalting",
+        "description": "Strateško vođenje za digitalnu transformaciju, tehnički due diligence i tehnološko planiranje."
       },
       "softwareDevelopment": {
-        "title": "Развој софтвера",
-        "description": "Решења прилагођена вашим потребама изграђена модерним технологијама."
+        "title": "Razvoj softvera",
+        "description": "Rešenja prilagođena vašim potrebama izgrađena modernim tehnologijama."
       },
       "productDevelopment": {
-        "title": "Развој производа",
-        "description": "Комплетно креирање производа од концепта до лансирања, са континуираном подршком и итерацијама."
+        "title": "Razvoj proizvoda",
+        "description": "Kompletno kreiranje proizvoda od koncepta do lansiranja, sa kontinuiranom podrškom i iteracijama."
       },
-      "learnMore": "Сазнај више"
+      "learnMore": "Saznaj više"
     },
     "cta": {
-      "title": "Спремни за сарадњу?",
-      "description": "Разговарајмо о томе како можемо да помогнемо у трансформацији вашег пословања технологијом која испоручује.",
-      "getInTouch": "Ступите у контакт",
-      "exploreServices": "Истражите услуге"
+      "title": "Spremni za saradnju?",
+      "description": "Razgovarajmo o tome kako možemo da pomognemo u transformaciji vašeg poslovanja tehnologijom koja isporučuje.",
+      "getInTouch": "Stupite u kontakt",
+      "exploreServices": "Istražite usluge"
     }
   }
 }

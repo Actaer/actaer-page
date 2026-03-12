@@ -53,26 +53,6 @@ Complete product lifecycle services:
 
 **Best for:** Startups building MVPs, enterprises launching new products, companies needing end-to-end product support.
 
-## Products
-
-### Vantum ERP
-Modern distribution ERP for wholesalers, distributors, and retail chains.
-
-**Key Features:**
-- Inventory Management with multi-warehouse support
-- Sales Order Processing with real-time availability
-- Purchase Order Management
-- AI-Powered Smart Replenishment
-- Lot and serial tracking
-- Real-time analytics
-
-**Target Industries:** Wholesale distribution, retail chains, 3PL logistics
-**Pricing Model:** Contact for pricing (no per-seat fees, unlimited users)
-**Implementation Time:** Weeks, not months
-**Tech Stack:** .NET 10, React 19, PostgreSQL, Kafka, Redis
-
-**Website:** https://vantumerp.com
-
 ## About Us
 
 Actaer is a newly founded tech consulting firm built by experienced engineers and consultants. We bring fresh perspectives and modern approaches to help businesses leverage technology effectively.
@@ -113,9 +93,6 @@ A: We serve various industries including retail, distribution, logistics, health
 **Q: Does Actaer offer remote services?**
 A: Yes, we work with clients worldwide and offer fully remote engagement models.
 
-**Q: What is Vantum ERP?**
-A: Vantum ERP is our flagship product - a modern distribution ERP designed for wholesalers, distributors, and retail chains with AI-powered features.
-
 **Q: How can I contact Actaer?**
 A: You can reach us at office@actaer.com or call +381 649055722.
 
@@ -139,7 +116,6 @@ For more information, visit:
 - IT Consulting: https://actaer.com/services/it-consulting
 - Software Development: https://actaer.com/services/software-development
 - Product Development: https://actaer.com/services/product-development
-- Products: https://actaer.com/products/vantum-erp
 - Blog: https://actaer.com/blog
 - Contact: https://actaer.com/contact
 - About: https://actaer.com/about

@@ -82,13 +82,13 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/vantum",
-        destination: "/products/vantum-erp",
+        source: "/products/vantum-erp",
+        destination: "/services/product-development",
         permanent: true,
       },
       {
-        source: "/erp",
-        destination: "/products/vantum-erp",
+        source: "/:locale/products/vantum-erp",
+        destination: "/:locale/services/product-development",
         permanent: true,
       },
     ];

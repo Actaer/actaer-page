@@ -95,41 +95,6 @@ export function generateFaqJsonLd(
 }
 
 /**
- * Generate SoftwareApplication JSON-LD for Vantum ERP
- */
-export function generateSoftwareAppJsonLd() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Vantum ERP",
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    description:
-      "Modern distribution ERP for wholesalers, distributors, and retail chains. Inventory management, sales orders, purchasing, and AI-powered replenishment.",
-    url: "https://vantumerp.com",
-    author: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      description: "Contact for pricing",
-    },
-    featureList: [
-      "Inventory Management",
-      "Sales Orders",
-      "Purchasing",
-      "Smart Replenishment",
-      "AI-Powered Analytics",
-      "Real-time Reporting",
-    ],
-  };
-}
-
-/**
  * Generate Article JSON-LD for blog list page
  */
 export function generateBlogListJsonLd(
@@ -329,17 +294,6 @@ export function generateEnhancedOrganizationJsonLd() {
         },
       ],
     },
-    makesOffer: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "SoftwareApplication",
-          name: "Vantum ERP",
-          applicationCategory: "BusinessApplication",
-          operatingSystem: "Web",
-        },
-      },
-    ],
     slogan: "Your Success, Engineered",
     areaServed: {
       "@type": "GeoCircle",

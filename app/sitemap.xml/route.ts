@@ -25,7 +25,6 @@ const staticPaths = [
     priority: 0.8,
     changeFrequency: "monthly",
   },
-  { path: "/products/vantum-erp", priority: 0.9, changeFrequency: "weekly" },
   { path: "/blog", priority: 0.8, changeFrequency: "weekly" },
   { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
 ];

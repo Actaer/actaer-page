@@ -63,13 +63,6 @@ export default function NotFound() {
                 </Link>
                 <span className="text-muted-foreground">•</span>
                 <Link
-                  href="/products/vantum-erp"
-                  className="text-primary hover:underline underline-offset-4"
-                >
-                  Vantum ERP
-                </Link>
-                <span className="text-muted-foreground">•</span>
-                <Link
                   href="/blog"
                   className="text-primary hover:underline underline-offset-4"
                 >
