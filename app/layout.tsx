@@ -49,6 +49,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://linkedin.com" />
         <link rel="dns-prefetch" href="https://x.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        <link rel="dns-prefetch" href="https://assets.apollo.io" />
 
         {/* AI/LLM discovery files */}
         <link rel="author" href="/llms.txt" />
