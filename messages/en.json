@@ -464,6 +464,8 @@
     "noPostsDescription": "No blog posts yet. Check back soon!",
     "backToBlog": "Back to Blog",
     "thanksForReading": "Thanks for reading! Have questions or want to discuss this topic?",
+    "published": "Published",
+    "lastUpdated": "Last Updated",
     "getInTouch": "Get in Touch"
   },
   "notFound": {

@@ -70,13 +70,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   // Dynamic import of the MDX content - try locale first, then fallback
   let Content;
+  let postSchemas: object[] = [];
   try {
     const module = await import(`@/content/blog/${locale}/${slug}.mdx`);
     Content = module.default;
+    postSchemas = module.schemas || [];
   } catch {
     // Fallback to English
     const module = await import(`@/content/blog/${defaultLocale}/${slug}.mdx`);
     Content = module.default;
+    postSchemas = module.schemas || [];
   }
 
   // Breadcrumb JSON-LD
@@ -103,7 +106,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     description: post.description,
     image: post.image ? `${siteConfig.url}${post.image}` : undefined,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.lastUpdated || post.date,
     author: {
       "@type": "Person",
       name: post.author,
@@ -140,6 +143,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           __html: JSON.stringify(blogPostingJsonLd).replace(/</g, "\\u003c"),
         }}
       />
+      {postSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+          }}
+        />
+      ))}
       <Header />
       <main className="pt-24">
         <article className="py-16 md:py-24">
@@ -176,7 +188,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </span>
                 <span className="flex items-center gap-1">
                   <Calendar className="w-4 h-4" />
-                  {formatDate(post.date, locale)}
+                  {t("published")} {formatDate(post.date, locale)}
+                  {post.lastUpdated && (
+                    <>
+                      {" "}
+                      | {t("lastUpdated")}{" "}
+                      {formatDate(post.lastUpdated, locale)}
+                    </>
+                  )}
                 </span>
               </div>
             </header>

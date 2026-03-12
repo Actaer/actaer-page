@@ -7,6 +7,7 @@ export interface BlogPost {
   title: string;
   description: string;
   date: string;
+  lastUpdated?: string;
   author: string;
   tags: string[];
   image?: string;
@@ -96,6 +97,7 @@ export async function getPostBySlug(
       title: metadata.title,
       description: metadata.description,
       date: metadata.date,
+      lastUpdated: metadata.lastUpdated,
       author: metadata.author,
       tags: metadata.tags || [],
       image: metadata.image,
