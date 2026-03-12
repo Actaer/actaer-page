@@ -47,6 +47,12 @@ export function CtaSection() {
 
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="cta-content max-w-3xl mx-auto text-center">
+          <blockquote className="text-lg italic text-muted-foreground mb-8 border-l-4 border-primary pl-4">
+            &ldquo;{t("testimonial")}&rdquo;
+            <footer className="text-sm mt-2 not-italic">
+              {t("testimonialAuthor")}
+            </footer>
+          </blockquote>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6">
             {t.rich("title", {
               highlighted: (chunks) => (

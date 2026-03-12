@@ -16,6 +16,7 @@ import {
   generateBreadcrumbJsonLd,
   generateAboutPageJsonLd,
   generateFaqJsonLd,
+  generateSpeakableJsonLd,
 } from "@/lib/seo";
 import { type Locale } from "@/i18n/config";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -54,27 +55,27 @@ const faqJsonLd = generateFaqJsonLd([
   {
     question: "What is Actaer?",
     answer:
-      "Actaer is a newly founded, full-service technology consulting firm based in Serbia that specializes in IT consulting, custom software development, and product development. We transform businesses into agile, software-powered innovators.",
+      "We are a full-service technology consulting firm based in Serbia that specializes in IT consulting, custom software development, and product development. We transform businesses into agile, software-powered innovators.",
   },
   {
     question: "Where is Actaer located?",
     answer:
-      "Actaer is headquartered in Novi Pazar, Serbia. We serve clients globally and offer fully remote engagement models.",
+      "Our headquarters are in Novi Pazar, Serbia. We serve clients globally and offer fully remote engagement models.",
   },
   {
-    question: "What services does Actaer offer?",
+    question: "What services does the company offer?",
     answer:
-      "Actaer offers three main service categories: IT Consulting (digital transformation, technical due diligence, team augmentation), Custom Software Development (full-stack engineering, AI/ML solutions, enterprise systems), and Product Development (MVP development, UI/UX design, ongoing support).",
+      "We offer three main service categories: IT Consulting (digital transformation, technical due diligence, team augmentation), Custom Software Development (full-stack engineering, AI/ML solutions, enterprise systems), and Product Development (MVP development, UI/UX design, ongoing support).",
   },
   {
     question: "Why choose Actaer as a new consulting firm?",
     answer:
-      "Although newly founded, Actaer is built by experienced engineers and consultants with proven track records in software development and IT consulting. We bring fresh perspectives, modern approaches, and dedicated focus to every client engagement.",
+      "Although newly founded, our team consists of experienced engineers and consultants with proven track records in software development and IT consulting. We bring fresh perspectives, modern approaches, and dedicated focus to every client engagement.",
   },
   {
     question: "What is Vantum ERP?",
     answer:
-      "Vantum ERP is Actaer's flagship product - a modern distribution ERP designed for wholesalers, distributors, and retail chains. It features AI-powered replenishment, real-time inventory management, and a modern cloud-native architecture.",
+      "Vantum ERP is our flagship product - a modern distribution ERP designed for wholesalers, distributors, and retail chains. It features AI-powered replenishment, real-time inventory management, and a modern cloud-native architecture.",
   },
 ]);
 
@@ -83,6 +84,10 @@ export default async function AboutPage({ params }: PageProps) {
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "aboutPage" });
+
+  const speakableJsonLd = generateSpeakableJsonLd({
+    url: `${siteConfig.url}/${locale}/about`,
+  });
 
   const values = [
     {
@@ -145,6 +150,12 @@ export default async function AboutPage({ params }: PageProps) {
           __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(speakableJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}
@@ -180,6 +191,27 @@ export default async function AboutPage({ params }: PageProps) {
                   <p>{t("story.paragraph2")}</p>
                   <p>{t("story.paragraph3")}</p>
                   <p>{t("story.paragraph4")}</p>
+                </div>
+                <p className="mt-4 text-sm text-muted-foreground">
+                  Founded in 2015. Last updated: January 2026.
+                </p>
+                <div className="mt-4 flex gap-4">
+                  <a
+                    href={siteConfig.links.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:text-primary/80 text-sm"
+                  >
+                    LinkedIn
+                  </a>
+                  <a
+                    href={siteConfig.links.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:text-primary/80 text-sm"
+                  >
+                    X (Twitter)
+                  </a>
                 </div>
               </div>
 

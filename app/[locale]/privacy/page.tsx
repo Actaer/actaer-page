@@ -3,7 +3,7 @@ import { Header, Footer } from "@/components/layout";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
-import { generateBreadcrumbJsonLd } from "@/lib/seo";
+import { generateBreadcrumbJsonLd, generateSpeakableJsonLd } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { type Locale } from "@/i18n/config";
 
@@ -36,12 +36,22 @@ export default async function PrivacyPage({ params }: PageProps) {
     { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/privacy` },
   ]);
 
+  const speakableJsonLd = generateSpeakableJsonLd({
+    url: `${siteConfig.url}/${locale}/privacy`,
+  });
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(speakableJsonLd).replace(/</g, "\\u003c"),
         }}
       />
       <Header />
@@ -64,17 +74,29 @@ export default async function PrivacyPage({ params }: PageProps) {
           <div className="prose prose-neutral dark:prose-invert max-w-none">
             {/* Introduction */}
             <section className="mb-8">
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 {t("intro")}
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Effective date: January 24, 2026. For more on GDPR, see the{" "}
+                <a
+                  href="https://gdpr.eu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-2 hover:text-primary/80"
+                >
+                  official GDPR website
+                </a>
+                .
               </p>
             </section>
 
             <Separator className="my-8" />
 
-            {/* Information We Collect */}
+            {/* 1. Information We Collect */}
             <section className="mb-8">
               <h2 className="text-xl font-semibold mb-4">
-                {t("sections.collect.title")}
+                1. {t("sections.collect.title")}
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 {t("sections.collect.description")}
@@ -89,10 +111,10 @@ export default async function PrivacyPage({ params }: PageProps) {
 
             <Separator className="my-8" />
 
-            {/* How We Use Information */}
+            {/* 2. How We Use Information */}
             <section className="mb-8">
               <h2 className="text-xl font-semibold mb-4">
-                {t("sections.use.title")}
+                2. {t("sections.use.title")}
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 {t("sections.use.description")}
@@ -107,10 +129,10 @@ export default async function PrivacyPage({ params }: PageProps) {
 
             <Separator className="my-8" />
 
-            {/* Data Sharing */}
+            {/* 3. Data Sharing */}
             <section className="mb-8">
               <h2 className="text-xl font-semibold mb-4">
-                {t("sections.sharing.title")}
+                3. {t("sections.sharing.title")}
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 {t("sections.sharing.description")}
@@ -119,10 +141,23 @@ export default async function PrivacyPage({ params }: PageProps) {
 
             <Separator className="my-8" />
 
-            {/* Your Rights */}
+            {/* 4. Data Retention */}
+            <section className="mb-8">
+              <h2 className="text-xl font-semibold mb-4">4. Data Retention</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                We retain personal data only for as long as necessary to fulfill
+                the purposes outlined in this policy, or as required by law.
+                Contact form submissions are retained for up to 12 months.
+                Analytics data is anonymized and retained for up to 24 months.
+              </p>
+            </section>
+
+            <Separator className="my-8" />
+
+            {/* 5. Your Rights */}
             <section className="mb-8">
               <h2 className="text-xl font-semibold mb-4">
-                {t("sections.rights.title")}
+                5. {t("sections.rights.title")}
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 {t("sections.rights.description")}
@@ -138,10 +173,10 @@ export default async function PrivacyPage({ params }: PageProps) {
 
             <Separator className="my-8" />
 
-            {/* Contact */}
+            {/* 6. Contact */}
             <section className="mb-8">
               <h2 className="text-xl font-semibold mb-4">
-                {t("sections.contact.title")}
+                6. {t("sections.contact.title")}
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 {t("sections.contact.description")}{" "}

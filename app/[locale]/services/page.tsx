@@ -17,7 +17,11 @@ import {
 } from "@/components/ui/accordion";
 import { ArrowRight, Lightbulb, Code2, Rocket } from "lucide-react";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
-import { generateBreadcrumbJsonLd, generateServiceListJsonLd } from "@/lib/seo";
+import {
+  generateBreadcrumbJsonLd,
+  generateServiceListJsonLd,
+  generateSpeakableJsonLd,
+} from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Locale } from "@/i18n/config";
@@ -101,6 +105,10 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
     })),
   );
 
+  const speakableJsonLd = generateSpeakableJsonLd({
+    url: `${siteConfig.url}/${locale}/services`,
+  });
+
   return (
     <>
       <script
@@ -113,6 +121,12 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(serviceListJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(speakableJsonLd).replace(/</g, "\\u003c"),
         }}
       />
       <Header />

@@ -4,7 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { BlogCard } from "@/components/blog";
 import { getAllPosts } from "@/lib/blog";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
-import { generateBreadcrumbJsonLd, generateBlogListJsonLd } from "@/lib/seo";
+import {
+  generateBreadcrumbJsonLd,
+  generateBlogListJsonLd,
+  generateSpeakableJsonLd,
+} from "@/lib/seo";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Locale } from "@/i18n/config";
 
@@ -82,6 +86,22 @@ export default async function BlogPage({ params }: BlogPageProps) {
               <p className="text-lg md:text-xl text-muted-foreground">
                 {t("description")}
               </p>
+              <div className="flex justify-center gap-8 mt-8">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-primary">
+                    {posts.length}
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Published Articles
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-primary">3</div>
+                  <p className="text-sm text-muted-foreground">
+                    Topic Categories
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

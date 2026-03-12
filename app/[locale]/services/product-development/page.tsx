@@ -16,6 +16,7 @@ import {
   generateServiceJsonLd,
   generateHowToJsonLd,
   generateFaqJsonLd,
+  generateSpeakableJsonLd,
 } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
@@ -164,7 +165,22 @@ export default async function ProductDevelopmentPage({
       answer:
         "Yes, we offer comprehensive post-launch support including 24/7 monitoring, bug fixes and updates, security patches, and feature enhancements to ensure your product continues to evolve with your business.",
     },
+    {
+      question:
+        "What is the difference between MVP and full product development?",
+      answer:
+        "An MVP focuses on the minimum set of features to validate your idea with real users, typically delivered in 2-3 months. Full product development builds on the validated MVP with additional features, integrations, and scaling, spanning 6-12 months.",
+    },
+    {
+      question: "How does agile development reduce risk?",
+      answer:
+        "Agile development reduces risk by delivering working software in short sprints (1-2 weeks), gathering user feedback early and often, and allowing you to pivot or adjust priorities based on real data rather than assumptions.",
+    },
   ]);
+
+  const speakableJsonLd = generateSpeakableJsonLd({
+    url: `${siteConfig.url}/${locale}/services/product-development`,
+  });
 
   return (
     <>
@@ -192,6 +208,12 @@ export default async function ProductDevelopmentPage({
           __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(speakableJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}
@@ -208,8 +230,11 @@ export default async function ProductDevelopmentPage({
                 </span>
                 {t.raw("heroTitle").split("{highlighted}")[1] || ""}
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              <p className="text-lg md:text-xl text-muted-foreground mb-4">
                 {t("heroDescription")}
+              </p>
+              <p className="text-sm text-muted-foreground mb-8">
+                Last updated: January 2026.
               </p>
               <Button asChild size="lg">
                 <Link href="/contact">
@@ -338,6 +363,39 @@ export default async function ProductDevelopmentPage({
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Expert Quote & Stats */}
+        <section className="py-16 md:py-24 bg-muted/30">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-2xl mx-auto mb-12">
+              <blockquote className="text-lg italic text-muted-foreground border-l-4 border-primary pl-4">
+                &ldquo;It doesn&apos;t matter how good your engineering team is
+                if they are not given something worthwhile to build.&rdquo;
+                <footer className="text-sm mt-2 not-italic">
+                  &mdash; Marty Cagan, Inspired: How to Create Tech Products
+                  Customers Love (2018)
+                </footer>
+              </blockquote>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              <div className="text-center p-6 rounded-lg border bg-card">
+                <div className="text-4xl font-bold text-primary mb-2">
+                  30-50%
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  faster time-to-market with agile development vs. waterfall
+                </p>
+              </div>
+              <div className="text-center p-6 rounded-lg border bg-card">
+                <div className="text-4xl font-bold text-primary mb-2">90%</div>
+                <p className="text-sm text-muted-foreground">
+                  of startups fail — but those that validate with MVPs reduce
+                  risk significantly
+                </p>
               </div>
             </div>
           </div>

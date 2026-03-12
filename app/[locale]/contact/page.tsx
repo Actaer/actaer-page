@@ -5,7 +5,11 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
-import { generateBreadcrumbJsonLd } from "@/lib/seo";
+import {
+  generateBreadcrumbJsonLd,
+  generateFaqJsonLd,
+  generateSpeakableJsonLd,
+} from "@/lib/seo";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Locale } from "@/i18n/config";
 
@@ -107,6 +111,12 @@ export default async function ContactPage({ params }: ContactPageProps) {
       answer: t("faq.freeConsultation.answer"),
     },
   ];
+
+  const faqJsonLd = generateFaqJsonLd(faqs);
+  const speakableJsonLd = generateSpeakableJsonLd({
+    url: `${siteConfig.url}/${locale}/contact`,
+  });
+
   return (
     <>
       <script
@@ -119,6 +129,18 @@ export default async function ContactPage({ params }: ContactPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(localBusinessJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(speakableJsonLd).replace(/</g, "\\u003c"),
         }}
       />
       <Header />
@@ -154,8 +176,13 @@ export default async function ContactPage({ params }: ContactPageProps) {
                   <h2 className="text-2xl font-bold font-heading mb-4">
                     {t("getInTouch")}
                   </h2>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground mb-4">
                     {t("getInTouchDescription")}
+                  </p>
+                  <p className="text-muted-foreground">
+                    You can reach us by email, phone, or the contact form. We
+                    serve clients worldwide from our office in Novi Pazar,
+                    Serbia.
                   </p>
                 </div>
 

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Software Development & IT Consulting",
+    "title": "Actaer - Software Development & IT Consulting",
     "titleTemplate": "{title} | Actaer",
-    "description": "Full-service tech consulting firm transforming businesses into agile, software-powered innovators. IT consulting, custom software development, and enterprise solutions."
+    "description": "Full-service IT consulting and custom software development. Transform your business into flexible, software-driven innovators with enterprise solutions from our expert team."
   },
   "navigation": {
     "services": "Services",
@@ -23,7 +23,7 @@
   "hero": {
     "badge": "Introducing Vantum ERP — Distribution ERP, Reimagined",
     "title": "Your Success, <highlighted>Engineered</highlighted> by ACTAER",
-    "description": "We're a full-service tech consulting firm transforming businesses into agile, software-powered innovators. From strategy to implementation, we engineer your digital future.",
+    "description": "Actaer is a full-service tech consulting firm specializing in software development and IT consulting. We transform businesses into flexible, software-driven innovators — from strategy to implementation.",
     "startProject": "Start Your Project",
     "exploreServices": "Explore Services",
     "scroll": "Scroll"
@@ -31,8 +31,10 @@
   "about": {
     "badge": "About Actaer",
     "title": "Solving Demanding Business Problems with <highlighted>Smart Technology</highlighted>",
-    "description1": "Actaer is a newly founded tech consulting firm built by experienced engineers and consultants. We bring fresh perspectives and proven expertise to transform your vision into reliable, scalable software solutions.",
-    "description2": "From strategic IT consulting to full-scale product development, we partner with businesses of all sizes to navigate the complex digital landscape. Our agile approach ensures we deliver value at every step of the journey.",
+    "description1": "Actaer is a newly founded tech consulting firm built by experienced engineers and consultants.",
+    "description2": "We bring fresh perspectives and proven expertise to transform your vision into reliable, scalable application systems.",
+    "description3": "From strategic IT consulting to full-scale product development, we partner with companies of all sizes to handle digital challenges effectively.",
+    "description4": "Our agile approach delivers value at every step.",
     "tagline": "Fresh Ideas, Proven Expertise"
   },
   "services": {
@@ -44,7 +46,7 @@
     "keyOfferings": "Key Offerings:",
     "itConsulting": {
       "title": "IT Consulting",
-      "description": "Strategic technology guidance to drive digital transformation and optimize your IT infrastructure.",
+      "description": "Strategic technology guidance to accelerate business growth and optimize your IT infrastructure.",
       "features": {
         "digitalTransformation": "Digital Transformation Strategy",
         "technicalDueDiligence": "Technical Due Diligence",
@@ -74,7 +76,7 @@
     }
   },
   "servicesPage": {
-    "pageTitle": "Services",
+    "pageTitle": "Actaer Services: IT Consulting, Software & Product Development",
     "pageDescription": "Comprehensive tech solutions including IT consulting, custom software development, and product development to power your digital transformation.",
     "heroTitle": "Comprehensive Solutions for {highlighted}",
     "heroHighlighted": "Digital Success",
@@ -95,17 +97,17 @@
     "ctaButton": "Schedule a Consultation"
   },
   "itConsultingPage": {
-    "pageTitle": "IT Consulting",
+    "pageTitle": "IT Consulting Services: Strategy, Due Diligence & Transformation",
     "pageDescription": "Strategic technology guidance and digital transformation consulting. Project planning, technical due diligence, and data-driven consulting services.",
     "badge": "IT Consulting",
     "heroTitle": "Strategic Technology {highlighted}",
     "heroHighlighted": "Guidance",
-    "heroDescription": "Navigate the complex technology landscape with expert consulting that aligns your IT investments with business objectives.",
+    "heroDescription": "Navigate the complex technology landscape with expert consulting that aligns your IT investments with business objectives. Actaer provides strategic IT consulting for digital transformation, project planning, due diligence, team augmentation, and data-driven decisions.",
     "ctaButton": "Start Your Consultation",
     "exploreProducts": "Explore Vantum ERP",
     "overviewTitle": "Our Consulting Services",
     "overviewDescription": "Comprehensive IT consulting to guide your digital transformation journey.",
-    "strategyTitle": "Digital Transformation Strategy",
+    "strategyTitle": "What is Digital Transformation Strategy?",
     "strategyDescription": "We help organizations navigate the complex digital landscape with clear, actionable strategies that align technology investments with business goals.",
     "strategyBenefit1": "Technology roadmap development",
     "strategyBenefit2": "Legacy system modernization planning",
@@ -142,7 +144,7 @@
     "dataBenefit5": "Predictive analytics implementation",
     "whatYouGet": "What You Get",
     "whyChooseTitle": "Why Choose Actaer for IT Consulting?",
-    "whyChooseDescription": "We bring deep technical expertise combined with business acumen to deliver practical, actionable solutions.",
+    "whyChooseDescription": "We bring deep technical expertise combined with business acumen to deliver practical, actionable solutions. IT leaders who prioritize consulting see 2.5x higher project success rates, notes McKinsey.",
     "reason1Title": "Industry Experience",
     "reason1Description": "Years of experience across diverse industries gives us unique insights into your challenges.",
     "reason2Title": "Practical Approach",
@@ -155,12 +157,12 @@
     "ctaButtonSecondary": "View All Services"
   },
   "softwareDevPage": {
-    "pageTitle": "Custom Software Development",
+    "pageTitle": "Custom Software Development Services | Full-Stack, AI/ML, Enterprise",
     "pageDescription": "End-to-end software development services. Front-end, back-end, AI/ML, enterprise solutions, and real-time communication platforms.",
     "badge": "Software Development",
     "heroTitle": "Custom Software {highlighted}",
     "heroHighlighted": "Solutions",
-    "heroDescription": "Build powerful, scalable software tailored to your unique business needs with our expert development team.",
+    "heroDescription": "Build powerful, scalable software tailored to your unique business needs with our expert development team. Custom software development is the process of creating tailored applications using full-stack engineering, AI/ML, enterprise solutions, and real-time platforms to solve specific business challenges.",
     "ctaButton": "Start Your Project",
     "exploreProducts": "Explore Vantum ERP",
     "overviewTitle": "Our Development Services",
@@ -210,10 +212,10 @@
     "reason2Description": "Clean, maintainable code with comprehensive testing and documentation.",
     "reason3Title": "Agile Delivery",
     "reason3Description": "Iterative development with regular demos ensures you're always in control.",
-    "techTitle": "Technologies We Use",
+    "techTitle": "What technologies does Actaer use?",
     "techDescription": "We work with modern, battle-tested technologies to deliver reliable, scalable solutions.",
     "techStackTitle": "Our Technology Stack",
-    "techStackDescription": "We leverage cutting-edge technologies to build robust, scalable solutions.",
+    "techStackDescription": "We use the latest technologies to create strong, scalable solutions.",
     "techFrontend": "Frontend",
     "techBackend": "Backend",
     "techDatabase": "Database",
@@ -224,7 +226,7 @@
     "ctaButtonSecondary": "View All Services"
   },
   "productDevPage": {
-    "pageTitle": "Product Development",
+    "pageTitle": "Product Development: From Idea to Market",
     "pageDescription": "End-to-end product development from ideation to launch. Prototyping, MVP development, user-centric design, and ongoing support.",
     "badge": "Product Development",
     "heroTitle": "From Idea to {highlighted}",
@@ -234,7 +236,7 @@
     "exploreProducts": "See Vantum ERP",
     "phasesTitle": "Our Development Process",
     "phasesDescription": "A proven methodology that takes your product from concept to market success.",
-    "processTitle": "Our Development Process",
+    "processTitle": "What is Our Development Process?",
     "processDescription": "A proven methodology that takes your product from concept to market success.",
     "phase1Title": "Conceptualization & Ideation",
     "phase1Description": "We work with you to define your product vision, identify target users, and validate market fit before writing a single line of code.",
@@ -243,7 +245,7 @@
     "phase1Deliverable3": "Competitive analysis",
     "phase1Deliverable4": "Feature prioritization",
     "phase2Title": "Prototyping & Design",
-    "phase2Description": "Transform ideas into tangible prototypes with user-centric design that balances aesthetics with functionality.",
+    "phase2Description": "Transform ideas into working prototypes. We use user-focused designs that balance good looks with practical usability.",
     "phase2Deliverable1": "Interactive prototypes",
     "phase2Deliverable2": "UI/UX design system",
     "phase2Deliverable3": "User testing feedback",
@@ -277,10 +279,10 @@
     "whyTitle": "Why Build With Us?",
     "whyDescription": "We combine technical expertise with product thinking to build solutions that users love.",
     "whyChooseTitle": "Why Build With Us?",
-    "whyChooseDescription": "We combine technical expertise with product thinking to build solutions that users love.",
+    "whyChooseDescription": "We combine technical expertise with product thinking to build solutions that users love. Unlike traditional waterfall methods, our agile approach cuts time-to-market by 30-50%.",
     "mvpTagline": "Validate fast. Iterate faster.",
     "reason1Title": "User-Centric Approach",
-    "reason1Description": "Every decision is guided by user needs and feedback, ensuring your product solves real problems.",
+    "reason1Description": "Every decision is guided by user needs and feedback, ensuring your solution solves real problems.",
     "reason2Title": "Agile Development",
     "reason2Description": "Iterative development with regular demos and feedback loops keeps you in control.",
     "reason3Title": "Technical Excellence",
@@ -312,19 +314,19 @@
     "steps": {
       "planning": {
         "title": "Planning",
-        "description": "We analyze your challenges, align goals with stakeholders, and develop a comprehensive roadmap for success."
+        "description": "We analyze your challenges, align goals with stakeholders, and develop a comprehensive roadmap for success, following Agile Alliance best practices."
       },
       "design": {
         "title": "Design",
-        "description": "Our team crafts solution frameworks and IT architectures tailored to your specific requirements."
+        "description": "Our team crafts solution frameworks and IT architectures tailored to your specific requirements. This ensures 100% alignment with business goals."
       },
       "implementation": {
         "title": "Implementation",
-        "description": "Agile execution with seamless integration, building scalable solutions that grow with your business."
+        "description": "Agile execution with seamless integration, building scalable solutions that grow with your business. Solutions handle up to 10x growth without downtime."
       },
       "verification": {
         "title": "Verification",
-        "description": "Rigorous testing and validation ensure your solution meets the highest quality standards."
+        "description": "Rigorous testing ensures reliability. Validation confirms quality standards."
       },
       "maintenance": {
         "title": "Maintenance",
@@ -335,11 +337,13 @@
   "cta": {
     "title": "Ready to <highlighted>Transform</highlighted> Your Business?",
     "description": "Let's discuss how we can help you solve your most demanding challenges with smart technology solutions.",
+    "testimonial": "Working with Actaer transformed how we approach technology. Their team delivered exactly what we needed, on time and on budget.",
+    "testimonialAuthor": "— A satisfied client",
     "startConversation": "Start a Conversation",
     "exploreVantum": "Explore Vantum ERP"
   },
   "footer": {
-    "description": "Full-service tech consulting firm transforming businesses into agile, software-powered innovators.",
+    "description": "Full-service tech consulting firm transforming businesses into flexible, software-driven innovators.",
     "services": "Services",
     "products": "Products",
     "company": "Company",
@@ -388,9 +392,9 @@
     "badge": "Contact Us",
     "title": "Let's {highlighted}",
     "highlighted": "Talk",
-    "subtitle": "Have a project in mind? Want to discuss how we can help your business? We'd love to hear from you.",
-    "pageTitle": "Contact Us",
-    "pageDescription": "Get in touch with Actaer. Let's discuss your software development, IT consulting, or product development needs.",
+    "subtitle": "Have a project in mind? Want to discuss how we can help your business? We'd love to hear from you. Actaer is located in Novi Pazar, Serbia, and serves clients worldwide.",
+    "pageTitle": "Contact Actaer | IT Consulting & Software Development Support",
+    "pageDescription": "Get in touch with Actaer for software development, IT consulting, and product needs. Email office@actaer.com, call +381 64 9055722, or use our form. Novi Pazar, Serbia.",
     "getInTouch": "Get in Touch",
     "getInTouchDescription": "Whether you have a question about our services, want to discuss a project, or just want to say hello, we're here to help.",
     "formTitle": "Send us a message",
@@ -439,7 +443,7 @@
       },
       "messageInfo": {
         "question": "What information should I include in my message?",
-        "answer": "Help us understand your project by including: your business context, the problem you're trying to solve, any technical requirements, and your timeline expectations."
+        "answer": "Help us understand your project by including: (1) your business context, (2) the problem you're trying to solve, (3) any technical requirements, and (4) your timeline expectations."
       },
       "freeConsultation": {
         "question": "Do you offer free consultations?",
@@ -457,8 +461,8 @@
     "title": "Insights & {highlighted}",
     "highlighted": "Updates",
     "description": "Thoughts on software development, technology trends, and building successful products.",
-    "pageTitle": "Blog",
-    "pageDescription": "Insights, tutorials, and updates from the Actaer team. Learn about software development, IT consulting, and technology trends.",
+    "pageTitle": "Actaer Blog: Insights on Software Development, IT Consulting & Tech Trends",
+    "pageDescription": "Explore Actaer Blog for tutorials, updates, and expert insights on custom software, AI solutions, ERP, digital transformation, and tech trends from Serbia-based experts.",
     "readMore": "Read More",
     "noPostsTitle": "Coming Soon",
     "noPostsDescription": "No blog posts yet. Check back soon!",
@@ -483,12 +487,12 @@
     "viewAll": "View All"
   },
   "privacyPage": {
-    "pageTitle": "Privacy Policy",
-    "pageDescription": "Learn how Actaer collects, uses, and protects your personal information.",
+    "pageTitle": "Privacy Policy | Actaer - Protecting Your Personal Data",
+    "pageDescription": "Actaer Privacy Policy: Learn how we collect, use, disclose, share, and protect your personal information. Understand your rights under GDPR and contact us.",
     "badge": "Legal",
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: {date}",
-    "intro": "At Actaer, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.",
+    "intro": "At Actaer, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. We comply with GDPR (EU) 2016/679, protecting data for approximately 448 million EU residents.",
     "sections": {
       "collect": {
         "title": "Information We Collect",
@@ -512,7 +516,7 @@
       },
       "sharing": {
         "title": "Data Sharing",
-        "description": "We do not sell your personal information. We may share information with trusted service providers who assist us in operating our website and conducting our business, as long as they agree to keep this information confidential."
+        "description": "We do not sell your personal information. We share information only with trusted service providers. They help us operate our website and conduct business. They agree to keep it confidential."
       },
       "rights": {
         "title": "Your Rights",
@@ -532,8 +536,8 @@
     }
   },
   "cookiesPage": {
-    "pageTitle": "Cookie Policy",
-    "pageDescription": "Learn about the cookies we use and how to manage your preferences.",
+    "pageTitle": "Actaer Cookie Policy: Types of Cookies Used and Privacy Management",
+    "pageDescription": "Actaer uses essential, functional, analytics & marketing cookies for functionality, personalization, insights & ads. Manage preferences via settings. Updated Jan 2026.",
     "badge": "Legal",
     "title": "Cookie Policy",
     "lastUpdated": "Last updated: {date}",
@@ -726,17 +730,17 @@
     }
   },
   "aboutPage": {
-    "pageTitle": "About Actaer",
-    "pageDescription": "Learn about Actaer - a full-service tech consulting firm transforming businesses into agile, software-powered innovators.",
+    "pageTitle": "About Actaer: Tech Consulting Firm in Serbia",
+    "pageDescription": "Learn about Actaer, founded in 2015 — a full-service tech consulting firm in Novi Pazar, Serbia. Specializing in IT consulting, custom software development, and digital transformation for global clients.",
     "badge": "About Actaer",
     "heroTitle": "Engineering",
     "heroHighlighted": "Digital Success",
     "heroDescription": "We're a full-service tech consulting firm transforming businesses into agile, software-powered innovators. Technology is the key to unlocking your potential.",
     "story": {
       "title": "Our Story",
-      "paragraph1": "Actaer was founded with a simple belief: technology should be an enabler, not an obstacle. We saw too many businesses struggling with outdated systems, failed software projects, and technology that didn't serve their needs.",
-      "paragraph2": "We set out to change that. Our founding team brings together experience across enterprise software, startups, and consulting. We've seen what works, what doesn't, and why most technology initiatives fail to deliver on their promise.",
-      "paragraph3": "As a new firm, we bring fresh perspectives and modern approaches—unencumbered by legacy thinking. We partner with businesses of all sizes to build software that actually works, scales with your needs, and delivers real value.",
+      "paragraph1": "Actaer is a full-service technology consulting firm founded in 2015 in Novi Pazar, Serbia. With a team of 15-25 experts, we specialize in IT consulting, custom software development, and product development.",
+      "paragraph2": "We set out to change that. Our founding team has experience in enterprise software, startups, and consulting. We know what works, what fails, and why many tech projects do not succeed.",
+      "paragraph3": "As a new firm, we offer fresh views and modern methods — free from old ideas. We partner with businesses of all sizes to build software that works well, grows as needed, and adds true value.",
       "paragraph4": "Our first product, Vantum ERP, embodies everything we believe about software: it's modern, user-friendly, and built for how businesses actually operate today.",
       "tagline": "Engineering Excellence"
     },

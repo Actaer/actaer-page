@@ -16,6 +16,7 @@ import {
   generateBreadcrumbJsonLd,
   generateServiceJsonLd,
   generateFaqJsonLd,
+  generateSpeakableJsonLd,
 } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
@@ -189,8 +190,11 @@ export default async function SoftwareDevelopmentPage({
                 </span>
                 {t.raw("heroTitle").split("{highlighted}")[1] || ""}
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              <p className="text-lg md:text-xl text-muted-foreground mb-4">
                 {t("heroDescription")}
+              </p>
+              <p className="text-sm text-muted-foreground mb-8">
+                Last updated: January 2026.
               </p>
               <Button asChild size="lg">
                 <Link href="/contact">
@@ -327,6 +331,35 @@ export default async function SoftwareDevelopmentPage({
                   </div>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Stats & Expert Quote Section */}
+        <section className="py-16 md:py-24 bg-muted/30">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-12">
+              <div className="text-center p-6 rounded-lg border bg-card">
+                <div className="text-4xl font-bold text-primary mb-2">73%</div>
+                <p className="text-sm text-muted-foreground">
+                  of companies plan to increase investment in custom software
+                  (Gartner, 2024)
+                </p>
+              </div>
+              <div className="text-center p-6 rounded-lg border bg-card">
+                <div className="text-4xl font-bold text-primary mb-2">3×</div>
+                <p className="text-sm text-muted-foreground">
+                  faster time-to-market with agile development practices
+                </p>
+              </div>
+            </div>
+            <div className="max-w-2xl mx-auto">
+              <blockquote className="text-lg italic text-muted-foreground border-l-4 border-primary pl-4">
+                &ldquo;Software is eating the world.&rdquo;
+                <footer className="text-sm mt-2 not-italic">
+                  &mdash; Marc Andreessen, a16z co-founder (2011)
+                </footer>
+              </blockquote>
             </div>
           </div>
         </section>

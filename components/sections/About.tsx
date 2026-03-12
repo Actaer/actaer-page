@@ -56,10 +56,23 @@ export function About() {
                 ),
               })}
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground mb-4">
               {t("description1")}
             </p>
-            <p className="text-muted-foreground mb-8">{t("description2")}</p>
+            <p className="text-muted-foreground mb-4">{t("description2")}</p>
+            <p className="text-muted-foreground mb-4">{t("description3")}</p>
+            <p className="text-muted-foreground mb-6">{t("description4")}</p>
+            <blockquote className="border-l-4 border-primary/50 pl-4 italic text-muted-foreground mb-6">
+              &ldquo;Software engineering is the engine of digital
+              transformation.&rdquo; — Werner Vogels, AWS CTO.
+            </blockquote>
+            <ul className="list-disc list-inside text-muted-foreground space-y-1 mb-8">
+              <li>Custom Software Development</li>
+              <li>IT Consulting</li>
+              <li>AI &amp; Machine Learning</li>
+              <li>Cloud &amp; DevOps</li>
+              <li>Digital Transformation</li>
+            </ul>
           </div>
 
           {/* Visual Element */}
