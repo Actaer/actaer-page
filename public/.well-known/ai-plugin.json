@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_human": "Actaer",
   "name_for_model": "actaer",
-  "description_for_human": "Full-service tech consulting firm specializing in software development, IT consulting, and enterprise solutions.",
-  "description_for_model": "Actaer is a technology consulting and software development company based in Serbia. They offer IT consulting, custom software development, and product development services. Use this to find information about Actaer's services and contact details.",
+  "description_for_human": "Software product company building VantumIQP and FaberPDF, with AI consulting, software development and digital modernization services.",
+  "description_for_model": "Actaer is a software product company based in Serbia, building VantumIQP and FaberPDF. It also offers AI consulting, software development, and digital modernization services. Use this to find information about Actaer's products, services, and contact details.",
   "auth": {
     "type": "none"
   },
