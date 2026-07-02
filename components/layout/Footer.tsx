@@ -79,7 +79,7 @@ export function Footer() {
                 ))}
                 {col.heading === t("footer.legal") ? (
                   <li>
-                    <button onClick={openPreferences} className="text-sm transition-colors hover:text-background">
+                    <button onClick={openPreferences} className="-my-3.5 py-3.5 text-sm transition-colors hover:text-background">
                       {t("footer.cookieSettings")}
                     </button>
                   </li>

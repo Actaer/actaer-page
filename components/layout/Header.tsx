@@ -119,7 +119,7 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon-sm"
-            className="text-foreground md:hidden"
+            className="size-12 text-foreground md:hidden"
             onClick={() => setMobileNavOpen(true)}
           >
             <Menu className="size-5" />
