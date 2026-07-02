@@ -1,89 +1,98 @@
 export const metadata = {
-  title: "Welcome to the Actaer Blog",
-  description: "Introducing our new blog where we share insights on software development, technology trends, and building successful digital products.",
+  title: "Why We Started Actaer",
+  description: "We got tired of software that fights you — BI that needs babysitting, PDF tools that want your contracts in their cloud. So we built our own. Here's the story.",
   date: "2026-01-20",
+  lastUpdated: "2026-07-02",
   author: "Actaer Team",
-  tags: ["Announcement", "Company"],
-  image: "/images/ChatGPT-Image-24.-апр-2025.-04_01_50.avif",
+  tags: ["Actaer", "Products", "Company"],
+  image: "/images/covers/welcome-to-actaer.svg",
   published: true,
 };
 
-# Welcome to the Actaer Blog
+export const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What does Actaer build?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Actaer builds two products: VantumIQP, a governed business intelligence workspace built on Apache Superset, and FaberPDF, a local-first PDF editor for Windows and Linux, currently in beta.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does Actaer still offer consulting?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. AI Consulting is our flagship service. We find where AI pays off in your business, build the automation, and train your team to own it. We also take on software development and digital modernization work.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where is Actaer based?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Actaer is a software product company based in Novi Pazar, Serbia, founded in 2025.",
+        },
+      },
+    ],
+  },
+];
 
-**Actaer** is a full-service tech consulting firm specializing in IT consulting, custom software development, and product development. This blog is our platform for sharing technical knowledge and industry insights.
+# Why We Started Actaer
 
-*Written by the Actaer engineering team — experienced software developers, architects, and IT consultants based in Serbia.*
+Actaer is a software product company from Novi Pazar, Serbia, founded in 2025. We build the tools we wished existed — and we help companies put AI to work. This is the short version of why.
 
-We're excited to launch our new blog! This is where we'll share our thoughts, experiences, and insights on software development, technology trends, and the art of building successful digital products.
+*Written by the Actaer team — the engineers behind VantumIQP and FaberPDF.*
 
-## What to Expect
+## The problem we couldn't unsee
 
-Our blog will cover a range of topics that we're passionate about:
+Somewhere along the way, software stopped being on your side.
 
-### Technical Deep Dives
+You know the pattern. The BI platform that needs a full-time babysitter before it shows you a single trustworthy number. The PDF editor that won't let you sign a contract until you upload it to someone else's cloud and start a subscription. The consultants who study your business for three months, hand you a deck, and leave before anything runs.
 
-We'll share technical articles about the technologies we use and love:
+We spent years inside that pattern — as engineers, as users, as the people called in to clean up afterwards. At some point the frustration turned into a question we couldn't put down: what would these tools look like if someone built them to serve the person using them?
 
-- Modern web development with React, Next.js, and TypeScript
-- Building scalable backend systems with .NET and Node.js
-- AI and machine learning implementation strategies
-- DevOps best practices and cloud architecture
+## So we built our own
 
-### Industry Insights
+We started with the two problems that annoyed us most.
 
-Stay informed about the latest trends in the tech industry:
+The first was business intelligence. Most companies have plenty of data and very few answers. Dashboards drift, numbers disagree, and nobody can say where a chart came from. [VantumIQP](/products/vantumiqp) is our answer: a governed BI workspace built on Apache Superset. Ask a question, explore it in SQL, and publish a dashboard your whole company can trust — every chart traceable to its query, with access control your auditors will actually like. It's for teams that need reporting both executives and regulators believe.
 
-- Digital transformation strategies
-- Enterprise software evolution
-- The future of ERP systems
-- Emerging technologies and their business applications
+The second was documents. Signing or fixing a PDF should not require an account, a subscription, and a trip through a stranger's server. [FaberPDF](/products/faberpdf) is a local-first PDF editor for Windows and Linux. Sign, annotate, edit text, and validate documents right on your desktop — your files never leave your machine. It's free during beta, and it's for anyone whose documents are their business: legal teams, accountants, operations, you.
 
-> According to Gartner, worldwide IT spending is projected to reach $5.26 trillion in 2024, a 7.5% increase from 2023.
+## And we consult — differently
 
-### Product Development
+We still consult. But we do it the way we'd want to be consulted.
 
-Learn from our experience building products:
+[AI Consulting](/consulting/ai-consulting) is our flagship service. We find where AI actually pays off in your business, build the automation, and train your people to own it. You don't get a strategy deck. You get working systems and a team that knows how to keep them working.
 
-- How to validate product ideas quickly
-- MVP development strategies
-- User-centric design principles
-- Scaling from startup to enterprise
+Building products is what keeps us honest. We live with our own architecture decisions, support our own users, and fix our own bugs. That discipline follows us onto your project — because we can't recommend practices on Monday that we'd never accept in our own codebase on Tuesday.
 
-## Our Philosophy
+## What you can expect from us
 
-At Actaer, we believe that great software is built at the intersection of technical excellence and business understanding. Our goal with this blog is to share knowledge that helps you:
+We're small, senior, and deliberate. That's not a limitation — it's the product. You talk to the people who do the work. You get plain answers, even when they're not the easy ones. And you get software we stand behind, because our name is on it.
 
-1. **Make better technology decisions** — Understand the trade-offs and choose the right tools for your needs.
-2. **Build better products** — Learn from our successes and failures in product development.
-3. **Stay ahead of the curve** — Keep up with the rapidly evolving tech landscape.
+On this blog, expect the same: honest writing about building products, putting AI to work, and the engineering trade-offs behind both.
 
-> "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." — Martin Fowler, *Refactoring: Improving the Design of Existing Code* (1999)
+If something in your company is slower or harder than it should be, tell us about it. [Reach out](/contact) — we'll give you a straight answer about whether we can help.
 
-## How We Compare
+## Frequently asked questions
 
-Unlike traditional agency blogs that focus on marketing, we prioritize **hands-on technical content**. Our team writes from real project experience — not theory. According to Stack Overflow's 2024 Developer Survey, 76% of developers learn new technologies through blogs and technical articles.
+**What does Actaer build?**
 
-## Join the Conversation
+Two products: [VantumIQP](/products/vantumiqp), a governed business intelligence workspace built on Apache Superset, and [FaberPDF](/products/faberpdf), a local-first PDF editor for Windows and Linux, currently in beta.
 
-We'd love to hear from you! If you have topics you'd like us to cover, questions about our articles, or just want to chat about technology, don't hesitate to [reach out](/contact).
+**Does Actaer still offer consulting?**
 
-Stay tuned for more content coming soon. Subscribe to our newsletter to get notified when we publish new articles.
+Yes. [AI Consulting](/consulting/ai-consulting) is our flagship service — we find where AI pays off, build the automation, and train your team to own it. We also take on software development and digital modernization work.
 
----
+**Where is Actaer based?**
 
-## Frequently Asked Questions
-
-**What topics does the Actaer Blog cover?**
-
-We cover software development, IT consulting, AI and machine learning, product development, and enterprise technology trends.
-
-**How often does Actaer publish new articles?**
-
-We aim to publish new technical articles and insights regularly, with a focus on quality over quantity.
-
-**Can I suggest a topic for the Actaer Blog?**
-
-Absolutely! [Contact us](/contact) with your ideas. We love hearing what our readers want to learn about.
+Novi Pazar, Serbia. We founded the company in 2025.
 
 ---
 
