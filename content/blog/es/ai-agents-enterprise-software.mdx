@@ -9,6 +9,74 @@ export const metadata = {
   published: true,
 };
 
+export const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Qué son los agentes de IA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Los agentes de IA son sistemas de software autónomos que pueden razonar, planificar y ejecutar tareas complejas de forma independiente, más allá de simples chatbots.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué casos de uso empresariales existen para los agentes de IA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Servicio al cliente (gestionar consultas, reembolsos), ventas (calificación de leads, actualización del CRM), análisis de datos (patrones, informes), cadena de suministro (previsión, inventario).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cómo empezar con los agentes de IA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Identifica casos de uso de alto valor, empieza en pequeño con pilotos, mide los resultados e itera según el feedback.",
+        },
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Construir Agentes de IA Efectivos",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Define Límites Claros",
+        text: "Establece qué puede y qué no puede hacer el agente, p. ej., importes máximos de reembolso.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Construye Observabilidad",
+        text: "Registra todas las decisiones para depuración, cumplimiento y mejora.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Diseña una Degradación Controlada",
+        text: "Escala cuando haya incertidumbre.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Implementa Human-in-the-Loop",
+        text: "Exige aprobación para las decisiones críticas.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".page h2", ".page p", "blockquote"],
+    },
+  },
+];
+
 # El Ascenso de los Agentes de IA en Software Empresarial
 
 Un agente de IA es software que razona, planifica y actúa por su cuenta. Va mucho más allá de un chatbot. Gartner proyecta que el 33% de las aplicaciones empresariales incluirán IA agéntica para 2028, frente a menos del 1% en 2024 (Fuente: Gartner, 2024). Esto es lo que significa para tu empresa — y cómo desplegar agentes sin salir escaldado.

@@ -9,6 +9,74 @@ export const metadata = {
   published: true,
 };
 
+export const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czym są agenty AI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Agenty AI to autonomiczne systemy oprogramowania, które potrafią samodzielnie rozumować, planować i wykonywać złożone zadania — to znacznie więcej niż proste chatboty.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Jakie korporacyjne zastosowania mają agenty AI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Obsługa klienta (zapytania, zwroty), sprzedaż (kwalifikacja leadów, aktualizacja CRM), analiza danych (wzorce, raporty), łańcuch dostaw (prognozowanie, zapasy).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Jak zacząć pracę z agentami AI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Zidentyfikuj zastosowania o wysokiej wartości, zacznij od małych pilotaży, mierz wyniki i iteruj na podstawie feedbacku.",
+        },
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Budowanie Skutecznych Agentów AI",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Zdefiniuj Jasne Granice",
+        text: "Ustal, co agent może, a czego nie, np. maksymalne kwoty zwrotów.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zadbaj o Obserwowalność",
+        text: "Loguj wszystkie decyzje na potrzeby debugowania, zgodności i ulepszeń.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zaprojektuj Kontrolowaną Degradację",
+        text: "Eskaluj w razie niepewności.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wdróż Human-in-the-Loop",
+        text: "Wymagaj zatwierdzenia dla krytycznych decyzji.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".page h2", ".page p", "blockquote"],
+    },
+  },
+];
+
 # Wzrost Agentów AI w Oprogramowaniu Korporacyjnym
 
 Agent AI to oprogramowanie, które samodzielnie rozumuje, planuje i działa. Wykracza daleko poza chatbota. Gartner prognozuje, że do 2028 roku 33% aplikacji korporacyjnych będzie zawierać agentową AI, wobec niecałego 1% w 2024 (źródło: Gartner, 2024). Oto, co to oznacza dla Twojej firmy — i jak wdrażać agenty, nie parząc sobie palców.

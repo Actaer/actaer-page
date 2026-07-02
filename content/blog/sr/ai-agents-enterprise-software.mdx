@@ -9,6 +9,74 @@ export const metadata = {
   published: true,
 };
 
+export const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Šta su AI agenti?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AI agenti su autonomni softverski sistemi koji mogu samostalno da rasuđuju, planiraju i izvršavaju složene zadatke — mnogo više od običnih chatbot-ova.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Koji poslovni slučajevi upotrebe postoje za AI agente?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Korisnička služba (upiti, povraćaji novca), prodaja (kvalifikacija lead-ova, ažuriranje CRM-a), analiza podataka (obrasci, izveštaji), lanac snabdevanja (prognoze, zalihe).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kako da počnete sa AI agentima?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Identifikujte slučajeve upotrebe visoke vrednosti, počnite sa malim pilot projektima, merite rezultate i iterirajte na osnovu povratnih informacija.",
+        },
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Izgradnja Efikasnih AI Agenata",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Definišite Jasne Granice",
+        text: "Odredite šta agent sme, a šta ne sme, npr. maksimalne iznose povraćaja.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ugradite Observabilnost",
+        text: "Beležite sve odluke radi debagovanja, usklađenosti i unapređenja.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dizajnirajte Kontrolisanu Degradaciju",
+        text: "Eskalirajte kada postoji nesigurnost.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Implementirajte Human-in-the-Loop",
+        text: "Zahtevajte odobrenje za kritične odluke.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".page h2", ".page p", "blockquote"],
+    },
+  },
+];
+
 # Uspon AI Agenata u Poslovnom Softveru
 
 AI agent je softver koji rasuđuje, planira i deluje samostalno. To je korak dalje od chatbot-a. Gartner predviđa da će do 2028. godine 33% enterprise aplikacija uključivati agentski AI, u odnosu na manje od 1% u 2024. (izvor: Gartner, 2024). Evo šta to znači za vašu kompaniju — i kako da uvedete agente bez skupih grešaka.

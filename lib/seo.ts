@@ -429,7 +429,8 @@ export function generateContactPageJsonLd() {
     "@type": "ContactPage",
     "@id": `${siteConfig.url}/contact`,
     name: `Contact ${siteConfig.name}`,
-    description: `Get in touch with ${siteConfig.name}. Let's discuss our products, AI consulting, or your software development needs.`,
+    description:
+      "Questions about VantumIQP, FaberPDF, or AI consulting? You'll hear back from an engineer within one business day. No sales gauntlet — just answers.",
     url: `${siteConfig.url}/contact`,
     mainEntity: {
       "@type": "Organization",

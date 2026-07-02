@@ -9,6 +9,74 @@ export const metadata = {
   published: true,
 };
 
+export const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Was sind KI-Agenten?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "KI-Agenten sind autonome Softwaresysteme, die eigenständig denken, planen und komplexe Aufgaben ausführen können — weit über einfache Chatbots hinaus.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welche Anwendungsfälle gibt es für KI-Agenten in Unternehmen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Kundenservice (Anfragen bearbeiten, Erstattungen), Vertrieb (Lead-Qualifizierung, CRM-Pflege), Datenanalyse (Muster, Berichte), Lieferkette (Prognosen, Bestandsverwaltung).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wie starten Sie mit KI-Agenten?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Identifizieren Sie Anwendungsfälle mit hohem Nutzen, starten Sie klein mit Piloten, messen Sie die Ergebnisse und iterieren Sie auf Basis von Feedback.",
+        },
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Effektive KI-Agenten entwickeln",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Klare Grenzen definieren",
+        text: "Legen Sie fest, was der Agent darf und was nicht, z. B. maximale Erstattungsbeträge.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Beobachtbarkeit einbauen",
+        text: "Protokollieren Sie alle Entscheidungen für Debugging, Compliance und Verbesserung.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kontrollierte Degradation gestalten",
+        text: "Eskalieren Sie bei Unsicherheit.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Human-in-the-Loop implementieren",
+        text: "Verlangen Sie Freigaben für kritische Entscheidungen.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".page h2", ".page p", "blockquote"],
+    },
+  },
+];
+
 # Der Aufstieg von KI-Agenten in Unternehmenssoftware
 
 Ein KI-Agent ist Software, die eigenständig denkt, plant und handelt. Das geht weit über einen Chatbot hinaus. Gartner prognostiziert, dass bis 2028 33 % der Unternehmensanwendungen agentische KI enthalten werden — 2024 waren es noch unter 1 % (Quelle: Gartner, 2024). Hier lesen Sie, was das für Ihr Unternehmen bedeutet — und wie Sie Agenten einführen, ohne sich die Finger zu verbrennen.
