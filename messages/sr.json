@@ -133,8 +133,7 @@
   },
   "contact": {
     "badge": "Kontaktirajte nas",
-    "title": "Hajde da {highlighted}",
-    "highlighted": "razgovaramo",
+    "title": "Hajde da razgovaramo",
     "subtitle": "Imate projekat na umu? Želite da diskutujete kako vam možemo pomoći? Rado bismo čuli od vas.",
     "pageTitle": "Kontaktirajte nas",
     "pageDescription": "Stupite u kontakt sa Actaer. Hajde da razgovaramo o vašim potrebama za razvoj softvera, IT konsalting ili razvoj proizvoda.",
@@ -201,8 +200,7 @@
   },
   "blog": {
     "badge": "Blog",
-    "title": "Uvidi i {highlighted}",
-    "highlighted": "Novosti",
+    "title": "Uvidi i Novosti",
     "description": "Razmišljanja o razvoju softvera, tehnološkim trendovima i izgradnji uspešnih proizvoda.",
     "pageTitle": "Blog",
     "pageDescription": "Uvidi, tutorijali i novosti od Actaer tima. Saznajte više o razvoju softvera, IT konsaltingu i tehnološkim trendovima.",
@@ -330,15 +328,14 @@
     }
   },
   "aboutPage": {
-    "pageTitle": "O Actaer-u",
-    "pageDescription": "Saznajte više o Actaer-u - kompletnoj tehnološkoj konsultantskoj firmi koja transformiše preduzeća u agilne, softverski pokretane inovatore.",
+    "pageTitle": "About Actaer: Software Product Company in Serbia",
+    "pageDescription": "Learn about Actaer, founded in 2015 — a software product company in Novi Pazar, Serbia. We build VantumIQP and FaberPDF and run a consulting practice for AI, software development, and digital modernization.",
     "badge": "O Actaer-u",
-    "heroTitle": "Inženjering za",
-    "heroHighlighted": "Digitalni uspeh",
-    "heroDescription": "Mi smo kompletna tehnološka konsultantska firma koja transformiše preduzeća u agilne, softverski pokretane inovatore. Tehnologija je ključ za otključavanje vašeg potencijala.",
+    "heroTitle": "Inženjering za Digitalni uspeh",
+    "heroDescription": "We're a product company with a consulting practice. We build software people rely on every day — and we help other businesses put AI and modern technology to work.",
     "story": {
       "title": "Naša priča",
-      "paragraph1": "Actaer je osnovan sa jednostavnim uverenjem: tehnologija treba da bude pomoćnik, a ne prepreka. Videli smo previše preduzeća koja se bore sa zastarelim sistemima, neuspelim softverskim projektima i tehnologijom koja nije služila njihovim potrebama.",
+      "paragraph1": "Actaer is a software product company from Novi Pazar, Serbia. We build VantumIQP, a governed business-intelligence workspace, and FaberPDF, a local-first PDF editor — and we help other companies put AI and modern technology to work through our consulting practice.",
       "paragraph2": "Krenuli smo da to promenimo. Naš osnivački tim objedinjuje iskustvo iz enterprise softvera, startupova i konsaltinga. Videli smo šta funkcioniše, šta ne, i zašto većina tehnoloških inicijativa ne ispunjava svoje obećanje.",
       "paragraph3": "Kao nova firma, donosimo sveže perspektive i moderne pristupe — neopterećeni legacy razmišljanjem. Sarađujemo sa preduzećima svih veličina da gradimo softver koji zaista funkcioniše, skalira sa vašim potrebama i isporučuje stvarnu vrednost.",
       "tagline": "Inženjerska izvrsnost",
@@ -371,18 +368,18 @@
     },
     "whatWeDo": {
       "title": "Šta radimo",
-      "description": "Sveobuhvatne tehnološke usluge za pokretanje vašeg poslovanja.",
+      "description": "Two products and a consulting practice, built on the same engineering standards.",
       "itConsulting": {
-        "title": "IT konsalting",
-        "description": "Strateško vođenje za digitalnu transformaciju, tehnički due diligence i tehnološko planiranje."
+        "title": "AI Consulting",
+        "description": "AI strategy, adoption, and automation — practical guidance from engineers who put AI into production."
       },
       "softwareDevelopment": {
         "title": "Razvoj softvera",
         "description": "Rešenja prilagođena vašim potrebama izgrađena modernim tehnologijama."
       },
       "productDevelopment": {
-        "title": "Razvoj proizvoda",
-        "description": "Kompletno kreiranje proizvoda od koncepta do lansiranja, sa kontinuiranom podrškom i iteracijama."
+        "title": "Digital Modernization",
+        "description": "Legacy assessment, process digitization, and pragmatic technology adoption — modernization your team owns."
       },
       "learnMore": "Saznaj više"
     },

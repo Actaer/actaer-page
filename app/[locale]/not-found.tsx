@@ -1,8 +1,9 @@
 "use client";
 
 import { Header, Footer } from "@/components/layout";
+import { Eyebrow } from "@/components/carbon";
 import { Button } from "@/components/ui/button";
-import { Home, ArrowLeft, Search } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
@@ -12,66 +13,51 @@ export default function NotFound() {
   return (
     <>
       <Header />
-      <main className="pt-24 min-h-[80vh] flex items-center">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-2xl mx-auto text-center">
-            {/* 404 Number */}
-            <div className="relative mb-8">
-              <span className="text-[10rem] md:text-[14rem] font-bold font-heading text-muted/20 select-none leading-none">
-                404
-              </span>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Search className="h-20 w-20 text-muted-foreground/50" />
-              </div>
-            </div>
-
-            {/* Message */}
-            <h1 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-              {t("title")}
-            </h1>
-            <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto">
+      <main className="flex min-h-[80vh] items-center pt-24">
+        <div className="mx-auto w-full max-w-[1584px] px-4 md:px-8">
+          <div className="max-w-3xl space-y-6">
+            <Eyebrow>404</Eyebrow>
+            <h1 className="text-display-lg text-balance">{t("title")}</h1>
+            <p className="text-body-lg max-w-2xl text-muted-foreground">
               {t("description")}
             </p>
 
             {/* Actions */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-wrap gap-0 pt-4">
               <Button asChild size="lg">
                 <Link href="/">
-                  <Home className="mr-2 h-4 w-4" />
                   {t("backToHome")}
+                  <ArrowRight />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="/contact">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  {t("contactSupport")}
-                </Link>
+              <Button asChild variant="outline" size="lg" className="-ml-px">
+                <Link href="/contact">{t("contactSupport")}</Link>
               </Button>
             </div>
 
             {/* Helpful Links */}
-            <div className="mt-12 pt-8 border-t">
-              <p className="text-sm text-muted-foreground mb-4">
+            <div className="mt-12 border-t border-border pt-8">
+              <p className="mb-4 text-sm text-muted-foreground">
                 {t("helpfulLinks")}
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+              <div className="flex flex-wrap items-center gap-4 text-sm">
                 <Link
                   href="/consulting"
-                  className="text-primary hover:underline underline-offset-4"
+                  className="text-primary underline-offset-4 hover:underline"
                 >
                   {t("ourServices")}
                 </Link>
-                <span className="text-muted-foreground">•</span>
+                <span className="text-muted-foreground">&middot;</span>
                 <Link
                   href="/blog"
-                  className="text-primary hover:underline underline-offset-4"
+                  className="text-primary underline-offset-4 hover:underline"
                 >
                   Blog
                 </Link>
-                <span className="text-muted-foreground">•</span>
+                <span className="text-muted-foreground">&middot;</span>
                 <Link
                   href="/about"
-                  className="text-primary hover:underline underline-offset-4"
+                  className="text-primary underline-offset-4 hover:underline"
                 >
                   {t("aboutUs")}
                 </Link>

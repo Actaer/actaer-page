@@ -138,8 +138,7 @@
   },
   "contact": {
     "badge": "Contact Us",
-    "title": "Let's {highlighted}",
-    "highlighted": "Talk",
+    "title": "Let's Talk",
     "subtitle": "Have a project in mind? Want to discuss how we can help your business? We'd love to hear from you. Actaer is located in Novi Pazar, Serbia, and serves clients worldwide.",
     "pageTitle": "Contact Actaer | IT Consulting & Software Development Support",
     "pageDescription": "Get in touch with Actaer for software development, IT consulting, and product needs. Email office@actaer.com, call +381 64 9055722, or use our form. Novi Pazar, Serbia.",
@@ -206,8 +205,7 @@
   },
   "blog": {
     "badge": "Blog",
-    "title": "Insights & {highlighted}",
-    "highlighted": "Updates",
+    "title": "Insights & Updates",
     "description": "Thoughts on software development, technology trends, and building successful products.",
     "pageTitle": "Actaer Blog: Insights on Software Development, IT Consulting & Tech Trends",
     "pageDescription": "Explore Actaer Blog for tutorials, updates, and expert insights on custom software, AI solutions, ERP, digital transformation, and tech trends from Serbia-based experts.",
@@ -335,15 +333,14 @@
     }
   },
   "aboutPage": {
-    "pageTitle": "About Actaer: Tech Consulting Firm in Serbia",
-    "pageDescription": "Learn about Actaer, founded in 2015 — a full-service tech consulting firm in Novi Pazar, Serbia. Specializing in IT consulting, custom software development, and digital transformation for global clients.",
+    "pageTitle": "About Actaer: Software Product Company in Serbia",
+    "pageDescription": "Learn about Actaer, founded in 2015 — a software product company in Novi Pazar, Serbia. We build VantumIQP and FaberPDF and run a consulting practice for AI, software development, and digital modernization.",
     "badge": "About Actaer",
-    "heroTitle": "Engineering",
-    "heroHighlighted": "Digital Success",
-    "heroDescription": "We're a full-service tech consulting firm transforming businesses into agile, software-powered innovators. Technology is the key to unlocking your potential.",
+    "heroTitle": "Engineering Digital Success",
+    "heroDescription": "We're a product company with a consulting practice. We build software people rely on every day — and we help other businesses put AI and modern technology to work.",
     "story": {
       "title": "Our Story",
-      "paragraph1": "Actaer is a full-service technology consulting firm founded in 2015 in Novi Pazar, Serbia. With a team of 15-25 experts, we specialize in IT consulting, custom software development, and product development.",
+      "paragraph1": "Actaer is a software product company from Novi Pazar, Serbia. We build VantumIQP, a governed business-intelligence workspace, and FaberPDF, a local-first PDF editor — and we help other companies put AI and modern technology to work through our consulting practice.",
       "paragraph2": "We set out to change that. Our founding team has experience in enterprise software, startups, and consulting. We know what works, what fails, and why many tech projects do not succeed.",
       "paragraph3": "As a new firm, we offer fresh views and modern methods — free from old ideas. We partner with businesses of all sizes to build software that works well, grows as needed, and adds true value.",
       "paragraph4": "Our products, VantumIQP and FaberPDF, embody everything we believe about software: modern, user-friendly, and built for how businesses actually operate today.",
@@ -376,18 +373,18 @@
     },
     "whatWeDo": {
       "title": "What We Do",
-      "description": "Comprehensive technology services to power your business.",
+      "description": "Two products and a consulting practice, built on the same engineering standards.",
       "itConsulting": {
-        "title": "IT Consulting",
-        "description": "Strategic guidance for digital transformation, technical due diligence, and technology planning."
+        "title": "AI Consulting",
+        "description": "AI strategy, adoption, and automation — practical guidance from engineers who put AI into production."
       },
       "softwareDevelopment": {
         "title": "Software Development",
         "description": "Custom software solutions built with modern technologies to solve your unique challenges."
       },
       "productDevelopment": {
-        "title": "Product Development",
-        "description": "End-to-end product creation from concept to launch, with ongoing support and iteration."
+        "title": "Digital Modernization",
+        "description": "Legacy assessment, process digitization, and pragmatic technology adoption — modernization your team owns."
       },
       "learnMore": "Learn More"
     },

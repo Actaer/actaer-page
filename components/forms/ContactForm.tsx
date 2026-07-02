@@ -10,14 +10,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { CheckCircle, Loader2 } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const fieldClasses =
+  "h-10 border-0 border-b border-(--ink-subtle) bg-muted px-4 focus-visible:border-b-2 focus-visible:border-primary focus-visible:ring-0";
+
+const textareaClasses =
+  "border-0 border-b border-(--ink-subtle) bg-muted px-4 py-3 focus-visible:border-b-2 focus-visible:border-primary focus-visible:ring-0";
 
 type FormData = {
   name: string;
@@ -92,38 +92,38 @@ export function ContactForm({
 
   if (submitSuccess) {
     return (
-      <Card className={compact ? "border-0 shadow-none" : ""}>
-        <CardContent className="pt-6">
-          <div className="text-center py-8">
-            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-              <CheckCircle className="w-8 h-8 text-primary" />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">{t("success.title")}</h3>
-            <p className="text-muted-foreground mb-6">
-              {t("success.description")}
-            </p>
-            <Button variant="outline" onClick={handleReset}>
-              {t("success.sendAnother")}
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
+      <div
+        className={compact ? "" : "border border-border bg-background p-6 md:p-8"}
+      >
+        <div className="py-8">
+          <CheckCircle className="mb-4 size-8 text-primary" />
+          <h3 className="text-body-lg mb-2 font-semibold">
+            {t("success.title")}
+          </h3>
+          <p className="mb-6 text-muted-foreground">
+            {t("success.description")}
+          </p>
+          <Button variant="outline" onClick={handleReset}>
+            {t("success.sendAnother")}
+          </Button>
+        </div>
+      </div>
     );
   }
 
   return (
-    <Card className={compact ? "border-0 shadow-none" : ""}>
+    <div
+      className={compact ? "" : "border border-border bg-background p-6 md:p-8"}
+    >
       {!compact && (
-        <CardHeader>
-          <CardTitle className="text-2xl font-heading">
-            {title || t("formTitle")}
-          </CardTitle>
-          <CardDescription>
+        <div className="mb-8 space-y-2">
+          <h2 className="text-headline">{title || t("formTitle")}</h2>
+          <p className="text-sm text-muted-foreground">
             {description || t("formDescription")}
-          </CardDescription>
-        </CardHeader>
+          </p>
+        </div>
       )}
-      <CardContent className={compact ? "p-0" : ""}>
+      <div>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-2">
@@ -135,7 +135,10 @@ export function ContactForm({
                 id="name"
                 placeholder={t("form.namePlaceholder")}
                 {...register("name")}
-                className={errors.name ? "border-destructive" : ""}
+                className={cn(
+                  fieldClasses,
+                  errors.name && "border-b-destructive",
+                )}
               />
               {errors.name && (
                 <p className="text-sm text-destructive">
@@ -154,7 +157,10 @@ export function ContactForm({
                 type="email"
                 placeholder={t("form.emailPlaceholder")}
                 {...register("email")}
-                className={errors.email ? "border-destructive" : ""}
+                className={cn(
+                  fieldClasses,
+                  errors.email && "border-b-destructive",
+                )}
               />
               {errors.email && (
                 <p className="text-sm text-destructive">
@@ -171,6 +177,7 @@ export function ContactForm({
                 id="company"
                 placeholder={t("form.companyPlaceholder")}
                 {...register("company")}
+                className={fieldClasses}
               />
             </div>
 
@@ -181,6 +188,7 @@ export function ContactForm({
                 type="tel"
                 placeholder={t("form.phonePlaceholder")}
                 {...register("phone")}
+                className={fieldClasses}
               />
             </div>
           </div>
@@ -195,7 +203,10 @@ export function ContactForm({
               placeholder={t("form.messagePlaceholder")}
               rows={5}
               {...register("message")}
-              className={errors.message ? "border-destructive" : ""}
+              className={cn(
+                textareaClasses,
+                errors.message && "border-b-destructive",
+              )}
             />
             {errors.message && (
               <p className="text-sm text-destructive">
@@ -205,7 +216,7 @@ export function ContactForm({
           </div>
 
           {(errors.root || submitError) && (
-            <div className="p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
+            <div className="border border-destructive/20 bg-destructive/10 p-4">
               <p className="text-sm text-destructive">
                 {submitError || t("errors.general")}
               </p>
@@ -223,7 +234,7 @@ export function ContactForm({
             )}
           </Button>
         </form>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }

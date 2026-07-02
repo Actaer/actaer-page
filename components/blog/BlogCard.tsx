@@ -3,14 +3,6 @@
 import Image from "next/image";
 import { BlogPost } from "@/lib/blog";
 import { formatDate } from "@/lib/date";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
@@ -25,53 +17,44 @@ export function BlogCard({ post }: BlogCardProps) {
   const locale = useLocale() as Locale;
 
   return (
-    <Card className="overflow-hidden border-border/50 hover:border-primary/30 transition-colors group">
-      <Link href={`/blog/${post.slug}`}>
+    <article className="-mt-px -ml-px flex flex-col border border-border bg-background">
+      <Link href={`/blog/${post.slug}`} className="group flex h-full flex-col">
         {post.image && (
-          <div className="relative aspect-video overflow-hidden">
+          <div className="relative aspect-video overflow-hidden border-b border-border">
             <Image
               src={post.image}
               alt={post.title}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover transition-transform group-hover:scale-105"
+              className="object-cover"
             />
           </div>
         )}
-        <CardHeader>
-          <div className="flex items-center gap-2 mb-2">
-            <time className="text-sm text-muted-foreground">
-              {formatDate(post.date, locale)}
-            </time>
-            {post.tags.length > 0 && (
-              <>
-                <span className="text-muted-foreground">•</span>
-                <Badge variant="secondary" className="text-xs">
-                  {post.tags[0]}
-                </Badge>
-              </>
-            )}
-          </div>
-          <CardTitle className="text-xl font-heading group-hover:text-primary transition-colors line-clamp-2">
+        <div className="flex flex-1 flex-col gap-3 p-6">
+          <p className="text-xs tracking-[0.32px] text-muted-foreground">
+            <time>{formatDate(post.date, locale)}</time>
+            {post.tags.length > 0 && <> &middot; {post.tags[0]}</>}
+          </p>
+          <h3 className="text-body-lg font-semibold transition-colors group-hover:text-primary">
             {post.title}
-          </CardTitle>
-          <CardDescription className="line-clamp-2">
+          </h3>
+          <p className="line-clamp-3 text-sm text-muted-foreground">
             {post.description}
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="flex items-center justify-between">
-            <span className="text-sm text-muted-foreground">{post.author}</span>
+          </p>
+          <div className="mt-auto flex items-center justify-between pt-2">
+            <span className="text-xs tracking-[0.32px] text-muted-foreground">
+              {post.author}
+            </span>
             <span
-              className="text-primary flex items-center gap-1 text-sm font-medium group-hover:gap-2 transition-all"
+              className="inline-flex items-center gap-2 text-sm tracking-[0.16px] text-primary group-hover:underline underline-offset-4"
               aria-hidden="true"
             >
               {t("readMore")}
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="size-4" />
             </span>
           </div>
-        </CardContent>
+        </div>
       </Link>
-    </Card>
+    </article>
   );
 }

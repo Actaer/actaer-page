@@ -78,12 +78,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     // Code
     code: ({ children }) => (
-      <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
+      <code className="relative bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
         {children}
       </code>
     ),
     pre: ({ children }) => (
-      <pre className="mb-4 mt-6 overflow-x-auto rounded-lg border bg-zinc-950 p-4">
+      <pre className="mb-4 mt-6 overflow-x-auto border bg-zinc-950 p-4">
         {children}
       </pre>
     ),
@@ -116,7 +116,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     // Image
     img: (props) => (
       <Image
-        className="rounded-lg my-6"
+        className="my-6"
         sizes="100vw"
         style={{ width: "100%", height: "auto" }}
         {...(props as ImageProps)}

@@ -1,16 +1,7 @@
 import { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
 import { Header, Footer } from "@/components/layout";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { ArrowRight, Target, Heart, Zap, Users } from "lucide-react";
+import { PageHero, Section, Eyebrow, ArrowLink, CtaBanner } from "@/components/carbon";
+import { Target, Heart, Zap, Users } from "lucide-react";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
 import {
   generateBreadcrumbJsonLd,
@@ -55,7 +46,7 @@ const faqJsonLd = generateFaqJsonLd([
   {
     question: "What is Actaer?",
     answer:
-      "We are a full-service technology consulting firm based in Serbia that specializes in IT consulting, custom software development, and product development. We transform businesses into agile, software-powered innovators.",
+      "We are a software product company based in Novi Pazar, Serbia. We build VantumIQP, a governed business-intelligence workspace, and FaberPDF, a local-first PDF editor, and we run a consulting practice for AI, software development, and digital modernization.",
   },
   {
     question: "Where is Actaer located?",
@@ -65,12 +56,12 @@ const faqJsonLd = generateFaqJsonLd([
   {
     question: "What services does the company offer?",
     answer:
-      "We offer three main service categories: IT Consulting (digital transformation, technical due diligence, team augmentation), Custom Software Development (full-stack engineering, AI/ML solutions, enterprise systems), and Product Development (MVP development, UI/UX design, ongoing support).",
+      "Alongside our products VantumIQP and FaberPDF, our consulting practice covers three areas: AI Consulting (AI strategy, adoption, and automation), Software Development (full-stack engineering, enterprise integrations, real-time platforms), and Digital Modernization (legacy assessment, process digitization, pragmatic technology adoption).",
   },
   {
-    question: "Why choose Actaer as a new consulting firm?",
+    question: "Why choose Actaer?",
     answer:
-      "Although newly founded, our team consists of experienced engineers and consultants with proven track records in software development and IT consulting. We bring fresh perspectives, modern approaches, and dedicated focus to every client engagement.",
+      "We are a product company with a consulting practice: the same senior engineers who build and ship VantumIQP and FaberPDF work on client engagements, bringing proven engineering standards, modern approaches, and dedicated focus to every project.",
   },
 ]);
 
@@ -111,17 +102,17 @@ export default async function AboutPage({ params }: PageProps) {
     {
       title: t("whatWeDo.itConsulting.title"),
       description: t("whatWeDo.itConsulting.description"),
-      href: `/${locale}/consulting/ai-consulting`,
+      href: "/consulting/ai-consulting",
     },
     {
       title: t("whatWeDo.softwareDevelopment.title"),
       description: t("whatWeDo.softwareDevelopment.description"),
-      href: `/${locale}/consulting/software-development`,
+      href: "/consulting/software-development",
     },
     {
       title: t("whatWeDo.productDevelopment.title"),
       description: t("whatWeDo.productDevelopment.description"),
-      href: `/${locale}/consulting/digital-modernization`,
+      href: "/consulting/digital-modernization",
     },
   ];
 
@@ -152,201 +143,130 @@ export default async function AboutPage({ params }: PageProps) {
         }}
       />
       <Header />
-      <main className="pt-24">
-        {/* Hero Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-3xl">
-              <Badge variant="outline" className="mb-4">
-                {t("badge")}
-              </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">
-                {t("heroTitle")}{" "}
-                <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-                  {t("heroHighlighted")}
-                </span>
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground">
-                {t("heroDescription")}
-              </p>
-            </div>
-          </div>
-        </section>
+      <main>
+        <PageHero
+          eyebrow={t("badge")}
+          title={t("heroTitle")}
+          description={t("heroDescription")}
+        />
 
         {/* Story Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-                  {t("story.title")}
-                </h2>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>{t("story.paragraph1")}</p>
-                  <p>{t("story.paragraph2")}</p>
-                  <p>{t("story.paragraph3")}</p>
-                  <p>{t("story.paragraph4")}</p>
-                </div>
-                <p className="mt-4 text-sm text-muted-foreground">
-                  Founded in 2015. Last updated: January 2026.
-                </p>
-                <div className="mt-4 flex gap-4">
-                  <a
-                    href={siteConfig.links.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary underline underline-offset-2 hover:text-primary/80 text-sm"
-                  >
-                    LinkedIn
-                  </a>
-                  <a
-                    href={siteConfig.links.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary underline underline-offset-2 hover:text-primary/80 text-sm"
-                  >
-                    X (Twitter)
-                  </a>
-                </div>
+        <Section band="muted">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h2 className="text-display-md mb-6">{t("story.title")}</h2>
+              <div className="space-y-4 text-muted-foreground">
+                <p>{t("story.paragraph1")}</p>
+                <p>{t("story.paragraph2")}</p>
+                <p>{t("story.paragraph3")}</p>
+                <p>{t("story.paragraph4")}</p>
               </div>
+              <p className="mt-4 text-sm text-muted-foreground">
+                Founded in 2015. Last updated: January 2026.
+              </p>
+              <div className="mt-4 flex gap-4">
+                <a
+                  href={siteConfig.links.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 text-sm underline underline-offset-2"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href={siteConfig.links.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 text-sm underline underline-offset-2"
+                >
+                  X (Twitter)
+                </a>
+              </div>
+            </div>
 
-              <div className="relative">
-                <div className="aspect-square rounded-2xl bg-linear-to-br from-primary/20 via-purple-500/20 to-pink-500/20 p-1">
-                  <div className="w-full h-full rounded-2xl bg-background/80 backdrop-blur-sm flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <div className="text-6xl md:text-8xl font-bold font-heading bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent mb-4">
-                        A
-                      </div>
-                      <p className="text-xl font-semibold">Actaer</p>
-                      <p className="text-muted-foreground">
-                        {t("story.tagline")}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl" />
+            <div className="flex aspect-square items-center justify-center border border-border bg-background">
+              <div className="p-8 text-center">
+                <div className="text-display-xl text-primary mb-4">A</div>
+                <p className="text-body-lg font-semibold">Actaer</p>
+                <p className="text-sm text-muted-foreground">
+                  {t("story.tagline")}
+                </p>
               </div>
             </div>
           </div>
-        </section>
+        </Section>
 
         {/* Values Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-                {t("values.title")}
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                {t("values.description")}
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {values.map((value, index) => (
-                <Card key={index} className="border-border/50 text-center">
-                  <CardHeader>
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                      <value.icon className="w-7 h-7 text-primary" />
-                    </div>
-                    <CardTitle className="text-xl">{value.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base">
-                      {value.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+        <Section>
+          <div className="mb-12 max-w-3xl space-y-4">
+            <Eyebrow>{t("values.title")}</Eyebrow>
+            <h2 className="text-display-md">{t("values.description")}</h2>
           </div>
-        </section>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            {values.map((value, index) => (
+              <div
+                key={index}
+                className="-mt-px -ml-px space-y-3 border border-border bg-background p-6"
+              >
+                <value.icon className="size-6 text-primary" />
+                <h3 className="text-body-lg font-semibold">{value.title}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {value.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Section>
 
         {/* Mission Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-                {t("mission.title")}
-              </h2>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                {t("mission.description")}
-              </p>
-              <div className="inline-block p-8 rounded-2xl bg-background border">
-                <blockquote className="text-lg italic">
-                  &ldquo;{t("mission.quote")}&rdquo;
-                </blockquote>
-              </div>
+        <Section band="muted">
+          <div className="max-w-3xl space-y-6">
+            <Eyebrow>{t("mission.title")}</Eyebrow>
+            <h2 className="text-display-md">{t("mission.description")}</h2>
+            <div className="border border-border bg-background p-8">
+              <blockquote className="border-l-2 border-primary pl-6 text-body-lg">
+                &ldquo;{t("mission.quote")}&rdquo;
+              </blockquote>
             </div>
           </div>
-        </section>
+        </Section>
 
         {/* What We Do Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center max-w-3xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-                {t("whatWeDo.title")}
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                {t("whatWeDo.description")}
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <Card
-                  key={index}
-                  className="border-border/50 hover:border-primary/30 transition-colors"
-                >
-                  <CardHeader>
-                    <CardTitle className="text-xl">{service.title}</CardTitle>
-                    <CardDescription className="text-base">
-                      {service.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <Button asChild variant="ghost" className="p-0 group">
-                      <Link href={service.href}>
-                        {t("whatWeDo.learnMore")}
-                        <span className="sr-only"> {service.title}</span>
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+        <Section>
+          <div className="mb-12 max-w-3xl space-y-4">
+            <Eyebrow>{t("whatWeDo.title")}</Eyebrow>
+            <h2 className="text-display-md">{t("whatWeDo.description")}</h2>
           </div>
-        </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="-mt-px -ml-px flex flex-col gap-3 border border-border bg-background p-6"
+              >
+                <h3 className="text-body-lg font-semibold">{service.title}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {service.description}
+                </p>
+                <div className="mt-auto pt-2">
+                  <ArrowLink href={service.href}>
+                    {t("whatWeDo.learnMore")}
+                    <span className="sr-only"> {service.title}</span>
+                  </ArrowLink>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-linear-to-br from-primary/10 via-purple-500/10 to-pink-500/10">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-                {t("cta.title")}
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                {t("cta.description")}
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button asChild size="lg">
-                  <Link href={`/${locale}/contact`}>
-                    {t("cta.getInTouch")}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link href={`/${locale}/consulting`}>
-                    {t("cta.exploreServices")}
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CtaBanner
+          title={t("cta.title")}
+          description={t("cta.description")}
+          ctaLabel={t("cta.getInTouch")}
+          ctaHref="/contact"
+        />
       </main>
       <Footer />
     </>

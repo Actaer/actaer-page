@@ -133,8 +133,7 @@
   },
   "contact": {
     "badge": "Kontaktieren Sie uns",
-    "title": "Lassen Sie uns {highlighted}",
-    "highlighted": "sprechen",
+    "title": "Lassen Sie uns sprechen",
     "subtitle": "Haben Sie ein Projekt im Sinn? Möchten Sie besprechen, wie wir Ihrem Unternehmen helfen können? Wir freuen uns auf Ihre Nachricht.",
     "pageTitle": "Kontaktieren Sie uns",
     "pageDescription": "Nehmen Sie Kontakt mit Actaer auf. Lassen Sie uns über Ihre Softwareentwicklung, IT-Beratung oder Produktentwicklungsbedürfnisse sprechen.",
@@ -201,8 +200,7 @@
   },
   "blog": {
     "badge": "Blog",
-    "title": "Einblicke & {highlighted}",
-    "highlighted": "Updates",
+    "title": "Einblicke & Updates",
     "description": "Gedanken über Softwareentwicklung, Technologietrends und den Aufbau erfolgreicher Produkte.",
     "pageTitle": "Blog",
     "pageDescription": "Einblicke, Tutorials und Updates vom Actaer-Team. Erfahren Sie mehr über Softwareentwicklung, IT-Beratung und Technologietrends.",
@@ -330,15 +328,14 @@
     }
   },
   "aboutPage": {
-    "pageTitle": "Über Actaer",
-    "pageDescription": "Erfahren Sie mehr über Actaer - eine Full-Service-Technologieberatung, die Unternehmen in agile, softwaregetriebene Innovatoren transformiert.",
+    "pageTitle": "About Actaer: Software Product Company in Serbia",
+    "pageDescription": "Learn about Actaer, founded in 2015 — a software product company in Novi Pazar, Serbia. We build VantumIQP and FaberPDF and run a consulting practice for AI, software development, and digital modernization.",
     "badge": "Über Actaer",
-    "heroTitle": "Engineering für",
-    "heroHighlighted": "Digitalen Erfolg",
-    "heroDescription": "Wir sind eine Full-Service-Technologieberatung, die Unternehmen in agile, softwaregetriebene Innovatoren transformiert. Technologie ist der Schlüssel zur Entfaltung Ihres Potenzials.",
+    "heroTitle": "Engineering für Digitalen Erfolg",
+    "heroDescription": "We're a product company with a consulting practice. We build software people rely on every day — and we help other businesses put AI and modern technology to work.",
     "story": {
       "title": "Unsere Geschichte",
-      "paragraph1": "Actaer wurde mit einer einfachen Überzeugung gegründet: Technologie sollte ein Wegbereiter sein, kein Hindernis. Wir sahen zu viele Unternehmen, die mit veralteten Systemen, gescheiterten Softwareprojekten und Technologie kämpften, die ihren Bedürfnissen nicht diente.",
+      "paragraph1": "Actaer is a software product company from Novi Pazar, Serbia. We build VantumIQP, a governed business-intelligence workspace, and FaberPDF, a local-first PDF editor — and we help other companies put AI and modern technology to work through our consulting practice.",
       "paragraph2": "Wir haben uns vorgenommen, das zu ändern. Unser Gründungsteam vereint Erfahrung aus Enterprise-Software, Startups und Beratung. Wir haben gesehen, was funktioniert, was nicht, und warum die meisten Technologieinitiativen ihr Versprechen nicht einlösen.",
       "paragraph3": "Als neues Unternehmen bringen wir frische Perspektiven und moderne Ansätze mit — unbelastet von altem Denken. Wir arbeiten mit Unternehmen jeder Größe zusammen, um Software zu entwickeln, die tatsächlich funktioniert, mit Ihren Anforderungen skaliert und echten Mehrwert liefert.",
       "tagline": "Engineering-Exzellenz",
@@ -371,18 +368,18 @@
     },
     "whatWeDo": {
       "title": "Was Wir Tun",
-      "description": "Umfassende Technologiedienste für Ihr Unternehmen.",
+      "description": "Two products and a consulting practice, built on the same engineering standards.",
       "itConsulting": {
-        "title": "IT-Beratung",
-        "description": "Strategische Beratung für digitale Transformation, technische Due Diligence und Technologieplanung."
+        "title": "AI Consulting",
+        "description": "AI strategy, adoption, and automation — practical guidance from engineers who put AI into production."
       },
       "softwareDevelopment": {
         "title": "Softwareentwicklung",
         "description": "Maßgeschneiderte Softwarelösungen mit modernen Technologien für Ihre einzigartigen Herausforderungen."
       },
       "productDevelopment": {
-        "title": "Produktentwicklung",
-        "description": "End-to-End Produkterstellung vom Konzept bis zum Launch, mit laufender Unterstützung und Iteration."
+        "title": "Digital Modernization",
+        "description": "Legacy assessment, process digitization, and pragmatic technology adoption — modernization your team owns."
       },
       "learnMore": "Mehr Erfahren"
     },
