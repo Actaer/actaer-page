@@ -170,7 +170,7 @@
       "required": "*"
     },
     "success": {
-      "title": "Message Sent!",
+      "title": "Message sent",
       "description": "Thank you for reaching out. We'll get back to you shortly.",
       "sendAnother": "Send Another Message"
     },
@@ -187,7 +187,7 @@
       },
       "international": {
         "question": "Do you work with international clients?",
-        "answer": "Absolutely! We work with clients worldwide. Our team is experienced in remote collaboration and we adjust to different time zones as needed."
+        "answer": "Yes. We work with clients worldwide. Our team is experienced in remote collaboration and we adjust to different time zones as needed."
       },
       "messageInfo": {
         "question": "What information should I include in my message?",
@@ -212,12 +212,12 @@
     "pageDescription": "Notes from building VantumIQP and FaberPDF — and from putting AI to work in real companies. Practical, tested, hype-free. Read the latest.",
     "readMore": "Read More",
     "noPostsTitle": "Coming Soon",
-    "noPostsDescription": "No blog posts yet. Check back soon!",
+    "noPostsDescription": "No blog posts yet. Check back soon.",
     "backToBlog": "Back to Blog",
-    "thanksForReading": "Thanks for reading! Have questions or want to discuss this topic?",
+    "thanksForReading": "Thanks for reading. Have questions or want to discuss this topic?",
     "published": "Published",
     "lastUpdated": "Last Updated",
-    "getInTouch": "Get in Touch"
+    "getInTouch": "Get in touch"
   },
   "notFound": {
     "title": "Page Not Found",
@@ -285,7 +285,7 @@
     }
   },
   "cookiesPage": {
-    "pageTitle": "Actaer Cookie Policy: Types of Cookies Used and Privacy Management",
+    "pageTitle": "Cookie Policy — How Actaer Uses Cookies",
     "pageDescription": "Actaer uses essential, functional, analytics & marketing cookies for functionality, personalization, insights & ads. Manage preferences via settings. Updated Jan 2026.",
     "badge": "Legal",
     "title": "Cookie Policy",
@@ -459,7 +459,7 @@
   },
   "digitalModernizationPage": {
     "pageTitle": "Digital Modernization — Without the Big-Bang Rewrite",
-    "pageDescription": "Legacy modernization and digital transformation that sticks: process digitization, tool adoption, and coaching until your team owns it. Start with an assessment.",
+    "pageDescription": "Legacy modernization and digital transformation that sticks: process digitization, tool adoption, coaching until your team owns it. Start with an assessment.",
     "heroEyebrow": "Consulting · Digital modernization",
     "heroTitle": "Modernize without betting the company",
     "heroDescription": "Big-bang rewrites fail. We move you off paper, spreadsheets, and legacy systems step by step — with your team learning at every one.",

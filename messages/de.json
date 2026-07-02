@@ -170,7 +170,7 @@
       "required": "*"
     },
     "success": {
-      "title": "Nachricht gesendet!",
+      "title": "Nachricht gesendet",
       "description": "Vielen Dank für Ihre Nachricht. Wir melden uns in Kürze bei Ihnen.",
       "sendAnother": "Weitere Nachricht senden"
     },
@@ -187,7 +187,7 @@
       },
       "international": {
         "question": "Arbeiten Sie mit internationalen Kunden?",
-        "answer": "Absolut! Wir arbeiten mit Kunden weltweit. Unser Team hat Erfahrung in der Remote-Zusammenarbeit und wir passen uns bei Bedarf an verschiedene Zeitzonen an."
+        "answer": "Ja. Wir arbeiten mit Kunden weltweit. Unser Team hat Erfahrung in der Remote-Zusammenarbeit und wir passen uns bei Bedarf an verschiedene Zeitzonen an."
       },
       "messageInfo": {
         "question": "Welche Informationen sollte ich in meine Nachricht aufnehmen?",
@@ -212,9 +212,9 @@
     "pageDescription": "Notizen aus der Arbeit an VantumIQP und FaberPDF — und aus KI-Projekten in echten Unternehmen. Praktisch, erprobt, ohne Hype. Lesen Sie das Neueste.",
     "readMore": "Weiterlesen",
     "noPostsTitle": "Demnächst",
-    "noPostsDescription": "Noch keine Blog-Beiträge. Schauen Sie bald wieder vorbei!",
+    "noPostsDescription": "Noch keine Blog-Beiträge. Schauen Sie bald wieder vorbei.",
     "backToBlog": "Zurück zum Blog",
-    "thanksForReading": "Danke fürs Lesen! Haben Sie Fragen oder möchten Sie dieses Thema diskutieren?",
+    "thanksForReading": "Danke fürs Lesen. Haben Sie Fragen oder möchten Sie dieses Thema diskutieren?",
     "published": "Veröffentlicht",
     "lastUpdated": "Zuletzt aktualisiert",
     "getInTouch": "Kontakt aufnehmen"

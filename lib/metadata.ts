@@ -4,7 +4,7 @@ import { locales, type Locale } from "@/i18n/config";
 export const siteConfig = {
   name: "Actaer",
   description:
-    "Software product company building VantumIQP and FaberPDF, with AI consulting, software development and digital modernization services.",
+    "Actaer builds VantumIQP and FaberPDF — and helps companies put AI to work. Software product company from Serbia. See what we can do for you.",
   url: "https://actaer.com",
   ogImage: "/opengraph-image",
   links: {

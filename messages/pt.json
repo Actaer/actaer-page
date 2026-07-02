@@ -170,7 +170,7 @@
       "required": "*"
     },
     "success": {
-      "title": "Mensagem enviada!",
+      "title": "Mensagem enviada",
       "description": "Obrigado por nos contactar. Responderemos em breve.",
       "sendAnother": "Enviar outra mensagem"
     },
@@ -187,7 +187,7 @@
       },
       "international": {
         "question": "Trabalham com clientes internacionais?",
-        "answer": "Absolutamente! Trabalhamos com clientes em todo o mundo. A nossa equipa tem experiência em colaboração remota e adaptamo-nos a diferentes fusos horários conforme necessário."
+        "answer": "Sim. Trabalhamos com clientes em todo o mundo. A nossa equipa tem experiência em colaboração remota e adaptamo-nos a diferentes fusos horários conforme necessário."
       },
       "messageInfo": {
         "question": "Que informações devo incluir na minha mensagem?",
@@ -212,9 +212,9 @@
     "pageDescription": "Notas de quem constrói o VantumIQP e o FaberPDF — e põe a IA a trabalhar em empresas reais. Prático, testado, sem exageros. Leia os artigos mais recentes.",
     "readMore": "Ler mais",
     "noPostsTitle": "Em breve",
-    "noPostsDescription": "Ainda não há publicações. Volte em breve!",
+    "noPostsDescription": "Ainda não há publicações. Volte em breve.",
     "backToBlog": "Voltar ao blog",
-    "thanksForReading": "Obrigado por ler! Tem perguntas ou quer discutir este tema?",
+    "thanksForReading": "Obrigado por ler. Tem perguntas ou quer discutir este tema?",
     "published": "Publicado",
     "lastUpdated": "Última atualização",
     "getInTouch": "Entre em contacto"

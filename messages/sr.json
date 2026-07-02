@@ -170,7 +170,7 @@
       "required": "*"
     },
     "success": {
-      "title": "Poruka poslata!",
+      "title": "Poruka poslata",
       "description": "Hvala što ste nam se obratili. Javićemo vam se uskoro.",
       "sendAnother": "Pošalji još jednu poruku"
     },
@@ -187,7 +187,7 @@
       },
       "international": {
         "question": "Da li radite sa međunarodnim klijentima?",
-        "answer": "Apsolutno! Radimo sa klijentima širom sveta. Naš tim ima iskustva u udaljenoj saradnji i prilagođavamo se različitim vremenskim zonama po potrebi."
+        "answer": "Da. Radimo sa klijentima širom sveta. Naš tim ima iskustva u udaljenoj saradnji i prilagođavamo se različitim vremenskim zonama po potrebi."
       },
       "messageInfo": {
         "question": "Koje informacije treba da uključim u svoju poruku?",
@@ -212,9 +212,9 @@
     "pageDescription": "Beleške iz izgradnje VantumIQP-a i FaberPDF-a — i iz stavljanja AI-ja u pogon u stvarnim kompanijama. Praktično, provereno, bez pompe. Pročitajte najnovije.",
     "readMore": "Pročitaj više",
     "noPostsTitle": "Uskoro",
-    "noPostsDescription": "Još nema blog postova. Proverite ponovo uskoro!",
+    "noPostsDescription": "Još nema blog postova. Proverite ponovo uskoro.",
     "backToBlog": "Nazad na blog",
-    "thanksForReading": "Hvala na čitanju! Imate pitanja ili želite da diskutujete o ovoj temi?",
+    "thanksForReading": "Hvala na čitanju. Imate pitanja ili želite da diskutujete o ovoj temi?",
     "published": "Objavljeno",
     "lastUpdated": "Poslednje ažuriranje",
     "getInTouch": "Stupite u kontakt"
