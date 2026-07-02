@@ -160,11 +160,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                 <p className="mb-4 text-muted-foreground">
                   {t("getInTouchDescription")}
                 </p>
-                <p className="text-muted-foreground">
-                  You can reach us by email, phone, or the contact form. We
-                  serve clients worldwide from our office in Novi Pazar,
-                  Serbia.
-                </p>
+                <p className="text-muted-foreground">{t("reachUs")}</p>
               </div>
 
               <div className="grid grid-cols-1">

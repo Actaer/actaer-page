@@ -144,6 +144,7 @@
     "pageDescription": "Get in touch with Actaer for software development, IT consulting, and product needs. Email office@actaer.com, call +381 64 9055722, or use our form. Novi Pazar, Serbia.",
     "getInTouch": "Get in Touch",
     "getInTouchDescription": "Whether you have a question about our services, want to discuss a project, or just want to say hello, we're here to help.",
+    "reachUs": "You can reach us by email, phone, or the contact form. We serve clients worldwide from our office in Novi Pazar, Serbia.",
     "formTitle": "Send us a message",
     "formDescription": "Fill out the form below and we'll get back to you as soon as possible.",
     "info": {
@@ -341,7 +342,7 @@
     "story": {
       "title": "Our Story",
       "paragraph1": "Actaer is a software product company from Novi Pazar, Serbia. We build VantumIQP, a governed business-intelligence workspace, and FaberPDF, a local-first PDF editor — and we help other companies put AI and modern technology to work through our consulting practice.",
-      "paragraph2": "We set out to change that. Our founding team has experience in enterprise software, startups, and consulting. We know what works, what fails, and why many tech projects do not succeed.",
+      "paragraph2": "Behind those products is a founding team with experience in enterprise software, startups, and consulting. We know what works, what fails, and why many tech projects do not succeed.",
       "paragraph3": "As a new firm, we offer fresh views and modern methods — free from old ideas. We partner with businesses of all sizes to build software that works well, grows as needed, and adds true value.",
       "paragraph4": "Our products, VantumIQP and FaberPDF, embody everything we believe about software: modern, user-friendly, and built for how businesses actually operate today.",
       "tagline": "Engineering Excellence"
@@ -391,8 +392,7 @@
     "cta": {
       "title": "Ready to Work Together?",
       "description": "Let's discuss how we can help transform your business with technology that delivers.",
-      "getInTouch": "Get in Touch",
-      "exploreServices": "Explore Services"
+      "getInTouch": "Get in Touch"
     }
   },
   "productsPage": {
