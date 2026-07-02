@@ -19,20 +19,71 @@
     "openMenu": "Otvori meni",
     "theme": "Tema"
   },
-  "hero": {
-    "badge": "Razvoj softvera i IT konsalting",
-    "title": "Vaš uspeh, <highlighted>Inženjeriran</highlighted> od ACTAER-a",
-    "description": "Mi smo kompletna tehnološka konsalting firma koja transformiše preduzeća u agilne, softverski pokretane inovatore. Od strategije do implementacije, mi inženjerimo vašu digitalnu budućnost.",
-    "startProject": "Započnite projekat",
-    "exploreServices": "Istražite usluge",
-    "scroll": "Skrolujte"
-  },
-  "about": {
-    "badge": "O Actaer-u",
-    "title": "Rešavanje zahtevnih poslovnih problema uz <highlighted>Pametnu tehnologiju</highlighted>",
-    "description1": "Actaer je novoosnovana tehnološka konsalting firma koju su osnovali iskusni inženjeri i konsultanti. Donosimo sveže perspektive i dokazanu ekspertizu za pretvaranje vaše vizije u pouzdana, skalabilna softverska rešenja.",
-    "description2": "Od strateškog IT konsaltinga do kompletnog razvoja proizvoda, sarađujemo sa preduzećima svih veličina za navigaciju kroz složeni digitalni pejzaž. Naš agilni pristup osigurava da isporučujemo vrednost na svakom koraku putovanja.",
-    "tagline": "Sveže ideje, dokazana ekspertiza"
+  "home": {
+    "hero": {
+      "eyebrow": "Software products and AI consulting",
+      "title": "We build software products. And we help companies put AI to work.",
+      "description": "Actaer is a product company. We build and ship VantumIQP and FaberPDF — and we bring the same engineering discipline to companies that want to modernize with AI.",
+      "primaryCta": "Explore our products",
+      "secondaryCta": "AI consulting"
+    },
+    "products": {
+      "eyebrow": "Our products",
+      "title": "Software we build and stand behind",
+      "vantumiqp": {
+        "category": "Business intelligence",
+        "tagline": "Open your data. See the story. Share the answer.",
+        "description": "A governed BI workspace built on Apache Superset — dashboards, SQL exploration and decision-ready reports in one place.",
+        "feature1": "40+ chart types",
+        "feature2": "SQL exploration without tool-switching",
+        "feature3": "Role-aware dashboards with governance",
+        "cta": "Learn more"
+      },
+      "faberpdf": {
+        "category": "Document tools",
+        "tagline": "The modern local-first PDF editor.",
+        "description": "Sign, annotate, edit and validate PDFs entirely on your desktop. No uploads, no cloud round-trips — documents never leave your machine.",
+        "feature1": "Sign and annotate locally",
+        "feature2": "Edit text and validate files",
+        "feature3": "Windows and Linux, free during beta",
+        "cta": "Learn more"
+      }
+    },
+    "consulting": {
+      "eyebrow": "Consulting",
+      "title": "AI consulting from people who ship software",
+      "description": "We are not analysts with slide decks. We build products for a living — and we help your teams adopt AI, modernize systems and ship with confidence.",
+      "aiTitle": "AI Consulting",
+      "aiDescription": "Our flagship service. AI strategy and roadmaps, model and vendor selection, agentic automation, and hands-on enablement for your teams.",
+      "softwareTitle": "Software Development",
+      "softwareDescription": "Custom software delivered end to end — full-stack engineering, enterprise integrations and real-time platforms.",
+      "modernizationTitle": "Digital Modernization",
+      "modernizationDescription": "We teach organizations how to modernize: legacy assessment, process digitization and technology adoption that sticks.",
+      "cta": "How we work"
+    },
+    "why": {
+      "eyebrow": "Why Actaer",
+      "title": "Product DNA, consulting discipline",
+      "point1Title": "We ship our own products",
+      "point1Description": "Advice backed by software we build, sell and operate ourselves.",
+      "point2Title": "Engineering first",
+      "point2Description": "Senior engineers on every engagement — no hand-offs to a bench.",
+      "point3Title": "Practical AI",
+      "point3Description": "We deploy AI where it earns its keep, not where it demos well.",
+      "point4Title": "Based in Serbia, serving Europe",
+      "point4Description": "Novi Pazar roots, EU time zone, remote-first delivery."
+    },
+    "blog": {
+      "eyebrow": "Insights",
+      "title": "Latest from the blog",
+      "cta": "All articles",
+      "readMore": "Read article"
+    },
+    "cta": {
+      "title": "Let's talk about your next move",
+      "description": "A product demo, an AI roadmap, or a modernization plan — tell us what you need and we'll get back within one business day.",
+      "button": "Contact us"
+    }
   },
   "services": {
     "badge": "Naše usluge",
@@ -287,51 +338,6 @@
     "ctaDescription": "Razgovarajmo o vašoj ideji proizvoda i kreirajmo roadmapu da je oživimo.",
     "ctaButtonPrimary": "Započnite Proizvod",
     "ctaButtonSecondary": "Pogledajte Sve Usluge"
-  },
-  "techStack": {
-    "badge": "Tehnološki stek",
-    "title": "Izgrađeno uz <highlighted>Moderne tehnologije</highlighted>",
-    "description": "Koristimo najsavremenije alate i okvire za izgradnju skalabilnih, održivih i visoko-performantnih rešenja.",
-    "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "language": "Jezik",
-      "database": "Baza podataka",
-      "devops": "DevOps",
-      "cloud": "Cloud"
-    }
-  },
-  "workflow": {
-    "badge": "Naš proces",
-    "title": "Kako <highlighted>Isporučujemo uspeh</highlighted>",
-    "description": "Naša dokazana metodologija osigurava konzistentne, visoko-kvalitetne rezultate za svaki projekat koji preuzmemo.",
-    "steps": {
-      "planning": {
-        "title": "Planiranje",
-        "description": "Analiziramo vaše izazove, usklađujemo ciljeve sa zainteresovanim stranama i razvijamo sveobuhvatan putokaz za uspeh."
-      },
-      "design": {
-        "title": "Dizajn",
-        "description": "Naš tim kreira okvire rešenja i IT arhitekture prilagođene vašim specifičnim zahtevima."
-      },
-      "implementation": {
-        "title": "Implementacija",
-        "description": "Agilno izvršenje uz besprekornu integraciju, izgradnja skalabilnih rešenja koja rastu sa vašim poslovanjem."
-      },
-      "verification": {
-        "title": "Verifikacija",
-        "description": "Rigorozno testiranje i validacija osiguravaju da vaše rešenje ispunjava najviše standarde kvaliteta."
-      },
-      "maintenance": {
-        "title": "Održavanje",
-        "description": "Proaktivna podrška i kontinuirana unapređenja održavaju vaše sisteme na vrhunskim performansama."
-      }
-    }
-  },
-  "cta": {
-    "title": "Spremni da <highlighted>Transformišete</highlighted> svoje poslovanje?",
-    "description": "Razgovarajmo o tome kako vam možemo pomoći da rešite najzahtevnije izazove pametnim tehnološkim rešenjima.",
-    "startConversation": "Započnite razgovor"
   },
   "footer": {
     "description": "Kompletna tehnološka konsalting firma koja transformiše preduzeća u agilne, softverski pokretane inovatore.",

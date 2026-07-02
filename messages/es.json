@@ -19,20 +19,71 @@
     "openMenu": "Abrir menú",
     "theme": "Tema"
   },
-  "hero": {
-    "badge": "Desarrollo de Software y Consultoría IT",
-    "title": "Tu éxito, <highlighted>Diseñado</highlighted> por ACTAER",
-    "description": "Somos una firma de consultoría tecnológica integral que transforma empresas en innovadores ágiles impulsados por software. Desde la estrategia hasta la implementación, diseñamos tu futuro digital.",
-    "startProject": "Iniciar tu proyecto",
-    "exploreServices": "Explorar servicios",
-    "scroll": "Desplazar"
-  },
-  "about": {
-    "badge": "Sobre Actaer",
-    "title": "Resolviendo problemas empresariales complejos con <highlighted>Tecnología Inteligente</highlighted>",
-    "description1": "Actaer es una firma de consultoría tecnológica recién fundada, construida por ingenieros y consultores experimentados. Aportamos perspectivas frescas y experiencia comprobada para transformar tu visión en soluciones de software confiables y escalables.",
-    "description2": "Desde consultoría IT estratégica hasta desarrollo completo de productos, colaboramos con empresas de todos los tamaños para navegar el complejo panorama digital. Nuestro enfoque ágil garantiza que entregamos valor en cada paso del camino.",
-    "tagline": "Ideas Frescas, Experiencia Comprobada"
+  "home": {
+    "hero": {
+      "eyebrow": "Software products and AI consulting",
+      "title": "We build software products. And we help companies put AI to work.",
+      "description": "Actaer is a product company. We build and ship VantumIQP and FaberPDF — and we bring the same engineering discipline to companies that want to modernize with AI.",
+      "primaryCta": "Explore our products",
+      "secondaryCta": "AI consulting"
+    },
+    "products": {
+      "eyebrow": "Our products",
+      "title": "Software we build and stand behind",
+      "vantumiqp": {
+        "category": "Business intelligence",
+        "tagline": "Open your data. See the story. Share the answer.",
+        "description": "A governed BI workspace built on Apache Superset — dashboards, SQL exploration and decision-ready reports in one place.",
+        "feature1": "40+ chart types",
+        "feature2": "SQL exploration without tool-switching",
+        "feature3": "Role-aware dashboards with governance",
+        "cta": "Learn more"
+      },
+      "faberpdf": {
+        "category": "Document tools",
+        "tagline": "The modern local-first PDF editor.",
+        "description": "Sign, annotate, edit and validate PDFs entirely on your desktop. No uploads, no cloud round-trips — documents never leave your machine.",
+        "feature1": "Sign and annotate locally",
+        "feature2": "Edit text and validate files",
+        "feature3": "Windows and Linux, free during beta",
+        "cta": "Learn more"
+      }
+    },
+    "consulting": {
+      "eyebrow": "Consulting",
+      "title": "AI consulting from people who ship software",
+      "description": "We are not analysts with slide decks. We build products for a living — and we help your teams adopt AI, modernize systems and ship with confidence.",
+      "aiTitle": "AI Consulting",
+      "aiDescription": "Our flagship service. AI strategy and roadmaps, model and vendor selection, agentic automation, and hands-on enablement for your teams.",
+      "softwareTitle": "Software Development",
+      "softwareDescription": "Custom software delivered end to end — full-stack engineering, enterprise integrations and real-time platforms.",
+      "modernizationTitle": "Digital Modernization",
+      "modernizationDescription": "We teach organizations how to modernize: legacy assessment, process digitization and technology adoption that sticks.",
+      "cta": "How we work"
+    },
+    "why": {
+      "eyebrow": "Why Actaer",
+      "title": "Product DNA, consulting discipline",
+      "point1Title": "We ship our own products",
+      "point1Description": "Advice backed by software we build, sell and operate ourselves.",
+      "point2Title": "Engineering first",
+      "point2Description": "Senior engineers on every engagement — no hand-offs to a bench.",
+      "point3Title": "Practical AI",
+      "point3Description": "We deploy AI where it earns its keep, not where it demos well.",
+      "point4Title": "Based in Serbia, serving Europe",
+      "point4Description": "Novi Pazar roots, EU time zone, remote-first delivery."
+    },
+    "blog": {
+      "eyebrow": "Insights",
+      "title": "Latest from the blog",
+      "cta": "All articles",
+      "readMore": "Read article"
+    },
+    "cta": {
+      "title": "Let's talk about your next move",
+      "description": "A product demo, an AI roadmap, or a modernization plan — tell us what you need and we'll get back within one business day.",
+      "button": "Contact us"
+    }
   },
   "services": {
     "badge": "Nuestros Servicios",
@@ -287,51 +338,6 @@
     "ctaDescription": "Hablemos de su idea de producto y creemos una hoja de ruta para darle vida.",
     "ctaButtonPrimary": "Iniciar su Producto",
     "ctaButtonSecondary": "Ver Todos los Servicios"
-  },
-  "techStack": {
-    "badge": "Stack Tecnológico",
-    "title": "Construido con <highlighted>Tecnologías Modernas</highlighted>",
-    "description": "Aprovechamos herramientas y frameworks de vanguardia para construir soluciones escalables, mantenibles y de alto rendimiento.",
-    "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "language": "Lenguaje",
-      "database": "Base de Datos",
-      "devops": "DevOps",
-      "cloud": "Cloud"
-    }
-  },
-  "workflow": {
-    "badge": "Nuestro Proceso",
-    "title": "Cómo <highlighted>Entregamos Éxito</highlighted>",
-    "description": "Nuestra metodología probada garantiza resultados consistentes y de alta calidad para cada proyecto que emprendemos.",
-    "steps": {
-      "planning": {
-        "title": "Planificación",
-        "description": "Analizamos tus desafíos, alineamos objetivos con las partes interesadas y desarrollamos una hoja de ruta integral para el éxito."
-      },
-      "design": {
-        "title": "Diseño",
-        "description": "Nuestro equipo crea marcos de solución y arquitecturas IT adaptadas a tus requisitos específicos."
-      },
-      "implementation": {
-        "title": "Implementación",
-        "description": "Ejecución ágil con integración perfecta, construyendo soluciones escalables que crecen con tu negocio."
-      },
-      "verification": {
-        "title": "Verificación",
-        "description": "Pruebas rigurosas y validación garantizan que tu solución cumpla con los más altos estándares de calidad."
-      },
-      "maintenance": {
-        "title": "Mantenimiento",
-        "description": "Soporte proactivo y mejoras continuas mantienen tus sistemas funcionando al máximo rendimiento."
-      }
-    }
-  },
-  "cta": {
-    "title": "¿Listo para <highlighted>Transformar</highlighted> tu negocio?",
-    "description": "Hablemos sobre cómo podemos ayudarte a resolver tus desafíos más exigentes con soluciones tecnológicas inteligentes.",
-    "startConversation": "Iniciar una conversación"
   },
   "footer": {
     "description": "Firma de consultoría tecnológica integral que transforma empresas en innovadores ágiles impulsados por software.",
