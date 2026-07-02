@@ -24,7 +24,7 @@ Actaer is a software product company based in Novi Pazar, Serbia. We build our o
 ## Products
 
 ### VantumIQP
-Governed business intelligence workspace built on Apache Superset:
+Your data has a story. Finally see it. VantumIQP is a governed business intelligence workspace built on Apache Superset:
 - Dashboards and decision-ready reports
 - SQL exploration with governed access
 - Role-based permissions and data governance
@@ -34,7 +34,7 @@ Governed business intelligence workspace built on Apache Superset:
 **Best for:** Organizations that need governed, self-service business intelligence without vendor lock-in.
 
 ### FaberPDF
-Modern local-first desktop PDF editor for Windows and Linux:
+Your documents are your business. FaberPDF is a modern local-first desktop PDF editor for Windows and Linux:
 - Sign, annotate, edit and validate PDFs
 - No cloud uploads — documents never leave your machine
 - Free during beta
@@ -77,10 +77,10 @@ Actaer is a software product company built by experienced engineers and consulta
 
 ## Core Values
 
-1. **Results-Driven**: We measure success by client impact
-2. **Client-Centric**: Long-term partnerships based on trust
-3. **Innovation-Focused**: Cutting-edge technology solutions
-4. **Collaborative**: Working as an extension of your team
+1. **Results-driven**: We measure success by what changes for our clients
+2. **Client-centric**: Straight answers, even when they're not the easy ones
+3. **Innovation-focused**: New technology when it solves the problem, skipped when it doesn't
+4. **Collaborative**: We work beside your team and leave the capability with you
 
 ## Technology Expertise
 

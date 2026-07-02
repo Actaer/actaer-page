@@ -105,7 +105,7 @@ export function generateBlogListJsonLd(
     "@type": "Blog",
     name: `${siteConfig.name} Blog`,
     description:
-      "Insights, tutorials, and updates on software products, AI adoption, and engineering.",
+      "Notes from building VantumIQP and FaberPDF — and from putting AI to work in real companies. Practical, tested, hype-free.",
     url: `${siteConfig.url}/blog`,
     publisher: {
       "@type": "Organization",
@@ -252,7 +252,8 @@ export function generateEnhancedOrganizationJsonLd() {
       height: 512,
     },
     image: `${siteConfig.url}/images/logo.png`,
-    description: siteConfig.description,
+    description:
+      "Actaer is a software product company from Novi Pazar, Serbia — the engineering team behind VantumIQP and FaberPDF, with a consulting practice that puts AI to work in real companies.",
     foundingDate: "2025",
     address: {
       "@type": "PostalAddress",
@@ -339,7 +340,7 @@ export function generateEnhancedOrganizationJsonLd() {
         },
       ],
     },
-    slogan: "Software products and AI consulting",
+    slogan: "We build software we stand behind — and help others do the same.",
     areaServed: {
       "@type": "GeoCircle",
       geoMidpoint: {
@@ -366,7 +367,8 @@ export function generateAboutPageJsonLd() {
     "@type": "AboutPage",
     "@id": `${siteConfig.url}/about`,
     name: `About ${siteConfig.name}`,
-    description: `Learn about ${siteConfig.name} - a software product company from Novi Pazar, Serbia, building VantumIQP and FaberPDF and helping companies put AI and modern technology to work through its consulting practice.`,
+    description:
+      "Actaer builds VantumIQP and FaberPDF and helps companies put AI to work. Meet the software company from Novi Pazar, Serbia. Founded 2025.",
     url: `${siteConfig.url}/about`,
     mainEntity: {
       "@id": `${siteConfig.url}/#organization`,

@@ -137,16 +137,16 @@
     }
   },
   "contact": {
-    "badge": "Contact Us",
-    "title": "Let's Talk",
-    "subtitle": "Have a project in mind? Want to discuss how we can help your business? We'd love to hear from you. Actaer is located in Novi Pazar, Serbia, and serves clients worldwide.",
-    "pageTitle": "Contact — Products & AI Consulting",
-    "pageDescription": "Get in touch with Actaer about VantumIQP, FaberPDF, AI consulting, or software development. Email office@actaer.com, call +381 64 9055722, or use our form. Novi Pazar, Serbia.",
-    "getInTouch": "Get in Touch",
-    "getInTouchDescription": "Whether you have a question about our services, want to discuss a project, or just want to say hello, we're here to help.",
-    "reachUs": "You can reach us by email, phone, or the contact form. We serve clients worldwide from our office in Novi Pazar, Serbia.",
+    "badge": "Contact",
+    "title": "Tell us what's slowing you down",
+    "subtitle": "A demo, a roadmap, or a second opinion — the person reading this is an engineer, and you'll hear back within one business day.",
+    "pageTitle": "Contact — Talk to an Engineer",
+    "pageDescription": "Questions about VantumIQP, FaberPDF, or AI consulting? You'll hear back from an engineer within one business day. No sales gauntlet — just answers.",
+    "getInTouch": "Get in touch",
+    "getInTouchDescription": "Ask about a product, scope a project, or get a second opinion. You'll get a straight answer.",
+    "reachUs": "Email, phone, or the form — whatever suits you. We work from Novi Pazar, Serbia, with clients worldwide.",
     "formTitle": "Send us a message",
-    "formDescription": "Fill out the form below and we'll get back to you as soon as possible.",
+    "formDescription": "Tell us what you're working on. You'll hear back within one business day.",
     "info": {
       "email": "Email",
       "phone": "Phone",
@@ -206,10 +206,10 @@
   },
   "blog": {
     "badge": "Blog",
-    "title": "Insights & Updates",
-    "description": "Thoughts on software development, technology trends, and building successful products.",
-    "pageTitle": "Blog: Software Products, AI & Engineering Insights",
-    "pageDescription": "Tutorials, product updates, and expert insights on software products, AI adoption, digital modernization, and engineering from the Actaer team.",
+    "title": "What we're learning",
+    "description": "Notes from building VantumIQP and FaberPDF — and from putting AI to work in real companies. Practical, tested, hype-free.",
+    "pageTitle": "Blog — Software Products, AI & Engineering Insights",
+    "pageDescription": "Notes from building VantumIQP and FaberPDF — and from putting AI to work in real companies. Practical, tested, hype-free. Read the latest.",
     "readMore": "Read More",
     "noPostsTitle": "Coming Soon",
     "noPostsDescription": "No blog posts yet. Check back soon!",
@@ -334,66 +334,66 @@
     }
   },
   "aboutPage": {
-    "pageTitle": "About Actaer: Software Product Company in Serbia",
-    "pageDescription": "Learn about Actaer, founded in 2025 — a software product company in Novi Pazar, Serbia. We build VantumIQP and FaberPDF and run a consulting practice for AI, software development, and digital modernization.",
+    "pageTitle": "About Actaer — Software Company from Novi Pazar, Serbia",
+    "pageDescription": "Actaer builds VantumIQP and FaberPDF and helps companies put AI to work. Meet the software company from Novi Pazar, Serbia. Founded 2025.",
     "founded": "Founded in 2025.",
-    "badge": "About Actaer",
-    "heroTitle": "Engineering Digital Success",
-    "heroDescription": "We're a product company with a consulting practice. We build software people rely on every day — and we help other businesses put AI and modern technology to work.",
+    "badge": "About us",
+    "heroTitle": "We got tired of software that fights you",
+    "heroDescription": "So we started building our own. Actaer is a software product company from Novi Pazar, Serbia — and the engineering team behind VantumIQP and FaberPDF.",
     "story": {
-      "title": "Our Story",
-      "paragraph1": "Actaer is a software product company from Novi Pazar, Serbia. We build VantumIQP, a governed business-intelligence workspace, and FaberPDF, a local-first PDF editor — and we help other companies put AI and modern technology to work through our consulting practice.",
-      "paragraph2": "Behind those products is a founding team with experience in enterprise software, startups, and consulting. We know what works, what fails, and why many tech projects do not succeed.",
-      "paragraph3": "As a new firm, we offer fresh views and modern methods — free from old ideas. We partner with businesses of all sizes to build software that works well, grows as needed, and adds true value.",
-      "paragraph4": "Our products, VantumIQP and FaberPDF, embody everything we believe about software: modern, user-friendly, and built for how businesses actually operate today.",
-      "tagline": "Engineering Excellence"
+      "title": "Our story",
+      "paragraph1": "Every tool we used seemed to work against us. BI platforms that needed a babysitter. PDF editors that wanted our contracts in their cloud. Consultants who left decks instead of systems.",
+      "paragraph2": "So we built Actaer to do it differently: build products we'd want to use, and consult the way we'd want to be consulted — with working software, not promises.",
+      "paragraph3": "Today that means VantumIQP, our governed business intelligence workspace, and FaberPDF, our local-first PDF editor — plus a consulting practice that puts AI to work in real companies.",
+      "paragraph4": "We're small, senior, and deliberate. That's not a limitation. It's the product.",
+      "tagline": "Software you can trust. People you can call."
     },
     "values": {
-      "title": "Our Values",
-      "description": "The principles that guide everything we do.",
+      "title": "Our values",
+      "description": "The principles we hold ourselves to — on our products and on your project.",
       "resultsDriven": {
-        "title": "Results-Driven",
-        "description": "We measure success by the impact we create for our clients, not by hours logged or lines of code written."
+        "title": "Results-driven",
+        "description": "We measure success by what changes for you — not hours logged or lines of code written."
       },
       "clientCentric": {
-        "title": "Client-Centric",
-        "description": "Your success is our success. We build long-term partnerships based on trust, transparency, and mutual growth."
+        "title": "Client-centric",
+        "description": "Your goals set the agenda. We tell you the truth, even when it's not the easy answer."
       },
       "innovationFocused": {
-        "title": "Innovation-Focused",
-        "description": "We stay at the forefront of technology, bringing cutting-edge solutions to solve your most challenging problems."
+        "title": "Innovation-focused",
+        "description": "We adopt new technology when it solves your problem — and skip it when it doesn't."
       },
       "collaborative": {
         "title": "Collaborative",
-        "description": "We work as an extension of your team, fostering open communication and shared ownership of outcomes."
+        "description": "We work beside your team, share what we know, and leave you stronger than we found you."
       }
     },
     "mission": {
-      "title": "Our Mission",
-      "description": "To empower businesses with technology that actually works. We're on a mission to eliminate the gap between what technology promises and what it delivers.",
+      "title": "Our mission",
+      "description": "Close the gap between what technology promises and what it delivers — for our users and for our clients.",
       "quote": "We build software we stand behind — and help others do the same."
     },
     "whatWeDo": {
-      "title": "What We Do",
-      "description": "Two products and a consulting practice, built on the same engineering standards.",
+      "title": "What we do",
+      "description": "Two products and a consulting practice, held to the same engineering standard.",
       "itConsulting": {
         "title": "AI Consulting",
-        "description": "AI strategy, adoption, and automation — practical guidance from engineers who put AI into production."
+        "description": "Find where AI pays off in your business — then put it into production, with your team trained to own it."
       },
       "softwareDevelopment": {
         "title": "Software Development",
-        "description": "Custom software solutions built with modern technologies to solve your unique challenges."
+        "description": "Custom systems built the way we build our own products: engineered, documented, and supported after launch."
       },
       "productDevelopment": {
         "title": "Digital Modernization",
-        "description": "Legacy assessment, process digitization, and pragmatic technology adoption — modernization your team owns."
+        "description": "Move off paper, spreadsheets, and legacy systems step by step — change your team actually keeps."
       },
-      "learnMore": "Learn More"
+      "learnMore": "Learn more"
     },
     "cta": {
-      "title": "Ready to Work Together?",
-      "description": "Let's discuss how we can help transform your business with technology that delivers.",
-      "getInTouch": "Get in Touch"
+      "title": "Ready when you are",
+      "description": "Bring us the problem. You'll hear back from an engineer within one business day.",
+      "getInTouch": "Get in touch"
     }
   },
   "productsPage": {
@@ -404,78 +404,78 @@
     "heroDescription": "Every Actaer product starts as a problem we couldn't stand anymore. Then we fix it — properly."
   },
   "consultingPage": {
-    "pageTitle": "Consulting — AI Strategy, Software & Modernization",
-    "pageDescription": "AI consulting from a product company: AI strategy and adoption, custom software development, and digital modernization for companies that want to move faster.",
+    "pageTitle": "Consulting — AI, Software & Modernization",
+    "pageDescription": "Consulting from a company that ships its own software: AI strategy, working systems, and teams trained to own them. Talk to an engineer today.",
     "heroEyebrow": "Consulting",
-    "heroTitle": "AI consulting from people who ship software",
-    "heroDescription": "We build products for a living. When we consult, you get the same senior engineers, the same standards, and advice we would follow ourselves.",
-    "heroCta": "Talk to us",
+    "heroTitle": "You don't need more advice. You need it running.",
+    "heroDescription": "Decks don't ship. We're a product company — when we consult, you get working systems, honest trade-offs, and a team that stays until yours can take over.",
+    "heroCta": "Talk to an engineer",
     "flagshipLabel": "Flagship service"
   },
   "aiConsultingPage": {
     "pageTitle": "AI Consulting — Strategy, Adoption & Automation",
-    "pageDescription": "AI strategy and roadmaps, model selection, agentic automation and team enablement. Practical AI consulting from a company that builds software products.",
+    "pageDescription": "Find where AI pays off in your business. AI strategy, adoption, and automation from engineers who deploy it daily. Book a session — leave with next steps.",
     "heroEyebrow": "Consulting · Flagship",
-    "heroTitle": "Put AI to work where it earns its keep",
-    "heroDescription": "We help companies move from AI curiosity to AI in production — strategy, pilots, automation and the training your teams need to keep it running.",
+    "heroTitle": "AI that earns its keep",
+    "heroDescription": "Everyone's selling AI strategy. We build the part that actually runs — automation, agents, and integrations deployed in your business, with your team trained to own them.",
     "heroCta": "Start the conversation",
     "offeringsEyebrow": "What we do",
-    "offeringsTitle": "From roadmap to running system",
-    "offering1Title": "AI strategy & roadmap",
-    "offering1Description": "Where AI creates value in your business, what to build vs. buy, and a sequenced plan your board can sign off on.",
+    "offeringsTitle": "From 'we should use AI' to AI in production",
+    "offering1Title": "Strategy & roadmap",
+    "offering1Description": "Where AI creates value in your business, what to build versus buy, and a sequenced plan your board can approve.",
     "offering2Title": "Adoption & integration",
-    "offering2Description": "Model and vendor selection, integration with your existing systems, and evaluation that goes beyond the demo.",
+    "offering2Description": "Model and vendor selection, integration with the systems you already run, and evaluation that outlasts the demo.",
     "offering3Title": "Automation & agents",
-    "offering3Description": "Agentic workflows for document processing, reporting and operations — deployed with guardrails, not hype.",
+    "offering3Description": "Agentic workflows for documents, reporting, and operations — deployed with guardrails, not press releases.",
     "offering4Title": "Enablement & training",
-    "offering4Description": "Hands-on workshops that leave your engineers and operators able to run and extend what we build.",
+    "offering4Description": "Workshops that leave your engineers and operators able to run, extend, and trust what we built together.",
     "whyEyebrow": "Why us",
-    "whyTitle": "Advice backed by products we ship",
-    "whyDescription": "VantumIQP and FaberPDF keep us honest: we deal with data governance, deployment and support every day. That experience — not a methodology binder — is what we bring to your AI initiative.",
-    "ctaTitle": "Ready to make AI concrete?",
-    "ctaDescription": "Book a working session and leave with next steps, not a sales pitch.",
+    "whyTitle": "We deploy AI in our own products first",
+    "whyDescription": "VantumIQP and FaberPDF keep us honest. We live with data governance, deployment, and support every single day — so the advice you get has already survived contact with production.",
+    "ctaTitle": "Make AI concrete",
+    "ctaDescription": "Book a working session. Leave with next steps, not a pitch.",
     "ctaButton": "Contact us"
   },
   "softwareDevelopmentPage": {
-    "pageTitle": "Software Development — Custom Solutions",
-    "pageDescription": "Custom software development by a product company: full-stack engineering, enterprise integrations and real-time platforms, delivered end to end.",
+    "pageTitle": "Custom Software Development — Built Like a Product",
+    "pageDescription": "Custom software development by a product company: full-stack engineering, enterprise integrations, and support that doesn't end at launch. Scope it with us.",
     "heroEyebrow": "Consulting · Software development",
-    "heroTitle": "Custom software, built like a product",
-    "heroDescription": "From requirements to running system — engineered by the team that builds VantumIQP and FaberPDF.",
+    "heroTitle": "Software built like we'd have to live with it",
+    "heroDescription": "Because we do. The team behind VantumIQP and FaberPDF builds your system the same way: engineered, documented, and supported long after launch.",
     "heroCta": "Discuss your project",
     "offeringsEyebrow": "What we do",
-    "offeringsTitle": "End-to-end delivery",
+    "offeringsTitle": "End to end, no hand-offs",
     "offering1Title": "Full-stack engineering",
-    "offering1Description": "Web and desktop applications with modern stacks — TypeScript, React, .NET, and the cloud platform you already use.",
+    "offering1Description": "Web and desktop applications in modern stacks — TypeScript, React, .NET, and the cloud you already use.",
     "offering2Title": "Enterprise integrations",
-    "offering2Description": "Connecting the systems you have — ERP, BI, document flows — instead of replacing them wholesale.",
+    "offering2Description": "We connect the systems you have — ERP, BI, documents — instead of selling you replacements.",
     "offering3Title": "Real-time platforms",
-    "offering3Description": "Dashboards, event pipelines and operational tooling that keep up with your business.",
+    "offering3Description": "Dashboards, pipelines, and operational tools that keep up with your business.",
     "offering4Title": "Long-term support",
-    "offering4Description": "Maintenance, monitoring and iteration after launch — we don't ship and vanish.",
+    "offering4Description": "Monitoring, maintenance, iteration. We don't ship and vanish.",
     "ctaTitle": "Have a system in mind?",
-    "ctaDescription": "Tell us what you need built and we'll scope it together.",
+    "ctaDescription": "Tell us what you need. We'll scope it together — honestly.",
     "ctaButton": "Contact us"
   },
   "digitalModernizationPage": {
-    "pageTitle": "Digital Modernization — Adopt Technology That Sticks",
-    "pageDescription": "We teach companies how to modernize: legacy assessment, process digitization and pragmatic technology adoption, guided by engineers who ship products.",
+    "pageTitle": "Digital Modernization — Without the Big-Bang Rewrite",
+    "pageDescription": "Legacy modernization and digital transformation that sticks: process digitization, tool adoption, and coaching until your team owns it. Start with an assessment.",
     "heroEyebrow": "Consulting · Digital modernization",
-    "heroTitle": "Modernize without the big-bang rewrite",
-    "heroDescription": "We help organizations move off spreadsheets, paper and legacy systems — step by step, with your team learning as we go.",
-    "heroCta": "Plan your modernization",
+    "heroTitle": "Modernize without betting the company",
+    "heroDescription": "Big-bang rewrites fail. We move you off paper, spreadsheets, and legacy systems step by step — with your team learning at every one.",
+    "heroCta": "Plan your first step",
     "offeringsEyebrow": "What we do",
-    "offeringsTitle": "Modernization that your team owns",
+    "offeringsTitle": "Change your team actually keeps",
     "offering1Title": "Legacy assessment",
-    "offering1Description": "An honest map of what you run today, what it costs you, and what to change first.",
+    "offering1Description": "An honest map of what you run, what it costs you, and what to change first.",
     "offering2Title": "Process digitization",
-    "offering2Description": "Turning manual, paper-driven workflows into digital ones your staff actually adopt.",
+    "offering2Description": "Manual workflows become digital ones your staff actually want to use.",
     "offering3Title": "Technology adoption",
-    "offering3Description": "Selecting and rolling out the right tools — BI, document management, automation — without shelfware.",
+    "offering3Description": "The right tools — BI, documents, automation — rolled out without shelfware.",
     "offering4Title": "Coaching & handover",
-    "offering4Description": "We work alongside your people so the capability stays when the engagement ends.",
+    "offering4Description": "We work beside your people, so the capability stays when we leave.",
     "ctaTitle": "Start where you are",
-    "ctaDescription": "A one-day assessment is often enough to see the first three moves.",
+    "ctaDescription": "One day of assessment usually reveals the first three moves.",
     "ctaButton": "Contact us"
   },
   "vantumiqpPage": {
