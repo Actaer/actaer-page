@@ -111,17 +111,17 @@ export default async function AboutPage({ params }: PageProps) {
     {
       title: t("whatWeDo.itConsulting.title"),
       description: t("whatWeDo.itConsulting.description"),
-      href: `/${locale}/services/it-consulting`,
+      href: `/${locale}/consulting/ai-consulting`,
     },
     {
       title: t("whatWeDo.softwareDevelopment.title"),
       description: t("whatWeDo.softwareDevelopment.description"),
-      href: `/${locale}/services/software-development`,
+      href: `/${locale}/consulting/software-development`,
     },
     {
       title: t("whatWeDo.productDevelopment.title"),
       description: t("whatWeDo.productDevelopment.description"),
-      href: `/${locale}/services/product-development`,
+      href: `/${locale}/consulting/digital-modernization`,
     },
   ];
 
@@ -339,7 +339,7 @@ export default async function AboutPage({ params }: PageProps) {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href={`/${locale}/services`}>
+                  <Link href={`/${locale}/consulting`}>
                     {t("cta.exploreServices")}
                   </Link>
                 </Button>

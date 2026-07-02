@@ -9,19 +9,19 @@ const STATIC_LAST_MODIFIED = new Date("2026-01-25");
 const staticPaths = [
   { path: "", priority: 1, changeFrequency: "weekly" },
   { path: "/about", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/services", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/consulting", priority: 0.9, changeFrequency: "monthly" },
   {
-    path: "/services/it-consulting",
+    path: "/consulting/ai-consulting",
     priority: 0.8,
     changeFrequency: "monthly",
   },
   {
-    path: "/services/software-development",
+    path: "/consulting/software-development",
     priority: 0.8,
     changeFrequency: "monthly",
   },
   {
-    path: "/services/product-development",
+    path: "/consulting/digital-modernization",
     priority: 0.8,
     changeFrequency: "monthly",
   },

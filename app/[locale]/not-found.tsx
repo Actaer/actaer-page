@@ -56,7 +56,7 @@ export default function NotFound() {
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
                 <Link
-                  href="/services"
+                  href="/consulting"
                   className="text-primary hover:underline underline-offset-4"
                 >
                   {t("ourServices")}
