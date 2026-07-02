@@ -55,42 +55,25 @@ const nextConfig: NextConfig = {
 
   // Redirects for common mistyped URLs
   async redirects() {
+    const legacyMap = [
+      { from: "/services", to: "/consulting" },
+      { from: "/services/it-consulting", to: "/consulting/ai-consulting" },
+      { from: "/services/software-development", to: "/consulting/software-development" },
+      { from: "/services/product-development", to: "/consulting/digital-modernization" },
+      { from: "/products/vantum-erp", to: "/products/vantumiqp" },
+    ];
     return [
-      {
-        source: "/home",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/service",
-        destination: "/services",
-        permanent: true,
-      },
-      {
-        source: "/service/:slug",
-        destination: "/services/:slug",
-        permanent: true,
-      },
-      {
-        source: "/product/:slug",
-        destination: "/products/:slug",
-        permanent: true,
-      },
-      {
-        source: "/blogs",
-        destination: "/blog",
-        permanent: true,
-      },
-      {
-        source: "/products/vantum-erp",
-        destination: "/services/product-development",
-        permanent: true,
-      },
-      {
-        source: "/:locale/products/vantum-erp",
-        destination: "/:locale/services/product-development",
-        permanent: true,
-      },
+      { source: "/home", destination: "/", permanent: true },
+      { source: "/blogs", destination: "/blog", permanent: true },
+      { source: "/service/:slug", destination: "/consulting", permanent: true },
+      ...legacyMap.flatMap(({ from, to }) => [
+        { source: from, destination: to, permanent: true },
+        {
+          source: `/:locale(en|sr|de|es|pt|pl)${from}`,
+          destination: `/:locale${to}`,
+          permanent: true,
+        },
+      ]),
     ];
   },
 };

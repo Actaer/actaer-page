@@ -3,28 +3,19 @@ import { getAllPosts } from "@/lib/blog";
 import { locales, defaultLocale, Locale } from "@/i18n/config";
 
 // Fixed dates for static pages (update these when content changes)
-const STATIC_LAST_MODIFIED = new Date("2026-01-25");
+const STATIC_LAST_MODIFIED = new Date("2026-07-02");
 
 // Static page paths
 const staticPaths = [
   { path: "", priority: 1, changeFrequency: "weekly" },
-  { path: "/about", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/products", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/products/vantumiqp", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/products/faberpdf", priority: 0.9, changeFrequency: "monthly" },
   { path: "/consulting", priority: 0.9, changeFrequency: "monthly" },
-  {
-    path: "/consulting/ai-consulting",
-    priority: 0.8,
-    changeFrequency: "monthly",
-  },
-  {
-    path: "/consulting/software-development",
-    priority: 0.8,
-    changeFrequency: "monthly",
-  },
-  {
-    path: "/consulting/digital-modernization",
-    priority: 0.8,
-    changeFrequency: "monthly",
-  },
+  { path: "/consulting/ai-consulting", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/consulting/software-development", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/consulting/digital-modernization", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/about", priority: 0.7, changeFrequency: "monthly" },
   { path: "/blog", priority: 0.8, changeFrequency: "weekly" },
   { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
 ];

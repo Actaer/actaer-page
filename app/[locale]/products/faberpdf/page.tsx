@@ -6,7 +6,10 @@ import { PageHero, Section, Eyebrow } from "@/components/carbon";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
-import { generateBreadcrumbJsonLd } from "@/lib/seo";
+import {
+  generateBreadcrumbJsonLd,
+  generateSoftwareApplicationJsonLd,
+} from "@/lib/seo";
 
 const EXTERNAL_URL = "https://www.faberpdf.com";
 
@@ -42,6 +45,12 @@ export default async function FaberPdfPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c") }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateSoftwareApplicationJsonLd("faberpdf")).replace(/</g, "\\u003c"),
+        }}
       />
       <Header />
       <main>

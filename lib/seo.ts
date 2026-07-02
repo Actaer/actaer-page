@@ -193,6 +193,46 @@ export function generateHowToJsonLd({
   };
 }
 
+const productSchemas = {
+  vantumiqp: {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "VantumIQP",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    url: "https://www.vantumiqp.com",
+    description:
+      "Governed business intelligence workspace built on Apache Superset: dashboards, SQL exploration and decision-ready reports.",
+    publisher: { "@type": "Organization", name: "Actaer", url: siteConfig.url },
+  },
+  faberpdf: {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "FaberPDF",
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Windows, Linux",
+    url: "https://www.faberpdf.com",
+    description:
+      "Modern local-first desktop PDF editor: sign, annotate, edit and validate PDFs without cloud uploads.",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR",
+      description: "Free during beta",
+    },
+    publisher: { "@type": "Organization", name: "Actaer", url: siteConfig.url },
+  },
+} as const;
+
+/**
+ * Generate SoftwareApplication JSON-LD schema for a product
+ */
+export function generateSoftwareApplicationJsonLd(
+  product: keyof typeof productSchemas,
+) {
+  return productSchemas[product];
+}
+
 /**
  * Generate comprehensive Organization JSON-LD with additional AI-friendly properties
  */
@@ -235,6 +275,18 @@ export function generateEnhancedOrganizationJsonLd() {
       },
     ],
     sameAs: [siteConfig.links.linkedin, siteConfig.links.twitter],
+    owns: [
+      {
+        "@type": "SoftwareApplication",
+        name: "VantumIQP",
+        url: "https://www.vantumiqp.com",
+      },
+      {
+        "@type": "SoftwareApplication",
+        name: "FaberPDF",
+        url: "https://www.faberpdf.com",
+      },
+    ],
     knowsAbout: [
       "Software Development",
       "IT Consulting",
