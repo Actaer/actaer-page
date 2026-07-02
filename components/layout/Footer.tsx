@@ -8,7 +8,40 @@ import { siteConfig } from "@/lib/metadata";
 import { useCookieConsentSafe } from "@/lib/cookie-consent";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Cookie } from "lucide-react";
+import { Mail, Phone, MapPin, Cookie } from "lucide-react";
+
+// Brand icons were removed from lucide-react in v1.0; render them inline instead.
+function LinkedinIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  );
+}
+
+function XTwitterIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
 
 export function Footer() {
   const { resolvedTheme } = useTheme();
@@ -161,7 +194,7 @@ export function Footer() {
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="LinkedIn"
             >
-              <Linkedin className="h-5 w-5" />
+              <LinkedinIcon className="h-5 w-5" />
             </a>
             <a
               href={siteConfig.links.twitter}
@@ -170,7 +203,7 @@ export function Footer() {
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="X (Twitter)"
             >
-              <Twitter className="h-5 w-5" />
+              <XTwitterIcon className="h-5 w-5" />
             </a>
           </div>
         </div>

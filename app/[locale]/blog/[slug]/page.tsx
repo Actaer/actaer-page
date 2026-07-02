@@ -72,14 +72,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   let Content;
   let postSchemas: object[] = [];
   try {
-    const module = await import(`@/content/blog/${locale}/${slug}.mdx`);
-    Content = module.default;
-    postSchemas = module.schemas || [];
+    const mdxModule = await import(`@/content/blog/${locale}/${slug}.mdx`);
+    Content = mdxModule.default;
+    postSchemas = mdxModule.schemas || [];
   } catch {
     // Fallback to English
-    const module = await import(`@/content/blog/${defaultLocale}/${slug}.mdx`);
-    Content = module.default;
-    postSchemas = module.schemas || [];
+    const mdxModule = await import(
+      `@/content/blog/${defaultLocale}/${slug}.mdx`
+    );
+    Content = mdxModule.default;
+    postSchemas = mdxModule.schemas || [];
   }
 
   // Breadcrumb JSON-LD
