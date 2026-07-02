@@ -162,7 +162,7 @@ export default async function AboutPage({ params }: PageProps) {
                 <p>{t("story.paragraph4")}</p>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                Founded in 2015. Last updated: January 2026.
+                {t("founded")}
               </p>
               <div className="mt-4 flex gap-4">
                 <a

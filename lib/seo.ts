@@ -105,7 +105,7 @@ export function generateBlogListJsonLd(
     "@type": "Blog",
     name: `${siteConfig.name} Blog`,
     description:
-      "Insights, tutorials, and updates on software development, IT consulting, and technology trends.",
+      "Insights, tutorials, and updates on software products, AI adoption, and engineering.",
     url: `${siteConfig.url}/blog`,
     publisher: {
       "@type": "Organization",
@@ -132,7 +132,8 @@ export function generateServiceListJsonLd(
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Services",
-    description: "Professional software development and IT consulting services",
+    description:
+      "AI consulting, software development, and digital modernization services",
     itemListElement: services.map((service, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -252,7 +253,7 @@ export function generateEnhancedOrganizationJsonLd() {
     },
     image: `${siteConfig.url}/images/logo.png`,
     description: siteConfig.description,
-    foundingDate: "2015",
+    foundingDate: "2025",
     address: {
       "@type": "PostalAddress",
       addressLocality: siteConfig.address.city,
@@ -288,65 +289,57 @@ export function generateEnhancedOrganizationJsonLd() {
       },
     ],
     knowsAbout: [
+      "Business Intelligence",
+      "Apache Superset",
+      "PDF Software",
+      "AI Consulting",
       "Software Development",
-      "IT Consulting",
-      "Digital Transformation",
-      "Enterprise Resource Planning",
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Web Development",
-      "Mobile App Development",
-      "Cloud Computing",
-      "DevOps",
-      "Agile Methodology",
+      "Digital Modernization",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Technology Services",
+      name: "Products & Services",
       itemListElement: [
         {
-          "@type": "OfferCatalog",
-          name: "IT Consulting",
-          itemListElement: [
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Digital Transformation Strategy",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Technical Due Diligence",
-              },
-            },
-          ],
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "SoftwareApplication",
+            name: "VantumIQP",
+            url: "https://www.vantumiqp.com",
+          },
         },
         {
-          "@type": "OfferCatalog",
-          name: "Software Development",
-          itemListElement: [
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Custom Software Development",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "AI & Machine Learning Solutions",
-              },
-            },
-          ],
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "SoftwareApplication",
+            name: "FaberPDF",
+            url: "https://www.faberpdf.com",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "AI Consulting",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Software Development",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Digital Modernization",
+          },
         },
       ],
     },
-    slogan: "Your Success, Engineered",
+    slogan: "Software products and AI consulting",
     areaServed: {
       "@type": "GeoCircle",
       geoMidpoint: {
@@ -373,7 +366,7 @@ export function generateAboutPageJsonLd() {
     "@type": "AboutPage",
     "@id": `${siteConfig.url}/about`,
     name: `About ${siteConfig.name}`,
-    description: `Learn about ${siteConfig.name} - a full-service tech consulting firm transforming businesses into agile, software-powered innovators.`,
+    description: `Learn about ${siteConfig.name} - a software product company from Novi Pazar, Serbia, building VantumIQP and FaberPDF and helping companies put AI and modern technology to work through its consulting practice.`,
     url: `${siteConfig.url}/about`,
     mainEntity: {
       "@id": `${siteConfig.url}/#organization`,
@@ -434,7 +427,7 @@ export function generateContactPageJsonLd() {
     "@type": "ContactPage",
     "@id": `${siteConfig.url}/contact`,
     name: `Contact ${siteConfig.name}`,
-    description: `Get in touch with ${siteConfig.name}. Let's discuss your software development, IT consulting, or product development needs.`,
+    description: `Get in touch with ${siteConfig.name}. Let's discuss our products, AI consulting, or your software development needs.`,
     url: `${siteConfig.url}/contact`,
     mainEntity: {
       "@type": "Organization",
