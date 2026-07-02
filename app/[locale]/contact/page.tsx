@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 import { Header, Footer } from "@/components/layout";
 import { ContactForm } from "@/components/forms";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { PageHero, Section } from "@/components/carbon";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
 import {
@@ -144,109 +143,80 @@ export default async function ContactPage({ params }: ContactPageProps) {
         }}
       />
       <Header />
-      <main className="pt-24">
-        {/* Hero Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <Badge variant="outline" className="mb-4">
-                {t("badge")}
-              </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">
-                {t.raw("title").split("{highlighted}")[0]}
-                <span className="bg-linear-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-                  {t("highlighted")}
-                </span>
-                {t.raw("title").split("{highlighted}")[1] || ""}
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground">
-                {t("subtitle")}
-              </p>
-            </div>
-          </div>
-        </section>
+      <main>
+        <PageHero
+          eyebrow={t("badge")}
+          title={t("title")}
+          description={t("subtitle")}
+        />
 
         {/* Contact Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
-              {/* Contact Info */}
-              <div className="lg:col-span-1 space-y-6">
-                <div>
-                  <h2 className="text-2xl font-bold font-heading mb-4">
-                    {t("getInTouch")}
-                  </h2>
-                  <p className="text-muted-foreground mb-4">
-                    {t("getInTouchDescription")}
-                  </p>
-                  <p className="text-muted-foreground">
-                    You can reach us by email, phone, or the contact form. We
-                    serve clients worldwide from our office in Novi Pazar,
-                    Serbia.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  {contactInfo.map((item, index) => (
-                    <Card key={index} className="border-border/50">
-                      <CardHeader className="pb-2">
-                        <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                            <item.icon className="w-5 h-5 text-primary" />
-                          </div>
-                          <CardTitle className="text-sm font-medium text-muted-foreground">
-                            {item.title}
-                          </CardTitle>
-                        </div>
-                      </CardHeader>
-                      <CardContent className="pt-0">
-                        {item.href ? (
-                          <a
-                            href={item.href}
-                            className="text-foreground hover:text-primary transition-colors"
-                          >
-                            {item.value}
-                          </a>
-                        ) : (
-                          <span className="text-foreground">{item.value}</span>
-                        )}
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+        <Section band="muted">
+          <div className="grid gap-8 lg:grid-cols-3 lg:gap-12">
+            {/* Contact Info */}
+            <div className="space-y-6 lg:col-span-1">
+              <div>
+                <h2 className="text-headline mb-4">{t("getInTouch")}</h2>
+                <p className="mb-4 text-muted-foreground">
+                  {t("getInTouchDescription")}
+                </p>
+                <p className="text-muted-foreground">{t("reachUs")}</p>
               </div>
 
-              {/* Contact Form */}
-              <div className="lg:col-span-2">
-                <ContactForm />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold font-heading mb-8 text-center">
-                {t("faq.title")}
-              </h2>
-
-              <div className="space-y-6">
-                {faqs.map((faq, index) => (
-                  <Card key={index} className="border-border/50">
-                    <CardHeader>
-                      <CardTitle className="text-lg">{faq.question}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground">{faq.answer}</p>
-                    </CardContent>
-                  </Card>
+              <div className="grid grid-cols-1">
+                {contactInfo.map((item, index) => (
+                  <div
+                    key={index}
+                    className="-mt-px flex items-start gap-4 border border-border bg-background p-6 first:mt-0"
+                  >
+                    <item.icon className="mt-0.5 size-5 shrink-0 text-primary" />
+                    <div>
+                      <p className="text-xs tracking-[0.32px] text-muted-foreground">
+                        {item.title}
+                      </p>
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          className="text-foreground transition-colors hover:text-primary"
+                        >
+                          {item.value}
+                        </a>
+                      ) : (
+                        <span className="text-foreground">{item.value}</span>
+                      )}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
+
+            {/* Contact Form */}
+            <div className="lg:col-span-2">
+              <ContactForm />
+            </div>
           </div>
-        </section>
+        </Section>
+
+        {/* FAQ Section */}
+        <Section>
+          <div className="max-w-3xl">
+            <h2 className="text-display-md mb-12">{t("faq.title")}</h2>
+
+            <div className="grid grid-cols-1">
+              {faqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className="-mt-px space-y-2 border border-border bg-background p-6 first:mt-0"
+                >
+                  <h3 className="text-body-lg font-semibold">
+                    {faq.question}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Section>
       </main>
       <Footer />
     </>

@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 import { baseMetadata, viewport as baseViewport } from "@/lib/metadata";
 import {
   generateEnhancedOrganizationJsonLd,
@@ -12,11 +11,10 @@ import { CookieConsentProvider } from "@/lib/cookie-consent";
 import { ConditionalAnalytics } from "@/components/layout";
 import { getLocale } from "next-intl/server";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
-const montserrat = Montserrat({
+const plexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-heading",
+  weight: ["300", "400", "600"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = baseMetadata;
@@ -38,7 +36,7 @@ export default async function RootLayout({
   const locale = await getLocale();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale}>
       <head>
         {/* Preconnect to external resources for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,20 +68,11 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`${inter.variable} ${montserrat.variable} font-sans antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <CookieConsentProvider>
-            {children}
-            <ConditionalAnalytics />
-          </CookieConsentProvider>
-        </ThemeProvider>
+      <body className={`${plexSans.variable} font-sans antialiased`}>
+        <CookieConsentProvider>
+          {children}
+          <ConditionalAnalytics />
+        </CookieConsentProvider>
       </body>
     </html>
   );

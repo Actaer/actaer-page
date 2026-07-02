@@ -1,13 +1,13 @@
 import { Header, Footer } from "@/components/layout";
 import {
-  Hero,
-  About,
-  ServicesGrid,
-  TechStack,
-  Workflow,
-  CtaSection,
+  HomeHero,
+  ProductsShowcase,
+  ConsultingOverview,
+  WhyActaer,
+  BlogTeaser,
 } from "@/components/sections";
-import { setRequestLocale } from "next-intl/server";
+import { CtaBanner } from "@/components/carbon";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Locale } from "@/i18n/config";
 import { siteConfig } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd, generateSpeakableJsonLd } from "@/lib/seo";
@@ -19,6 +19,8 @@ interface HomePageProps {
 export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  const t = await getTranslations("home");
 
   const url = `${siteConfig.url}/${locale}`;
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([{ name: "Home", url }]);
@@ -40,12 +42,17 @@ export default async function HomePage({ params }: HomePageProps) {
       />
       <Header />
       <main>
-        <Hero />
-        <About />
-        <ServicesGrid />
-        <TechStack />
-        <Workflow />
-        <CtaSection />
+        <HomeHero />
+        <ProductsShowcase />
+        <ConsultingOverview />
+        <WhyActaer />
+        <BlogTeaser locale={locale} />
+        <CtaBanner
+          title={t("cta.title")}
+          description={t("cta.description")}
+          ctaLabel={t("cta.button")}
+          ctaHref="/contact"
+        />
       </main>
       <Footer />
     </>

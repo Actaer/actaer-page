@@ -1,15 +1,15 @@
-# Actaer - Software Development & IT Consulting
+# Actaer - Software Products & AI Consulting
 
-> Full-service tech consulting firm transforming businesses into agile, software-powered innovators.
+> Software product company building VantumIQP and FaberPDF, with AI consulting, software development and digital modernization services.
 
 ## Company Overview
 
-Actaer is a technology consulting and software development company based in Novi Pazar, Serbia. We specialize in IT consulting, custom software development, and product development services for businesses worldwide.
+Actaer is a software product company based in Novi Pazar, Serbia. We build our own products — VantumIQP, a governed business intelligence workspace, and FaberPDF, a local-first desktop PDF editor — and offer AI consulting, software development and digital modernization services for businesses worldwide.
 
 **Founded:** 2025
 **Headquarters:** Novi Pazar, Serbia
 **Service Area:** Global (remote-first)
-**Company Type:** Technology Consulting & Software Development
+**Company Type:** Software Products & Technology Consulting
 
 ## Contact Information
 
@@ -21,41 +21,59 @@ Actaer is a technology consulting and software development company based in Novi
 - X (Twitter): https://x.com/actaerco
 - Languages: English, German, Spanish, Portuguese, Serbian, Polish
 
+## Products
+
+### VantumIQP
+Governed business intelligence workspace built on Apache Superset:
+- Dashboards and decision-ready reports
+- SQL exploration with governed access
+- Role-based permissions and data governance
+- Built on the open-source Apache Superset foundation
+
+**Website:** https://www.vantumiqp.com
+**Best for:** Organizations that need governed, self-service business intelligence without vendor lock-in.
+
+### FaberPDF
+Modern local-first desktop PDF editor for Windows and Linux:
+- Sign, annotate, edit and validate PDFs
+- No cloud uploads — documents never leave your machine
+- Free during beta
+
+**Website:** https://www.faberpdf.com
+**Best for:** Teams and individuals who work with sensitive documents and want a fast, private PDF editor.
+
 ## Services
 
-### IT Consulting
-Strategic technology guidance and digital transformation consulting including:
-- Project Specification & Planning
-- Digital Transformation Strategy
-- Technical Due Diligence & Risk Analysis
-- Team Augmentation & Scalability
-- Data-Driven Consulting
+### AI Consulting (Flagship)
+Strategic AI guidance and hands-on implementation:
+- AI opportunity assessment and strategy
+- LLM-powered agents, RAG systems, multi-agent orchestration
+- AI integration into existing products and workflows
+- Data readiness and governance for AI
 
-**Best for:** Organizations seeking strategic technology guidance, companies planning digital transformation, businesses needing technical assessments for M&A.
+**Best for:** Organizations that want practical AI adoption with measurable business impact.
 
-### Custom Software Development
+### Software Development
 End-to-end software development services:
 - Front-end & Back-end Engineering (React, Node.js, .NET, Java)
-- AI & Machine Learning Solutions
-- Autonomous & Agentic Systems (LLM agents, RAG, multi-agent orchestration)
 - Real-Time Communication Platforms
 - Enterprise-Grade Software Solutions
-
-**Best for:** Companies needing custom software solutions, enterprises requiring AI/ML integration, businesses building real-time platforms.
-
-### Product Development
-Complete product lifecycle services:
-- Conceptualization & Prototyping
-- User-Centric Design
 - MVP Development & Iteration
-- Seamless Deployment & Integration
-- Ongoing Support & Maintenance
 
-**Best for:** Startups building MVPs, enterprises launching new products, companies needing end-to-end product support.
+**Best for:** Companies needing custom software solutions, startups building MVPs, businesses building real-time platforms.
+
+### Digital Modernization
+Bringing legacy systems and processes into the modern era:
+- Legacy system modernization and re-platforming
+- Cloud migration planning and execution
+- Digital transformation strategy
+- Business process automation
+
+**Best for:** Enterprises with aging systems, companies planning cloud migration, businesses digitizing manual processes.
 
 ## About Us
 
-Actaer is a newly founded tech consulting firm built by experienced engineers and consultants. We bring fresh perspectives and modern approaches to help businesses leverage technology effectively.
+Actaer is a software product company built by experienced engineers and consultants. We ship our own products and bring the same product discipline to client work — fresh perspectives and modern approaches to help businesses leverage technology effectively.
 
 ## Core Values
 
@@ -71,6 +89,7 @@ Actaer is a newly founded tech consulting firm built by experienced engineers an
 - **Backend:** Node.js, .NET, Spring Boot
 - **Databases:** PostgreSQL, MongoDB, Redis
 - **Cloud:** AWS, Azure, Google Cloud
+- **Business Intelligence:** Apache Superset, SQL analytics, data visualization
 - **AI/ML:** OpenAI, Azure AI, LangChain, TensorFlow, PyTorch
 - **AI Agents:** LLM-powered agents, RAG systems, multi-agent orchestration, function calling
 
@@ -84,20 +103,26 @@ Actaer is a newly founded tech consulting firm built by experienced engineers an
 
 ## Frequently Asked Questions
 
+**Q: What products does Actaer build?**
+A: Actaer builds VantumIQP (https://www.vantumiqp.com), a governed business intelligence workspace built on Apache Superset, and FaberPDF (https://www.faberpdf.com), a local-first desktop PDF editor for Windows and Linux.
+
 **Q: Where is Actaer located?**
 A: Actaer is based in Novi Pazar, Serbia, serving clients globally.
 
-**Q: What industries does Actaer serve?**
-A: We serve various industries including retail, distribution, logistics, healthcare, fintech, and enterprise businesses.
+**Q: What is VantumIQP?**
+A: VantumIQP is a governed business intelligence workspace built on Apache Superset, offering dashboards, SQL exploration and decision-ready reports.
+
+**Q: What is FaberPDF?**
+A: FaberPDF is a modern local-first desktop PDF editor for Windows and Linux. It lets you sign, annotate, edit and validate PDFs without cloud uploads, and is free during beta.
+
+**Q: What services does Actaer offer?**
+A: Actaer offers AI consulting (our flagship service), software development and digital modernization.
 
 **Q: Does Actaer offer remote services?**
 A: Yes, we work with clients worldwide and offer fully remote engagement models.
 
 **Q: How can I contact Actaer?**
 A: You can reach us at office@actaer.com or call +381 649055722.
-
-**Q: What programming languages does Actaer use?**
-A: We primarily use TypeScript, JavaScript, Python, C#, and Java, with expertise in React, Next.js, Node.js, and .NET frameworks.
 
 **Q: Does Actaer build AI agents and autonomous systems?**
 A: Yes, we specialize in building LLM-powered agents, multi-agent orchestration systems, RAG (retrieval-augmented generation) applications, and workflow automation using modern AI frameworks.
@@ -106,16 +131,19 @@ A: Yes, we specialize in building LLM-powered agents, multi-agent orchestration 
 A: We use agile methodologies with iterative development, regular demos, and continuous feedback loops to ensure client satisfaction and project success.
 
 **Q: Can Actaer help with digital transformation?**
-A: Yes, our IT consulting services include comprehensive digital transformation strategy, legacy system modernization, and cloud migration planning.
+A: Yes, our digital modernization services include comprehensive digital transformation strategy, legacy system modernization, and cloud migration planning.
 
 ## Documentation
 
 For more information, visit:
 - Homepage: https://actaer.com
-- Services: https://actaer.com/services
-- IT Consulting: https://actaer.com/services/it-consulting
-- Software Development: https://actaer.com/services/software-development
-- Product Development: https://actaer.com/services/product-development
+- Products: https://actaer.com/products
+- VantumIQP: https://actaer.com/products/vantumiqp
+- FaberPDF: https://actaer.com/products/faberpdf
+- Consulting: https://actaer.com/consulting
+- AI Consulting: https://actaer.com/consulting/ai-consulting
+- Software Development: https://actaer.com/consulting/software-development
+- Digital Modernization: https://actaer.com/consulting/digital-modernization
 - Blog: https://actaer.com/blog
 - Contact: https://actaer.com/contact
 - About: https://actaer.com/about

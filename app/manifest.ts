@@ -3,13 +3,13 @@ import { siteConfig } from "@/lib/metadata";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${siteConfig.name} - Software Development & IT Consulting`,
+    name: `${siteConfig.name} - Software Products & AI Consulting`,
     short_name: siteConfig.name,
     description: siteConfig.description,
     start_url: "/",
     display: "standalone",
-    background_color: "#0a0a0a",
-    theme_color: "#7c3aed",
+    background_color: "#ffffff",
+    theme_color: "#ffffff",
     orientation: "portrait-primary",
     icons: [
       {

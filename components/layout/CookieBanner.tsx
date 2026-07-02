@@ -32,13 +32,13 @@ export function CookieBanner() {
       {/* Banner - only show when not consented */}
       {!consent.hasConsented && (
         <div className="fixed inset-x-0 bottom-0 z-50 p-4 md:p-6">
-          <Card className="mx-auto max-w-4xl border shadow-lg">
+          <Card className="mx-auto max-w-4xl border">
             <CardContent className="p-4 md:p-6">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:gap-6">
                 {/* Icon and Content */}
                 <div className="flex flex-1 gap-4">
                   <div className="hidden shrink-0 md:block">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-none bg-primary/10">
                       <Cookie className="h-5 w-5 text-primary" />
                     </div>
                   </div>

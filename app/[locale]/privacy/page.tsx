@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { Header, Footer } from "@/components/layout";
-import { Badge } from "@/components/ui/badge";
+import { PageHero, Section } from "@/components/carbon";
 import { Separator } from "@/components/ui/separator";
 import { constructMetadata, siteConfig } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd, generateSpeakableJsonLd } from "@/lib/seo";
@@ -55,23 +55,16 @@ export default async function PrivacyPage({ params }: PageProps) {
         }}
       />
       <Header />
-      <main className="min-h-screen pt-24 pb-16">
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-          {/* Hero */}
-          <div className="mb-12 text-center">
-            <Badge variant="outline" className="mb-4">
-              {t("badge")}
-            </Badge>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              {t("title")}
-            </h1>
-            <p className="text-muted-foreground">
-              {t("lastUpdated", { date: "January 24, 2026" })}
-            </p>
-          </div>
+      <main>
+        <PageHero
+          eyebrow={t("badge")}
+          title={t("title")}
+          description={t("lastUpdated", { date: "January 24, 2026" })}
+        />
 
+        <Section>
           {/* Content */}
-          <div className="prose prose-neutral dark:prose-invert max-w-none">
+          <div className="max-w-3xl">
             {/* Introduction */}
             <section className="mb-8">
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -189,7 +182,7 @@ export default async function PrivacyPage({ params }: PageProps) {
               </p>
             </section>
           </div>
-        </div>
+        </Section>
       </main>
       <Footer />
     </>

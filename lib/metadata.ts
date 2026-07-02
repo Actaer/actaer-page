@@ -4,7 +4,7 @@ import { locales, type Locale } from "@/i18n/config";
 export const siteConfig = {
   name: "Actaer",
   description:
-    "Full-service tech consulting firm transforming businesses into agile, software-powered innovators. IT consulting, custom software development, and enterprise solutions.",
+    "Software product company building VantumIQP and FaberPDF, with AI consulting, software development and digital modernization services.",
   url: "https://actaer.com",
   ogImage: "/opengraph-image",
   links: {
@@ -12,6 +12,8 @@ export const siteConfig = {
     phone: "+381 649055722",
     linkedin: "https://linkedin.com/company/actaer",
     twitter: "https://x.com/actaerco",
+    vantumiqp: "https://www.vantumiqp.com",
+    faberpdf: "https://www.faberpdf.com",
   },
   address: {
     city: "Novi Pazar",
@@ -20,10 +22,7 @@ export const siteConfig = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
-  ],
+  themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -32,25 +31,23 @@ export const viewport: Viewport = {
 export const baseMetadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} - Software Development & IT Consulting`,
+    default: `${siteConfig.name} - Software Products & AI Consulting`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
+    "AI consulting",
+    "business intelligence platform",
+    "Apache Superset",
+    "PDF editor",
+    "local-first software",
     "software development",
-    "IT consulting",
-    "custom software",
-    "enterprise solutions",
-    "ERP",
+    "digital modernization",
     "digital transformation",
-    "AI solutions",
-    "product development",
+    "VantumIQP",
+    "FaberPDF",
     "Serbia",
-    "tech consulting",
-    "software engineering",
-    "web development",
-    "mobile app development",
-    "cloud solutions",
+    "enterprise software",
   ],
   authors: [{ name: "Actaer", url: siteConfig.url }],
   creator: "Actaer",
