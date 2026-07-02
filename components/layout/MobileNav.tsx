@@ -55,14 +55,17 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent side="right" className="w-full p-0 sm:w-[400px]">
         <SheetHeader className="border-b border-border px-6 pt-6 pb-4">
-          <SheetTitle>
+          <SheetTitle className="flex items-center gap-2.5">
             <Image
               src="/images/logo-dark.png"
-              alt="Actaer"
+              alt="Actaer logo"
               width={140}
               height={48}
               className="h-8 w-auto"
             />
+            <span className="text-lg font-semibold tracking-[0.16px] text-foreground">
+              Actaer
+            </span>
           </SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col px-6 pb-6">

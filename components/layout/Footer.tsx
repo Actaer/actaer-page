@@ -50,8 +50,9 @@ export function Footer() {
       <div className="mx-auto max-w-[1584px] px-4 py-16 md:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3 lg:grid-cols-6">
           <div className="lg:col-span-2">
-            <Link href="/" className="mb-4 inline-block">
-              <Image src="/images/logo-light.png" alt="Actaer" width={120} height={40} className="h-7 w-auto" />
+            <Link href="/" className="mb-4 inline-flex items-center gap-2.5">
+              <Image src="/images/logo-light.png" alt="Actaer logo" width={120} height={40} className="h-7 w-auto" />
+              <span className="text-lg font-semibold tracking-[0.16px] text-background">Actaer</span>
             </Link>
             <p className="mb-6 max-w-xs text-sm">{t("footer.description")}</p>
             <div className="space-y-2 text-sm">
