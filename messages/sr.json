@@ -503,6 +503,11 @@
     "audienceEyebrow": "Za koga je",
     "audienceTitle": "Timovi kojima trebaju upravljani odgovori, a ne još jedan alat o kome moraju da brinu",
     "audienceDescription": "Organizacije koje žele kontrolne table koje zainteresovane strane zaista razumeju — uz sledljivost i kontrolu pristupa koje enterprise okruženje očekuje. Za sada samo demo pristup: počinjemo od vašeg slučaja upotrebe, a ne od stranice za plaćanje.",
+    "showcaseEyebrow": "See it working",
+    "showcaseTitle": "Real dashboards. Real SQL. No mockups.",
+    "showcaseDashboardAlt": "VantumIQP governed dashboard built on Apache Superset",
+    "showcaseSqlAlt": "SQL editor in VantumIQP with every chart traceable to its query",
+    "showcaseVisualAlt": "Chart builder in the VantumIQP business intelligence workspace",
     "ctaTitle": "Pogledajte VantumIQP na sopstvenim podacima",
     "ctaDescription": "Zakažite demo i zajedno ćemo proći kroz vaš tok izveštavanja.",
     "ctaButton": "Zatražite demo"

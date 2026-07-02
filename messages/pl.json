@@ -503,6 +503,11 @@
     "audienceEyebrow": "Dla kogo",
     "audienceTitle": "Zespoły, które potrzebują zarządzanych odpowiedzi, a nie kolejnego narzędzia do niańczenia",
     "audienceDescription": "Organizacje, które chcą dashboardów zrozumiałych dla interesariuszy — z identyfikowalnością i kontrolą dostępu, jakich oczekuje przedsiębiorstwo. Na razie tylko dostęp demo: zaczynamy od Twojego przypadku użycia, nie od strony płatności.",
+    "showcaseEyebrow": "See it working",
+    "showcaseTitle": "Real dashboards. Real SQL. No mockups.",
+    "showcaseDashboardAlt": "VantumIQP governed dashboard built on Apache Superset",
+    "showcaseSqlAlt": "SQL editor in VantumIQP with every chart traceable to its query",
+    "showcaseVisualAlt": "Chart builder in the VantumIQP business intelligence workspace",
     "ctaTitle": "Zobacz VantumIQP na własnych danych",
     "ctaDescription": "Umów demo, a razem przejdziemy przez Twój proces raportowania.",
     "ctaButton": "Poproś o demo"

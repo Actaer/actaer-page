@@ -92,6 +92,44 @@ export default async function VantumIqpPage({ params }: PageProps) {
         </Section>
 
         <Section band="muted">
+          <div className="mb-12 space-y-4">
+            <Eyebrow>{t("showcaseEyebrow")}</Eyebrow>
+            <h2 className="text-display-md max-w-3xl">{t("showcaseTitle")}</h2>
+          </div>
+          <div className="space-y-8">
+            <div className="border border-border bg-background p-2">
+              <Image
+                src="/images/products/vantumiqp-dashboard.png"
+                alt={t("showcaseDashboardAlt")}
+                width={1600}
+                height={900}
+                className="h-auto w-full"
+              />
+            </div>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div className="border border-border bg-background p-2">
+                <Image
+                  src="/images/products/vantumiqp-sql-editor.jpg"
+                  alt={t("showcaseSqlAlt")}
+                  width={1280}
+                  height={1024}
+                  className="h-auto w-full"
+                />
+              </div>
+              <div className="border border-border bg-background p-2">
+                <Image
+                  src="/images/products/vantumiqp-visualize.jpg"
+                  alt={t("showcaseVisualAlt")}
+                  width={1280}
+                  height={1024}
+                  className="h-auto w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </Section>
+
+        <Section>
           <div className="max-w-3xl space-y-4">
             <Eyebrow>{t("audienceEyebrow")}</Eyebrow>
             <h2 className="text-display-md">{t("audienceTitle")}</h2>
