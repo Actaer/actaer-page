@@ -5,19 +5,24 @@
     "description": "Full-service IT consulting and custom software development. Transform your business into flexible, software-driven innovators with enterprise solutions from our expert team."
   },
   "navigation": {
-    "services": "Services",
-    "itConsulting": "IT Consulting",
-    "itConsultingDescription": "Strategic technology guidance and digital transformation.",
+    "products": "Products",
+    "allProducts": "All products",
+    "allProductsDescription": "Everything we build and ship.",
+    "vantumiqpDescription": "Business intelligence workspace built on Apache Superset.",
+    "faberpdfDescription": "Local-first desktop PDF editor. No cloud round-trips.",
+    "consulting": "Consulting",
+    "allConsulting": "Consulting overview",
+    "allConsultingDescription": "How we work with client teams.",
+    "aiConsulting": "AI Consulting",
+    "aiConsultingDescription": "AI strategy, adoption and automation for your business.",
     "softwareDevelopment": "Software Development",
-    "softwareDevelopmentDescription": "Custom software solutions tailored to your needs.",
-    "productDevelopment": "Product Development",
-    "productDevelopmentDescription": "End-to-end product creation from concept to launch.",
+    "softwareDevelopmentDescription": "Custom software built by a team that ships its own products.",
+    "digitalModernization": "Digital Modernization",
+    "digitalModernizationDescription": "We teach companies how to modernize and adopt technology.",
     "about": "About",
     "blog": "Blog",
     "contact": "Contact",
-    "getStarted": "Get Started",
-    "openMenu": "Open menu",
-    "theme": "Theme"
+    "openMenu": "Open menu"
   },
   "hero": {
     "badge": "Software Development & IT Consulting",
@@ -339,9 +344,9 @@
     "exploreVantum": "Explore Vantum ERP"
   },
   "footer": {
-    "description": "Full-service tech consulting firm transforming businesses into flexible, software-driven innovators.",
-    "services": "Services",
+    "description": "Software product company from Novi Pazar, Serbia. We build VantumIQP and FaberPDF, and help companies put AI to work.",
     "products": "Products",
+    "consulting": "Consulting",
     "company": "Company",
     "legal": "Legal",
     "privacyPolicy": "Privacy Policy",
