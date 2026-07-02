@@ -1,8 +1,7 @@
 "use client";
 
-import { useRef, useState, useSyncExternalStore } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import gsap from "gsap";
@@ -10,7 +9,6 @@ import { useGSAP } from "@gsap/react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "./MobileNav";
-import { ModeToggle } from "@/components/mode-toggle";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import {
   NavigationMenu,
@@ -25,18 +23,10 @@ import { cn } from "@/lib/utils";
 
 gsap.registerPlugin(useGSAP);
 
-const emptySubscribe = () => () => {};
-
 export function Header() {
   const headerRef = useRef<HTMLElement>(null);
   const pathname = usePathname();
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  const mounted = useSyncExternalStore(
-    emptySubscribe,
-    () => true,
-    () => false,
-  );
-  const { resolvedTheme } = useTheme();
   const t = useTranslations("navigation");
 
   const services = [
@@ -85,40 +75,14 @@ export function Header() {
           <div className="flex h-12 md:h-14 items-center justify-between md:gap-10 xl:gap-32">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              {/* Show placeholder or CSS-based solution before mount to prevent flash */}
-              {!mounted ? (
-                <>
-                  <Image
-                    src="/images/logo-light.png"
-                    alt="Actaer"
-                    width={120}
-                    height={40}
-                    className="h-8 w-auto hidden dark:block"
-                    priority
-                  />
-                  <Image
-                    src="/images/logo-dark.png"
-                    alt="Actaer"
-                    width={120}
-                    height={40}
-                    className="h-8 w-auto block dark:hidden"
-                    priority
-                  />
-                </>
-              ) : (
-                <Image
-                  src={
-                    resolvedTheme === "dark"
-                      ? "/images/logo-light.png"
-                      : "/images/logo-dark.png"
-                  }
-                  alt="Actaer"
-                  width={120}
-                  height={40}
-                  className="h-8 w-auto"
-                  priority
-                />
-              )}
+              <Image
+                src="/images/logo-dark.png"
+                alt="Actaer"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -178,10 +142,9 @@ export function Header() {
               </NavigationMenuList>
             </NavigationMenu>
 
-            {/* CTA Button & Theme Toggle - Desktop */}
+            {/* CTA Button - Desktop */}
             <div className="hidden md:flex items-center gap-2">
               <LanguageSwitcher />
-              <ModeToggle />
               <Button asChild className="rounded-full">
                 <Link href="/contact">{t("getStarted")}</Link>
               </Button>

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { siteConfig } from "@/lib/metadata";
@@ -44,7 +43,6 @@ function XTwitterIcon({ className }: { className?: string }) {
 }
 
 export function Footer() {
-  const { resolvedTheme } = useTheme();
   const t = useTranslations();
   const cookieContext = useCookieConsentSafe();
   const openPreferences = cookieContext?.openPreferences ?? (() => {});
@@ -76,11 +74,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4">
               <Image
-                src={
-                  resolvedTheme === "dark"
-                    ? "/images/logo-light.png"
-                    : "/images/logo-dark.png"
-                }
+                src="/images/logo-dark.png"
                 alt="Actaer"
                 width={120}
                 height={40}

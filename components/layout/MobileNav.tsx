@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import {
@@ -17,7 +16,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "@/components/mode-toggle";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { cn } from "@/lib/utils";
 
@@ -28,7 +26,6 @@ interface MobileNavProps {
 
 export function MobileNav({ open, onOpenChange }: MobileNavProps) {
   const pathname = usePathname();
-  const { resolvedTheme } = useTheme();
   const t = useTranslations("navigation");
 
   const services = [
@@ -62,11 +59,7 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
         <SheetHeader className="px-6 pt-6 pb-4">
           <SheetTitle>
             <Image
-              src={
-                resolvedTheme === "dark"
-                  ? "/images/logo-light.png"
-                  : "/images/logo-dark.png"
-              }
+              src="/images/logo-dark.png"
               alt="Actaer"
               width={140}
               height={48}
@@ -134,15 +127,9 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
             </Link>
           </Button>
 
-          {/* Theme Toggle & Language */}
-          <div className="flex items-center justify-between mt-8 pt-6 border-t border-border/50">
-            <span className="text-base text-muted-foreground">
-              {t("theme")}
-            </span>
-            <div className="flex items-center gap-2">
-              <LanguageSwitcher />
-              <ModeToggle />
-            </div>
+          {/* Language */}
+          <div className="flex items-center justify-end mt-8 pt-6 border-t border-border/50">
+            <LanguageSwitcher />
           </div>
         </nav>
       </SheetContent>
