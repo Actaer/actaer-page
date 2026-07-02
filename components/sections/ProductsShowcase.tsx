@@ -1,9 +1,22 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Section, Eyebrow, ArrowLink } from "@/components/carbon";
 
 const products = [
-  { key: "vantumiqp", name: "VantumIQP", href: "/products/vantumiqp" },
-  { key: "faberpdf", name: "FaberPDF", href: "/products/faberpdf" },
+  {
+    key: "vantumiqp",
+    name: "VantumIQP",
+    href: "/products/vantumiqp",
+    logo: "/images/products/vantumiqp-logo.png",
+    logoAlt: "VantumIQP logo",
+  },
+  {
+    key: "faberpdf",
+    name: "FaberPDF",
+    href: "/products/faberpdf",
+    logo: "/images/products/faberpdf-logo-black.png",
+    logoAlt: "FaberPDF logo",
+  },
 ] as const;
 
 export function ProductsShowcase() {
@@ -18,7 +31,10 @@ export function ProductsShowcase() {
         {products.map((product) => (
           <article key={product.key} className="-mt-px flex flex-col gap-4 border border-border p-8 md:-ml-px md:mt-0">
             <p className="text-eyebrow text-muted-foreground">{t(`${product.key}.category`)}</p>
-            <h3 className="text-card-title">{product.name}</h3>
+            <div className="flex items-center gap-3">
+              <Image src={product.logo} alt={product.logoAlt} width={32} height={32} className="h-8 w-auto" />
+              <h3 className="text-card-title">{product.name}</h3>
+            </div>
             <p className="text-subhead">{t(`${product.key}.tagline`)}</p>
             <p className="text-body-tracked text-muted-foreground">{t(`${product.key}.description`)}</p>
             <ul className="mt-2 space-y-2 border-t border-border pt-4 text-sm text-muted-foreground">

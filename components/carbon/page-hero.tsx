@@ -1,11 +1,13 @@
 import { Eyebrow } from "./eyebrow";
 
 export function PageHero({
+  media,
   eyebrow,
   title,
   description,
   children,
 }: {
+  media?: React.ReactNode;
   eyebrow?: string;
   title: string;
   description?: string;
@@ -14,6 +16,7 @@ export function PageHero({
   return (
     <div className="mx-auto max-w-[1584px] px-4 pt-28 pb-16 md:px-8 md:pt-36 md:pb-24">
       <div className="max-w-4xl space-y-6">
+        {media ? <div className="pb-2">{media}</div> : null}
         {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
         <h1 className="text-display-lg text-balance">{title}</h1>
         {description ? (

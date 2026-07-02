@@ -24,9 +24,19 @@ export function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const t = useTranslations("navigation");
 
-  const products = [
-    { title: "VantumIQP", href: "/products/vantumiqp", description: t("vantumiqpDescription") },
-    { title: "FaberPDF", href: "/products/faberpdf", description: t("faberpdfDescription") },
+  const products: { title: string; href: string; description: string; icon?: string }[] = [
+    {
+      title: "VantumIQP",
+      href: "/products/vantumiqp",
+      description: t("vantumiqpDescription"),
+      icon: "/images/products/vantumiqp-logo.png",
+    },
+    {
+      title: "FaberPDF",
+      href: "/products/faberpdf",
+      description: t("faberpdfDescription"),
+      icon: "/images/products/faberpdf-logo-black.png",
+    },
     { title: t("allProducts"), href: "/products", description: t("allProductsDescription") },
   ];
 
@@ -59,7 +69,12 @@ export function Header() {
                     pathname === item.href && "bg-muted",
                   )}
                 >
-                  <div className="text-sm font-semibold leading-none">{item.title}</div>
+                  <div className="flex items-center gap-2 text-sm font-semibold leading-none">
+                    {item.icon ? (
+                      <Image src={item.icon} alt="" width={20} height={20} className="h-5 w-auto" />
+                    ) : null}
+                    {item.title}
+                  </div>
                   <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                     {item.description}
                   </p>

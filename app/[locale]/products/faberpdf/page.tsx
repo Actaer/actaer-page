@@ -1,6 +1,7 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Locale } from "@/i18n/config";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Header, Footer } from "@/components/layout";
 import { PageHero, Section, Eyebrow } from "@/components/carbon";
 import { Button } from "@/components/ui/button";
@@ -54,7 +55,14 @@ export default async function FaberPdfPage({ params }: PageProps) {
       />
       <Header />
       <main>
-        <PageHero eyebrow={t("heroEyebrow")} title={t("heroTitle")} description={t("heroDescription")}>
+        <PageHero
+          media={
+            <Image src="/images/products/faberpdf-logo-black.png" alt="FaberPDF logo" width={48} height={48} className="h-12 w-auto" />
+          }
+          eyebrow={t("heroEyebrow")}
+          title={t("heroTitle")}
+          description={t("heroDescription")}
+        >
           <Button asChild size="lg">
             <a href={EXTERNAL_URL} target="_blank" rel="noopener noreferrer">
               {t("heroCta")}
