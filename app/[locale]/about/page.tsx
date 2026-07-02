@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Header, Footer } from "@/components/layout";
 import { PageHero, Section, Eyebrow, ArrowLink, CtaBanner } from "@/components/carbon";
 import { Target, Heart, Zap, Users } from "lucide-react";
-import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { constructMetadata, siteConfig, localizedUrl } from "@/lib/metadata";
 import {
   generateBreadcrumbJsonLd,
   generateAboutPageJsonLd,
@@ -25,7 +25,7 @@ export async function generateMetadata({
   return constructMetadata({
     title: t("pageTitle"),
     description: t("pageDescription"),
-    canonical: `${siteConfig.url}/${locale}/about`,
+    canonical: localizedUrl(locale, "/about"),
     locale,
     path: "/about",
   });
@@ -72,7 +72,7 @@ export default async function AboutPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: "aboutPage" });
 
   const speakableJsonLd = generateSpeakableJsonLd({
-    url: `${siteConfig.url}/${locale}/about`,
+    url: localizedUrl(locale, "/about"),
   });
 
   const values = [

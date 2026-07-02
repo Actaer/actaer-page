@@ -6,7 +6,7 @@ import { PageHero, Section, Eyebrow, CtaBanner } from "@/components/carbon";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
-import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { constructMetadata, localizedUrl } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd } from "@/lib/seo";
 
 interface PageProps {
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: t("pageDescription"),
     locale,
     path: "/consulting/ai-consulting",
-    canonical: `${siteConfig.url}/${locale}/consulting/ai-consulting`,
+    canonical: localizedUrl(locale, "/consulting/ai-consulting"),
   });
 }
 
@@ -30,9 +30,9 @@ export default async function AiConsultingPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations("aiConsultingPage");
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: `${siteConfig.url}/${locale}` },
-    { name: "Consulting", url: `${siteConfig.url}/${locale}/consulting` },
-    { name: "AI Consulting", url: `${siteConfig.url}/${locale}/consulting/ai-consulting` },
+    { name: "Home", url: localizedUrl(locale) },
+    { name: "Consulting", url: localizedUrl(locale, "/consulting") },
+    { name: "AI Consulting", url: localizedUrl(locale, "/consulting/ai-consulting") },
   ]);
   const offerings = ["offering1", "offering2", "offering3", "offering4"];
 

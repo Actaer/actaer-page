@@ -88,6 +88,10 @@
       "title": "Tell us what's slowing you down.",
       "description": "A demo, an AI roadmap, or a second opinion — you'll hear back from an engineer within one business day.",
       "button": "Start the conversation"
+    },
+    "meta": {
+      "pageTitle": "Actaer — Software Products & AI Consulting",
+      "pageDescription": "Actaer builds VantumIQP and FaberPDF — and helps companies put AI to work. Software product company from Serbia. See what we can do for you."
     }
   },
   "footer": {

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { getAllPostSlugs, getPostBySlug, formatDate } from "@/lib/blog";
-import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { constructMetadata, siteConfig, localizedUrl } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
@@ -44,7 +44,7 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     image: post.image,
-    canonical: `${siteConfig.url}/${locale}/blog/${slug}`,
+    canonical: localizedUrl(locale, `/blog/${slug}`),
     locale,
     path: `/blog/${slug}`,
     openGraph: {
@@ -86,8 +86,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   // Breadcrumb JSON-LD
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
     { name: "Home", url: siteConfig.url },
-    { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/blog` },
-    { name: post.title, url: `${siteConfig.url}/${locale}/blog/${slug}` },
+    { name: t("pageTitle"), url: localizedUrl(locale, "/blog") },
+    { name: post.title, url: localizedUrl(locale, `/blog/${slug}`) },
   ]);
 
   // Map locale to language code
@@ -97,6 +97,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     de: "de-DE",
     es: "es-ES",
     pt: "pt-PT",
+    pl: "pl-PL",
   };
 
   // BlogPosting JSON-LD
@@ -123,7 +124,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${siteConfig.url}/${locale}/blog/${slug}`,
+      "@id": localizedUrl(locale, `/blog/${slug}`),
     },
     keywords: post.tags.join(", "),
     articleSection: "Technology",

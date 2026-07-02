@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Header, Footer } from "@/components/layout";
 import { PageHero, Section } from "@/components/carbon";
 import { Separator } from "@/components/ui/separator";
-import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { constructMetadata, siteConfig, localizedUrl } from "@/lib/metadata";
 import {
   generateBreadcrumbJsonLd,
   generateFaqJsonLd,
@@ -23,7 +23,7 @@ export async function generateMetadata({
   return constructMetadata({
     title: t("pageTitle"),
     description: t("pageDescription"),
-    canonical: `${siteConfig.url}/${locale}/cookies`,
+    canonical: localizedUrl(locale, "/cookies"),
     locale,
     path: "/cookies",
   });
@@ -36,8 +36,8 @@ export default async function CookiesPage({ params }: PageProps) {
   const t = await getTranslations("cookiesPage");
 
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: `${siteConfig.url}/${locale}` },
-    { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/cookies` },
+    { name: "Home", url: localizedUrl(locale) },
+    { name: t("pageTitle"), url: localizedUrl(locale, "/cookies") },
   ]);
 
   const cookieFaqJsonLd = generateFaqJsonLd([
@@ -64,7 +64,7 @@ export default async function CookiesPage({ params }: PageProps) {
   ]);
 
   const speakableJsonLd = generateSpeakableJsonLd({
-    url: `${siteConfig.url}/${locale}/cookies`,
+    url: localizedUrl(locale, "/cookies"),
   });
 
   const cookieTypes = [

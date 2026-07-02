@@ -6,7 +6,7 @@ import { Header, Footer } from "@/components/layout";
 import { PageHero, Section, Eyebrow } from "@/components/carbon";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { constructMetadata, localizedUrl } from "@/lib/metadata";
 import {
   generateBreadcrumbJsonLd,
   generateSoftwareApplicationJsonLd,
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: t("pageDescription"),
     locale,
     path: "/products/faberpdf",
-    canonical: `${siteConfig.url}/${locale}/products/faberpdf`,
+    canonical: localizedUrl(locale, "/products/faberpdf"),
   });
 }
 
@@ -35,9 +35,9 @@ export default async function FaberPdfPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations("faberpdfPage");
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: `${siteConfig.url}/${locale}` },
-    { name: "Products", url: `${siteConfig.url}/${locale}/products` },
-    { name: "FaberPDF", url: `${siteConfig.url}/${locale}/products/faberpdf` },
+    { name: "Home", url: localizedUrl(locale) },
+    { name: "Products", url: localizedUrl(locale, "/products") },
+    { name: "FaberPDF", url: localizedUrl(locale, "/products/faberpdf") },
   ]);
   const features = ["feature1", "feature2", "feature3", "feature4", "feature5", "feature6"];
 

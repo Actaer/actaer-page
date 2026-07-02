@@ -88,6 +88,10 @@
       "title": "Cuéntanos qué te está frenando.",
       "description": "Una demo, una hoja de ruta de IA o una segunda opinión — un ingeniero te responderá en un día laborable.",
       "button": "Inicia la conversación"
+    },
+    "meta": {
+      "pageTitle": "Actaer — Productos de Software y Consultoría de IA",
+      "pageDescription": "Actaer construye VantumIQP y FaberPDF — y ayuda a las empresas a poner la IA a trabajar. Empresa de productos de software de Serbia. Descubra lo que podemos hacer por usted."
     }
   },
   "footer": {

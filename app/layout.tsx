@@ -51,9 +51,6 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://x.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
 
-        {/* AI/LLM discovery files */}
-        <link rel="author" href="/llms.txt" />
-
         {/* Structured Data - Enhanced for AI crawlers */}
         <script
           type="application/ld+json"

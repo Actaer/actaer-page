@@ -3,7 +3,7 @@ import { Header, Footer } from "@/components/layout";
 import { PageHero, Section } from "@/components/carbon";
 import { BlogCard } from "@/components/blog";
 import { getAllPosts } from "@/lib/blog";
-import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { constructMetadata, siteConfig, localizedUrl } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd, generateBlogListJsonLd } from "@/lib/seo";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Locale } from "@/i18n/config";
@@ -21,7 +21,7 @@ export async function generateMetadata({
   return constructMetadata({
     title: t("pageTitle"),
     description: t("pageDescription"),
-    canonical: `${siteConfig.url}/${locale}/blog`,
+    canonical: localizedUrl(locale, "/blog"),
     locale,
     path: "/blog",
   });
@@ -37,14 +37,14 @@ export default async function BlogPage({ params }: BlogPageProps) {
   // JSON-LD schemas
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
     { name: "Home", url: siteConfig.url },
-    { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/blog` },
+    { name: t("pageTitle"), url: localizedUrl(locale, "/blog") },
   ]);
 
   const blogListJsonLd = generateBlogListJsonLd(
     posts.map((post) => ({
       title: post.title,
       description: post.description,
-      url: `${siteConfig.url}/${locale}/blog/${post.slug}`,
+      url: localizedUrl(locale, `/blog/${post.slug}`),
       date: post.date,
     })),
   );

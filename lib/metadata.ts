@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { locales, type Locale } from "@/i18n/config";
+import { locales, defaultLocale, type Locale } from "@/i18n/config";
 
 export const siteConfig = {
   name: "Actaer",
@@ -19,6 +19,25 @@ export const siteConfig = {
     city: "Novi Pazar",
     country: "Serbia",
   },
+};
+
+/**
+ * Absolute URL for a page in a given locale.
+ * The default locale (en) lives at the root — no /en prefix.
+ */
+export function localizedUrl(locale: Locale, path = ""): string {
+  const prefix = locale === defaultLocale ? "" : `/${locale}`;
+  return `${siteConfig.url}${prefix}${path}`;
+}
+
+// Open Graph locale codes per locale (og:locale expects language_TERRITORY)
+export const ogLocales: Record<Locale, string> = {
+  en: "en_US",
+  sr: "sr_RS",
+  de: "de_DE",
+  es: "es_ES",
+  pt: "pt_PT",
+  pl: "pl_PL",
 };
 
 export const viewport: Viewport = {
@@ -59,9 +78,6 @@ export const baseMetadata: Metadata = {
     address: false,
     telephone: false,
   },
-  alternates: {
-    canonical: siteConfig.url,
-  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -81,8 +97,8 @@ export const baseMetadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    creator: "@actaer",
-    site: "@actaer",
+    creator: "@actaerco",
+    site: "@actaerco",
   },
   robots: {
     index: true,
@@ -115,19 +131,24 @@ export function constructMetadata({
   locale?: Locale;
   path?: string;
 } & Partial<Metadata> = {}): Metadata {
-  // Generate alternate language links for hreflang
+  // Generate alternate language links for hreflang (incl. x-default → en at root)
   const languages: Record<string, string> = {};
-  if (locale && path !== undefined) {
+  if (locale) {
     for (const loc of locales) {
-      languages[loc] = `${siteConfig.url}/${loc}${path}`;
+      languages[loc] = localizedUrl(loc, path);
     }
+    languages["x-default"] = localizedUrl(defaultLocale, path);
   }
+
+  // Canonical is derived from locale + path unless explicitly overridden
+  const canonicalUrl =
+    canonical ?? (locale ? localizedUrl(locale, path) : undefined);
 
   return {
     title: title,
     description: description || siteConfig.description,
     alternates: {
-      canonical: canonical,
+      canonical: canonicalUrl,
       languages: Object.keys(languages).length > 0 ? languages : undefined,
       ...props.alternates,
     },
@@ -135,10 +156,11 @@ export function constructMetadata({
       title: title || siteConfig.name,
       description: description || siteConfig.description,
       images: image ? [{ url: image }] : undefined,
-      url: canonical,
-      locale: locale
-        ? `${locale}_${locale === "en" ? "US" : locale.toUpperCase()}`
-        : "en_US",
+      url: canonicalUrl,
+      locale: locale ? ogLocales[locale] : "en_US",
+      alternateLocale: locale
+        ? locales.filter((l) => l !== locale).map((l) => ogLocales[l])
+        : undefined,
       ...props.openGraph,
     },
     twitter: {

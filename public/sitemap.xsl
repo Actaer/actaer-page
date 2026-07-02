@@ -13,17 +13,17 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <style>
                     :root {
-                    --bg: #0a0a0a;
-                    --card: #141414;
-                    --border: #262626;
-                    --text: #fafafa;
-                    --text-muted: #a1a1aa;
-                    --accent: #3b82f6;
-                    --accent-hover: #2563eb;
+                    --bg: #ffffff;
+                    --border: #e0e0e0;
+                    --text: #161616;
+                    --text-muted: #525252;
+                    --accent: #0f62fe;
+                    --accent-hover: #0043ce;
+                    --surface: #f4f4f4;
                     }
                     * { box-sizing: border-box; margin: 0; padding: 0; }
                     body {
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
                     background: var(--bg);
                     color: var(--text);
                     line-height: 1.6;
@@ -37,7 +37,7 @@
                     }
                     h1 {
                     font-size: 1.75rem;
-                    font-weight: 600;
+                    font-weight: 300;
                     margin-bottom: 0.5rem;
                     }
                     .subtitle { color: var(--text-muted); font-size: 0.95rem; }
@@ -52,15 +52,12 @@
                     table {
                     width: 100%;
                     border-collapse: collapse;
-                    background: var(--card);
-                    border-radius: 8px;
-                    overflow: hidden;
                     font-size: 0.875rem;
                     }
                     th {
                     text-align: left;
                     padding: 0.875rem 1rem;
-                    background: var(--border);
+                    background: var(--surface);
                     font-weight: 500;
                     color: var(--text-muted);
                     text-transform: uppercase;
@@ -72,23 +69,13 @@
                     border-bottom: 1px solid var(--border);
                     }
                     tr:last-child td { border-bottom: none; }
-                    tr:hover td { background: rgba(255,255,255,0.02); }
+                    tr:hover td { background: var(--surface); }
                     a {
                     color: var(--accent);
                     text-decoration: none;
                     word-break: break-all;
                     }
                     a:hover { color: var(--accent-hover); text-decoration: underline; }
-                    .priority {
-                    display: inline-block;
-                    padding: 0.25rem 0.5rem;
-                    border-radius: 4px;
-                    font-size: 0.75rem;
-                    font-weight: 500;
-                    }
-                    .priority-high { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
-                    .priority-med { background: rgba(234, 179, 8, 0.2); color: #eab308; }
-                    .priority-low { background: rgba(156, 163, 175, 0.2); color: #9ca3af; }
                     .langs {
                     display: flex;
                     flex-wrap: wrap;
@@ -97,8 +84,7 @@
                     .lang {
                     display: inline-block;
                     padding: 0.125rem 0.375rem;
-                    background: var(--border);
-                    border-radius: 3px;
+                    background: var(--surface);
                     font-size: 0.7rem;
                     text-transform: uppercase;
                     color: var(--text-muted);
@@ -113,7 +99,7 @@
             <body>
                 <div class="container">
                     <header>
-                        <h1>🗺️ XML Sitemap</h1>
+                        <h1>XML Sitemap</h1>
                         <p class="subtitle">This sitemap is used by search engines to discover and
                             index pages on actaer.com</p>
                         <div class="stats">
@@ -121,47 +107,24 @@
                                     <xsl:value-of select="count(sitemap:urlset/sitemap:url)" />
                                 </strong>
                                 URLs</span>
-                            <span class="stat"><strong>5</strong> Languages (EN, SR, DE, ES, PT)</span>
+                            <span class="stat"><strong>6</strong> Languages (EN, SR, DE, ES, PT, PL)</span>
                         </div>
                     </header>
                     <table>
                         <thead>
                             <tr>
                                 <th>URL</th>
-                                <th>Priority</th>
-                                <th>Change Freq</th>
                                 <th>Last Modified</th>
                                 <th>Alternates</th>
                             </tr>
                         </thead>
                         <tbody>
                             <xsl:for-each select="sitemap:urlset/sitemap:url">
-                                <xsl:sort select="sitemap:priority" order="descending"
-                                    data-type="number" />
                                 <tr>
                                     <td>
                                         <a href="{sitemap:loc}">
                                             <xsl:value-of select="sitemap:loc" />
                                         </a>
-                                    </td>
-                                    <td>
-                                        <xsl:variable name="priority" select="sitemap:priority" />
-                                        <span>
-                                            <xsl:attribute name="class">
-                                                <xsl:text>priority </xsl:text>
-                                                <xsl:choose>
-                                                    <xsl:when test="$priority &gt;= 0.8">
-                                                        priority-high</xsl:when>
-                                                    <xsl:when test="$priority &gt;= 0.5">
-                                                        priority-med</xsl:when>
-                                                    <xsl:otherwise>priority-low</xsl:otherwise>
-                                                </xsl:choose>
-                                            </xsl:attribute>
-                                            <xsl:value-of select="$priority" />
-                                        </span>
-                                    </td>
-                                    <td>
-                                        <xsl:value-of select="sitemap:changefreq" />
                                     </td>
                                     <td>
                                         <xsl:value-of select="substring(sitemap:lastmod, 1, 10)" />

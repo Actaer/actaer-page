@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Header, Footer } from "@/components/layout";
 import { PageHero, Section } from "@/components/carbon";
 import { Separator } from "@/components/ui/separator";
-import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { constructMetadata, siteConfig, localizedUrl } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd, generateSpeakableJsonLd } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { type Locale } from "@/i18n/config";
@@ -19,7 +19,7 @@ export async function generateMetadata({
   return constructMetadata({
     title: t("pageTitle"),
     description: t("pageDescription"),
-    canonical: `${siteConfig.url}/${locale}/privacy`,
+    canonical: localizedUrl(locale, "/privacy"),
     locale,
     path: "/privacy",
   });
@@ -32,12 +32,12 @@ export default async function PrivacyPage({ params }: PageProps) {
   const t = await getTranslations("privacyPage");
 
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: `${siteConfig.url}/${locale}` },
-    { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/privacy` },
+    { name: "Home", url: localizedUrl(locale) },
+    { name: t("pageTitle"), url: localizedUrl(locale, "/privacy") },
   ]);
 
   const speakableJsonLd = generateSpeakableJsonLd({
-    url: `${siteConfig.url}/${locale}/privacy`,
+    url: localizedUrl(locale, "/privacy"),
   });
 
   return (

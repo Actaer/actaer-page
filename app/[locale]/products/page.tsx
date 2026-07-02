@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Header, Footer } from "@/components/layout";
 import { PageHero, CtaBanner } from "@/components/carbon";
 import { ProductsShowcase } from "@/components/sections";
-import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { constructMetadata, localizedUrl } from "@/lib/metadata";
 import { generateBreadcrumbJsonLd } from "@/lib/seo";
 
 interface PageProps {
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: t("pageDescription"),
     locale,
     path: "/products",
-    canonical: `${siteConfig.url}/${locale}/products`,
+    canonical: localizedUrl(locale, "/products"),
   });
 }
 
@@ -29,8 +29,8 @@ export default async function ProductsPage({ params }: PageProps) {
   const t = await getTranslations("productsPage");
   const tHome = await getTranslations("home");
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: `${siteConfig.url}/${locale}` },
-    { name: "Products", url: `${siteConfig.url}/${locale}/products` },
+    { name: "Home", url: localizedUrl(locale) },
+    { name: "Products", url: localizedUrl(locale, "/products") },
   ]);
 
   return (

@@ -63,6 +63,9 @@ const nextConfig: NextConfig = {
       { from: "/products/vantum-erp", to: "/products/vantumiqp" },
     ];
     return [
+      // Default locale (en) lives at the root — permanently redirect old /en/* URLs
+      { source: "/en", destination: "/", permanent: true },
+      { source: "/en/:path*", destination: "/:path*", permanent: true },
       { source: "/home", destination: "/", permanent: true },
       { source: "/blogs", destination: "/blog", permanent: true },
       { source: "/service/:slug", destination: "/consulting", permanent: true },

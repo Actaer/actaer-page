@@ -3,7 +3,7 @@ import { Header, Footer } from "@/components/layout";
 import { ContactForm } from "@/components/forms";
 import { PageHero, Section } from "@/components/carbon";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
-import { constructMetadata, siteConfig } from "@/lib/metadata";
+import { constructMetadata, siteConfig, localizedUrl } from "@/lib/metadata";
 import {
   generateBreadcrumbJsonLd,
   generateFaqJsonLd,
@@ -25,7 +25,7 @@ export async function generateMetadata({
   return constructMetadata({
     title: t("pageTitle"),
     description: t("pageDescription"),
-    canonical: `${siteConfig.url}/${locale}/contact`,
+    canonical: localizedUrl(locale, "/contact"),
     locale,
     path: "/contact",
   });
@@ -89,7 +89,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
   // JSON-LD schema
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
     { name: "Home", url: siteConfig.url },
-    { name: t("pageTitle"), url: `${siteConfig.url}/${locale}/contact` },
+    { name: t("pageTitle"), url: localizedUrl(locale, "/contact") },
   ]);
 
   const faqs = [
@@ -113,7 +113,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
   const faqJsonLd = generateFaqJsonLd(faqs);
   const speakableJsonLd = generateSpeakableJsonLd({
-    url: `${siteConfig.url}/${locale}/contact`,
+    url: localizedUrl(locale, "/contact"),
   });
 
   return (

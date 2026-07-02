@@ -88,6 +88,10 @@
       "title": "Recite nam šta vas usporava.",
       "description": "Demo, AI mapa puta ili drugo mišljenje — inženjer vam se javlja u roku od jednog radnog dana.",
       "button": "Započnite razgovor"
+    },
+    "meta": {
+      "pageTitle": "Actaer — Softverski proizvodi i AI konsalting",
+      "pageDescription": "Actaer gradi VantumIQP i FaberPDF — i pomaže kompanijama da stave AI u pogon. Softverska kompanija iz Srbije. Pogledajte šta možemo da uradimo za vas."
     }
   },
   "footer": {

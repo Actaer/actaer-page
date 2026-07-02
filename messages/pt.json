@@ -88,6 +88,10 @@
       "title": "Diga-nos o que o está a atrasar.",
       "description": "Uma demo, um roteiro de IA ou uma segunda opinião — receberá resposta de um engenheiro no prazo de um dia útil.",
       "button": "Comece a conversa"
+    },
+    "meta": {
+      "pageTitle": "Actaer — Produtos de Software e Consultoria de IA",
+      "pageDescription": "A Actaer constrói o VantumIQP e o FaberPDF — e ajuda as empresas a pôr a IA a trabalhar. Empresa de produtos de software da Sérvia. Veja o que podemos fazer por si."
     }
   },
   "footer": {

@@ -88,6 +88,10 @@
       "title": "Sagen Sie uns, was Sie ausbremst.",
       "description": "Eine Demo, eine KI-Roadmap oder eine zweite Meinung — ein Ingenieur meldet sich innerhalb eines Werktags bei Ihnen.",
       "button": "Gespräch beginnen"
+    },
+    "meta": {
+      "pageTitle": "Actaer — Softwareprodukte & KI-Beratung",
+      "pageDescription": "Actaer baut VantumIQP und FaberPDF — und hilft Unternehmen, KI produktiv einzusetzen. Software-Produktunternehmen aus Serbien. Sehen Sie, was wir für Sie tun können."
     }
   },
   "footer": {

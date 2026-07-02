@@ -1,70 +1,81 @@
-import { siteConfig } from "@/lib/metadata";
+import { localizedUrl } from "@/lib/metadata";
 import { getAllPosts } from "@/lib/blog";
-import { locales, defaultLocale, Locale } from "@/i18n/config";
+import { locales, defaultLocale, type Locale } from "@/i18n/config";
 
-// Fixed dates for static pages (update these when content changes)
-const STATIC_LAST_MODIFIED = new Date("2026-07-02");
+// Update when static page content meaningfully changes — Google only trusts
+// lastmod when it is consistently accurate, so never set this to build time.
+const STATIC_LAST_MODIFIED = "2026-07-02";
 
-// Static page paths
 const staticPaths = [
-  { path: "", priority: 1, changeFrequency: "weekly" },
-  { path: "/products", priority: 0.9, changeFrequency: "monthly" },
-  { path: "/products/vantumiqp", priority: 0.9, changeFrequency: "monthly" },
-  { path: "/products/faberpdf", priority: 0.9, changeFrequency: "monthly" },
-  { path: "/consulting", priority: 0.9, changeFrequency: "monthly" },
-  { path: "/consulting/ai-consulting", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/consulting/software-development", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/consulting/digital-modernization", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/about", priority: 0.7, changeFrequency: "monthly" },
-  { path: "/blog", priority: 0.8, changeFrequency: "weekly" },
-  { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
+  "",
+  "/products",
+  "/products/vantumiqp",
+  "/products/faberpdf",
+  "/consulting",
+  "/consulting/ai-consulting",
+  "/consulting/software-development",
+  "/consulting/digital-modernization",
+  "/about",
+  "/blog",
+  "/contact",
+  "/privacy",
+  "/cookies",
 ];
 
 interface SitemapEntry {
   url: string;
-  lastModified: Date;
-  changeFrequency: string;
-  priority: number;
+  lastModified: string;
+  // hreflang → absolute URL, repeated identically for every locale variant
   alternates: Record<string, string>;
 }
 
-// Generate alternates for each locale
-function generateAlternates(path: string): Record<string, string> {
+function buildAlternates(
+  path: string,
+  availableLocales: readonly Locale[],
+): Record<string, string> {
   const alternates: Record<string, string> = {};
-  for (const locale of locales) {
-    alternates[locale] = `${siteConfig.url}/${locale}${path}`;
+  for (const locale of availableLocales) {
+    alternates[locale] = localizedUrl(locale, path);
+  }
+  if (availableLocales.includes(defaultLocale)) {
+    alternates["x-default"] = localizedUrl(defaultLocale, path);
   }
   return alternates;
 }
 
 async function generateSitemapEntries(): Promise<SitemapEntry[]> {
-  const baseUrl = siteConfig.url;
   const entries: SitemapEntry[] = [];
 
-  // Generate entries for each locale for static pages
-  for (const locale of locales) {
-    for (const page of staticPaths) {
+  for (const path of staticPaths) {
+    const alternates = buildAlternates(path, locales);
+    for (const locale of locales) {
       entries.push({
-        url: `${baseUrl}/${locale}${page.path}`,
+        url: localizedUrl(locale, path),
         lastModified: STATIC_LAST_MODIFIED,
-        changeFrequency: page.changeFrequency,
-        priority:
-          locale === defaultLocale ? page.priority : page.priority * 0.9,
-        alternates: generateAlternates(page.path),
+        alternates,
       });
     }
   }
 
-  // Dynamic blog posts for each locale
+  // Blog posts — only link alternates for locales where the translation exists
+  const postsByLocale = new Map<Locale, { slug: string; date: string }[]>();
   for (const locale of locales) {
-    const posts = await getAllPosts(locale as Locale);
+    postsByLocale.set(locale, await getAllPosts(locale));
+  }
+  const slugLocales = new Map<string, Locale[]>();
+  for (const [locale, posts] of postsByLocale) {
     for (const post of posts) {
+      slugLocales.set(post.slug, [...(slugLocales.get(post.slug) ?? []), locale]);
+    }
+  }
+
+  for (const [locale, posts] of postsByLocale) {
+    for (const post of posts) {
+      const path = `/blog/${post.slug}`;
       entries.push({
-        url: `${baseUrl}/${locale}/blog/${post.slug}`,
-        lastModified: new Date(post.date),
-        changeFrequency: "monthly",
-        priority: locale === defaultLocale ? 0.6 : 0.5,
-        alternates: generateAlternates(`/blog/${post.slug}`),
+        url: localizedUrl(locale, path),
+        lastModified: new Date(post.date).toISOString().slice(0, 10),
+        alternates: buildAlternates(path, slugLocales.get(post.slug) ?? []),
       });
     }
   }
@@ -94,9 +105,7 @@ function generateXml(entries: SitemapEntry[]): string {
       return `<url>
 <loc>${escapeXml(entry.url)}</loc>
 ${alternateLinks}
-<lastmod>${entry.lastModified.toISOString()}</lastmod>
-<changefreq>${entry.changeFrequency}</changefreq>
-<priority>${entry.priority}</priority>
+<lastmod>${entry.lastModified}</lastmod>
 </url>`;
     })
     .join("\n");
