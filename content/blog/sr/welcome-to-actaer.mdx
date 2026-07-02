@@ -1,62 +1,99 @@
 export const metadata = {
-  title: "Dobrodošli na Actaer Blog",
-  description: "Predstavljamo naš novi blog gde delimo uvide o razvoju softvera, tehnološkim trendovima i izgradnji uspešnih digitalnih proizvoda.",
+  title: "Zašto smo pokrenuli Actaer",
+  description: "Umorili smo se od softvera koji se bori protiv vas — BI kome treba dadilja, PDF alati koji hoće vaše ugovore u svom cloudu. Pa smo napravili sopstveni. Ovo je ta priča.",
   date: "2026-01-20",
-  author: "Actaer Tim",
-  tags: ["Najava", "Kompanija"],
+  lastUpdated: "2026-07-02",
+  author: "Actaer Team",
+  tags: ["Actaer", "Proizvodi", "Kompanija"],
   image: "/images/covers/welcome-to-actaer.svg",
   published: true,
 };
 
-# Dobrodošli na Actaer Blog
+export const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Šta Actaer gradi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Actaer gradi dva proizvoda: VantumIQP, upravljani radni prostor za poslovnu inteligenciju izgrađen na Apache Superset-u, i FaberPDF, local-first PDF editor za Windows i Linux, trenutno u beta fazi.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Da li Actaer i dalje nudi konsalting?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Da. AI konsalting je naša vodeća usluga. Pronalazimo gde se AI isplati u vašem poslovanju, gradimo automatizaciju i obučavamo vaš tim da je preuzme. Radimo i razvoj softvera i digitalnu modernizaciju.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Gde se Actaer nalazi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Actaer je kompanija za softverske proizvode iz Novog Pazara, Srbija, osnovana 2025. godine.",
+        },
+      },
+    ],
+  },
+];
 
-Uzbuđeni smo što pokrećemo naš novi blog! Ovo je mesto gde ćemo deliti naše misli, iskustva i uvide o razvoju softvera, tehnološkim trendovima i umetnosti izgradnje uspešnih digitalnih proizvoda.
+# Zašto smo pokrenuli Actaer
 
-## Šta Očekivati
+Actaer je kompanija za softverske proizvode iz Novog Pazara, Srbija, osnovana 2025. godine. Gradimo alate za koje smo želeli da postoje — i pomažemo kompanijama da stave AI u pogon. Ovo je kratka verzija odgovora na pitanje zašto.
 
-Naš blog će pokrivati niz tema o kojima smo strastveni:
+*Piše Actaer tim — inženjeri koji stoje iza VantumIQP-a i FaberPDF-a.*
 
-### Dubinske Tehničke Analize
+## Problem pored kojeg više nismo mogli da prođemo
 
-Delićemo tehničke članke o tehnologijama koje koristimo i volimo:
+Negde usput, softver je prestao da bude na vašoj strani.
 
-- Moderan web razvoj sa React, Next.js i TypeScript
-- Izgradnja skalabilnih backend sistema sa .NET i Node.js
-- Strategije implementacije AI i mašinskog učenja
-- DevOps najbolje prakse i cloud arhitektura
+Poznat vam je taj obrazac. BI platforma kojoj treba dadilja sa punim radnim vremenom pre nego što vam pokaže ijedan pouzdan broj. PDF editor koji vam ne da da potpišete ugovor dok ga ne otpremite u tuđi cloud i ne pokrenete pretplatu. Konsultanti koji tri meseca proučavaju vaše poslovanje, predaju vam prezentaciju i odu pre nego što išta proradi.
 
-### Uvidi iz Industrije
+Godine smo proveli unutar tog obrasca — kao inženjeri, kao korisnici, kao ljudi koje pozovu da posle svega počiste. U jednom trenutku frustracija se pretvorila u pitanje koje nismo mogli da ostavimo: kako bi ovi alati izgledali da ih je neko napravio da služe onome ko ih koristi?
 
-Budite informisani o najnovijim trendovima u tehnološkoj industriji:
+## Pa smo napravili sopstvene
 
-- Strategije digitalne transformacije
-- Evolucija poslovnog softvera
-- Budućnost ERP sistema
-- Emergentne tehnologije i njihove poslovne aplikacije
+Počeli smo od dva problema koja su nas najviše nervirala.
 
-### Razvoj Proizvoda
+Prvi je bila poslovna inteligencija. Većina kompanija ima mnogo podataka i vrlo malo odgovora. Kontrolne table zastarevaju, brojevi se ne slažu i niko ne ume da kaže odakle je grafikon došao. [VantumIQP](/products/vantumiqp) je naš odgovor: upravljani BI radni prostor izgrađen na Apache Superset-u. Postavite pitanje, istražite ga u SQL-u i objavite kontrolnu tablu kojoj cela kompanija može da veruje — svaki grafikon sledljiv do svog upita, uz kontrolu pristupa koja će se vašim revizorima zaista dopasti. Namenjen je timovima kojima treba izveštavanje u koje veruju i rukovodstvo i regulatori.
 
-Učite iz našeg iskustva u izgradnji proizvoda:
+Drugi problem su bili dokumenti. Potpisivanje ili ispravka PDF-a ne bi trebalo da zahtevaju nalog, pretplatu i put preko tuđeg servera. [FaberPDF](/products/faberpdf) je local-first PDF editor za Windows i Linux. Potpisujte, označavajte, menjajte tekst i validirajte dokumente direktno na svom računaru — vaši fajlovi nikada ne napuštaju vašu mašinu. Besplatan je tokom bete i namenjen svakome čiji su dokumenti njegov posao: pravnim timovima, računovođama, operacijama, vama.
 
-- Kako brzo validirati ideje proizvoda
-- Strategije razvoja MVP-a
-- Principi dizajna usmerenog na korisnika
-- Skaliranje od startapa do preduzeća
+## A konsalting radimo — drugačije
 
-## Naša Filosofija
+I dalje se bavimo konsaltingom. Ali radimo ga onako kako bismo želeli da neko konsultuje nas.
 
-U Actaer-u verujemo da se sjajan softver gradi na raskrsnici tehničke izvrsnosti i poslovnog razumevanja. Naš cilj sa ovim blogom je da podelimo znanje koje vam pomaže da:
+[AI konsalting](/consulting/ai-consulting) je naša vodeća usluga. Pronalazimo gde se AI zaista isplati u vašem poslovanju, gradimo automatizaciju i obučavamo vaše ljude da je preuzmu. Ne dobijate stratešku prezentaciju. Dobijate sisteme koji rade i tim koji zna kako da ih održi u radu.
 
-1. **Donosite bolje tehnološke odluke** - Razumejte kompromise i izaberite prave alate za vaše potrebe.
-2. **Gradite bolje proizvode** - Učite iz naših uspeha i neuspeha u razvoju proizvoda.
-3. **Budete ispred krivulje** - Pratite brzo razvijajući tehnološki pejzaž.
+Izgradnja proizvoda je ono što nas drži iskrenima. Živimo sa sopstvenim arhitektonskim odlukama, podržavamo sopstvene korisnike i ispravljamo sopstvene greške. Ta disciplina nas prati i na vašem projektu — jer ne možemo ponedeljkom preporučivati prakse koje utorkom ne bismo prihvatili u sopstvenom kodu.
 
-## Pridružite se Razgovoru
+## Šta možete da očekujete od nas
 
-Voleli bismo da čujemo od vas! Ako imate teme koje biste voleli da pokrijemo, pitanja o našim člancima, ili samo želite da ćaskate o tehnologiji, ne oklevajte da nas [kontaktirate](/contact).
+Mali smo, senior i promišljeni. To nije ograničenje — to je proizvod. Razgovarate sa ljudima koji rade posao. Dobijate jasne odgovore, čak i kada nisu oni najlakši. I dobijate softver iza kojeg stojimo, jer je naše ime na njemu.
 
-Ostanite sa nama za više sadržaja koji uskoro stiže. Pretplatite se na naš newsletter da biste bili obavešteni kada objavimo nove članke.
+Na ovom blogu očekujte isto: iskreno pisanje o izgradnji proizvoda, stavljanju AI-ja u pogon i inženjerskim kompromisima iza jednog i drugog.
+
+Ako je nešto u vašoj kompaniji sporije ili teže nego što bi trebalo da bude, recite nam. [Javite nam se](/contact) — dobićete jasan odgovor o tome da li možemo da pomognemo.
+
+## Često postavljana pitanja
+
+**Šta Actaer gradi?**
+
+Dva proizvoda: [VantumIQP](/products/vantumiqp), upravljani radni prostor za poslovnu inteligenciju izgrađen na Apache Superset-u, i [FaberPDF](/products/faberpdf), local-first PDF editor za Windows i Linux, trenutno u beta fazi.
+
+**Da li Actaer i dalje nudi konsalting?**
+
+Da. [AI konsalting](/consulting/ai-consulting) je naša vodeća usluga — pronalazimo gde se AI isplati, gradimo automatizaciju i obučavamo vaš tim da je preuzme. Radimo i razvoj softvera i digitalnu modernizaciju.
+
+**Gde se Actaer nalazi?**
+
+Novi Pazar, Srbija. Kompaniju smo osnovali 2025. godine.
 
 ---
 
-*Actaer Tim*
+*Actaer tim*

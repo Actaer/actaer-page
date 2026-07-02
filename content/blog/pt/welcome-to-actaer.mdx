@@ -1,62 +1,99 @@
 export const metadata = {
-  title: "Bem-vindo ao Blog da Actaer",
-  description: "Apresentando nosso novo blog onde compartilhamos insights sobre desenvolvimento de software, tendências tecnológicas e construção de produtos digitais bem-sucedidos.",
+  title: "Porque Criámos a Actaer",
+  description: "Fartámo-nos de software que luta contra quem o usa — BI que precisa de ama, ferramentas de PDF que querem os contratos na nuvem delas. Por isso construímos o nosso. Esta é a história.",
   date: "2026-01-20",
-  author: "Equipe Actaer",
-  tags: ["Anúncio", "Empresa"],
+  lastUpdated: "2026-07-02",
+  author: "Actaer Team",
+  tags: ["Actaer", "Produtos", "Empresa"],
   image: "/images/covers/welcome-to-actaer.svg",
   published: true,
 };
 
-# Bem-vindo ao Blog da Actaer
+export const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "O que constrói a Actaer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A Actaer constrói dois produtos: o VantumIQP, um espaço de trabalho de inteligência empresarial governado construído sobre o Apache Superset, e o FaberPDF, um editor de PDF local-first para Windows e Linux, atualmente em beta.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "A Actaer ainda presta consultoria?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sim. A Consultoria em IA é o nosso serviço de referência. Encontramos onde a IA compensa no seu negócio, construímos a automação e formamos a sua equipa para se apropriar dela. Também aceitamos projetos de desenvolvimento de software e modernização digital.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Onde fica a Actaer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A Actaer é uma empresa de produtos de software sediada em Novi Pazar, na Sérvia, fundada em 2025.",
+        },
+      },
+    ],
+  },
+];
 
-Estamos empolgados em lançar nosso novo blog! Este é o lugar onde compartilharemos nossos pensamentos, experiências e insights sobre desenvolvimento de software, tendências tecnológicas e a arte de construir produtos digitais bem-sucedidos.
+# Porque Criámos a Actaer
 
-## O Que Esperar
+A Actaer é uma empresa de produtos de software de Novi Pazar, Sérvia, fundada em 2025. Construímos as ferramentas que gostávamos que existissem — e ajudamos as empresas a pôr a IA a trabalhar. Esta é a versão curta do porquê.
 
-Nosso blog cobrirá uma variedade de tópicos sobre os quais somos apaixonados:
+*Escrito pela equipa da Actaer — os engenheiros por trás do VantumIQP e do FaberPDF.*
 
-### Análises Técnicas Profundas
+## O problema que já não conseguíamos ignorar
 
-Compartilharemos artigos técnicos sobre as tecnologias que usamos e amamos:
+Algures pelo caminho, o software deixou de estar do seu lado.
 
-- Desenvolvimento web moderno com React, Next.js e TypeScript
-- Construção de sistemas backend escaláveis com .NET e Node.js
-- Estratégias de implementação de IA e machine learning
-- Melhores práticas de DevOps e arquitetura em nuvem
+Conhece o padrão. A plataforma de BI que precisa de uma ama a tempo inteiro antes de mostrar um único número fiável. O editor de PDF que não o deixa assinar um contrato sem o enviar para a nuvem de outra pessoa e iniciar uma subscrição. Os consultores que estudam o seu negócio durante três meses, entregam uma apresentação e vão-se embora antes de alguma coisa funcionar.
 
-### Insights da Indústria
+Passámos anos dentro desse padrão — como engenheiros, como utilizadores, como as pessoas chamadas para limpar os estragos no fim. A dada altura, a frustração transformou-se numa pergunta que não conseguíamos largar: como seriam estas ferramentas se alguém as construísse para servir quem as usa?
 
-Mantenha-se informado sobre as últimas tendências na indústria de tecnologia:
+## Então construímos as nossas
 
-- Estratégias de transformação digital
-- Evolução do software empresarial
-- O futuro dos sistemas ERP
-- Tecnologias emergentes e suas aplicações empresariais
+Começámos pelos dois problemas que mais nos incomodavam.
 
-### Desenvolvimento de Produtos
+O primeiro era a inteligência empresarial. A maioria das empresas tem dados de sobra e muito poucas respostas. Os dashboards degradam-se, os números discordam e ninguém sabe dizer de onde veio um gráfico. O [VantumIQP](/products/vantumiqp) é a nossa resposta: um espaço de trabalho de BI governado, construído sobre o Apache Superset. Faça uma pergunta, explore-a em SQL e publique um dashboard em que toda a empresa pode confiar — cada gráfico rastreável até à sua consulta, com um controlo de acessos de que os seus auditores vão mesmo gostar. É para equipas que precisam de relatórios em que tanto os executivos como os reguladores acreditam.
 
-Aprenda com nossa experiência construindo produtos:
+O segundo eram os documentos. Assinar ou corrigir um PDF não devia exigir uma conta, uma subscrição e uma viagem pelo servidor de um desconhecido. O [FaberPDF](/products/faberpdf) é um editor de PDF local-first para Windows e Linux. Assine, anote, edite texto e valide documentos diretamente no seu desktop — os ficheiros nunca saem da sua máquina. É gratuito durante a beta, e é para todos aqueles cujos documentos são o seu negócio: equipas jurídicas, contabilistas, operações, você.
 
-- Como validar ideias de produtos rapidamente
-- Estratégias de desenvolvimento de MVP
-- Princípios de design centrado no usuário
-- Escalando de startup para empresa
+## E prestamos consultoria — de forma diferente
 
-## Nossa Filosofia
+Continuamos a prestar consultoria. Mas fazemo-lo como gostaríamos de a receber.
 
-Na Actaer, acreditamos que um ótimo software é construído na interseção entre excelência técnica e compreensão empresarial. Nosso objetivo com este blog é compartilhar conhecimento que ajude você a:
+A [Consultoria em IA](/consulting/ai-consulting) é o nosso serviço de referência. Encontramos onde a IA realmente compensa no seu negócio, construímos a automação e formamos as suas pessoas para se apropriarem dela. Não recebe uma apresentação de estratégia. Recebe sistemas a funcionar e uma equipa que sabe mantê-los a funcionar.
 
-1. **Tomar melhores decisões tecnológicas** - Entenda as compensações e escolha as ferramentas certas para suas necessidades.
-2. **Construir melhores produtos** - Aprenda com nossos sucessos e fracassos no desenvolvimento de produtos.
-3. **Ficar à frente da curva** - Acompanhe o cenário tecnológico em rápida evolução.
+Construir produtos é o que nos mantém honestos. Vivemos com as nossas próprias decisões de arquitetura, damos suporte aos nossos próprios utilizadores e corrigimos os nossos próprios bugs. Essa disciplina acompanha-nos até ao seu projeto — porque não podemos recomendar à segunda-feira práticas que nunca aceitaríamos no nosso próprio código à terça.
 
-## Junte-se à Conversa
+## O que pode esperar de nós
 
-Adoraríamos ouvir de você! Se você tem tópicos que gostaria que cobrissemos, perguntas sobre nossos artigos, ou apenas quer conversar sobre tecnologia, não hesite em [entrar em contato](/contact).
+Somos uma equipa pequena, sénior e ponderada. Isso não é uma limitação — é o produto. Fala com as pessoas que fazem o trabalho. Recebe respostas claras, mesmo quando não são as fáceis. E recebe software pelo qual respondemos, porque o nosso nome está nele.
 
-Fique ligado para mais conteúdo em breve. Assine nossa newsletter para ser notificado quando publicarmos novos artigos.
+Neste blog, espere o mesmo: escrita honesta sobre construir produtos, pôr a IA a trabalhar e os compromissos de engenharia por trás de ambos.
+
+Se algo na sua empresa está mais lento ou mais difícil do que devia, fale-nos disso. [Entre em contacto](/contact) — dir-lhe-emos com franqueza se podemos ajudar.
+
+## Perguntas frequentes
+
+**O que constrói a Actaer?**
+
+Dois produtos: o [VantumIQP](/products/vantumiqp), um espaço de trabalho de inteligência empresarial governado construído sobre o Apache Superset, e o [FaberPDF](/products/faberpdf), um editor de PDF local-first para Windows e Linux, atualmente em beta.
+
+**A Actaer ainda presta consultoria?**
+
+Sim. A [Consultoria em IA](/consulting/ai-consulting) é o nosso serviço de referência — encontramos onde a IA compensa, construímos a automação e formamos a sua equipa para se apropriar dela. Também aceitamos projetos de desenvolvimento de software e modernização digital.
+
+**Onde fica a Actaer?**
+
+Em Novi Pazar, na Sérvia. Fundámos a empresa em 2025.
 
 ---
 
-*A Equipe Actaer*
+*A Equipa Actaer*
