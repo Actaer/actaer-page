@@ -54,11 +54,11 @@ export default async function SoftwareDevelopmentPage({ params }: PageProps) {
         </PageHero>
 
         <Section>
-          <div className="mb-12 space-y-4">
+          <div className="mb-12 space-y-4" data-reveal="">
             <Eyebrow>{t("offeringsEyebrow")}</Eyebrow>
             <h2 className="text-display-md max-w-3xl">{t("offeringsTitle")}</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2" data-reveal-group="">
             {offerings.map((o) => (
               <div key={o} className="-mt-px space-y-2 border border-border p-8 sm:-ml-px sm:mt-0">
                 <h3 className="text-card-title">{t(`${o}Title`)}</h3>

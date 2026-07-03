@@ -77,11 +77,11 @@ export default async function FaberPdfPage({ params }: PageProps) {
         </PageHero>
 
         <Section>
-          <div className="mb-12 space-y-4">
+          <div className="mb-12 space-y-4" data-reveal="">
             <Eyebrow>{t("featuresEyebrow")}</Eyebrow>
             <h2 className="text-display-md max-w-3xl">{t("featuresTitle")}</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" data-reveal-group="">
             {features.map((f) => (
               <div key={f} className="-mt-px space-y-2 border border-border p-6 sm:-ml-px sm:mt-0">
                 <h3 className="text-body-lg font-semibold">{t(`${f}Title`)}</h3>
@@ -92,7 +92,7 @@ export default async function FaberPdfPage({ params }: PageProps) {
         </Section>
 
         <Section band="muted">
-          <div className="max-w-3xl space-y-4">
+          <div className="max-w-3xl space-y-4" data-reveal="">
             <Eyebrow>{t("privacyEyebrow")}</Eyebrow>
             <h2 className="text-display-md">{t("privacyTitle")}</h2>
             <p className="text-body-lg text-muted-foreground">{t("privacyDescription")}</p>

@@ -163,7 +163,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                 <p className="text-muted-foreground">{t("reachUs")}</p>
               </div>
 
-              <div className="grid grid-cols-1">
+              <div className="grid grid-cols-1" data-reveal-group="">
                 {contactInfo.map((item, index) => (
                   <div
                     key={index}
@@ -200,9 +200,9 @@ export default async function ContactPage({ params }: ContactPageProps) {
         {/* FAQ Section */}
         <Section>
           <div className="max-w-3xl">
-            <h2 className="text-display-md mb-12">{t("faq.title")}</h2>
+            <h2 className="text-display-md mb-12" data-reveal="">{t("faq.title")}</h2>
 
-            <div className="grid grid-cols-1">
+            <div className="grid grid-cols-1" data-reveal="">
               {faqs.map((faq, index) => (
                 <div
                   key={index}

@@ -74,7 +74,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
         {/* Blog Posts Grid */}
         <Section band="muted">
           {posts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" data-reveal-group="">
               {posts.map((post) => (
                 <BlogCard key={post.slug} post={post} />
               ))}

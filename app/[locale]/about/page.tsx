@@ -152,7 +152,7 @@ export default async function AboutPage({ params }: PageProps) {
 
         {/* Story Section */}
         <Section band="muted">
-          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center" data-reveal="">
             <div>
               <h2 className="text-display-md mb-6">{t("story.title")}</h2>
               <div className="space-y-4 text-muted-foreground">
@@ -198,12 +198,12 @@ export default async function AboutPage({ params }: PageProps) {
 
         {/* Values Section */}
         <Section>
-          <div className="mb-12 max-w-3xl space-y-4">
+          <div className="mb-12 max-w-3xl space-y-4" data-reveal="">
             <Eyebrow>{t("values.title")}</Eyebrow>
             <h2 className="text-display-md">{t("values.description")}</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" data-reveal-group="">
             {values.map((value, index) => (
               <div
                 key={index}
@@ -221,7 +221,7 @@ export default async function AboutPage({ params }: PageProps) {
 
         {/* Mission Section */}
         <Section band="muted">
-          <div className="max-w-3xl space-y-6">
+          <div className="max-w-3xl space-y-6" data-reveal="">
             <Eyebrow>{t("mission.title")}</Eyebrow>
             <h2 className="text-display-md">{t("mission.description")}</h2>
             <div className="border border-border bg-background p-8">
@@ -234,12 +234,12 @@ export default async function AboutPage({ params }: PageProps) {
 
         {/* What We Do Section */}
         <Section>
-          <div className="mb-12 max-w-3xl space-y-4">
+          <div className="mb-12 max-w-3xl space-y-4" data-reveal="">
             <Eyebrow>{t("whatWeDo.title")}</Eyebrow>
             <h2 className="text-display-md">{t("whatWeDo.description")}</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-3" data-reveal-group="">
             {services.map((service, index) => (
               <div
                 key={index}
