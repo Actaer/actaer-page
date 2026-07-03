@@ -52,7 +52,7 @@ Server components stay server components — they only gain static attributes. N
 Carbon does hovers in CSS; GSAP per-card hover would add JS weight for no visual gain.
 
 - `components/carbon/arrow-link.tsx` — arrow slides 4px right on hover (150ms, Carbon standard easing).
-- Cards (`ProductsShowcase` articles, `BlogCard`, consulting cards) — subtle background tint + stronger border on hover.
+- Cards (`ProductsShowcase` articles, `BlogCard`, consulting cards) — subtle background tint on hover. (No border intensify: cards share overlapping 1px borders via `-mt-px`/`-ml-px`, so per-card border-color changes render partially and look glitchy.) Only cards containing a link get hover treatment; purely informational cards (`WhyActaer`) stay static.
 - All hover transitions carry `motion-reduce:transition-none`.
 
 ## Error handling / degradation
