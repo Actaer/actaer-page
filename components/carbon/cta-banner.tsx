@@ -7,11 +7,13 @@ export function CtaBanner({
   description,
   ctaLabel,
   ctaHref,
+  external = false,
 }: {
   title: string;
   description?: string;
   ctaLabel: string;
   ctaHref: string;
+  external?: boolean;
 }) {
   return (
     <section className="bg-primary text-primary-foreground">
@@ -25,10 +27,17 @@ export function CtaBanner({
           className="border-primary-foreground bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary border"
           size="lg"
         >
-          <Link href={ctaHref}>
-            {ctaLabel}
-            <ArrowRight />
-          </Link>
+          {external ? (
+            <a href={ctaHref} target="_blank" rel="noopener noreferrer">
+              {ctaLabel}
+              <ArrowRight />
+            </a>
+          ) : (
+            <Link href={ctaHref}>
+              {ctaLabel}
+              <ArrowRight />
+            </Link>
+          )}
         </Button>
       </div>
     </section>
