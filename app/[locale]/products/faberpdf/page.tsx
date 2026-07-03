@@ -3,7 +3,7 @@ import type { Locale } from "@/i18n/config";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Header, Footer } from "@/components/layout";
-import { PageHero, Section, Eyebrow } from "@/components/carbon";
+import { PageHero, Section, Eyebrow, CtaBanner } from "@/components/carbon";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { constructMetadata, localizedUrl } from "@/lib/metadata";
@@ -99,24 +99,13 @@ export default async function FaberPdfPage({ params }: PageProps) {
           </div>
         </Section>
 
-        <section className="bg-primary text-primary-foreground">
-          <div className="mx-auto flex max-w-[1584px] flex-col gap-8 px-4 py-12 md:flex-row md:items-center md:justify-between md:px-8 md:py-16" data-reveal="">
-            <div className="max-w-3xl space-y-3">
-              <h2 className="text-headline">{t("ctaTitle")}</h2>
-              <p className="text-body-tracked text-primary-foreground/80">{t("ctaDescription")}</p>
-            </div>
-            <Button
-              asChild
-              size="lg"
-              className="border border-primary-foreground bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <a href={EXTERNAL_URL} target="_blank" rel="noopener noreferrer">
-                {t("ctaButton")}
-                <ArrowRight />
-              </a>
-            </Button>
-          </div>
-        </section>
+        <CtaBanner
+          title={t("ctaTitle")}
+          description={t("ctaDescription")}
+          ctaLabel={t("ctaButton")}
+          ctaHref={EXTERNAL_URL}
+          external
+        />
       </main>
       <Footer />
     </>
