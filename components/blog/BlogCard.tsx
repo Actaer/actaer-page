@@ -17,7 +17,7 @@ export function BlogCard({ post }: BlogCardProps) {
   const locale = useLocale() as Locale;
 
   return (
-    <article className="-mt-px -ml-px flex flex-col border border-border bg-background">
+    <article className="-mt-px -ml-px flex flex-col border border-border bg-background transition-colors duration-150 ease-carbon hover:bg-layer-hover motion-reduce:transition-none">
       <Link href={`/blog/${post.slug}`} className="group flex h-full flex-col">
         {post.image && (
           <div className="relative aspect-video overflow-hidden border-b border-border">
@@ -50,7 +50,7 @@ export function BlogCard({ post }: BlogCardProps) {
               aria-hidden="true"
             >
               {t("readMore")}
-              <ArrowRight className="size-4" />
+              <ArrowRight className="size-4 transition-transform duration-150 ease-carbon group-hover:translate-x-1 motion-reduce:transition-none" />
             </span>
           </div>
         </div>

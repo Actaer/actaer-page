@@ -19,7 +19,7 @@ export async function BlogTeaser({ locale }: { locale: Locale }) {
       </div>
       <div data-reveal-group="" className="grid grid-cols-1 md:grid-cols-3">
         {posts.map((post) => (
-          <article key={post.slug} className="-mt-px flex flex-col gap-3 border border-border bg-background p-6 md:-ml-px md:mt-0">
+          <article key={post.slug} className="-mt-px flex flex-col gap-3 border border-border bg-background p-6 transition-colors duration-150 ease-carbon hover:bg-layer-hover motion-reduce:transition-none md:-ml-px md:mt-0">
             <p className="text-xs tracking-[0.32px] text-muted-foreground">{formatDate(post.date, locale)}</p>
             <h3 className="text-body-lg font-semibold">{post.title}</h3>
             <p className="line-clamp-3 text-sm text-muted-foreground">{post.description}</p>

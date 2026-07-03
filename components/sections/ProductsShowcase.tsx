@@ -29,7 +29,7 @@ export function ProductsShowcase() {
       </div>
       <div data-reveal-group="" className="grid grid-cols-1 md:grid-cols-2">
         {products.map((product) => (
-          <article key={product.key} className="-mt-px flex flex-col gap-4 border border-border p-8 md:-ml-px md:mt-0">
+          <article key={product.key} className="-mt-px flex flex-col gap-4 border border-border p-8 transition-colors duration-150 ease-carbon hover:bg-muted motion-reduce:transition-none md:-ml-px md:mt-0">
             <p className="text-eyebrow text-muted-foreground">{t(`${product.key}.category`)}</p>
             <div className="flex items-center gap-3">
               <Image src={product.logo} alt={product.logoAlt} width={32} height={32} className="h-8 w-auto" />

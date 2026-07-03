@@ -19,7 +19,7 @@ export function ConsultingOverview() {
         {services.map((s) => (
           <article
             key={s.key}
-            className="-mt-px flex flex-col gap-3 border border-border bg-background p-6 md:-ml-px md:mt-0"
+            className="-mt-px flex flex-col gap-3 border border-border bg-background p-6 transition-colors duration-150 ease-carbon hover:bg-layer-hover motion-reduce:transition-none md:-ml-px md:mt-0"
           >
             <h3 className="text-card-title">{t(`${s.key}Title`)}</h3>
             <p className="text-body-tracked text-muted-foreground">{t(`${s.key}Description`)}</p>
