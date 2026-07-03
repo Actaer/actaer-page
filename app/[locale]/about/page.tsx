@@ -243,7 +243,7 @@ export default async function AboutPage({ params }: PageProps) {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="-mt-px -ml-px flex flex-col gap-3 border border-border bg-background p-6"
+                className="-mt-px -ml-px flex flex-col gap-3 border border-border bg-background p-6 transition-colors duration-150 ease-carbon hover:bg-muted motion-reduce:transition-none"
               >
                 <h3 className="text-body-lg font-semibold">{service.title}</h3>
                 <p className="text-sm text-muted-foreground">

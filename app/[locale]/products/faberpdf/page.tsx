@@ -100,7 +100,7 @@ export default async function FaberPdfPage({ params }: PageProps) {
         </Section>
 
         <section className="bg-primary text-primary-foreground">
-          <div className="mx-auto flex max-w-[1584px] flex-col gap-8 px-4 py-12 md:flex-row md:items-center md:justify-between md:px-8 md:py-16">
+          <div className="mx-auto flex max-w-[1584px] flex-col gap-8 px-4 py-12 md:flex-row md:items-center md:justify-between md:px-8 md:py-16" data-reveal="">
             <div className="max-w-3xl space-y-3">
               <h2 className="text-headline">{t("ctaTitle")}</h2>
               <p className="text-body-tracked text-primary-foreground/80">{t("ctaDescription")}</p>
