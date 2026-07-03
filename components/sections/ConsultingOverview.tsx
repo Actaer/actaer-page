@@ -1,7 +1,13 @@
 import { useTranslations } from "next-intl";
 import { Section, Eyebrow, ArrowLink } from "@/components/carbon";
 
-export function ConsultingOverview() {
+interface ConsultingOverviewProps {
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+}
+
+export function ConsultingOverview({ eyebrow, title, description }: ConsultingOverviewProps) {
   const t = useTranslations("home.consulting");
   const services = [
     { key: "ai", href: "/consulting/ai-consulting", flagship: true },
@@ -11,9 +17,9 @@ export function ConsultingOverview() {
   return (
     <Section band="muted">
       <div data-reveal="" className="mb-12 space-y-4">
-        <Eyebrow>{t("eyebrow")}</Eyebrow>
-        <h2 className="text-display-md max-w-3xl">{t("title")}</h2>
-        <p className="text-body-lg max-w-2xl text-muted-foreground">{t("description")}</p>
+        <Eyebrow>{eyebrow ?? t("eyebrow")}</Eyebrow>
+        <h2 className="text-display-md max-w-3xl">{title ?? t("title")}</h2>
+        <p className="text-body-lg max-w-2xl text-muted-foreground">{description ?? t("description")}</p>
       </div>
       <div data-reveal-group="" className="grid grid-cols-1 md:grid-cols-3">
         {services.map((s) => (

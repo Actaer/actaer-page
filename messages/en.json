@@ -415,6 +415,9 @@
     "heroTitle": "You don't need more advice. You need it running.",
     "heroDescription": "Decks don't ship. We're a product company — when we consult, you get working systems, honest trade-offs, and a team that stays until yours can take over.",
     "heroCta": "Talk to an engineer",
+    "servicesEyebrow": "What we do",
+    "servicesTitle": "Three practices. One standard: it ships.",
+    "servicesDescription": "Start with the problem in front of you — AI, custom software, or legacy systems. Every engagement ends the same way: running in production, owned by your team.",
     "flagshipLabel": "Flagship service"
   },
   "aiConsultingPage": {

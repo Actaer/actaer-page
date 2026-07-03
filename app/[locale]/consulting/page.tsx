@@ -52,7 +52,11 @@ export default async function ConsultingPage({ params }: PageProps) {
             </Link>
           </Button>
         </PageHero>
-        <ConsultingOverview />
+        <ConsultingOverview
+          eyebrow={t("servicesEyebrow")}
+          title={t("servicesTitle")}
+          description={t("servicesDescription")}
+        />
         <CtaBanner
           title={tHome("cta.title")}
           description={tHome("cta.description")}

@@ -415,6 +415,9 @@
     "heroTitle": "No necesitas más consejos. Los necesitas en marcha.",
     "heroDescription": "Las presentaciones no llegan a producción. Somos una empresa de producto — cuando consultamos, obtienes sistemas que funcionan, contrapartidas honestas y un equipo que se queda hasta que el tuyo pueda tomar el relevo.",
     "heroCta": "Habla con un ingeniero",
+    "servicesEyebrow": "Qué hacemos",
+    "servicesTitle": "Tres áreas. Un estándar: que funcione en producción.",
+    "servicesDescription": "Empieza por el problema que tienes delante — IA, software a medida o sistemas heredados. Cada proyecto termina igual: funcionando en producción y en manos de tu equipo.",
     "flagshipLabel": "Servicio insignia"
   },
   "aiConsultingPage": {
