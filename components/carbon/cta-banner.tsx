@@ -15,7 +15,7 @@ export function CtaBanner({
 }) {
   return (
     <section className="bg-primary text-primary-foreground">
-      <div className="mx-auto flex max-w-[1584px] flex-col gap-8 px-4 py-12 md:flex-row md:items-center md:justify-between md:px-8 md:py-16">
+      <div data-reveal="" className="mx-auto flex max-w-[1584px] flex-col gap-8 px-4 py-12 md:flex-row md:items-center md:justify-between md:px-8 md:py-16">
         <div className="max-w-3xl space-y-3">
           <h2 className="text-headline">{title}</h2>
           {description ? <p className="text-body-tracked text-primary-foreground/80">{description}</p> : null}

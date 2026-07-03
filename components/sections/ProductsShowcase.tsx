@@ -23,11 +23,11 @@ export function ProductsShowcase() {
   const t = useTranslations("home.products");
   return (
     <Section id="products">
-      <div className="mb-12 space-y-4">
+      <div data-reveal="" className="mb-12 space-y-4">
         <Eyebrow>{t("eyebrow")}</Eyebrow>
         <h2 className="text-display-md max-w-3xl">{t("title")}</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div data-reveal-group="" className="grid grid-cols-1 md:grid-cols-2">
         {products.map((product) => (
           <article key={product.key} className="-mt-px flex flex-col gap-4 border border-border p-8 md:-ml-px md:mt-0">
             <p className="text-eyebrow text-muted-foreground">{t(`${product.key}.category`)}</p>

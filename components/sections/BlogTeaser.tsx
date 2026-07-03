@@ -10,14 +10,14 @@ export async function BlogTeaser({ locale }: { locale: Locale }) {
   if (posts.length === 0) return null;
   return (
     <Section band="muted">
-      <div className="mb-12 flex flex-wrap items-end justify-between gap-4">
+      <div data-reveal="" className="mb-12 flex flex-wrap items-end justify-between gap-4">
         <div className="space-y-4">
           <Eyebrow>{t("eyebrow")}</Eyebrow>
           <h2 className="text-display-md">{t("title")}</h2>
         </div>
         <ArrowLink href="/blog">{t("cta")}</ArrowLink>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div data-reveal-group="" className="grid grid-cols-1 md:grid-cols-3">
         {posts.map((post) => (
           <article key={post.slug} className="-mt-px flex flex-col gap-3 border border-border bg-background p-6 md:-ml-px md:mt-0">
             <p className="text-xs tracking-[0.32px] text-muted-foreground">{formatDate(post.date, locale)}</p>

@@ -10,12 +10,12 @@ export function ConsultingOverview() {
   ];
   return (
     <Section band="muted">
-      <div className="mb-12 space-y-4">
+      <div data-reveal="" className="mb-12 space-y-4">
         <Eyebrow>{t("eyebrow")}</Eyebrow>
         <h2 className="text-display-md max-w-3xl">{t("title")}</h2>
         <p className="text-body-lg max-w-2xl text-muted-foreground">{t("description")}</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div data-reveal-group="" className="grid grid-cols-1 md:grid-cols-3">
         {services.map((s) => (
           <article
             key={s.key}
