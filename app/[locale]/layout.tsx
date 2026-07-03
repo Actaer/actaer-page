@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/config";
-import { CookieBanner, BackToTop } from "@/components/layout";
+import { CookieBanner, BackToTop, ScrollAnimations } from "@/components/layout";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -33,6 +33,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       {children}
+      <ScrollAnimations />
       <BackToTop />
       <CookieBanner />
     </NextIntlClientProvider>
